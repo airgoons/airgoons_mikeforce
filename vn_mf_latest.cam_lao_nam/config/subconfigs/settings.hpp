@@ -16,7 +16,7 @@ class teams
     FAILED[] = {"NO TEAM","\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa", "FAILED"};
 };
 
-snakebitechance[] = {0.5,1};  // 50% chance to get bit if closer than 1m, 0.1 = 10%
+snakebitechance[] = {0.0,1};  // 50% chance to get bit if closer than 1m, 0.1 = 10%
 snakebitefrequency[] = {300,300}; // Restrict snakes to biting once every 600s, with another 300s of reduced chance.
 
 dbprefix = "mf_db_";
