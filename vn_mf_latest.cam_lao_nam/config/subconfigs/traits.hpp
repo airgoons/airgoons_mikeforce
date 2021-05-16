@@ -7,10 +7,10 @@ icons[] = {"\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_role_medic.paa","\v
 // limits
 class MikeForce
 {
-	medic = 1;
-	engineer = 1;
-	explosiveSpecialist = 1;
-	radioOperator = 1;
+	medic = 8;
+	engineer = 2;
+	explosiveSpecialist = 8;
+	radioOperator = 2;
 };
 class SpikeTeam
 {
