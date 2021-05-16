@@ -5,6 +5,7 @@ using Config.Net;
 namespace mission_pack_unpack {
     public static class Configuration {
         public interface ISettings {
+            string SteamCmdPath { get; }
             string SteamPath { get; }
             string SteamApps_Arma3Tools_Path { get; }
             string SteamApps_MikeForce_Path { get; }
