@@ -1,5 +1,5 @@
 {
-    "STEAM_PATH": "C:/PATH/TO/Steam/",
-    "STEAMAPPS_ARMA3TOOLS_PATH": "steamapps/common/Arma 3 Tools/",
-    "STEAMAPPS_MIKEFORCE_PATH": "steamapps/workshop/content/107410/2477873447"
+    "SteamPath": "C:/PATH/TO/Steam/",
+    "SteamApps_Arma3Tools_Path": "steamapps/common/Arma 3 Tools/",
+    "SteamApps_MikeForce_Path": "steamapps/workshop/content/107410/2477873447"
 }
