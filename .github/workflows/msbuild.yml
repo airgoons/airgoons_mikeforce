@@ -36,7 +36,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
         # Artifact name
-        name: airgoons_mikeforce_devel_${{env.GITHUB_SHA}}
+        name: airgoons_mikeforce_devel_$GITHUB_SHA
         # A file, directory or wildcard pattern that describes what to upload
         path: ./mission_pack_unpack/bin/Release/netcoreapp3.1/*.*
         # The desired behavior if no files are found using the provided path.
