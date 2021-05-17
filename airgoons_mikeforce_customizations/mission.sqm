@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="vn_mf_latest_goon";
+sourceName="airgoons_mikeforce_latest";
 addons[]=
 {
 	"A3_Ui_F",
