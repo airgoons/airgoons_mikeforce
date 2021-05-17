@@ -111,7 +111,7 @@ namespace mission_pack_unpack {
             p.Start();
             p.WaitForExit();
 
-            File.Move(string.Format("{0}.pbo", customMission_path), Configuration.Settings.Output_Path);
+            File.Copy(string.Format("{0}.pbo", customMission_path), Configuration.Settings.Output_Path, true);
         }
 
         static void CleanUp(string workingDir) {
