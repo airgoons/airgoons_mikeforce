@@ -1,6 +1,9 @@
 # Arma Data Files
 *.pbo
 
+# Project specific files
+configuration.json
+
 #######################################################################################################
 ### GitIgnore.io
 
