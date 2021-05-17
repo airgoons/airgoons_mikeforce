@@ -331,7 +331,7 @@ class vn_whitelisted_arsenal_loadouts
 			{"vn_prop_food_lrrp_01_06",{0,0,0,0}},
 			{"vn_prop_food_lrrp_01_07",{0,0,0,0}},
 			{"vn_prop_food_lrrp_01_08",{0,0,0,0}},
-			{"vn_prop_food_meal_01",{-1,-1,-1,-1},
+			{"vn_prop_food_meal_01",{-1,-1,-1,-1}},
 			{"vn_prop_food_meal_01_01",{-1,-1,-1,-1}},
 			{"vn_prop_food_meal_01_02",{-1,-1,-1,-1}},
 			{"vn_prop_food_meal_01_03",{-1,-1,-1,-1}},
