@@ -1,0 +1,13 @@
+Setup Instructions
+==================
+
+Dependencies
+------------
+1.  Subscribe to Mike Force in the Arma 3 Workshop
+2.  Install Arma 3 Tools via Steam
+
+Configuration
+-------------
+1.  Make a copy of configuration_example.json and rename to configuration.json
+2.  Edit configuration.json
+        @TODO - document variables
