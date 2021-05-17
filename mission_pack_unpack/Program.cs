@@ -32,7 +32,11 @@ namespace mission_pack_unpack {
 
                 return 0;
             }
-            catch (Exception ex) {
+            catch (ApplicationException ex) {
+                Console.Error.WriteLine(ex.Message.ToString());
+                return 1;
+            }
+            catch(Exception ex) {
                 Console.Error.WriteLine(ex.ToString());
                 return 1;
             }

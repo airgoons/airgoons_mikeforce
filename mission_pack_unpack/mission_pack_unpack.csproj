@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>mission_pack_unpack</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,9 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="configuration.json">
+    <None Update="configuration_example.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /E /I $(SolutionDir)\..\airgoons_mikeforce_customizations $(OutDir)\airgoons_mikeforce_customizations" />
+  </Target>
 
 </Project>
