@@ -1,0 +1,3 @@
+1.  Subscribe to Mike Force in the Arma 3 Workshop
+2.  Install Arma 3 Tools via Steam
+3.  Modify Configuration.json

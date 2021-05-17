@@ -5,10 +5,10 @@ using Config.Net;
 namespace mission_pack_unpack {
     public static class Configuration {
         public interface ISettings {
-            string SteamCmdPath { get; }
-            string SteamPath { get; }
-            string SteamApps_Arma3Tools_Path { get; }
-            string SteamApps_MikeForce_Path { get; }
+            string Arma3Tools_Path { get; }
+            string MikeForce_Path { get; }
+            string Customizations_Path { get; }
+            string Output_Path { get; }
         }
 
         public static ISettings Settings {
