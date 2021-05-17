@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /E /I $(SolutionDir)\..\airgoons_mikeforce_customizations $(OutDir)\airgoons_mikeforce_customizations" />
+    <Exec Command="xcopy /E /I /Y $(SolutionDir)\..\airgoons_mikeforce_customizations $(OutDir)\airgoons_mikeforce_customizations&#xD;&#xA;xcopy /E /I /Y $(SolutionDir)\..\docs $(OutDir)\docs" />
   </Target>
 
 </Project>
