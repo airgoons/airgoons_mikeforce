@@ -2,5 +2,7 @@
     "Arma3Tools_Path": "C:/PATH/TO/STEAM/steamapps/common/Arma 3 Tools/",
     "MikeForce_Path": "C:/PATH/TO/STEAM/steamapps/workshop/content/107410/2477873447",
     "Customizations_Path": "./airgoons_mikeforce_customizations",
-    "Output_Path": "./airgoons_mikeforce_latest.cam_lao_nam.pbo"
+    "Output_Path":  "./output/",
+    "Output_Filename": "airgoons_mikeforce_latest.cam_lao_nam.pbo",
+    "Cleanup": true
 }
