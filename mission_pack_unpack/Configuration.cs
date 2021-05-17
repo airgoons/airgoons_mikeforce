@@ -9,6 +9,8 @@ namespace mission_pack_unpack {
             string MikeForce_Path { get; }
             string Customizations_Path { get; }
             string Output_Path { get; }
+            string Output_Filename { get; }
+            bool Cleanup { get; }
         }
 
         public static ISettings Settings {

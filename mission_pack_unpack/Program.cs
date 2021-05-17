@@ -18,7 +18,7 @@ namespace mission_pack_unpack {
              */
 
             try {
-                string workingDir = Path.GetFullPath("./temp");
+                string workingDir = Path.GetFullPath("./working");
 
                 CleanUp(workingDir);
 
@@ -28,7 +28,9 @@ namespace mission_pack_unpack {
                 CustomizeMission(customMission_path);
                 PackPBO(customMission_path);
 
-                CleanUp(workingDir);
+                if (Configuration.Settings.Cleanup) {
+                    CleanUp(workingDir);
+                }
 
                 return 0;
             }
@@ -43,7 +45,7 @@ namespace mission_pack_unpack {
         }
 
         static string CopyMikeForcePBO(string workingDir) {
-            Console.Out.WriteLine("Downloading official Mike Force PBO");
+            Console.Out.WriteLine("Copying official Mike Force PBO from Steam Workshop");
 
             string filename = "1799728943668364634_legacy.bin";
             string mikeforce_filepath = string.Format(
@@ -57,7 +59,7 @@ namespace mission_pack_unpack {
 
             else {
                 
-                string destinationPath = string.Format("{0}/{1}", workingDir, "mikeforce_latest.pbo");
+                string destinationPath = string.Format("{0}/{1}", workingDir, "official_mikeforce_latest.cam_lao_nam.pbo");
                 Directory.CreateDirectory(workingDir);
                 File.Copy(mikeforce_filepath, destinationPath, true);
 
@@ -83,10 +85,8 @@ namespace mission_pack_unpack {
                 p.Start();
                 p.WaitForExit();
 
-                File.Move(pboPath, pboPath.Replace("mikeforce_latest.pbo", "mikeforce_latest_official.pbo"));
-
                 string oldPath = pboPath.Replace(".pbo", "");
-                string newPath = pboPath.Replace(".pbo", "_airgoons");
+                string newPath = oldPath.Replace("official_", "airgoons_");
                 Directory.Move(oldPath, newPath);
 
                 return newPath;
@@ -115,7 +115,14 @@ namespace mission_pack_unpack {
             p.Start();
             p.WaitForExit();
 
-            File.Copy(string.Format("{0}.pbo", customMission_path), Configuration.Settings.Output_Path, true);
+            if (!Directory.Exists(Configuration.Settings.Output_Path)) {
+                Directory.CreateDirectory(Configuration.Settings.Output_Path);
+            }
+
+            File.Copy(
+                string.Format("{0}.pbo", customMission_path),
+                string.Format("{0}/{1}", Configuration.Settings.Output_Path, Configuration.Settings.Output_Filename),
+                true);
         }
 
         static void CleanUp(string workingDir) {
