@@ -1,1 +1,6 @@
-@TODO - create usage document
+Instructions for use when deploying a final version of the PBO to the server
+============================================================================
+1.  Download the latest release from GitHub
+2.  Ensure proper setup of configuration.json
+3.  Execute mission_pack_unpack.exe
+4.  Deploy the output PBO to the Arma 3 server

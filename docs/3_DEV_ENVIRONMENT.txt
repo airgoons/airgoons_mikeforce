@@ -1,0 +1,44 @@
+Dev Environment
+===============
+
+Dependencies
+------------
+1.  Git (configuration not in scope of this document)
+2.  Visual Studio 2019 or later (configuration not in scope of this document)
+
+Setup
+-----
+1.  Adjust configuration.json to support test usage
+        Arma3Tools_Path - retain normal setting
+        MikeForce_Path - retain normal setting
+        Customizations_Path - set to full path of customation directory location in the local git repository
+        Output_Path - set as desired
+        Output_Filename - if desired, set to "airgoons_mikeforce_testing.cam_lao_nam.pbo" or similar
+        Cleanup - set false
+        Working_Path - set to "%USERPROFILE%/Documents/Arma 3/mpmissions"
+2.  Open Arma 3 and launch Eden editor
+3.  Verify that the mission is available to be selected and loaded
+
+Workflow
+--------
+0.  Build mission_pack_unpack and customize configuration.json per the Setup section above
+1.  Create a new Git branch for your new feature
+        a)  Open a Terminal at the git repository directory
+        b)  Execute:
+                git checkout -b new_feature_name
+                git push -u origin new_feature_name
+2.  Make any desired changes to mission configuration text files in the git repository
+3.  Execute mission_pack_unpack.exe
+4.  Load the mission in Eden
+5.  VERIFY that mission loads without error messages
+        a) Failure at this step requries troubleshooting before proceeding, return to step 2
+6.  Commit changes to GitHub (normal Git workflow is out of scope for this document, see https://guides.github.com/introduction/flow/, https://education.github.com/git-cheat-sheet-education.pdf)
+7.  Make any changes to the mission's units and objects in Eden
+8.  Test the mission locally
+9.  Copy mission.sqm from the mission directory in mpmissions to the corresponding location in the local git repository
+10.  Commit changes to the local git repository
+11.  Push new commits to GitHub
+12.  Repeat from step 2 until all changes for the feature are complete and tested
+13.  In GitHub, initiate a pull request to merge your feature branch into main
+14.  Sufficiently test the feature change
+15.  Commit the merge as "Squash and Merge" to main

@@ -16,3 +16,4 @@ Configuration
         Output_Path - The path to where the modifified PBO should be copied after packaging
         Output_Filename - The filename of the output PBO
         Cleanup - Delete the working directory post after packaging the output PBO
+        Working_Path - The path to the working directory
