@@ -4,5 +4,6 @@
     "Customizations_Path": "./airgoons_mikeforce_customizations",
     "Output_Path":  "./output/",
     "Output_Filename": "airgoons_mikeforce_latest.cam_lao_nam.pbo",
-    "Cleanup": true
+    "Cleanup": true,
+    "Working_Path": "./working/"
 }
