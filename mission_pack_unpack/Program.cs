@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using Config.Net;
 
 namespace mission_pack_unpack {
 
@@ -18,11 +17,14 @@ namespace mission_pack_unpack {
              */
 
             try {
-                string workingDir = Path.GetFullPath("./working");
-
-                CleanUp(workingDir);
-
                 Configuration.InitSettings();
+
+                string workingDir = Configuration.Settings.Working_Path;
+
+                if (Configuration.Settings.Cleanup) {
+                    CleanUp(workingDir);
+                }
+
                 string mikeForcePBO_path = CopyMikeForcePBO(workingDir);
                 string customMission_path = UnpackPBO(mikeForcePBO_path);
                 CustomizeMission(customMission_path);
@@ -81,7 +83,7 @@ namespace mission_pack_unpack {
 
                 var p = new System.Diagnostics.Process();
                 p.StartInfo.FileName = bankRev_path;
-                p.StartInfo.Arguments = pboPath;
+                p.StartInfo.Arguments = string.Format("\"{0}\"", pboPath);
                 p.Start();
                 p.WaitForExit();
 
@@ -111,7 +113,7 @@ namespace mission_pack_unpack {
 
             var p = new System.Diagnostics.Process();
             p.StartInfo.FileName = fileBank_path;
-            p.StartInfo.Arguments = customMission_path;
+            p.StartInfo.Arguments = string.Format("\"{0}\"", customMission_path);
             p.Start();
             p.WaitForExit();
 
