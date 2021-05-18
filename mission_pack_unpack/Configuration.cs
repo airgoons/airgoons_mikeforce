@@ -11,6 +11,7 @@ namespace mission_pack_unpack {
             string Output_Path { get; }
             string Output_Filename { get; }
             bool Cleanup { get; }
+            string Working_Path { get; }
         }
 
         public static ISettings Settings {
