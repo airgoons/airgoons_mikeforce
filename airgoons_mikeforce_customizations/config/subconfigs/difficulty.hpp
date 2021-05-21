@@ -1,4 +1,4 @@
-setting = "easy"; // easy, normal, hard
+setting = "airgoons"; // easy, normal, hard
 class easy
 {
 	aiskill = 1;
@@ -18,5 +18,11 @@ class hard
 	aiskill = 1;
 	hunger_loss_factor = 1.0;
 	thirst_loss_factor = 1.0;
+	building_supplies = 500;
+};
+class airgoons {
+	aiskill = 1;
+	hunger_loss_factor = 0.5;
+	thirst_loss_factor = 0.5;
 	building_supplies = 500;
 };
