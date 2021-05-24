@@ -22,7 +22,7 @@ class hard
 };
 class airgoons {
 	aiskill = 1;
-	hunger_loss_factor = 0.5;
-	thirst_loss_factor = 0.5;
+	hunger_loss_factor = 0.2;
+	thirst_loss_factor = 0.2;
 	building_supplies = 500;
 };
