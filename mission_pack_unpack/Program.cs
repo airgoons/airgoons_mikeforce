@@ -89,6 +89,11 @@ namespace mission_pack_unpack {
 
                 string oldPath = pboPath.Replace(".pbo", "");
                 string newPath = oldPath.Replace("official_", "airgoons_");
+
+                if (Directory.Exists(newPath)) {
+                    Directory.Delete(newPath, true);
+                }
+
                 Directory.Move(oldPath, newPath);
 
                 return newPath;
