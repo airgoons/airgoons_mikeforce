@@ -98,8 +98,16 @@ namespace mission_pack_unpack {
         static void CustomizeMission(string customMission_path) {
             Console.Out.WriteLine("Applying customizations");
             var files = Directory.GetFiles(Configuration.Settings.Customizations_Path, "*.*", SearchOption.AllDirectories);
+
             foreach (var file in files) {
-                File.Copy(file, file.Replace(Configuration.Settings.Customizations_Path, customMission_path), true);
+                var dest = file.Replace(Configuration.Settings.Customizations_Path, customMission_path);
+
+                var dest_dir = Directory.GetParent(dest).FullName;
+                if (!Directory.Exists(dest_dir)) {
+                    Directory.CreateDirectory(dest_dir);
+                }
+
+                File.Copy(file, dest, true);
             }
         }
 
