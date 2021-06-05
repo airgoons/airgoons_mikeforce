@@ -188,7 +188,7 @@ class vn_whitelisted_arsenal_loadouts
 			{"vn_m129_mag",{-1,0,0,-1}},
 			{"vn_m14_10_mag",{-1,5,0,-1}},
 			{"vn_m14_10_t_mag",{-1,5,0,-1}},
-			{"vn_m14_grenade_mag",{-1,-1,-1,-1}},
+			{"vn_m14_grenade_mag",{-1,1,-1,-1}},
 			{"vn_m14_mag",{-1,5,1,-1}},
 			{"vn_m14_t_mag",{-1,5,1,-1}},
 			{"vn_m16_20_mag",{-1,0,6,-1}},
@@ -231,7 +231,7 @@ class vn_whitelisted_arsenal_loadouts
 			{"vn_mc10_mag",{-1,0,6,-1}},
 			{"vn_mc10_t_mag",{-1,0,6,-1}},
 			{"vn_mine_ammobox_range_mag",{-1,-1,-1,-1}},
-			{"vn_mine_m112_remote_mag",{-1,-1,-1,-1}},
+			{"vn_mine_m112_remote_mag",{-1,3,-1,-1}},
 			{"vn_mine_m14_mag",{-1,-1,-1,-1}},
 			{"vn_mine_m15_mag",{-1,-1,-1,-1}},
 			{"vn_mine_m16_mag",{-1,-1,-1,-1}},
@@ -397,17 +397,24 @@ class vn_whitelisted_arsenal_loadouts
 			{"vn_v_m7_mag",{-1,0,-1,-1}},
 			{"vn_v_rdg2_mag",{-1,-1,-1,-1}},
 			{"vn_v_rgd5_mag",{-1,-1,-1,-1}},
-			{"vn_welrod_mag",{-1,0,-1,-1}}
+			{"vn_welrod_mag",{-1,0,-1,-1}},
+			{"murshun_cigs_matches",{0,0,0,0}},
+			{"vn_b_item_cigs_01", {0,0,0,0}},
+			{"murshun_cigs_cigpack", {2,2,2,2}},
+			{"immersion_cigs_cigar0_nv", {-1,-1,3,-1}},
+			{"vn_b_item_lighter_01", {0,0,0,0}},
+			{"murshun_cigs_cig0_nv", {0,0,0,0}},
+			{"immersion_pops_poppack", {-1,1,-1,-1}}
 		};
 	
 		items[] = 
 		{
 			{"FirstAidKit",{-1,-1,-1,-1}},
-			{"G_Aviator",{-1,-1,-1,-1},
-			{"G_Bandanna_aviator",{0,0,0,0}},
-			{"G_Bandanna_blk",{0,0,0,0}},
-			{"G_Bandanna_oli",{0,0,0,0}},
-			{"G_Spectacles_Tinted",{0,0,0,0}},
+			{"G_Aviator",{-1,-1,-1,-1}},
+			{"G_Bandanna_aviator",{-1,-1,-1,-1}},
+			{"G_Bandanna_blk",{-1,-1,-1,-1}},
+			{"G_Bandanna_oli",{-1,-1,-1,-1}},
+			{"G_Spectacles_Tinted",{-1,-1,-1,-1}},
 			{"ItemCompass",{-1,-1,-1,-1}},
 			{"ItemMap",{-1,-1,-1,-1}},
 			{"ItemRadio",{-1,-1,-1,-1}},
