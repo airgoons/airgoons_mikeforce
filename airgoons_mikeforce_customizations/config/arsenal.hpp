@@ -188,6 +188,7 @@ class vn_whitelisted_arsenal_loadouts
 			{"vn_m129_mag",{-1,0,0,-1}},
 			{"vn_m14_10_mag",{-1,5,0,-1}},
 			{"vn_m14_10_t_mag",{-1,5,0,-1}},
+
 			{"vn_m14_grenade_mag",{-1,1,-1,-1}},
 			{"vn_m14_mag",{-1,5,1,-1}},
 			{"vn_m14_t_mag",{-1,5,1,-1}},
