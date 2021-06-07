@@ -10,7 +10,7 @@ class MikeForce
 	medic = 8;
 	engineer = 2;
 	explosiveSpecialist = 8;
-	radioOperator = 2;
+	radioOperator = 1;
 };
 class SpikeTeam
 {
@@ -24,12 +24,12 @@ class ACAV
 	medic = 2;
 	engineer = 40;
 	explosiveSpecialist = 2;
-	radioOperator = 2;
+	radioOperator = 0;
 };
 class GreenHornets
 {
 	medic = 1;
 	engineer = 1;
 	explosiveSpecialist = 1;
-	radioOperator = 1;
+	radioOperator = 0;
 };
