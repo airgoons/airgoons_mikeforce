@@ -828,10 +828,10 @@ class vn_whitelisted_arsenal_loadouts
 			{"U_B_ParadeUniform_01_US_F", {0,0,0,0}},
 			{"U_B_T_FullGhillie_tna_F",{5,5,5,5}},
 			{"U_C_Poloshirt_blue",{1,1,1,1}},
-			{"U_C_Poloshirt_burgundy",{1,1,1,1},
-			{"U_C_Poloshirt_salmon",{1,1,1,1},
-			{"U_C_Poloshirt_redwhite",{1,1,1,1},
-			{"U_C_Poloshirt_stripped",{1,1,1,1}
+			{"U_C_Poloshirt_burgundy",{1,1,1,1}},
+			{"U_C_Poloshirt_salmon",{1,1,1,1}},
+			{"U_C_Poloshirt_redwhite",{1,1,1,1}},
+			{"U_C_Poloshirt_stripped",{1,1,1,1}}
 		};
 	
 		backpacks[] = 
