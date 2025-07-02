@@ -1,0 +1,11 @@
+A vehicle can be changed if it's within 5m of its spawn point.
+When a vehicle is changed, players are kicked out and moved to the sign.
+The old vehicle is deleted.
+The new vehicle is spawned on the spawn point.
+
+Actions:
+- One per vehicle
+- No submenu unless necessary
+- Condition:
+-- Vehicle nearby to spawn point
+-- Vehicle is not wrecked/respawning/etc

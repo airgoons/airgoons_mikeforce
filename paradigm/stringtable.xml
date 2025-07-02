@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="PARADIGM_LIBRARY">
+	<Package name="PARADIGM">
+		<Container name="default">
+		</Container>
+		<Container name="notifications">
+			<Key ID="STR_para_notification_insufficient_resources_title">
+				<Original>Insufficient Resources</Original>
+			</Key>
+			<Key ID="STR_para_notification_insufficient_resources_desc">
+				<Original>The building doesn't have enough resources to do that.</Original>
+			</Key>
+		</Container>
+	</Package>
+</Project>
