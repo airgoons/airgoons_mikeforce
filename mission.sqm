@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1776;
+		nextID=1777;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1118;
+		nextID=1137;
 	};
 	class Camera
 	{
-		pos[]={16277.551,24.596937,6564.4697};
-		dir[]={-0.78001678,-0.46739972,0.41607529};
-		up[]={-0.41239867,0.88404751,0.21998064};
-		aside[]={0.47064888,5.4365955e-08,0.88232577};
+		pos[]={16290.051,29.936735,6558.5854};
+		dir[]={-0.72457045,-0.5663625,0.39273241};
+		up[]={-0.49792606,0.82415676,0.26988599};
+		aside[]={0.47652674,8.2654878e-08,0.87916476};
 	};
 };
 binarizationWanted=0;
@@ -63,13 +63,14 @@ addons[]=
 	"air_f_vietnam_c",
 	"A3_Modules_F_Multiplayer",
 	"A3_Missions_F_Oldman",
-	"wheeled_f_vietnam_04_c"
+	"wheeled_f_vietnam_04_c",
+	"armor_f_vietnam_04_c"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -263,6 +264,13 @@ class AddonsMetaData
 		{
 			className="wheeled_f_vietnam_04_c";
 			name="wheeled_f_vietnam_04_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
+		class Item28
+		{
+			className="armor_f_vietnam_04_c";
+			name="armor_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
@@ -482,7 +490,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=226;
+		items=227;
 		class Item0
 		{
 			dataType="Marker";
@@ -10625,7 +10633,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={16265.228,16.406326,6570.1489};
-				angles[]={-0,0.5729059,0};
+				angles[]={0,0.5729059,0};
 			};
 			side="Empty";
 			flags=4;
@@ -10634,6 +10642,23 @@ class Mission
 			};
 			id=1774;
 			type="vn_b_wheeled_m274_02_01";
+			atlOffset=9.5367432e-07;
+		};
+		class Item226
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16271.647,17.57987,6575.3022};
+				angles[]={-0,3.7652743,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1776;
+			type="vn_b_armor_m67_01_01";
 		};
 	};
 	class Connections
