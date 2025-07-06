@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1774;
+		nextID=1776;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1099;
+		nextID=1118;
 	};
 	class Camera
 	{
-		pos[]={16280.027,24.596937,6569.9956};
-		dir[]={-0.8489275,-0.37539703,0.3720234};
-		up[]={-0.34383166,0.92686439,0.15067637};
-		aside[]={0.40137836,3.7543941e-08,0.91591287};
+		pos[]={16277.551,24.596937,6564.4697};
+		dir[]={-0.78001678,-0.46739972,0.41607529};
+		up[]={-0.41239867,0.88404751,0.21998064};
+		aside[]={0.47064888,5.4365955e-08,0.88232577};
 	};
 };
 binarizationWanted=0;
@@ -62,13 +62,14 @@ addons[]=
 	"air_f_vietnam_03_c",
 	"air_f_vietnam_c",
 	"A3_Modules_F_Multiplayer",
-	"A3_Missions_F_Oldman"
+	"A3_Missions_F_Oldman",
+	"wheeled_f_vietnam_04_c"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=28;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -256,6 +257,13 @@ class AddonsMetaData
 			className="A3_Missions_F_Oldman";
 			name="Arma 3 Old Man - Playable Content";
 			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item27
+		{
+			className="wheeled_f_vietnam_04_c";
+			name="wheeled_f_vietnam_04_c";
+			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
 	};
@@ -474,7 +482,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=225;
+		items=226;
 		class Item0
 		{
 			dataType="Marker";
@@ -10610,6 +10618,22 @@ class Mission
 				};
 				nAttributes=10;
 			};
+		};
+		class Item225
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16265.228,16.406326,6570.1489};
+				angles[]={-0,0.5729059,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1774;
+			type="vn_b_wheeled_m274_02_01";
 		};
 	};
 	class Connections
