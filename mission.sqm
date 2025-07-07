@@ -10000,7 +10000,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""vn_m16""],[]],[[""vn_m16_30_mag"",""vn_m16_30_t_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m61_grenade_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01""],[]],[[],[]]],true]";
+							value="[[[[""vn_m16""],[]],[[""vn_m16_20_mag"",""vn_m16_20_t_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m61_grenade_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01""],[]],[[],[]]],true]";
 						};
 					};
 				};

@@ -38,7 +38,7 @@ class AmmoCrateLight
 		{"vn_hd_mag",20},
 		{"vn_hp_mag",20},
 		{"vn_m10_mag",20},
-		{"vn_m16_30_mag",60},
+		{"vn_m16_20_mag",60},
 		{"vn_m63a_30_mag",30},
 		{"vn_mp40_mag",30},
 		{"vn_m16_20_mag",60},
