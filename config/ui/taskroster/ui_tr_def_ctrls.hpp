@@ -105,8 +105,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_ACAV.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_ACAV_HL.paa";
+			text = "img\AirGoonIcons\Charlie.paa";
+			textUp = "img\AirGoonIcons\Charlie.paa"
 			
 			onButtonClick = "['ACAV'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -120,8 +120,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "img\AirGoonIcons\Alpha.paa";
-			textUp = "img\AirGoonIcons\Alpha.paa"
+			text = "img\AirGoonIcons\Delta.paa";
+			textUp = "img\AirGoonIcons\Delta.paa"
 			
 			onButtonClick = "['GreenHornets'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -135,8 +135,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce_HL.paa";
+			text = "img\AirGoonIcons\Alpha.paa";
+			textUp = "img\AirGoonIcons\Alpha.paa"
 			
 			onButtonClick = "['MikeForce'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -150,8 +150,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_SpikeTeam.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_SpikeTeam_HL.paa";
+			text = "img\AirGoonIcons\Bravo.paa";
+			textUp = "img\AirGoonIcons\Bravo.paa"
 			
 			onButtonClick = "['SpikeTeam'] call vn_mf_fnc_tr_selectTeam;";
 		};

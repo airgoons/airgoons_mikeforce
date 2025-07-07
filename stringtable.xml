@@ -168,16 +168,16 @@
         <Original>This vehicle can't be used by your team</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force">
-        <Original>PLEI MEI SF CAMP - ALPHA PLATOON</Original>
+        <Original>PLEI MEI SF CAMP</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_green_hornets">
-        <Original>PLEIKU HELI BASE - DELTA TROOP</Original>
+        <Original>ARMY HELI BASE - DELTA TROOP</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_spike_team">
-        <Original>MSS LEGHORN - BRAVO PATROL BASE</Original>
+        <Original>MSS LEGHORN - LAOS PATROL BASE</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_acav">
-        <Original>FOB 5 BAN ME THUOT - Engineer Base</Original>
+        <Original>FOB 5 BAN ME THUOT - Vehicle Base</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force_khe_sanh">
         <Original>KHE SANH CAMP - Infantry Base</Original>

@@ -9,9 +9,9 @@ class MikeForce
     class rolelimits 
     {
         medic = 4;
-        engineer = 4;
+        engineer = 2;
         explosiveSpecialist = 2;
-        vn_artillery = 2;
+        vn_artillery = 4;
     };
     
     class defaultTraits
@@ -42,7 +42,7 @@ class SpikeTeam
     class rolelimits 
     {
         medic = 4;
-        engineer = 4;
+        engineer = 2;
         explosiveSpecialist = 2;
         vn_artillery = 2;
     };
@@ -77,8 +77,8 @@ class ACAV
     {
         medic = 4;
         engineer = 40;
-        explosiveSpecialist = 4;
-        vn_artillery = 2;
+        explosiveSpecialist = 43;
+        vn_artillery = 0;
     };
     
     class defaultTraits
