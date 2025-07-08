@@ -10,7 +10,7 @@ class Header
 {
 	gameType = "mikefrc";
 	minPlayers = 1;
-	maxPlayers = 90; //Do not exceed 32 players, as it begins to degrade balance and performance.
+	maxPlayers = 99; //Do not exceed 32 players, as it begins to degrade balance and performance.
 };
 respawn = "BASE";
 respawnDelay = 20;
