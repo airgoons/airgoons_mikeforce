@@ -19,14 +19,14 @@ respawnButton = 1;
 respawnOnStart = -1;
 respawnTemplates[] = { "MenuPosition" };
 onPauseScript = "";
-onLoadMission = QUOT(Mike Force (VN_MF_VERSION));
-OnLoadIntro = "Welcome to Mike Force";
-loadScreen = "\vn\missions_f_vietnam\data\img\mikeforce\mission.jpg";
+onLoadMission = "Welcome to the suck";
+OnLoadIntro = "Welcome to Mike Force! No Fun Allowed.";
+loadScreen = "img\mission.jpg";	//	"\vn\missions_f_vietnam\data\img\mikeforce\mission.jpg";
 OnLoadIntroTime = 0;
 OnLoadMissionTime = 0;
-briefingName = QUOT(Mike Force (VN_MF_VERSION));
-onLoadName = QUOT(Mike Force (VN_MF_VERSION));
-overviewPicture = "\vn\missions_f_vietnam\data\img\mikeforce\mission.jpg";
+briefingName = "Mike Force: No Fun Allowed (v1.00.03)";
+onLoadName = "Mike Force: No Fun Allowed";
+overviewPicture = "img\mission.jpg";
 
 disabledAI = 1;
 scriptedPlayer = 0;
@@ -44,7 +44,9 @@ enableDebugConsole[] = {
 	// Jerik
 	"76561197977310549",
 	// Vaha
-	"76561198000876511"
+	"76561198000876511",
+	// zeph
+	"76561197986123205"
 };
 
 allowFunctionsLog = 1;
