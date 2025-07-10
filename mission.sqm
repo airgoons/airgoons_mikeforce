@@ -478,8 +478,8 @@ class Mission
 	appId=1227700;
 	class Intel
 	{
-		briefingName="Air Goons Vietnarma (from Mike Force v1.00.03)";
-		overviewText="Air Goons No-Fun Vietnarma";
+		briefingName="Air Goons Vietnarma (Mike Force v1.00.03)";
+		overviewText="Just a bunch of grunts in the jungle. No funny business.";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.34999999;
