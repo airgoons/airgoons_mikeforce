@@ -6,28 +6,32 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=513;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
-		nextID=1911;
+		nextID=1915;
 	};
 	class MarkerIDProvider
 	{
-		nextID=49;
+		nextID=50;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1232;
+		nextID=1251;
 	};
 	class Camera
 	{
-		pos[]={16259.304,69.757187,6521.7417};
-		dir[]={0.85087758,-0.52418971,-0.038241901};
-		up[]={0.52373457,0.85153204,-0.023537993};
-		aside[]={-0.044902444,2.9618604e-07,-0.9990859};
+		pos[]={16285.018,39.98,6557.5781};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
-sourceName="airgoons_mikeforce";
+sourceName="AirGoon_Vietnarma";
 addons[]=
 {
 	"A3_Ui_F",
@@ -540,7 +544,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=294;
+		items=296;
 		class Item0
 		{
 			dataType="Marker";
@@ -1304,13 +1308,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16417.373,65.549751,8241.0908};
-				angles[]={0.061924282,0,6.2611938};
+				position[]={16403.414,66.637299,8234.2129};
 			};
 			presenceCondition="(""advanced_revive"" call BIS_fnc_getParamValue) == 1";
 			id=258;
 			type="vn_module_advanced_revive";
-			atlOffset=0.73300171;
+			atlOffset=0.73252869;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8645,6 +8648,7 @@ class Mission
 			};
 			id=1658;
 			type="PortableHelipadLight_01_green_F";
+			atlOffset=-0.037572861;
 		};
 		class Item205
 		{
@@ -9682,10 +9686,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16449.125,15.012863,6544.1895};
+				position[]={16449.125,15.013,6544.189};
 			};
 			id=1749;
 			type="ModuleRespawnVehicle_F";
+			atlOffset=0.00013637543;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9983,7 +9988,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""vn_m16""],[]],[[""vn_m16_20_mag"",""vn_m16_20_t_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m61_grenade_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01""],[]],[[],[]]],true]";
+							value="[[[[""vn_m16"",""vn_m10"",""vn_m_bayo_m16"",""vn_m_axe_01"",""vn_b_melee_m43_etool_01"",""vn_m_machete_02"",""vn_mx991_red""],[1,1,1,1,1,1,1]],[[""vn_m16_20_mag"",""vn_m16_20_t_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m40a1_t_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m1911_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01"",""vn_b_item_wiretap""],[1,1,1]],[[],[]]],true]";
 						};
 					};
 				};
@@ -11779,7 +11784,7 @@ class Mission
 			};
 			id=1867;
 			type="PortableHelipadLight_01_green_F";
-			atlOffset=0.1476717;
+			atlOffset=0.1178894;
 		};
 		class Item273
 		{
@@ -11834,7 +11839,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={16417.232,17.903057,6502.1294};
-				angles[]={-0,4.676075,0};
+				angles[]={0,4.676075,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11843,6 +11848,7 @@ class Mission
 			};
 			id=1886;
 			type="vn_b_air_uh1c_03_01";
+			atlOffset=9.5367432e-07;
 		};
 		class Item277
 		{
@@ -11850,7 +11856,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15899.354,17.880871,7055.5156};
-				angles[]={-0,3.1257799,0};
+				angles[]={0,3.1257799,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11867,7 +11873,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15928.4,17.880871,7055.5327};
-				angles[]={-0,3.1257799,0};
+				angles[]={0,3.1257799,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11901,7 +11907,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15983.823,17.880871,7055.4121};
-				angles[]={-0,3.1257799,0};
+				angles[]={0,3.1257799,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11945,6 +11951,7 @@ class Mission
 			};
 			id=1897;
 			type="vn_b_air_f4c_hbmb";
+			atlOffset=9.5367432e-07;
 		};
 		class Item283
 		{
@@ -11952,7 +11959,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15748.945,16.886734,7064.876};
-				angles[]={-0,1.5571305,0};
+				angles[]={0,1.5571305,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11969,7 +11976,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15708.634,16.886734,7051.4731};
-				angles[]={-0,6.0947208,0};
+				angles[]={0,6.0947208,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12016,7 +12023,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15841.063,15.826201,7063.5625};
-				angles[]={0,1.5646688,-0};
+				angles[]={0,1.5646688,0};
 			};
 			side="Empty";
 			flags=5;
@@ -12032,7 +12039,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15841.063,15.826201,7058.9531};
-				angles[]={0,4.7356677,-0};
+				angles[]={0,4.7356677,0};
 			};
 			side="Empty";
 			flags=5;
@@ -12093,7 +12100,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15875.469,16.347357,7104.1294};
-				angles[]={-0,1.546378,0};
+				angles[]={0,1.546378,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12111,6 +12118,43 @@ class Mission
 			text="Pleiku Helicopter Supply Depot";
 			type="b_support";
 			id=1910;
+		};
+		class Item294
+		{
+			dataType="Marker";
+			position[]={16270.126,14.98,6556.835};
+			name="marker_49";
+			text="Arsenal";
+			type="mil_marker";
+			id=1911;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item295
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16407.914,65.458031,8259.96};
+				angles[]={6.183517,0,6.1677012};
+			};
+			id=1912;
+			type="vn_module_dynamicradiomusic";
 		};
 	};
 	class Connections
