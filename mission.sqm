@@ -20,11 +20,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1270;
+		nextID=1289;
 	};
 	class Camera
 	{
-		pos[]={16261.83,53.29039,6534.0474};
+		pos[]={16284.002,29.251455,6551.8975};
 		dir[]={-0.61155069,-0.67500103,0.41280678};
 		up[]={-0.55947465,0.73780596,0.37765473};
 		aside[]={0.55949008,-1.0468648e-07,0.82885373};
@@ -6863,6 +6863,7 @@ class Mission
 			};
 			id=1769;
 			type="VirtualReammoBox_camonet_F";
+			atlOffset=9.5367432e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6874,7 +6875,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""vn_m_axe_01"",""vn_m_bayo_m16"",""vn_m16"",""vn_b_melee_m43_etool_01"",""vn_m_machete_02"",""vn_m10"",""vn_mx991_red"",""vn_m_shovel_01""],[1,1,1,1,1,1,1,1]],[[""vn_m60_100_mag"",""vn_m16_20_mag"",""vn_m16_20_t_mag"",""vn_m40a1_mag"",""vn_m40a1_t_mag"",""vn_m1911_mag"",""vn_prop_drink_02"",""vn_b_item_cigs_01"",""vn_m61_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_b_item_lighter_01"",""vn_prop_food_lrrp_01_03"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01"",""vn_b_item_wiretap""],[1,1,1]],[[],[]]],true]";
+							value="[[[[""vn_m_axe_01"",""vn_m_bayo_m16"",""vn_m16"",""vn_b_melee_m43_etool_01"",""vn_m_machete_02"",""vn_m10"",""vn_mx991_red"",""vn_m_shovel_01"",""vn_mx991""],[1,1,1,1,1,1,1,1,1]],[[""vn_m60_100_mag"",""vn_m16_20_mag"",""vn_m16_20_t_mag"",""vn_m40a1_mag"",""vn_m40a1_t_mag"",""vn_m1911_mag"",""vn_prop_drink_02"",""vn_b_item_cigs_01"",""vn_m61_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_b_item_lighter_01"",""vn_prop_food_lrrp_01_03"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01"",""vn_b_item_wiretap"",""vn_m19_binocs_grn""],[1,1,1,1]],[[],[]]],true]";
 						};
 					};
 				};
