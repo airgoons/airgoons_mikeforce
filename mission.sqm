@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16215.22,31.496302,6522.2881};
-		dir[]={0.37875935,-0.55093628,0.74370706};
-		up[]={0.25003693,0.83452135,0.49095711};
-		aside[]={0.89112544,-2.7875649e-07,-0.45383605};
+		pos[]={16279.444,34.587833,6555.6782};
+		dir[]={-0.8263526,-0.43152255,-0.36205345};
+		up[]={-0.39529651,0.90206444,-0.17319244};
+		aside[]={-0.40133405,8.1252074e-07,0.91600436};
 	};
 };
 binarizationWanted=0;
@@ -46,9 +46,9 @@ addons[]=
 	"static_f_vietnam_03_c",
 	"wheeled_f_vietnam_03_c",
 	"characters_f_vietnam_c",
-	"weapons_f_vietnam_03_c",
-	"cba_jam_vn",
 	"sounds_f_vietnam_c",
+	"cba_jam_vn",
+	"weapons_f_vietnam_03_c",
 	"characters_f_vietnam_04_c",
 	"A3_Weapons_F",
 	"A3_Drones_F_Weapons_F_Gamma_Items",
@@ -186,8 +186,8 @@ class AddonsMetaData
 		};
 		class Item16
 		{
-			className="weapons_f_vietnam_03_c";
-			name="weapons_f_vietnam_03_c";
+			className="sounds_f_vietnam_c";
+			name="sounds_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
@@ -200,8 +200,8 @@ class AddonsMetaData
 		};
 		class Item18
 		{
-			className="sounds_f_vietnam_c";
-			name="sounds_f_vietnam_c";
+			className="weapons_f_vietnam_03_c";
+			name="weapons_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
@@ -6283,11 +6283,11 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="vn_m1_garand";
+								name="vn_xm177";
 								class primaryMuzzleMag
 								{
-									name="vn_m1_garand_mag";
-									ammoLeft=8;
+									name="vn_m16_20_mag";
+									ammoLeft=18;
 								};
 							};
 							class handgun
@@ -6324,9 +6324,9 @@ class Mission
 									};
 									class Item2
 									{
-										name="vn_m1_garand_mag";
-										count=3;
-										ammoLeft=8;
+										name="vn_m16_20_mag";
+										count=5;
+										ammoLeft=18;
 									};
 								};
 								class ItemCargo
@@ -6356,7 +6356,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="vn_b_pack_trp_02_02_m16_pl";
+								typeName="vn_b_pack_lw_06";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -7597,7 +7597,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="vn_b_pack_trp_02_02_m16_pl";
+								typeName="vn_b_pack_lw_06";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -8783,7 +8783,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="vn_b_pack_trp_02_02_m16_pl";
+								typeName="vn_b_pack_prc77_01";
 								isBackpack=1;
 								class MagazineCargo
 								{
