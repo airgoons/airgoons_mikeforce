@@ -87,11 +87,10 @@ _playersGroup = groupId group _player;
 hint _playersGroup;
 switch (_playersGroup) do
 {
-	case "B Alpha Platoon": {[_player, "MikeForce", nil, false] call vn_mf_fnc_change_team};
-	case "B Bravo Platoon": {[_player, "SpikeTeam", nil, false] call vn_mf_fnc_change_team};
-	case "B Charlie Platoon": {[_player, "ACAV", nil, false] call vn_mf_fnc_change_team};
-	case "B Delta Troop": {[_player, "GreenHornets", nil, false] call vn_mf_fnc_change_team};
-	default {[_player, "MikeForce", nil, false] call vn_mf_fnc_change_team};
+	case "Alpha Platoon": {[_player, "MikeForce", nil, false] call vn_mf_fnc_change_team};
+	case "Bravo Aussies": {[_player, "SpikeTeam", nil, false] call vn_mf_fnc_change_team};
+	case "Charlie Platoon": {[_player, "ACAV", nil, false] call vn_mf_fnc_change_team};
+	default {[_player, "GreenHornets", nil, false] call vn_mf_fnc_change_team};
 };
 
 // [NOFUN][AJK] This would load the last loadout, but instead we want to always spawn with the equipment preset in the editor
