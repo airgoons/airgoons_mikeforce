@@ -59,7 +59,7 @@ saving = 0;
 skipLobby = 0;
 
 corpseManagerMode = 1;
-corpseLimit = 10;
+corpseLimit = 40;
 corpseRemovalMinTime = 1200;
 corpseRemovalMaxTime = 3600;
 
