@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16336.144,77.824791,6521.6372};
-		dir[]={-0.71142614,-0.47368863,0.51936293};
-		up[]={-0.38266271,0.88058782,0.27936336};
-		aside[]={0.5896852,-4.5633351e-07,0.8077566};
+		pos[]={16271.667,40.410755,6553.2725};
+		dir[]={-0.64832401,-0.61872184,0.44396129};
+		up[]={-0.51054126,0.78551,0.34961799};
+		aside[]={0.56506008,-7.1083196e-07,0.82516992};
 	};
 };
 binarizationWanted=0;
@@ -14901,40 +14901,49 @@ class Mission
 		class Item336
 		{
 			dataType="Trigger";
-			position[]={16266.94,15.029985,6588.6567};
+			position[]={16266.94,15.03,6588.6572};
 			angle=2.160037;
 			class Attributes
 			{
+				onActivation="[localUnit, ""GreenHornets"", nil, false] call vn_mf_fnc_change_team;";
 				sizeA=4;
 				sizeB=4;
 				sizeC=4;
+				repeatable=1;
+				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
 			id=2348;
 			type="EmptyDetectorArea10x10";
+			atlOffset=1.4305115e-05;
 		};
 		class Item337
 		{
 			dataType="Trigger";
-			position[]={16259.436,17.522987,6576.958};
+			position[]={16259.436,17.522999,6576.958};
 			angle=2.160037;
 			class Attributes
 			{
+				onActivation="[localUnit, ""ACAV"", nil, false] call vn_mf_fnc_change_team;";
 				sizeA=4;
 				sizeB=4;
 				sizeC=4;
+				repeatable=1;
+				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
 			id=2349;
 			type="EmptyDetectorArea10x10";
+			atlOffset=1.1444092e-05;
 		};
 		class Item338
 		{
 			dataType="Trigger";
-			position[]={16252.26,15.030001,6564.604};
+			position[]={16252.26,15.03,6564.604};
 			angle=2.160037;
 			class Attributes
 			{
+				onActivation="[localUnit, ""SpikeTeam"", nil, false] call vn_mf_fnc_change_team;";
 				sizeA=4;
 				sizeB=4;
 				sizeC=4;
@@ -14942,21 +14951,26 @@ class Mission
 			};
 			id=2350;
 			type="EmptyDetectorArea10x10";
+			atlOffset=0.050000191;
 		};
 		class Item339
 		{
 			dataType="Trigger";
-			position[]={16244.626,15.029989,6552.8643};
+			position[]={16244.152,15.03,6552.8281};
 			angle=2.160037;
 			class Attributes
 			{
+				onActivation="[localUnit, ""MikeForce"", nil, false] call vn_mf_fnc_change_team;";
 				sizeA=4;
 				sizeB=4;
 				sizeC=4;
+				repeatable=1;
+				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
 			id=2351;
 			type="EmptyDetectorArea10x10";
+			atlOffset=1.0490417e-05;
 		};
 	};
 	class Connections
