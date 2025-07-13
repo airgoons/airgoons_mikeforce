@@ -35,7 +35,7 @@ disableChannels[]=  // allow text only on side chat
 	{0, false, true},	// Global, text, voice
 	{1, false, true},	// Side, text, voice
 	{2, true, true},	// Command, text, voice
-	{3, true, true},	// Group, text, voice
+	{3, false, true},	// Group, text, voice
 	{4, true, true},	// Vehicle, text, voice
 	{5, true, true}		// Direct, voice only
 };
