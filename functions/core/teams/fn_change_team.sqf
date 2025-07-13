@@ -17,16 +17,20 @@
 		[_myPlayer, "ACAV"] call vn_mf_fnc_change_team
 */
 
-params ["_player", "_team", ["_fullTeamBehaviour", "ABORT"]];
+// Added new 4th parameter to allow overriding the officer check.
+// A default value is provided and it is safely back-compatible with all other calls.
+params ["_player", "_team", ["_fullTeamBehaviour", "ABORT"], ["_performOfficerCheck", true]];
 
 private _currentTeam = _player getVariable ["vn_mf_db_player_group", "FAILED"];
 
 if (_currentTeam isEqualTo _team) exitWith { false };
 
-if (vn_mf_duty_officers inAreaArray [getPos _player, 20, 20, 0, false, 20] isEqualTo []) exitWith {
+// Edited the officer check to allow skipping it for the initialization using triggers (I hope).
+if (_performOfficerCheck && vn_mf_duty_officers inAreaArray [getPos _player, 20, 20, 0, false, 20] isEqualTo []) exitWith {
 	["TaskFailed",["","STR_vn_mf_needdutyofficer"]] remoteExecCall ["para_c_fnc_show_notification",_player];
 	false
 };
+
 
 private _tooManyPlayers = [_team] call vn_mf_fnc_is_team_full;
 

@@ -6,9 +6,13 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=1;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
-		nextID=2243;
+		nextID=2248;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1429;
+		nextID=1449;
 	};
 	class Camera
 	{
-		pos[]={16241.457,33.877262,6598.7603};
-		dir[]={0.50150657,-0.66385281,-0.55501032};
-		up[]={0.44508559,0.74780637,-0.49256295};
-		aside[]={-0.74205422,-1.8991705e-07,-0.67051989};
+		pos[]={16631.684,814.02637,6613.7432};
+		dir[]={-0.063480638,-0.70706558,0.70431316};
+		up[]={-0.063471884,0.70713848,0.70421433};
+		aside[]={0.9959746,-1.4321995e-07,0.089769058};
 	};
 };
 binarizationWanted=0;
-sourceName="airgoons_mikeforce";
+sourceName="AirGoon_Vietnarma";
 addons[]=
 {
 	"A3_Ui_F",
@@ -59,6 +63,7 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"characters_f_vietnam_c",
 	"sounds_f_vietnam_c",
+	"cba_jam_vn",
 	"weapons_f_vietnam_03_c",
 	"characters_f_vietnam_04_c",
 	"A3_Weapons_F",
@@ -76,7 +81,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=37;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -254,75 +259,82 @@ class AddonsMetaData
 		};
 		class Item25
 		{
+			className="cba_jam_vn";
+			name="Community Base Addons - Joint Ammo Magazines";
+			author="CBA Team";
+			url="https://www.github.com/CBATeam/CBA_A3";
+		};
+		class Item26
+		{
 			className="weapons_f_vietnam_03_c";
 			name="weapons_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item27
 		{
 			className="characters_f_vietnam_04_c";
 			name="characters_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="characters_f_vietnam_02_c";
 			name="characters_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item32
 		{
 			className="weapons_f_vietnam_04_c";
 			name="weapons_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item33
 		{
 			className="air_f_vietnam_03_c";
 			name="air_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="characters_f_vietnam_03_c";
 			name="characters_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item35
 		{
 			className="A3_Weapons_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item36
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
@@ -504,6 +516,19 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="EnableDebugConsole";
 			expression="true";
 			class Value
@@ -515,7 +540,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -523,7 +548,7 @@ class Mission
 	appId=1227700;
 	class Intel
 	{
-		briefingName="Air Goons Vietnarma (from Mike Force v1.00.03)";
+		briefingName="Mike Force v1.00.03 (edited for Air Goons)";
 		overviewText="Air Goons No-Fun Vietnarma. Visit www.airgoons.com for more info and come join us!";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
@@ -544,7 +569,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=320;
+		items=324;
 		class Item0
 		{
 			dataType="Marker";
@@ -7546,6 +7571,34 @@ class Mission
 			isPlayable=1;
 			id=1836;
 			type="VirtualCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="TFAR_freq_lr";
+					expression="if !(_value isEqualTo []) then {_value=[str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_lr',_value,true];}";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TFAR_freq_sr";
+					expression="if !(_value isEqualTo []) then {_value=[str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_sr',_value,true];}";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item240
 		{
@@ -7623,6 +7676,34 @@ class Mission
 			isPlayable=1;
 			id=1838;
 			type="VirtualCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="TFAR_freq_lr";
+					expression="if !(_value isEqualTo []) then {_value=[str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_lr',_value,true];}";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TFAR_freq_sr";
+					expression="if !(_value isEqualTo []) then {_value=[str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_sr',_value,true];}";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item242
 		{
@@ -8153,15 +8234,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16259.649,15.031426,6577.626};
-						angles[]={0,2.0816791,0};
+						position[]={16259.65,15.031439,6577.626};
+						angles[]={0,2.0816717,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="Charlie PL@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -8285,6 +8365,7 @@ class Mission
 					};
 					id=2082;
 					type="vn_b_men_army_01";
+					atlOffset=1.2397766e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8328,7 +8409,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="2: RTO";
 						isPlayable=1;
 						class Inventory
@@ -8509,7 +8589,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="3: Medic";
 						isPlayable=1;
 					};
@@ -8529,7 +8608,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="Squad Leader@Bravo 3";
 						isPlayable=1;
 					};
@@ -8578,7 +8656,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="Marksman, 3rd Squad";
 						isPlayable=1;
 					};
@@ -8627,7 +8704,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="6: Engineer M203";
 						isPlayable=1;
 						class Inventory
@@ -8847,7 +8923,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="7: Rifleman 1";
 						isPlayable=1;
 					};
@@ -8866,7 +8941,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="8: Rifleman 1";
 						isPlayable=1;
 					};
@@ -8885,7 +8959,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="9: AT";
 						isPlayable=1;
 					};
@@ -8905,7 +8978,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="Squad Leader@Bravo 2";
 						isPlayable=1;
 					};
@@ -8954,7 +9026,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="11: Rifleman 5";
 						isPlayable=1;
 					};
@@ -8973,7 +9044,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="12: Rifleman 2";
 						isPlayable=1;
 					};
@@ -8992,7 +9062,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="13: Rifleman 1";
 						isPlayable=1;
 					};
@@ -9011,7 +9080,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="14: Machine Gunner";
 						isPlayable=1;
 					};
@@ -9030,7 +9098,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="15: Grenadier";
 						isPlayable=1;
 					};
@@ -9050,7 +9117,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="Squad Leader@Bravo 1";
 						isPlayable=1;
 					};
@@ -9099,7 +9165,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="17: Rifleman 2";
 						isPlayable=1;
 					};
@@ -9148,7 +9213,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="18: Rifleman 3";
 						isPlayable=1;
 						class Inventory
@@ -9277,7 +9341,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="19: Scout";
 						isPlayable=1;
 					};
@@ -9296,7 +9359,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="20: Machine Gunner 2";
 						isPlayable=1;
 					};
@@ -9315,7 +9377,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ACAV""] call vn_mf_fnc_change_team;";
 						description="21: AT";
 						isPlayable=1;
 						class Inventory
@@ -9425,12 +9486,13 @@ class Mission
 			{
 			};
 			id=2081;
+			atlOffset=1.2397766e-05;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -9455,8 +9517,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16275.02,14.981439,6556.9712};
-						angles[]={0,5.3084779,0};
+						position[]={16275.02,14.981439,6556.9707};
+						angles[]={0,5.3084717,0};
 					};
 					side="West";
 					flags=7;
@@ -9586,7 +9648,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -9611,15 +9673,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16253.207,15.03144,6564.1841};
-						angles[]={0,2.1008096,0};
+						position[]={16253.207,15.031439,6564.1836};
+						angles[]={0,2.1008179,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="Bravo PL@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -9742,6 +9803,7 @@ class Mission
 					};
 					id=2106;
 					type="vn_b_men_army_01";
+					atlOffset=0.050000191;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9785,7 +9847,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="2: Rifleman 2";
 						isPlayable=1;
 					};
@@ -9804,7 +9865,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="3: Rifleman 3";
 						isPlayable=1;
 						class Inventory
@@ -9933,7 +9993,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="4: Scout";
 						isPlayable=1;
 					};
@@ -9953,7 +10012,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="5: Squad Leader";
 						isPlayable=1;
 					};
@@ -9972,7 +10030,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="6: RTO";
 						isPlayable=1;
 						class Inventory
@@ -10154,7 +10211,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="7: Squad Leader";
 						isPlayable=1;
 					};
@@ -10173,7 +10229,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="8: Rifleman 5";
 						isPlayable=1;
 					};
@@ -10192,7 +10247,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="9: Rifleman 2";
 						isPlayable=1;
 					};
@@ -10211,7 +10265,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="10: Rifleman 1";
 						isPlayable=1;
 					};
@@ -10230,7 +10283,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="11: Machine Gunner";
 						isPlayable=1;
 					};
@@ -10249,7 +10301,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="12: Machine Gunner 2";
 						isPlayable=1;
 					};
@@ -10268,7 +10319,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="13: Grenadier";
 						isPlayable=1;
 					};
@@ -10288,7 +10338,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="14: Squad Leader";
 						isPlayable=1;
 					};
@@ -10307,7 +10356,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="15: Sniper";
 						isPlayable=1;
 					};
@@ -10326,7 +10374,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="16: Medic";
 						isPlayable=1;
 					};
@@ -10345,7 +10392,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="17: Engineer";
 						isPlayable=1;
 					};
@@ -10364,7 +10410,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="18: Rifleman 1";
 						isPlayable=1;
 					};
@@ -10383,7 +10428,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="19: Rifleman 1";
 						isPlayable=1;
 					};
@@ -10402,7 +10446,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="20: AT";
 						isPlayable=1;
 					};
@@ -10421,7 +10464,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SpikeTeam""] call vn_mf_fnc_change_team;";
 						description="21: AT";
 						isPlayable=1;
 						class Inventory
@@ -10531,12 +10573,13 @@ class Mission
 			{
 			};
 			id=2105;
+			atlOffset=0.050000191;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -10569,7 +10612,6 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="Alpha PL@Alpha ";
 						isPlayable=1;
 						class Inventory
@@ -10704,7 +10746,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="2: Rifleman 2";
 						isPlayable=1;
 					};
@@ -10723,7 +10764,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="3: Rifleman 3";
 						isPlayable=1;
 						class Inventory
@@ -10852,7 +10892,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="4: Scout M203";
 						isPlayable=1;
 						class Inventory
@@ -11056,7 +11095,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="5: Squad Leader";
 						isPlayable=1;
 					};
@@ -11075,7 +11113,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="6: RTO";
 						isPlayable=1;
 						class Inventory
@@ -11257,7 +11294,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="7: Squad Leader";
 						isPlayable=1;
 					};
@@ -11276,7 +11312,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="8: Rifleman 5";
 						isPlayable=1;
 					};
@@ -11295,7 +11330,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="9: Rifleman 2";
 						isPlayable=1;
 					};
@@ -11314,7 +11348,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="10: Rifleman 1";
 						isPlayable=1;
 					};
@@ -11333,7 +11366,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="11: Machine Gunner";
 						isPlayable=1;
 					};
@@ -11352,7 +11384,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="12: Machine Gunner 2";
 						isPlayable=1;
 					};
@@ -11371,7 +11402,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="13: Grenadier";
 						isPlayable=1;
 					};
@@ -11391,7 +11421,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="14: Squad Leader";
 						isPlayable=1;
 					};
@@ -11410,7 +11439,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="15: Sniper";
 						isPlayable=1;
 					};
@@ -11429,7 +11457,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="16: Medic";
 						isPlayable=1;
 					};
@@ -11448,7 +11475,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="17: Engineer";
 						isPlayable=1;
 					};
@@ -11467,7 +11493,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="18: Rifleman 1";
 						isPlayable=1;
 					};
@@ -11486,7 +11511,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="19: Rifleman 1";
 						isPlayable=1;
 					};
@@ -11505,7 +11529,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="20: AT";
 						isPlayable=1;
 					};
@@ -11524,7 +11547,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MikeForce""] call vn_mf_fnc_change_team;";
 						description="21: AT";
 						isPlayable=1;
 						class Inventory
@@ -11639,7 +11661,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -11672,7 +11694,6 @@ class Mission
 					class Attributes
 					{
 						rank="MAJOR";
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="Commander Pilot@Delta 1";
 						isPlayable=1;
 						class Inventory
@@ -11808,7 +11829,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="2: Crew chief 2";
 						isPlayable=1;
 					};
@@ -11828,7 +11848,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="3: Crew chief";
 						isPlayable=1;
 					};
@@ -11841,20 +11860,49 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16262.201,17.524426,6592.3604};
+						position[]={16262.201,17.524437,6592.3608};
 						angles[]={0,0.55428165,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="4: Copilot";
 						isPlayable=1;
 					};
 					id=2153;
 					type="vn_b_men_aircrew_06";
-					atlOffset=1.9073486e-06;
+					atlOffset=1.335144e-05;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -11867,7 +11915,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -11899,7 +11947,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="PIC@Delta 2";
 						isPlayable=1;
 					};
@@ -11949,7 +11996,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="2: Copilot 2";
 						isPlayable=1;
 					};
@@ -11969,7 +12015,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="3: Crew chief";
 						isPlayable=1;
 					};
@@ -11989,7 +12034,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="4: Crew chief";
 						isPlayable=1;
 					};
@@ -12008,7 +12052,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -12040,7 +12084,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="PIC@Delta 3";
 						isPlayable=1;
 					};
@@ -12090,7 +12133,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="2: Copilot";
 						isPlayable=1;
 					};
@@ -12110,7 +12152,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="3: Crew chief 2";
 						isPlayable=1;
 					};
@@ -12130,7 +12171,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="4: Crew chief";
 						isPlayable=1;
 					};
@@ -12149,7 +12189,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -12181,7 +12221,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="PIC@Delta 5";
 						isPlayable=1;
 					};
@@ -12231,7 +12270,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="2: Copilot";
 						isPlayable=1;
 					};
@@ -12251,7 +12289,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="3: Crew chief 2";
 						isPlayable=1;
 					};
@@ -12271,7 +12308,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="4: Crew chief";
 						isPlayable=1;
 					};
@@ -12290,7 +12326,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -12322,7 +12358,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="PIC@Delta 4";
 						isPlayable=1;
 					};
@@ -12372,7 +12407,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="2: Copilot";
 						isPlayable=1;
 					};
@@ -12392,7 +12426,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="3: Crew chief 2";
 						isPlayable=1;
 					};
@@ -12412,7 +12445,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GreenHornets""] call vn_mf_fnc_change_team;";
 						description="4: Crew chief";
 						isPlayable=1;
 					};
@@ -12431,7 +12463,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -13515,7 +13547,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="#(rgb,512,512,3)text(1,1,""PuristaBold"",0.05,""#000000"",""#ffffff"",""Look at top-right of ingame map! It has helpful info!"")";
+							value="#(rgb,512,512,3)text(1,1,""TahomaB"",0.1,""#000000"",""#ffffff"",""Look at the top-right\nof the ingame map!\n\nIt has helpful info!"")";
 						};
 					};
 				};
@@ -13718,6 +13750,82 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item320
+		{
+			dataType="Trigger";
+			position[]={16240.193,15.03,6555.7588};
+			angle=2.1672275;
+			class Attributes
+			{
+				onActivation="[player, ""MikeForce"", nil, false] call vn_mf_fnc_change_team;";
+				sizeA=4.4000001;
+				sizeB=9;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2244;
+			type="EmptyDetectorArea10x10";
+			atlOffset=1.0490417e-05;
+		};
+		class Item321
+		{
+			dataType="Trigger";
+			position[]={16248.025,15.03,6567.6611};
+			angle=2.1615205;
+			class Attributes
+			{
+				onActivation="[player, ""SpikeTeam"", nil, false] call vn_mf_fnc_change_team;";
+				sizeA=4.4000001;
+				sizeB=9;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2245;
+			type="EmptyDetectorArea10x10";
+			atlOffset=0.050000191;
+		};
+		class Item322
+		{
+			dataType="Trigger";
+			position[]={16256.08,15.03,6579.5991};
+			angle=2.1646967;
+			class Attributes
+			{
+				onActivation="[player, ""ACAV"", nil, false] call vn_mf_fnc_change_team;";
+				sizeA=4.4000001;
+				sizeB=9;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2246;
+			type="EmptyDetectorArea10x10";
+			atlOffset=1.2397766e-05;
+		};
+		class Item323
+		{
+			dataType="Trigger";
+			position[]={16263.607,15.03,6590.959};
+			angle=2.1668437;
+			class Attributes
+			{
+				onActivation="[player, ""GreenHornets"", nil, false] call vn_mf_fnc_change_team;";
+				sizeA=4.4000001;
+				sizeB=9;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=2247;
+			type="EmptyDetectorArea10x10";
+			atlOffset=1.4305115e-05;
 		};
 	};
 	class Connections
