@@ -81,8 +81,18 @@ if (_enlisted isEqualTo "0") then {
 // last group, or if not one assign MikeForce
 // private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "MikeForce"];
 // Attempt team change, defaulting to MikeForce is team is full.
-//[_player, _lastTeamName, "DEFAULT"] call vn_mf_fnc_change_team;
 
+// Assigns players to the appropriate team based on their group.
+_playersGroup = groupId group _player;
+hint _playersGroup;
+switch (_playersGroup) do
+{
+	case "B Alpha Platoon": {[_player, "MikeForce", nil, false] call vn_mf_fnc_change_team};
+	case "B Bravo Platoon": {[_player, "SpikeTeam", nil, false] call vn_mf_fnc_change_team};
+	case "B Charlie Platoon": {[_player, "ACAV", nil, false] call vn_mf_fnc_change_team};
+	case "B Delta Troop": {[_player, "GreenHornets", nil, false] call vn_mf_fnc_change_team};
+	default {[_player, "MikeForce", nil, false] call vn_mf_fnc_change_team};
+};
 
 // [NOFUN][AJK] This would load the last loadout, but instead we want to always spawn with the equipment preset in the editor
 // (["GET", (_uid + "_loadout"), []] call para_s_fnc_profile_db) params ["","_loadout"];
