@@ -24,7 +24,7 @@ class MikeForce
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = false;
+        harassable = true;
         scout = true;
     };
 
@@ -57,7 +57,7 @@ class SpikeTeam
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = false;
+        harassable = true;
         scout = true;
         scout_multiple = true;
     };
@@ -91,7 +91,7 @@ class ACAV
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = false;
+        harassable = true;
         scout = false;
     };
 
