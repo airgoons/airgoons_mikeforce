@@ -17,7 +17,7 @@
 */
 
 if (isNil "vn_mf_snake_last_bite_time") then {
-	vn_mf_snake_last_bite_time = 0;
+	vn_mf_snake_last_bite_time = 422;
 };
 
 if (isNil "vn_mf_snake_brain" || {isNull vn_mf_snake_brain}) then {
@@ -29,7 +29,7 @@ if (isNil "vn_mf_snake_brain" || {isNull vn_mf_snake_brain}) then {
 		vn_mf_snake_brain = [_snake] spawn {
 			params ["_snake"];
 
-			private _chanceWhole = ["snake_bite_chance", 50] call BIS_fnc_getParamValue;
+			private _chanceWhole = ["snake_bite_chance", 11] call BIS_fnc_getParamValue;
 			private _chance = _chanceWhole / 100;
 			private _distanceWhole = ["snake_bite_distance", 100] call BIS_fnc_getParamValue;
 			private _distance = _distanceWhole / 100;

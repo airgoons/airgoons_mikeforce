@@ -9,7 +9,7 @@ class MikeForce
     class rolelimits 
     {
         medic = 4;
-        engineer = 2;
+        engineer = 3;
         explosiveSpecialist = 2;
         vn_artillery = 4;
     };
@@ -24,7 +24,7 @@ class MikeForce
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = true;
+        harassable = false;
         scout = true;
     };
 
@@ -42,7 +42,7 @@ class SpikeTeam
     class rolelimits 
     {
         medic = 4;
-        engineer = 2;
+        engineer = 3;
         explosiveSpecialist = 2;
         vn_artillery = 2;
     };
@@ -75,10 +75,10 @@ class ACAV
 
     class rolelimits 
     {
-        medic = 4;
+        medic = 5;
         engineer = 40;
         explosiveSpecialist = 43;
-        vn_artillery = 0;
+        vn_artillery = 2;
     };
     
     class defaultTraits
@@ -86,12 +86,12 @@ class ACAV
         camouflageCoef = 1.0;
         audibleCoef = 0.6;
         loadCoef = 1;
-        engineer = false;
+        engineer = true;
         explosiveSpecialist = false;
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = true;
+        harassable = false;
         scout = false;
     };
 
@@ -111,7 +111,7 @@ class GreenHornets
         medic = 1;
         engineer = 1;
         explosiveSpecialist = 1;
-        vn_artillery = 1;
+        vn_artillery = 3;
     };
     
     class defaultTraits
@@ -124,7 +124,7 @@ class GreenHornets
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = true;
+        harassable = false;
         scout = false;
     };
 

@@ -204,7 +204,7 @@ class snake_bite_chance
     title = $STR_vn_mf_param_snake_bite_chance;
     values[] = {0, 15, 25, 35, 50, 65, 75};
     texts[] = {"0% (Off)", "15%", "25%", "35%", "50% (Default)", "65%", "75%"};
-    default = 50;
+    default = 15;
 };
 
 class snake_bite_chance_desc
@@ -220,7 +220,7 @@ class snake_bite_distance
     title = $STR_vn_mf_param_snake_bite_distance;
     values[] = {25, 50, 75, 100, 125, 150};
     texts[] = {"25cm", "50cm", "75cm", "1m (Default)", "1.25m", "1.5m"};
-    default = 100;
+    default = 25;
 };
 
 class snake_bite_distance_desc
@@ -304,7 +304,7 @@ class max_players_spiketeam
     title = $STR_vn_mf_max_players_spiketeam;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
-    default = 6;
+    default = 99;
 };
 
 

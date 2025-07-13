@@ -32,10 +32,12 @@ disabledAI = 1;
 scriptedPlayer = 0;
 disableChannels[]=  // allow text only on side chat
 {
-	{0,true,true},
-	{1,false,true},
-	{2,true,true},
-	{6,true,true}
+	{0, false, true},	// Global, text, voice
+	{1, false, true},	// Side, text, voice
+	{2, true, true},	// Command, text, voice
+	{3, true, true},	// Group, text, voice
+	{4, true, true},	// Vehicle, text, voice
+	{5, true, true}		// Direct, voice only
 };
 enableItemsDropping = 0;
 briefing = 0;
@@ -73,8 +75,8 @@ showHUD[] =
 	true,	// Vehicle radar
 	true,	// Vehicle compass
 	true,	// Tank direction indicator
-	true,	// Commanding menu
-	true,	// Group Bar
+	false,	// Commanding menu
+	false,	// Group Bar
 	true,	// HUD Weapon Cursors
 	true	// Vehicle display panels
 };
