@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16252.846,20.682873,6529.3921};
-		dir[]={-0.23197292,-0.33804673,0.91221929};
-		up[]={-0.08333949,0.94106197,0.32773951};
-		aside[]={0.96925581,-1.5035039e-06,0.24647155};
+		pos[]={16247.411,19.054619,6564.7451};
+		dir[]={0.6769793,-0.54250324,-0.49761674};
+		up[]={0.43717805,0.83997524,-0.32135323};
+		aside[]={-0.59232897,-5.235197e-07,-0.80582261};
 	};
 };
 binarizationWanted=0;
@@ -13510,7 +13510,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="vn_b_pack_p08_01_m16_pl";
+								typeName="vn_b_pack_prc77_01";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -13863,18 +13863,160 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16253.271,15.03144,6565.0029};
-						angles[]={0,2.2050769,-0};
+						position[]={16253.27,15.031439,6565.0029};
+						angles[]={0,2.2050838,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						rank="SERGEANT";
+						description="RTO";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="vn_l1a1_01";
+								class primaryMuzzleMag
+								{
+									name="vn_l1a1_20_t_mag";
+									ammoLeft=20;
+								};
+							};
+							class handgun
+							{
+								name="vn_mx991";
+							};
+							class uniform
+							{
+								typeName="vn_b_uniform_aus_07_01";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="vn_m18_yellow_mag";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m18_red_mag";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="vn_l1a1_20_t_mag";
+										count=3;
+										ammoLeft=20;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_b_item_firstaidkit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="vn_b_vest_anzac_07";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="vn_b_pack_lw_06";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="vn_l1a1_20_t_mag";
+										count=8;
+										ammoLeft=20;
+									};
+									class Item1
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m18_yellow_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="vn_m18_purple_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_b_item_firstaidkit";
+										count=2;
+									};
+								};
+							};
+							map="vn_b_item_map";
+							compass="vn_b_item_compass";
+							watch="vn_b_item_watch";
+							radio="vn_b_item_radio_urc10";
+							headgear="vn_b_boonie_08_02";
+						};
 					};
 					id=2271;
 					type="vn_b_men_aus_army_70_16";
+					atlOffset=0.050000191;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item12
 				{
@@ -13890,6 +14032,122 @@ class Mission
 					{
 						skill=0.40000001;
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="vn_m16";
+								class primaryMuzzleMag
+								{
+									name="vn_m16_20_t_mag";
+									ammoLeft=18;
+								};
+							};
+							class handgun
+							{
+								name="vn_mx991";
+							};
+							class uniform
+							{
+								typeName="vn_b_uniform_aus_03_01";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="vn_m18_yellow_mag";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m18_red_mag";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="vn_m16_20_t_mag";
+										count=3;
+										ammoLeft=18;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_b_item_firstaidkit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="vn_b_vest_anzac_02";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="vn_b_pack_prc77_01_m16_pl";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="vn_m16_20_t_mag";
+										count=10;
+										ammoLeft=18;
+									};
+									class Item1
+									{
+										name="vn_40mm_m381_he_mag";
+										count=6;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="vn_m18_yellow_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="vn_m18_purple_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_b_item_firstaidkit";
+										count=2;
+									};
+								};
+							};
+							map="vn_b_item_map";
+							compass="vn_b_item_compass";
+							watch="vn_b_item_watch";
+							radio="vn_b_item_radio_urc10";
+							headgear="vn_b_boonie_08_02";
+						};
 					};
 					id=2272;
 					type="vn_b_men_aus_army_70_15";
