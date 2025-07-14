@@ -32,4 +32,4 @@ private _zonesToOpen = _potentialZonesToOpen - _capturedZones - _activeZones;
     [_x] call vn_mf_fnc_director_open_zone;
 } forEach _zonesToOpen;
 
-diag_log format ["VN MikeForce: Opening new zones: %1", str _zonesToOpen]
+diag_log format ["VN AlphaPlatoon: Opening new zones: %1", str _zonesToOpen]

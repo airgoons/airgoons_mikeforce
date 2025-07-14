@@ -30,7 +30,7 @@ params [
 	["_targetGroupIds", []] // 4: Teams to send task to, all groups if blank
 ];
 
-private _accepted_groups = (missionConfigFile >> "gamemode" >> "teams") call BIS_fnc_getCfgSubClasses; // ["MikeForce","SpikeTeam","ACAV","GreenHornets"]
+private _accepted_groups = (missionConfigFile >> "gamemode" >> "teams") call BIS_fnc_getCfgSubClasses; // ["AlphaPlatoon","BravoPlatoon","CharliePlatoon","DeltaTroop"]
 
 private _taskConfig = (missionConfigFile >> "gamemode" >> "tasks" >> _class);
 if (isClass _taskConfig) then

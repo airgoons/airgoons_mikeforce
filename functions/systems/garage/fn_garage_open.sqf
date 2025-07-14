@@ -122,7 +122,7 @@ switch _mode do {
 			["Init", _this] spawn SELF_FUNC;
 		};
 
-		["register", _this, "RscDisplayGarageMikeForce", "GUI"] call REGISTER_DISPLAY_FUNC;
+		["register", _this, "RscDisplayGarageAlphaPlatoon", "GUI"] call REGISTER_DISPLAY_FUNC;
 
 		["BIS_fnc_arsenal"] call bis_fnc_startloadingscreen;
 		_display = _this select 0;
@@ -191,7 +191,7 @@ switch _mode do {
 			};
 		};
 
-		["unregister", _this, "RscDisplayGarageMikeForce", "GUI"] call REGISTER_DISPLAY_FUNC;
+		["unregister", _this, "RscDisplayGarageAlphaPlatoon", "GUI"] call REGISTER_DISPLAY_FUNC;
 
 		with missionnamespace do {
 			BIS_fnc_garage_center = BIS_fnc_arsenal_center;

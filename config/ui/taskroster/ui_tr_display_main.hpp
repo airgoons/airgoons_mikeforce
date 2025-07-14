@@ -101,7 +101,7 @@ class vn_tr_disp_taskRoster_Main
 			
 			tooltip = "";
 			text = "";
-			onButtonClick = "systemchat str [player getVariable ['vn_mf_db_player_group','MikeForce']]; call vn_mf_fnc_tr_cleanRightSheet; createDialog 'vn_tr_disp_selectTeam';";
+			onButtonClick = "systemchat str [player getVariable ['vn_mf_db_player_group','AlphaPlatoon']]; call vn_mf_fnc_tr_cleanRightSheet; createDialog 'vn_tr_disp_selectTeam';";
 		};
 		
 		class username: vn_mf_RscButton

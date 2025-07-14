@@ -51,7 +51,7 @@ _dataStore setVariable ["move_to_area", {
 		if (_x distance2D _patrolPosition < 500 && vehicle _x != _x) exitWith {
 			["SUCCEEDED", [["patrol_area", _patrolPosition]]] call _fnc_finishSubtask;
 		};
-	} forEach missionNamespace getVariable ["GreenHornets", []]; 
+	} forEach missionNamespace getVariable ["DeltaTroop", []]; 
 }];
 
 _dataStore setVariable ["patrol_area", {
@@ -66,7 +66,7 @@ _dataStore setVariable ["patrol_area", {
 	//If we have less than 2 aircraft, create as many as necessary to take us up to 2.
 	for "_i" from 1 to (1 - count _currentAircraft) do {
 		//This isn't a good way of determining spawn position. It needs to be more realistic, and check if there's friendly units nearby.
-		private _spawnPosition = _patrolPosition getPos [1000, ((getMarkerPos "mf_respawn_greenhornets") getDir _patrolPosition) + random 45];
+		private _spawnPosition = _patrolPosition getPos [1000, ((getMarkerPos "mf_respawn_DeltaTroop") getDir _patrolPosition) + random 45];
 		private _aircraftClass = selectRandom selectRandom [vehicles_nva_planes, vehicles_nva_helis];
 		private _spawnInfo = [_spawnPosition, _spawnPosition getDir _patrolPosition, _aircraftClass, east call para_g_fnc_create_group] call BIS_fnc_spawnVehicle;
 

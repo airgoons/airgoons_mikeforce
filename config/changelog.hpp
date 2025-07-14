@@ -66,7 +66,7 @@ class Changelog {
 			"[New] Ported MF to Altis map. Grab the compatibility patch from the SGD workshop!",
 			"[Change] 1.2 content added to the arsenal, workshop, and docks.",
 			"[Change] Icon-based scouting.",
-			"[Change] Refactored teams(MF,ACAV,...) to not use the group system.",
+			"[Change] Refactored teams(MF,CharliePlatoon,...) to not use the group system.",
 			"[Change] Update welcome menu to only show after update by default",
 			"[Change] Add M101 Howitzers to configurable logistics.",
 			"[Fix] Players not being able to get in team-locked vehicles.",

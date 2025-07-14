@@ -25,8 +25,8 @@ namespace mission_pack_unpack {
                     CleanUp(workingDir);
                 }
 
-                string mikeForcePBO_path = CopyMikeForcePBO(workingDir);
-                string customMission_path = UnpackPBO(mikeForcePBO_path);
+                string AlphaPlatoonPBO_path = CopyAlphaPlatoonPBO(workingDir);
+                string customMission_path = UnpackPBO(AlphaPlatoonPBO_path);
                 CustomizeMission(customMission_path);
                 PackPBO(customMission_path);
 
@@ -46,24 +46,24 @@ namespace mission_pack_unpack {
             }
         }
 
-        static string CopyMikeForcePBO(string workingDir) {
+        static string CopyAlphaPlatoonPBO(string workingDir) {
             Console.Out.WriteLine("Copying official Mike Force PBO from Steam Workshop");
 
             string filename = "1799728943668364634_legacy.bin";
-            string mikeforce_filepath = string.Format(
+            string AlphaPlatoon_filepath = string.Format(
                 "{0}/{1}",
-                Configuration.Settings.MikeForce_Path,
+                Configuration.Settings.AlphaPlatoon_Path,
                 filename);
 
-            if (!File.Exists(mikeforce_filepath)) {
-                throw new ApplicationException(string.Format("Mike Force workshop file does not exist:  {0}", mikeforce_filepath));
+            if (!File.Exists(AlphaPlatoon_filepath)) {
+                throw new ApplicationException(string.Format("Mike Force workshop file does not exist:  {0}", AlphaPlatoon_filepath));
             }
 
             else {
                 
-                string destinationPath = string.Format("{0}/{1}", workingDir, "official_mikeforce_latest.cam_lao_nam.pbo");
+                string destinationPath = string.Format("{0}/{1}", workingDir, "official_AlphaPlatoon_latest.cam_lao_nam.pbo");
                 Directory.CreateDirectory(workingDir);
-                File.Copy(mikeforce_filepath, destinationPath, true);
+                File.Copy(AlphaPlatoon_filepath, destinationPath, true);
 
                 return destinationPath;
             }

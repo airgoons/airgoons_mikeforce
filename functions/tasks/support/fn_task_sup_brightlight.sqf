@@ -43,7 +43,7 @@ _taskDataStore setVariable ["INIT", {
 _taskDataStore setVariable ["find_aircrew", {
 	params ["_taskDataStore"];
 
-	private _validRescueUnits = missionNamespace getVariable "SpikeTeam";
+	private _validRescueUnits = missionNamespace getVariable "BravoPlatoon";
 	private _unitsToRescue = _taskDataStore getVariable "unitsToRescue";
 
 	private _isOneDownedAircrewAlive = _unitsToRescue findIf {alive _x} > -1;
@@ -53,7 +53,7 @@ _taskDataStore setVariable ["find_aircrew", {
 		["FAILED"] call _fnc_finishTask;
 	};
 
-	//This is a bit inefficient, loops (count units SpikeTeam) * (count UnitsToRescue) times.
+	//This is a bit inefficient, loops (count units BravoPlatoon) * (count UnitsToRescue) times.
 	//Unlikely to cause much of an issue though, as relatively small numbers.
 	private _isPlayerNearStrandedAircrew = _validRescueUnits findIf {private _rescuer = _x; _unitsToRescue findIf {_x distance2D _rescuer < 20} > -1 } > -1;
 
@@ -65,7 +65,7 @@ _taskDataStore setVariable ["find_aircrew", {
 _taskDataStore setVariable ["protect_aircrew", {
 	params ["_taskDataStore"];
 
-	private _validRescueUnits = missionNamespace getVariable "SpikeTeam";
+	private _validRescueUnits = missionNamespace getVariable "BravoPlatoon";
 	private _unitsToRescue = _taskDataStore getVariable "unitsToRescue";
 
 	private _aliveAircrew = _unitsToRescue select {alive _x};

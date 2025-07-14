@@ -4,9 +4,9 @@ class destroy_aa_site : task
 	tasktitle = "Eliminate the AA Site";
 	taskname = "Eliminate the AA Site";
 	taskdesc = "Enemy AA has been seen firing near this position. Take it out.";
-	taskgroups[] = {"MikeForce"}; // all
+	taskgroups[] = {"AlphaPlatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -33,9 +33,9 @@ class destroy_artillery_site : task
 	tasktitle = "Eliminate Hostile Artillery";
 	taskname = "Eliminate Hostile Artillery";
 	taskdesc = "Enemy artillery has been seen firing from this position. Take it out.";
-	taskgroups[] = {"MikeForce"}; // all
+	taskgroups[] = {"AlphaPlatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -62,9 +62,9 @@ class destroy_camp : task
 	tasktitle = "Destroy the Camp";
 	taskname = "Destroy the Camp";
 	taskdesc = "There's rumours of a VC camp in the area. Find it, eliminate it.";
-	taskgroups[] = {"MikeForce"}; // all
+	taskgroups[] = {"AlphaPlatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -91,9 +91,9 @@ class destroy_tunnel : task
 	tasktitle = "Seal Tunnel Exit";
 	taskname = "Seal Tunnel Exit";
 	taskdesc = "Intelligence places an enemy tunnel exit in this area. Seal it up.";
-	taskgroups[] = {"MikeForce"}; // all
+	taskgroups[] = {"AlphaPlatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -120,9 +120,9 @@ class destroy_vehicle_depot : task
 	tasktitle = "Destroy Vehicle Depot";
 	taskname = "Destroy Vehicle Depot";
 	taskdesc = "An enemy vehicle maintenance point has been placed in this area. Destroy it, and any vehicles you find.";
-	taskgroups[] = {"MikeForce"}; // all
+	taskgroups[] = {"AlphaPlatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 

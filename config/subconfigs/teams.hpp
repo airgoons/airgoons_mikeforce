@@ -1,5 +1,5 @@
 // limits and vanilla/custom trait values
-class MikeForce
+class AlphaPlatoon
 {
     name = "Alpha Platoon[Infantry]";
     icon = "img\AirGoonIcons\Alpha.paa";
@@ -32,7 +32,7 @@ class MikeForce
     onJoin = "";
     onLeave = "";
 };
-class SpikeTeam
+class BravoPlatoon
 {
     name = "Bravo Platoon [Infantry]";
     icon = "img\AirGoonIcons\Bravo.paa";
@@ -66,7 +66,7 @@ class SpikeTeam
     onJoin = "";
     onLeave = "";
 };
-class ACAV
+class CharliePlatoon
 {
     name = "Charlie Platoon[Engineers]";
     icon = "img\AirGoonIcons\Charlie.paa";
@@ -99,7 +99,7 @@ class ACAV
     onJoin = "";
     onLeave = "";
 };
-class GreenHornets
+class DeltaTroop
 {
     name = "Delta Troop [Air Support]";
     icon = "img\AirGoonIcons\Delta.paa";

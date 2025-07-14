@@ -24,7 +24,7 @@ if (!isServer) exitWith {};
 params ["_obj", "_spawnPointSettings", "_spawnLocation", "_textureSelection"];
 
 if (_obj getVariable ["veh_asset_isSpawnPoint", false]) exitWith {
-	diag_log format ["VN MikeForce: [WARNING] Attempting to make object a vehicle spawn point twice: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN AlphaPlatoon: [WARNING] Attempting to make object a vehicle spawn point twice: %1 at %2", typeOf _obj, getPos _obj];
 };
 
 if (_spawnPointSettings isEqualType "") then {
@@ -41,12 +41,12 @@ if (isNil "vn_mf_veh_asset_spawn_points") then {
 };
 
 if (_spawnPointSettings getOrDefault ["respawnType", ""] isEqualTo "") then {
-	diag_log format ["VN MikeForce: [WARNING] Spawn point info has no respawn type set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN AlphaPlatoon: [WARNING] Spawn point info has no respawn type set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
 	_spawnPointSettings set ["respawnType", "RESPAWN"];
 };
 
 if (_spawnPointSettings getOrDefault ["time", ""] isEqualTo "") then {
-	diag_log format ["VN MikeForce: [WARNING] Spawn point info has no respawn time set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN AlphaPlatoon: [WARNING] Spawn point info has no respawn time set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
 	_spawnPointSettings set ["time", 10];
 };
 
@@ -61,7 +61,7 @@ if !(isNil "_textureSelection" || _spawnPointSettings get "vehicles" isEqualTo [
 };
 
 if (isNil "_spawnLocation") exitWith {
-	diag_log format ["VN MikeForce: [ERROR] Unable to create spawn point, no spawn location given: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN AlphaPlatoon: [ERROR] Unable to create spawn point, no spawn location given: %1 at %2", typeOf _obj, getPos _obj];
 };
 
 private _id = [] call vn_mf_fnc_veh_asset_create_spawn_point_id;

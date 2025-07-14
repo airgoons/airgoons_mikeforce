@@ -31,7 +31,7 @@ Your Mobile Strike Force must take control of the populace and destroy the Viet 
 - There are 10 zones to capture and hold.<br/>
 - You can operate in 2 zones at the same time.<br/>
 There are 4 teams:<br/>
-- Mike Force; ACAV; Green Hornets; and Spike Team.<br/>
+- Mike Force; CharliePlatoon; Green Hornets; and Spike Team.<br/>
 - Teams work together on Primary Tasks to help capture a zone.<br/>
 - Your team - (insert name here) - has unique Team Tasks which help capture a zone. Change teams in the lobby.<br/>
 - You can get support from other teams with Request Support (Hyperlink?).<br/>

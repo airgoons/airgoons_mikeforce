@@ -1,6 +1,6 @@
 /*
 	File: fn_ui_initMissionDisplay.sqf
-	Author: Karel Moricky, improved by Killzone_Kid, modifed by Terra for Mikeforce
+	Author: Karel Moricky, improved by Killzone_Kid, modifed by Terra for AlphaPlatoon
 	Public: No
 	
 	Description:

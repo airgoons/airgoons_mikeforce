@@ -109,7 +109,7 @@ if (isNil "_squadTemplate") then
 						} 
 						else 
 						{
-							diag_log format ["VN MikeForce ERROR: Bad unit in squad composition %1", _x];
+							diag_log format ["VN AlphaPlatoon ERROR: Bad unit in squad composition %1", _x];
 							_classArray pushBack "C_Soldier_VR_F";
 						};
 					};

@@ -20,7 +20,7 @@ private _vehicle = _spawnPoint getOrDefault ["currentVehicle", objNull];
 
 //if it's deleted, not a lot we can do about it, as we have no position! Might as well just set it to repair.
 if (isNull _vehicle) exitWith {
-	["VN MikeForce: Vehicle for spawn point %1 was deleted and respawn type is Wreck. Sending to repair", _spawnPoint get "id"] call BIS_fnc_logFormat;
+	["VN AlphaPlatoon: Vehicle for spawn point %1 was deleted and respawn type is Wreck. Sending to repair", _spawnPoint get "id"] call BIS_fnc_logFormat;
 	[_spawnPoint] call vn_mf_fnc_veh_asset_set_repairing;
 };
 

@@ -30,10 +30,10 @@ VN_TR_MAININFO_TXT_TOP_CTRL ctrlSetStructuredText parsetext format[localize "STR
 //new
 //--- Add role descriptions
 _text = switch _groupID do {
-	case "MikeForce":{"STR_vn_mf_taskRoster_Main_MikeForceDescription"};
-	case "SpikeTeam":{"STR_vn_mf_taskRoster_Main_SpikeTeamDescription"};
-	case "GreenHornets":{"STR_vn_mf_taskRoster_Main_GreenHornetsTeamDescription"};
-	case "ACAV":{"STR_vn_mf_taskRoster_Main_ArmouredCavalryDescription"};
+	case "AlphaPlatoon":{"STR_vn_mf_taskRoster_Main_AlphaPlatoonDescription"};
+	case "BravoPlatoon":{"STR_vn_mf_taskRoster_Main_BravoPlatoonDescription"};
+	case "DeltaTroop":{"STR_vn_mf_taskRoster_Main_DeltaTroopTeamDescription"};
+	case "CharliePlatoon":{"STR_vn_mf_taskRoster_Main_ArmouredCavalryDescription"};
 	default {""};
 };
 

@@ -6,7 +6,7 @@ namespace mission_pack_unpack {
     public static class Configuration {
         public interface ISettings {
             string Arma3Tools_Path { get; }
-            string MikeForce_Path { get; }
+            string AlphaPlatoon_Path { get; }
             string Customizations_Path { get; }
             string Output_Path { get; }
             string Output_Filename { get; }

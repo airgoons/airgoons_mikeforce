@@ -17,7 +17,7 @@
         [parameter] call vn_fnc_myFunction
 */
 
-#define RTB_LOCATION (getMarkerPos "mf_respawn_spiketeam")
+#define RTB_LOCATION (getMarkerPos "mf_respawn_BravoPlatoon")
 
 params ["_dataStore"];
 
@@ -35,7 +35,7 @@ _dataStore setVariable ["INIT", {
 
 	//Spawn AA - use task so we get the AA marker on the map.
 	//Only show it to Spike Team
-	private _task = ["secondary_st2", "", [["pos", _taskDataStore getVariable "aaPos"]], "", ["SpikeTeam"]] call vn_mf_fnc_task_create;
+	private _task = ["secondary_st2", "", [["pos", _taskDataStore getVariable "aaPos"]], "", ["BravoPlatoon"]] call vn_mf_fnc_task_create;
 	_taskDataStore setVariable ["AATask", _task];
 
 	diag_log "Initialising";
@@ -48,7 +48,7 @@ _dataStore setVariable ["BEFORE_STATES_RUN", {
 
 	private _wiretapPos = _taskDataStore getVariable "wiretapPos";
 	private _playersInArea = allPlayers inAreaArray [_wiretapPos, 1000, 1000, 0, false];
-	private _validPlayers = _playersInArea select {vehicle _x isEqualTo _x && _x getVariable ["vn_mf_db_player_group", "FAILED"] == "SpikeTeam"};
+	private _validPlayers = _playersInArea select {vehicle _x isEqualTo _x && _x getVariable ["vn_mf_db_player_group", "FAILED"] == "BravoPlatoon"};
 	private _playersOnMission = _taskDataStore getVariable "playersOnMission";
 
 	{

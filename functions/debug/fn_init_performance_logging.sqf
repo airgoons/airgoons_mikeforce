@@ -14,7 +14,7 @@
 		call vn_mf_fnc_init_performance_logging
 */
 
-para_g_log_identifier = "MIKEFORCE";
+para_g_log_identifier = "AlphaPlatoon";
 
 private _performanceLoggingPeriod = localNamespace getVariable ["vn_mf_performance_logging_period", 30];
 

@@ -14,7 +14,7 @@
 		[] call vn_mf_fnc_detect_missing_arsenal_magazines
 */
 
-private _arsenalConfig = missionConfigFile >> "vn_whitelisted_arsenal_loadouts" >> "vn_mikeforce";
+private _arsenalConfig = missionConfigFile >> "vn_whitelisted_arsenal_loadouts" >> "vn_AlphaPlatoon";
 private _arsenalWeaponClasses = getArray (_arsenalConfig >> "weapons") apply {_x # 0};
 private _arsenalMagClasses = getArray (_arsenalConfig >> "magazines") apply {_x # 0};
 

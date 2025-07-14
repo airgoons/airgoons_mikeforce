@@ -183,7 +183,7 @@ private _currentSubtaskPosition = 0;
 //If we've got no subtasks, then something has gone wrong.
 if (count _subtasksToRun isEqualTo 0) then {
 	["CANCELED"] call _fnc_finishTask;
-	diag_log format ["VN MikeForce: Warning, task %1 ran out of states", _taskDataStore getVariable "taskClass"];
+	diag_log format ["VN AlphaPlatoon: Warning, task %1 ran out of states", _taskDataStore getVariable "taskClass"];
 };
 
 

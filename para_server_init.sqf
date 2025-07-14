@@ -56,14 +56,14 @@ publicVariable "vn_revive_withstand_allow";
 vn_revive_withstand_amount = 4;
 publicVariable "vn_revive_withstand_amount";
 //Set number of max players per team
-vn_mf_max_players_acav = ["max_players_acav", 99] call BIS_fnc_getParamValue;
-vn_mf_max_players_greenhornets = ["max_players_greenhornets", 15] call BIS_fnc_getParamValue;;
-vn_mf_max_players_mikeforce = ["max_players_mikeforce", 99] call BIS_fnc_getParamValue;;
-vn_mf_max_players_spiketeam = ["max_players_spiketeam", 0] call BIS_fnc_getParamValue;;
-publicVariable "vn_mf_max_players_acav";
-publicVariable "vn_mf_max_players_greenhornets";
-publicVariable "vn_mf_max_players_mikeforce";
-publicVariable "vn_mf_max_players_spiketeam";
+vn_mf_max_players_CharliePlatoon = ["max_players_CharliePlatoon", 99] call BIS_fnc_getParamValue;
+vn_mf_max_players_DeltaTroop = ["max_players_DeltaTroop", 15] call BIS_fnc_getParamValue;;
+vn_mf_max_players_AlphaPlatoon = ["max_players_AlphaPlatoon", 99] call BIS_fnc_getParamValue;;
+vn_mf_max_players_BravoPlatoon = ["max_players_BravoPlatoon", 0] call BIS_fnc_getParamValue;;
+publicVariable "vn_mf_max_players_CharliePlatoon";
+publicVariable "vn_mf_max_players_DeltaTroop";
+publicVariable "vn_mf_max_players_AlphaPlatoon";
+publicVariable "vn_mf_max_players_BravoPlatoon";
 //Disable RTO Support if desired
 private _airSupport = ["enable_air_support", 1] call BIS_fnc_getParamValue;
 private _artySupport = ["enable_arty_support", 1] call BIS_fnc_getParamValue;
@@ -98,7 +98,7 @@ para_g_enemiesPerPlayer = ((["ai_scaling", 100] call BIS_fnc_getParamValue) / 10
 //Global variable, so it needs syncing across the network.
 publicVariable "para_g_enemiesPerPlayer";
 
-diag_log "VN MikeForce: Initialising markers";
+diag_log "VN AlphaPlatoon: Initialising markers";
 //Read map markers and populate appropriate arrays
 call vn_mf_fnc_marker_init;
 
@@ -116,10 +116,10 @@ vn_mf_secondaryTaskConfigs = "getText (_x >> 'taskCategory') == 'SEC' && getText
 
 //Create a lookup for tasks by zone and team
 vn_mf_secondaryTasksBySide = false call para_g_fnc_create_namespace;
-vn_mf_secondaryTasksBySide setVariable ["MikeForce", []];
-vn_mf_secondaryTasksBySide setVariable ["SpikeTeam", []];
-vn_mf_secondaryTasksBySide setVariable ["GreenHornets", []];
-vn_mf_secondaryTasksBySide setVariable ["ACAV", []];
+vn_mf_secondaryTasksBySide setVariable ["AlphaPlatoon", []];
+vn_mf_secondaryTasksBySide setVariable ["BravoPlatoon", []];
+vn_mf_secondaryTasksBySide setVariable ["DeltaTroop", []];
+vn_mf_secondaryTasksBySide setVariable ["CharliePlatoon", []];
 
 
 // vn_mf_allowed_functions = ("isClass _x && getNumber _x >> 'rec' isEqualTo 1" configClasses (missionConfigFile >> "cfgfunctions" >> "vn_mf" >> "rehandler") apply {configName _x});
@@ -140,13 +140,13 @@ enableenvironment [[false,true] select _ambientlife,[false,true] select _ambient
 [] call vn_mf_fnc_respawn_points_init;
 
 // start scheduler
-diag_log "VN MikeForce: Starting scheduler";
+diag_log "VN AlphaPlatoon: Starting scheduler";
 [] call para_g_fnc_scheduler_subsystem_init;
 
 // start the event dispatcher, so anything relying on events can fire.
 call para_g_fnc_event_subsystem_init;
 
-diag_log "VN MikeForce: Initialising Cleanup Routine";
+diag_log "VN AlphaPlatoon: Initialising Cleanup Routine";
 // start cleanup subsystem
 [
     createHashmapFromArray [
@@ -160,7 +160,7 @@ diag_log "VN MikeForce: Initialising Cleanup Routine";
 ] call para_s_fnc_cleanup_subsystem_init;
 
 // creates and initialize groups and duty officers
-diag_log "VN MikeForce: Initialising groups and duty officers";
+diag_log "VN AlphaPlatoon: Initialising groups and duty officers";
 call vn_mf_fnc_group_init;
 
 {
@@ -172,27 +172,27 @@ call vn_mf_fnc_group_init;
 } forEach (vn_mf_secondaryTaskConfigs);
 
 // start generic scheduler functions
-diag_log "VN MikeForce: Starting game time monitor";
+diag_log "VN AlphaPlatoon: Starting game time monitor";
 // broadcast total time elapsed - initial
 missionNamespace setVariable ["para_g_totalgametime",["GET", "game_time", 0] call para_s_fnc_profile_db select 1,true];
-diag_log format ["VN MikeForce: Total Game Time - %1", para_g_totalgametime];
+diag_log format ["VN AlphaPlatoon: Total Game Time - %1", para_g_totalgametime];
 ["save_time_elapsed", {call vn_mf_fnc_save_time_elapsed}, [], 5] call para_g_fnc_scheduler_add_job;
 
 // spawn buildables and init vars
-diag_log "VN MikeForce: Initialising building system";
+diag_log "VN AlphaPlatoon: Initialising building system";
 call para_s_fnc_building_system_init;
 
-diag_log "VN MikeForce: Creating supply officers";
+diag_log "VN AlphaPlatoon: Creating supply officers";
 // spawn supply officers
 {
     [_x] call vn_mf_fnc_create_supply_officer;
 } forEach vn_mf_markers_supply_officer_initial;
 
-diag_log "VN MikeForce: Starting building state tracker";
+diag_log "VN AlphaPlatoon: Starting building state tracker";
 // building state tracking
 ["building_state_tracker", {call para_s_fnc_building_state_tracker}, [], 60] call para_g_fnc_scheduler_add_job;
 
-diag_log "VN MikeForce: Starting player list tracker";
+diag_log "VN AlphaPlatoon: Starting player list tracker";
 // do slow allplayers list updates
 ["loadbal_fps_aggregator", {call para_s_fnc_loadbal_fps_aggregator}, [], 15] call para_g_fnc_scheduler_add_job;
 
@@ -255,36 +255,36 @@ friendlyATMines = [
     "vn_mine_m15"
 ];
 
-diag_log "VN MikeForce: Initialising stats";
+diag_log "VN AlphaPlatoon: Initialising stats";
 [] call vn_mf_fnc_stats_init;
 
 //Set date here - it's as good a place as any. Day is just before a full moon, for good night ops.
 [vn_mf_dawnLength, vn_mf_dayLength, vn_mf_duskLength, vn_mf_nightLength] call para_s_fnc_day_night_subsystem_init;
 
-diag_log "VN MikeForce: Initialising Loadbalancer";
+diag_log "VN AlphaPlatoon: Initialising Loadbalancer";
 //Initialise the AI loadbalancer.
 [] call para_s_fnc_loadbal_subsystem_init;
 
 
-diag_log "VN MikeForce: Initialising AI Objectives";
+diag_log "VN AlphaPlatoon: Initialising AI Objectives";
 // start ai subsystem. Depends on the load balancer subsystem.
 [
     ["hardAiLimit", ["hard_ai_limit", 80] call BIS_fnc_getParamValue]
 ] call para_s_fnc_ai_obj_subsystem_init;
 
-diag_log "VN MikeForce: Initialising Harass";
+diag_log "VN AlphaPlatoon: Initialising Harass";
 // Start harassment subsystem. Depends on the AI subsystem.
 [] call para_s_fnc_harass_subsystem_init;
 
-diag_log "VN MikeForce: Initialising Vehicle Manager";
+diag_log "VN AlphaPlatoon: Initialising Vehicle Manager";
 // start vehicle asset management subsystem
 [] call vn_mf_fnc_veh_asset_subsystem_init;
 
-diag_log "VN MikeForce: Initialising Vehicle Creation Detection";
+diag_log "VN AlphaPlatoon: Initialising Vehicle Creation Detection";
 // start vehicle creation detection subsystem
 [] call vn_mf_fnc_veh_create_detection_subsystem_init;
 
-diag_log "VN MikeForce: Initialising AI Behaviour";
+diag_log "VN AlphaPlatoon: Initialising AI Behaviour";
 // start the behaviour subsystem
 [] call para_g_fnc_ai_behaviour_subsystem_init;
 
@@ -298,24 +298,24 @@ diag_log "VN MikeForce: Initialising AI Behaviour";
     []
 ]] call para_g_fnc_event_add_handler;
 
-diag_log "VN MikeForce: Initialising Zones";
+diag_log "VN AlphaPlatoon: Initialising Zones";
 // Initialise the zones
 [] call vn_mf_fnc_zones_init;
 
-diag_log "VN MikeForce: Initialising Sites";
+diag_log "VN AlphaPlatoon: Initialising Sites";
 // Initialise sites - must be done after zones.
 [] call vn_mf_fnc_sites_init;
 
-diag_log "VN MikeForce: Initialising Gameplay Director";
+diag_log "VN AlphaPlatoon: Initialising Gameplay Director";
 // Initialise the gameplay director
 [] call vn_mf_fnc_director_init;
 
-diag_log "VN MikeForce: Initialising Respawn Scheduler";
+diag_log "VN AlphaPlatoon: Initialising Respawn Scheduler";
 // Initialise respawn job
 ["veh_asset_respawner_job", {call vn_mf_fnc_veh_asset_respawn_job}, [], 1] call para_g_fnc_scheduler_add_job;
 
-diag_log "VN MikeForce: Initialising Performance Logging";
+diag_log "VN AlphaPlatoon: Initialising Performance Logging";
 [] call vn_mf_fnc_init_performance_logging;
 
-diag_log "VN MikeForce: Initialising Dynamic Groups";
+diag_log "VN AlphaPlatoon: Initialising Dynamic Groups";
 ["Initialize"] call para_c_fnc_dynamicGroups;

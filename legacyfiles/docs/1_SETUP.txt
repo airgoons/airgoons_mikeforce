@@ -11,7 +11,7 @@ Configuration
 1.  Make a copy of configuration_example.json and rename to configuration.json
 2.  Edit configuration.json
         Arma3Tools_Path - The path to Arma 3 Tools in steamapps/common
-        MikeForce_Path - The path to Arma 3 Tools steamapps/workshop
+        AlphaPlatoon_Path - The path to Arma 3 Tools steamapps/workshop
         Customizations_Path - The path to the set of customizations which are applied to an extracted official Mike Force pbo
         Output_Path - The path to where the modifified PBO should be copied after packaging
         Output_Filename - The filename of the output PBO

@@ -27,7 +27,7 @@ class para_WelcomeScreen {
             y = UIH(1);
             h = UIH((30 / 4));
             w = para_WelcomeScreen_WIDTH;
-            text = "\vn\missions_f_vietnam\data\img\mikeforce\mission_banner.jpg";
+            text = "\vn\missions_f_vietnam\data\img\AlphaPlatoon\mission_banner.jpg";
             colorText[] = {1,1,1,1};
             onLoad = "";
         };

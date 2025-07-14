@@ -13,7 +13,7 @@
 	   	Team is full [BOOLEAN]
     
     Example(s):
-		["ACAV"] call vn_mf_fnc_is_team_full
+		["CharliePlatoon"] call vn_mf_fnc_is_team_full
 */
 
 params ["_team"];

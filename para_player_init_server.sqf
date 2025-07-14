@@ -78,19 +78,19 @@ if (_enlisted isEqualTo "0") then {
 
 };
 
-// last group, or if not one assign MikeForce
-// private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "MikeForce"];
-// Attempt team change, defaulting to MikeForce is team is full.
+// last group, or if not one assign AlphaPlatoon
+// private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
+// Attempt team change, defaulting to AlphaPlatoon is team is full.
 
 // Assigns players to the appropriate team based on their group.
 _playersGroup = groupId group _player;
 hint _playersGroup;
 switch (_playersGroup) do
 {
-	case "Alpha Platoon": {[_player, "MikeForce", nil, false] call vn_mf_fnc_change_team};
-	case "Bravo Aussies": {[_player, "SpikeTeam", nil, false] call vn_mf_fnc_change_team};
-	case "Charlie Platoon": {[_player, "ACAV", nil, false] call vn_mf_fnc_change_team};
-	default {[_player, "GreenHornets", nil, false] call vn_mf_fnc_change_team};
+	case "Alpha Platoon": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team};
+	case "Bravo Aussies": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team};
+	case "Charlie Platoon": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team};
+	default {[_player, "DeltaTroop", nil, false] call vn_mf_fnc_change_team};
 };
 
 // [NOFUN][AJK] This would load the last loadout, but instead we want to always spawn with the equipment preset in the editor
@@ -118,8 +118,8 @@ _player setUnitRank "PRIVATE";
 // start player at correct camp for team
 //For now, we're just hardcoding this.
 
-// [NOFUN][AJK] This code enables the MikeForce special spawn system
-//private _playerGroup = _player getVariable ["vn_mf_db_player_group", "MikeForce"];
+// [NOFUN][AJK] This code enables the AlphaPlatoon special spawn system
+//private _playerGroup = _player getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
 //private _respawnMarker = format ["mf_respawn_%1", _playerGroup];
 //_player setPos getMarkerPos _respawnMarker;
 

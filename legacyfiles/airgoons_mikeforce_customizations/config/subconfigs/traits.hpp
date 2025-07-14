@@ -5,28 +5,28 @@ images[] = {"\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_role_med_ca.paa",
 icons[] = {"\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_role_medic.paa","\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_role_engineer.paa","\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_role_explosivespecialist.paa", "\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_role_radioOperator.paa" };
 
 // limits
-class MikeForce
+class AlphaPlatoon
 {
 	medic = 8;
 	engineer = 2;
 	explosiveSpecialist = 8;
 	radioOperator = 1;
 };
-class SpikeTeam
+class BravoPlatoon
 {
 	medic = 1;
 	engineer = 1;
 	explosiveSpecialist = 1;
 	radioOperator = 1;
 };
-class ACAV
+class CharliePlatoon
 {
 	medic = 2;
 	engineer = 40;
 	explosiveSpecialist = 2;
 	radioOperator = 0;
 };
-class GreenHornets
+class DeltaTroop
 {
 	medic = 1;
 	engineer = 1;

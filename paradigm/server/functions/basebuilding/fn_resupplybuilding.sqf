@@ -29,18 +29,18 @@ params [
 //_building is the building namespace/object, which has one or more child objects.
 private _building = _object getVariable ["para_g_building", objNull];
 
-if (isNull _building) exitWith {diag_log "VN MikeForce: Attempting to resupply null object or object with no building"};
+if (isNull _building) exitWith {diag_log "VN AlphaPlatoon: Attempting to resupply null object or object with no building"};
 
 if !(_building getVariable ["para_g_building_constructed", false]) exitWith {diag_log "Paradigm: Attempting to resupply a building that hasn't been built"};
 
 private _buildingType = _building getVariable ["para_g_buildclass", ""];
 
-if (_buildingType == "") exitWith {diag_log format ["VN MikeForce: Object %1 cannot be resupplied, no build class", _object]};
+if (_buildingType == "") exitWith {diag_log format ["VN AlphaPlatoon: Object %1 cannot be resupplied, no build class", _object]};
 
 private _supplySource = _building getVariable ["para_g_current_supply_source", objNull];
 
 if (isNull _supplySource) exitWith {
-	diag_log format ["VN MikeForce: Building with object %1 has no supply source", _building getVariable "para_s_building_id"];
+	diag_log format ["VN AlphaPlatoon: Building with object %1 has no supply source", _building getVariable "para_s_building_id"];
 };
 
 private _config = (missionConfigFile >> "gamemode");

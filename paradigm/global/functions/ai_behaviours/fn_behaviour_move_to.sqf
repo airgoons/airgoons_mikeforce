@@ -130,9 +130,9 @@ private _repairStrategies = [
 	},
 	//Strategy 7: Teleport when no players are nearby. handles AI stuck in objects.
 	{
-		diag_log "VN MikeForce: Group %1 is *very* stuck, attempting teleport.";
+		diag_log "VN AlphaPlatoon: Group %1 is *very* stuck, attempting teleport.";
 		if (allPlayers inAreaArray [getPos leader _group, 300, 300] isEqualTo []) then {
-			diag_log "VN MikeForce: Group %1 is *very* stuck, teleporting them now.";
+			diag_log "VN AlphaPlatoon: Group %1 is *very* stuck, teleporting them now.";
 			private _newPos = leader _group getPos [20 + random 20, random 360];
 			{
 				_x setPos _newPos;

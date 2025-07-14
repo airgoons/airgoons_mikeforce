@@ -56,7 +56,7 @@ if (isClass _config) then
 		// do awards logic here
 		if (isClass _awards) then
 		{
-			private _playerGroupId = _player getVariable ['vn_mf_db_player_group', 'MikeForce'];
+			private _playerGroupId = _player getVariable ['vn_mf_db_player_group', 'AlphaPlatoon'];
 			{ //  forEach (configProperties [_awards]);
 				private _award_name = configName _x;
 				private _a_required_teams = getArray(_x >> "required_teams");

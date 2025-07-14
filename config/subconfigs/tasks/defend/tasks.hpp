@@ -5,7 +5,7 @@ class defend_counterattack : task
 	taskname = "Defend from Counterattack";
 	taskdesc = "The enemy is preparing a counterattack, hold the zone at all costs.";
 	tasktype = "defend";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -39,7 +39,7 @@ class defend_base : task
 	taskname = "Defend FOB from Attack";
 	taskdesc = "The enemy is preparing to attack an FOB. Prepare to defend it!";
 	tasktype = "defend";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 

@@ -1,4 +1,4 @@
-#include "acav\tasks.hpp"
-#include "greenhornets\tasks.hpp"
-#include "mikeforce\tasks.hpp"
-#include "spiketeam\tasks.hpp"
+#include "CharliePlatoon\tasks.hpp"
+#include "DeltaTroop\tasks.hpp"
+#include "AlphaPlatoon\tasks.hpp"
+#include "BravoPlatoon\tasks.hpp"

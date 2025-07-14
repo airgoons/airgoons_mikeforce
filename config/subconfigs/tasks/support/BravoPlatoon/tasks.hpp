@@ -5,9 +5,9 @@ class support_st_brightlight : support_task
 	taskname = "Brightlight";
 	taskdesc = "Rescue the crew of the downed helicopter, %1.";
 	tasktype = "box";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\su\vn_ui_mf_task_sts1.jpg";
-	taskgroups[] = {"SpikeTeam"};
-	requestgroups[] = {"GreenHornets"};
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\su\vn_ui_mf_task_sts1.jpg";
+	taskgroups[] = {"BravoPlatoon"};
+	requestgroups[] = {"DeltaTroop"};
 	rankpoints = 10;
 	taskprogress = 0;
 
@@ -20,7 +20,7 @@ class support_st_brightlight : support_task
 	class parameters
 	{
 		stateMachineCode = "vn_mf_fnc_task_sup_brightlight";
-		posToReturnTo[] = {"marker", "mf_respawn_greenhornets"};
+		posToReturnTo[] = {"marker", "mf_respawn_DeltaTroop"};
 	};
 
 	//Data for subtasks. These are specific to the script.
@@ -56,8 +56,8 @@ class support_st_searchAndDestroy : support_task
 	taskname = "Destroy Gun Emplacements";
 	taskdesc = "%1 has requested you destroy the gun emplacements at this position.";
 	tasktype = "box";
-	taskgroups[] = {"SpikeTeam"};
-	requestgroups[] = {"GreenHornets", "MikeForce", "SpikeTeam"};
+	taskgroups[] = {"BravoPlatoon"};
+	requestgroups[] = {"DeltaTroop", "AlphaPlatoon", "BravoPlatoon"};
 	rankpoints = 10;
 	taskprogress = 0;
 

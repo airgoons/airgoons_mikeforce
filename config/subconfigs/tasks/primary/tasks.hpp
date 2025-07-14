@@ -5,7 +5,7 @@ class capture_zone : task
 	taskname = "Capture %1";
 	taskdesc = "Defeat hostile forces in %1, and destroy their HQ's equipment stockpiles.";
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\p\vn_ui_mf_task_p1.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\p\vn_ui_mf_task_p1.jpg";
 	rankpoints = 50;
 
 	taskScript = "vn_mf_fnc_state_machine_task_system";
@@ -45,7 +45,7 @@ class build_fob : task
 	taskdesc = "Build an FOB to begin claiming zones within %1ms of it.";
 	taskformatdata = "[mf_s_baseZoneUnlockDistance]";
 	tasktype = "repair";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\p\vn_ui_mf_task_p1.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\p\vn_ui_mf_task_p1.jpg";
 	rankpoints = 10;
 
 	taskScript = "vn_mf_fnc_state_machine_task_system";

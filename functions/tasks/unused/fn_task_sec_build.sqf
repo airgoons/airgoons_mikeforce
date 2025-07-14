@@ -38,7 +38,7 @@ _taskDataStore setVariable ["INIT", {
 	private _buildableConfig = missionConfigFile >> "gamemode" >> "buildables" >> _buildableType;
 
 	if (!isClass _buildableConfig) then {
-		diag_log format ["VN MikeForce: Warning, build task created for type %1, which has no class", _buildableType];
+		diag_log format ["VN AlphaPlatoon: Warning, build task created for type %1, which has no class", _buildableType];
 		["CANCELED"] call _fnc_finishTask;
 	};
 

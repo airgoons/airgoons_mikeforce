@@ -10,7 +10,7 @@ Setup
 -----
 1.  Adjust configuration.json to support test usage
         Arma3Tools_Path - retain normal setting
-        MikeForce_Path - retain normal setting
+        AlphaPlatoon_Path - retain normal setting
         Customizations_Path - set to full path of customation directory location in the local git repository
         Output_Path - set as desired
         Output_Filename - retain normal setting

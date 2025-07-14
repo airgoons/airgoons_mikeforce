@@ -14,7 +14,7 @@
 	   	Team join successful [BOOLEAN]
     
     Example(s):
-		[_myPlayer, "ACAV"] call vn_mf_fnc_change_team
+		[_myPlayer, "CharliePlatoon"] call vn_mf_fnc_change_team
 */
 
 // Added new 4th parameter to allow overriding the officer check.
@@ -36,10 +36,10 @@ private _tooManyPlayers = [_team] call vn_mf_fnc_is_team_full;
 
 
 if (_tooManyPlayers && _fullTeamBehaviour == "DEFAULT") then {
-	_team = "MikeForce";
+	_team = "AlphaPlatoon";
 };
 
-if (_tooManyPlayers && _team != "MikeForce") exitWith {
+if (_tooManyPlayers && _team != "AlphaPlatoon") exitWith {
 	["TaskFailed",["","STR_vn_mf_notification_title_team_full"]] remoteExecCall ["para_c_fnc_show_notification",_player];
 	false
 };

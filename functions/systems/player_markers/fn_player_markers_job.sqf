@@ -35,7 +35,7 @@ vn_mf_player_markers_manned_vehicles = [];
 {
 	private _unit = _x;
 	private _unitMarker = format ["player_marker_%1", getPlayerUID _unit];
-	private _unitGroup = _unit getVariable ["vn_mf_db_player_group", "MikeForce"];
+	private _unitGroup = _unit getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
 
 	private _markerType = "b_inf";
 	if (_unit getUnitTrait "Medic") then {_markerType = "b_med"};

@@ -1,4 +1,4 @@
-# GUI creation in Mikeforce
+# GUI creation in AlphaPlatoon
 ## Configs
 ### Basic display
 An example can be found in _config\ui\Example\vn_mf_RscDisplayExample.hpp_.
@@ -29,7 +29,7 @@ class vn_mf_RscDisplayDisplayName
 - From that function `vn_mf_fnc_vn_mf_RscDisplayDisplayName` is called and in which the UI's sqf part should be handled. See the following sections.
 
 ### Controls
-- Base classes for Mikeforce start with `vn_mf_[...]`.
+- Base classes for AlphaPlatoon start with `vn_mf_[...]`.
   - Digetic UIs should be in VN's style
     - This includes using the [Fonts](###Fonts)
   - Everything else should be A3's style
@@ -98,7 +98,7 @@ class ControlName: vn_mf_RscText
 ```
 
 ### Fonts
-The following fonts can be used for UIs in Mikeforce and VN in general:
+The following fonts can be used for UIs in AlphaPlatoon and VN in general:
 
 <table>
   <tr>

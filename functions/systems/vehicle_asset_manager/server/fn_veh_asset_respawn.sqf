@@ -23,7 +23,7 @@ private _spawnLocation = _spawnPoint getOrDefault ["nextSpawnLocationOverride", 
 
 if (isNil "_classToSpawn") exitWith {};
 if (!isClass (configFile >> "CfgVehicles" >> _classToSpawn)) exitWith {
-	diag_log format ["VN MikeForce: [ERROR] Unable to respawn vehicle, class %1 is invalid", _classToSpawn];
+	diag_log format ["VN AlphaPlatoon: [ERROR] Unable to respawn vehicle, class %1 is invalid", _classToSpawn];
 };
 
 private _vehicle = objNull;

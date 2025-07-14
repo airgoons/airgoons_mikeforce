@@ -4,9 +4,9 @@ class secondary_gh1 : task
 	tasktitle = "Ash and Trash";
 	taskname = "Deliver Supplies to the Zone";
 	taskdesc = "Deliver supplies to the Zone";
-	taskgroups[] = {"GreenHornets"};
+	taskgroups[] = {"DeltaTroop"};
 	tasktype = "upload";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_gh1.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_gh1.jpg";
 	rankpoints = 10;
 	taskprogress = 3;
 
@@ -30,8 +30,8 @@ class secondary_gh6 : task
 	taskname = "Combat Air Patrol";
 	taskdesc = "Enemy air assets have been spotted in this area. Patrol the area and eliminate any enemy aircraft. Don't let any escape.";
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_gh6.jpg";
-	taskgroups[] = {"GreenHornets"};
+	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_gh6.jpg";
+	taskgroups[] = {"DeltaTroop"};
 	rankpoints = 10;
 	taskprogress = 5;
 

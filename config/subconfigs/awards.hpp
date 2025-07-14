@@ -2,20 +2,20 @@ class deaths
 {
 	class purple_heart
 	{
-		// KIA while serving in ACAV / Green Hornets
+		// KIA while serving in CharliePlatoon / Green Hornets
 
-		required_teams[] = {"ACAV","GreenHornets"};
+		required_teams[] = {"CharliePlatoon","DeltaTroop"};
 		levels[] =
 		{
 			{1}
 		};
-		// requires 1 death while a member of  ACAV / Green Hornets
+		// requires 1 death while a member of  CharliePlatoon / Green Hornets
 	};
 	class rvn_wound_medal
 	{
 		// KIA while operating in Mike Force / Spike team
 
-		required_teams[] = {"MikeForce","SpikeTeam"};
+		required_teams[] = {"AlphaPlatoon","BravoPlatoon"};
 		levels[] =
 		{
 			{1}
@@ -83,7 +83,7 @@ class kills
 	class bronze_star
 	{
 		// 1 kill
-		required_teams[] = {"ACAV","MikeForce","SpikeTeam"};
+		required_teams[] = {"CharliePlatoon","AlphaPlatoon","BravoPlatoon"};
 
 		levels[] =
 		{
@@ -93,7 +93,7 @@ class kills
 	class silver_star
 	{
 		// 1 kill
-		required_teams[] = {"ACAV","MikeForce","SpikeTeam"};
+		required_teams[] = {"CharliePlatoon","AlphaPlatoon","BravoPlatoon"};
 
 		levels[] =
 		{
@@ -102,8 +102,8 @@ class kills
 	};
 	class air_medal
 	{
-		// 300 kills GreenHornets
-		required_teams[] = {"GreenHornets"};
+		// 300 kills DeltaTroop
+		required_teams[] = {"DeltaTroop"};
 
 		levels[] =
 		{
@@ -139,7 +139,7 @@ class atoakills
 	class air_cross_of_gallantry
 	{
 		// 10 air to air kills
-		required_teams[] = {"GreenHornets"};
+		required_teams[] = {"DeltaTroop"};
 
 		levels[] =
 		{
@@ -186,7 +186,7 @@ class teamtaskscomplete
 	class distinguished_flying_cross
 	{
 		// Completion of 5 GH team tasks generates each level of award
-		required_teams[] = {"GreenHornets"};
+		required_teams[] = {"DeltaTroop"};
 
 		levels[] =
 		{
@@ -200,7 +200,7 @@ class teamtaskscomplete
 	class army_commendation_medal
 	{
 		// Completion of 20 (secondary) Team tasks
-		required_teams[] = {"ACAV","SpikeTeam","MikeForce"};
+		required_teams[] = {"CharliePlatoon","BravoPlatoon","AlphaPlatoon"};
 
 		levels[] =
 		{
@@ -210,7 +210,7 @@ class teamtaskscomplete
 	class air_force_good_conduct_medal
 	{
 		// Completion of 20 (secondary) Team tasks
-		required_teams[] = {"GreenHornets"};
+		required_teams[] = {"DeltaTroop"};
 
 		levels[] =
 		{
@@ -220,7 +220,7 @@ class teamtaskscomplete
 	class air_force_cross
 	{
 		// Completion of 10 Team tasks at specified rank
-		required_teams[] = {"GreenHornets"};
+		required_teams[] = {"DeltaTroop"};
 
 		levels[] =
 		{
@@ -232,7 +232,7 @@ class teamtaskscomplete
 	class special_operations_medal
 	{
 		// Completion of 1 Team Task
-		required_teams[] = {"MikeForce","SpikeTeam"};
+		required_teams[] = {"AlphaPlatoon","BravoPlatoon"};
 
 		levels[] =
 		{
@@ -242,7 +242,7 @@ class teamtaskscomplete
 	class army_presidential_unit_citation
 	{
 		// Completion of 30 Spike Team tasks
-		required_teams[] = {"SpikeTeam"};
+		required_teams[] = {"BravoPlatoon"};
 
 		levels[] =
 		{
@@ -253,7 +253,7 @@ class teamtaskscomplete
 	class usaf_outstanding_unit_award
 	{
 		// Completion of 30 GH Team tasks
-		required_teams[] = {"GreenHornets"};
+		required_teams[] = {"DeltaTroop"};
 
 		levels[] =
 		{
@@ -263,7 +263,7 @@ class teamtaskscomplete
 	class meritorious_unit_citation
 	{
 		// Completion of 30 Team tasks
-		required_teams[] = {"MikeForce", "ACAV"};
+		required_teams[] = {"AlphaPlatoon", "CharliePlatoon"};
 
 		levels[] =
 		{
@@ -278,7 +278,7 @@ class supplytaskscomplete
 	class meritorious_service_medal
 	{
 		// 10 air to air kills
-		required_teams[] = {"ACAV","GreenHornets"};
+		required_teams[] = {"CharliePlatoon","DeltaTroop"};
 
 		levels[] =
 		{
@@ -370,7 +370,7 @@ class rank
 	class rvn_training_service_medal
 	{
 		// Achieving LT rank in Mike Force/ Spike Team
-		required_teams[] = {"MikeForce","SpikeTeam"};
+		required_teams[] = {"AlphaPlatoon","BravoPlatoon"};
 
 		required_code = "rank _player isEqualTo 'LIEUTENANT'";
 		levels[] =
@@ -380,8 +380,8 @@ class rank
 	};
 	class rvn_technical_service_medal
 	{
-		// Achieving LT rank in ACAV Team
-		required_teams[] = {"ACAV"};
+		// Achieving LT rank in CharliePlatoon Team
+		required_teams[] = {"CharliePlatoon"};
 
 		required_code = "rank _player isEqualTo 'LIEUTENANT'";
 		levels[] =
