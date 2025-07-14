@@ -42,7 +42,7 @@ class SpikeTeam
     class rolelimits 
     {
         medic = 4;
-        engineer = 3;
+        engineer = 2;
         explosiveSpecialist = 2;
         vn_artillery = 2;
     };
@@ -111,7 +111,7 @@ class GreenHornets
         medic = 1;
         engineer = 1;
         explosiveSpecialist = 1;
-        vn_artillery = 3;
+        vn_artillery = 2;
     };
     
     class defaultTraits

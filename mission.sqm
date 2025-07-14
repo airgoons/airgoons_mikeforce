@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2460;
+		nextID=2462;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16262.427,22.41354,6557.4131};
-		dir[]={0.3536174,-0.4113926,-0.84019399};
-		up[]={0.15961267,0.91141832,-0.37924123};
-		aside[]={-0.92178804,-3.7791324e-07,-0.38795826};
+		pos[]={16283.078,60.434456,6605.8613};
+		dir[]={-0.12435281,-0.42022723,-0.89899194};
+		up[]={-0.057591137,0.90736127,-0.41633561};
+		aside[]={-0.99067366,-5.4217526e-07,0.13703619};
 	};
 };
 binarizationWanted=0;
@@ -59,10 +59,10 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"characters_f_vietnam_c",
 	"sounds_f_vietnam_c",
+	"characters_f_vietnam_04_c",
 	"weapons_f_vietnam_03_c",
 	"characters_f_vietnam_02_c",
 	"characters_f_vietnam_03_c",
-	"characters_f_vietnam_04_c",
 	"weapons_f_vietnam_04_c",
 	"A3_Weapons_F",
 	"A3_Drones_F_Weapons_F_Gamma_Items",
@@ -257,29 +257,29 @@ class AddonsMetaData
 		};
 		class Item25
 		{
+			className="characters_f_vietnam_04_c";
+			name="characters_f_vietnam_04_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
+		class Item26
+		{
 			className="weapons_f_vietnam_03_c";
 			name="weapons_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item27
 		{
 			className="characters_f_vietnam_02_c";
 			name="characters_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="characters_f_vietnam_03_c";
 			name="characters_f_vietnam_03_c";
-			author="Savage Game Design";
-			url="https://www.arma3.com";
-		};
-		class Item28
-		{
-			className="characters_f_vietnam_04_c";
-			name="characters_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
@@ -8107,7 +8107,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=22;
+				items=23;
 				class Item0
 				{
 					dataType="Object";
@@ -8202,44 +8202,13 @@ class Mission
 							{
 								typeName="vn_b_pack_prc77_01";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="vn_m61_grenade_mag";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="vn_m18_yellow_mag";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="vn_m18_purple_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="vn_b_item_firstaidkit";
-										count=2;
-									};
-								};
 							};
 							map="vn_b_item_map";
 							compass="vn_b_item_compass";
 							watch="vn_b_item_watch";
 							radio="vn_b_item_radio_urc10";
 							goggles="vn_b_scarf_01_01";
-							headgear="vn_b_helmet_m1_02_01";
+							headgear="vn_b_helmet_m1_19_02";
 						};
 					};
 					id=2082;
@@ -8527,7 +8496,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16253.184,15.031426,6580.0059};
+						position[]={16253.022,15.031426,6580.6582};
 						angles[]={0,2.0816791,0};
 					};
 					side="West";
@@ -8608,6 +8577,10 @@ class Mission
 									name="vn_m72_mag";
 									ammoLeft=1;
 								};
+							};
+							class handgun
+							{
+								name="vn_m_shovel_01";
 							};
 							class binocular
 							{
@@ -9664,7 +9637,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16255.345,15.031439,6579.562};
+						position[]={16255.502,15.031426,6579.4448};
 						angles[]={0,2.1526542,0};
 					};
 					side="West";
@@ -9804,7 +9777,6 @@ class Mission
 					};
 					id=2376;
 					type="vn_b_men_army_04";
-					atlOffset=1.2397766e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10024,7 +9996,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16253.088,15.031439,6581.3208};
+						position[]={16253.846,15.031426,6581.7163};
 						angles[]={0,2.0816717,0};
 					};
 					side="West";
@@ -10052,6 +10024,10 @@ class Mission
 									name="vn_m72_mag";
 									ammoLeft=1;
 								};
+							};
+							class handgun
+							{
+								name="vn_m_shovel_01";
 							};
 							class binocular
 							{
@@ -10167,7 +10143,6 @@ class Mission
 					};
 					id=2382;
 					type="vn_b_men_army_04";
-					atlOffset=1.2397766e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10193,6 +10168,172 @@ class Mission
 								{
 									singleType="SCALAR";
 									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item22
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16260.328,15.031439,6579.6387};
+						angles[]={0,2.0816717,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Medic";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="vn_m16";
+								flashlight="vn_b_m16";
+								class primaryMuzzleMag
+								{
+									name="vn_m16_20_t_mag";
+									ammoLeft=18;
+								};
+							};
+							class uniform
+							{
+								typeName="vn_b_uniform_macv_03_01";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="vn_m18_red_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m16_20_t_mag";
+										count=3;
+										ammoLeft=18;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_b_item_firstaidkit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="vn_b_vest_usarmy_07";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_m16_40_t_mag";
+										count=3;
+										ammoLeft=36;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="vn_b_pack_m5_01_medic_m16_pl";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="vn_m16_20_t_mag";
+										count=10;
+										ammoLeft=18;
+									};
+									class Item1
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m18_yellow_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="vn_m18_purple_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="vn_b_item_medikit_01";
+										count=1;
+									};
+									class Item1
+									{
+										name="vn_b_item_firstaidkit";
+										count=2;
+									};
+								};
+							};
+							map="vn_b_item_map";
+							compass="vn_b_item_compass";
+							watch="vn_b_item_watch";
+							radio="vn_b_item_radio_urc10";
+							goggles="vn_b_aviator";
+							headgear="vn_b_helmet_m1_18_02";
+						};
+					};
+					id=2461;
+					type="vn_b_men_army_03";
+					atlOffset=1.2397766e-05;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.94999999;
 								};
 							};
 						};
@@ -12649,7 +12790,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="vn_b_pack_trp_04_02";
+								typeName="vn_b_pack_prc77_01";
 								isBackpack=1;
 							};
 							map="vn_b_item_map";
@@ -12657,7 +12798,7 @@ class Mission
 							watch="vn_b_item_watch";
 							radio="vn_b_item_radio_urc10";
 							goggles="vn_b_aviator";
-							headgear="vn_b_helmet_svh4_02_04";
+							headgear="vn_b_helmet_svh4_02_05";
 						};
 					};
 					id=2150;
@@ -14422,7 +14563,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16271.666,16.280605,6555.7822};
+				position[]={16271.666,16.280579,6555.7822};
 				angles[]={0.0045378557,0,0.0049392814};
 			};
 			side="Empty";
@@ -14432,7 +14573,7 @@ class Mission
 			};
 			id=2236;
 			type="Box_FIA_Support_F";
-			atlOffset=0.10202789;
+			atlOffset=0.10200024;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14444,7 +14585,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""vn_m_axe_01"",""vn_m_bayo_m16"",""vn_m16"",""vn_b_melee_m43_etool_01"",""vn_m_machete_02"",""vn_m10"",""vn_mx991_red"",""vn_m_shovel_01"",""vn_mx991""],[]],[[""vn_m60_100_mag"",""vn_m16_20_mag"",""vn_m16_20_t_mag"",""vn_m40a1_mag"",""vn_m40a1_t_mag"",""vn_m1911_mag"",""vn_prop_drink_02"",""vn_b_item_cigs_01"",""vn_m61_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_b_item_lighter_01"",""vn_prop_food_lrrp_01_03"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01"",""vn_b_item_wiretap"",""vn_m19_binocs_grn""],[]],[[],[]]],true]";
+							value="[[[[""vn_m_axe_01"",""vn_m_bayo_m16"",""vn_m16"",""vn_b_melee_m43_etool_01"",""vn_m_machete_02"",""vn_m10"",""vn_mx991_red"",""vn_m_shovel_01"",""vn_mx991""],[]],[[""vn_m60_100_mag"",""vn_m16_20_mag"",""vn_m16_20_t_mag"",""vn_m40a1_mag"",""vn_m40a1_t_mag"",""vn_m1911_mag"",""vn_prop_drink_02"",""vn_b_item_cigs_01"",""vn_m61_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_b_item_lighter_01"",""vn_prop_food_lrrp_01_03"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_m72_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01"",""vn_b_item_wiretap"",""vn_m19_binocs_grn""],[]],[[],[]]],true]";
 						};
 					};
 				};
