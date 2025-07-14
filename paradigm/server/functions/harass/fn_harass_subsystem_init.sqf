@@ -18,12 +18,12 @@
 */
 //Target number of AI per player
 para_s_harassBaseChallengeRating = 1;
-para_s_harassMaxChallengeRating = 3;
+para_s_harassMaxChallengeRating = 2;
 //Delay between each harass attack
-para_s_harassDelay = 600;
-para_s_harassMinDelay = 240;
+para_s_harassDelay = 900;
+para_s_harassMinDelay = 480;
 
-para_s_harassFiredDelay = 60;
+para_s_harassFiredDelay = 120;
 para_s_harassFiredChallengeValue = 0.5;
 para_s_harassFiredFrequencyMultiplier = 0.8;
 para_s_harassFiredChallengeCooldown = 300;
