@@ -22,7 +22,6 @@ class AmmoCrateLight
 		{"ACRE_PRC77",1},
 		{"vn_m1911_mag",20},
 		{"vn_m16_40_mag",15},
-		{"vn_welrod_mag",20},
 		{"vn_m61_grenade_mag",10},
 		{"vn_m67_grenade_mag",10},
 		{"vn_v40_grenade_mag",10},
@@ -37,10 +36,7 @@ class AmmoCrateLight
 		{"vn_hd_mag",20},
 		{"vn_hp_mag",20},
 		{"vn_m10_mag",20},
-		{"vn_m16_20_mag",60},
-		{"vn_m63a_30_mag",30},
-		{"vn_mp40_mag",30},
-		{"vn_m16_20_mag",60},
+		{"vn_m16_20_mag",40},
 		{"vn_carbine_15_mag",30},
 		{"vn_carbine_30_mag",30},
 		{"vn_m4956_10_mag",30},
@@ -103,7 +99,7 @@ class AmmoCrateExplosives
 	objectClassname = "vn_b_ammobox_supply_01";
 	weapons[] = {
 		{"vn_m79",2},
-		{"vn_m72",10},
+		{"vn_m72",7},
 	};
 	magazines[] = {
 		{"vn_m61_grenade_mag",30},
