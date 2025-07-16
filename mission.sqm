@@ -568,7 +568,7 @@ class Mission
 	appId=1227700;
 	class Intel
 	{
-		briefingName="Mike Force v1.00.03 (edited for Air Goons)";
+		briefingName="Mike Force NFA v1.00.03 (edited for Air Goons)";
 		overviewText="Air Goons No-Fun Vietnarma. Visit www.airgoons.com for more info and come join us!";
 		timeOfChanges=1800.0002;
 		startWeather=0.34999999;
