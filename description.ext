@@ -24,8 +24,8 @@ OnLoadIntro = "Welcome to Mike Force! No Fun Allowed.";
 loadScreen = "img\mission.jpg";	//	"\vn\missions_f_vietnam\data\img\AlphaPlatoon\mission.jpg";
 OnLoadIntroTime = 0;
 OnLoadMissionTime = 0;
-briefingName = QUOT(Mike Force NFA (VN_MF_VERSION));
-onLoadName = QUOT(Mike Force NFA (VN_MF_VERSION));
+briefingName = QUOT(Mike Force (VN_MF_VERSION) No Fun Grunts Only);
+onLoadName = QUOT(Mike Force (VN_MF_VERSION) No Fun Grunts Only);
 overviewPicture = "img\mission.jpg";
 
 disabledAI = 1;
