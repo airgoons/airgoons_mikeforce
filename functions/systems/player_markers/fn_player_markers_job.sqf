@@ -1,12 +1,12 @@
 /*
 	File: fn_player_markers_job.sqf
 	Author: Savage Game Design
-	Edited: DirtySanchez
+	Edited: DirtySanchez, zeph1rum
 	
 	Public: No
 	
 	Description:
-	    Called periodically to maintain player markers. 
+	    Called periodically to maintain player markers. Modified by zeph to emphasize group leaders, reducing map clutter
 	
 	Parameter(s): none
 	
@@ -36,12 +36,15 @@ vn_mf_player_markers_manned_vehicles = [];
 	private _unit = _x;
 	private _unitMarker = format ["player_marker_%1", getPlayerUID _unit];
 	private _unitGroup = _unit getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
+	private _unitAlpha = 1; // Default transparency 
 
 	private _markerType = "b_inf";
 	if (_unit getUnitTrait "Medic") then {_markerType = "b_med"};
 	if (_unit getUnitTrait "Engineer") then {_markerType = "b_maint"};
 	if (_unit getUnitTrait "ExplosiveSpecialist") then {_markerType = "b_Ordnance"};
 	if (_unit getUnitTrait "vn_artillery") then {_markerType = "b_support"};
+
+	if (isFormationLeader _unit != true) then {_unitAlpha = 0.25}; //Change the transparency of non-leader units
 
 	//Easiest way to check if it exists
 	if (markerShape _unitMarker == "") then {
@@ -71,7 +74,7 @@ vn_mf_player_markers_manned_vehicles = [];
 		vn_mf_player_markers_manned_vehicles pushBackUnique vehicle _unit;
 		_unitMarker setMarkerAlphaLocal 0;
 	} else {
-		_unitMarker setMarkerAlphaLocal 1;
+		_unitMarker setMarkerAlphaLocal _unitAlpha;
 	};
 } forEach allPlayers;
 
