@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1749;
+		nextID=1829;
 	};
 	class Camera
 	{
-		pos[]={16240.107,36.789787,6562.9355};
-		dir[]={0.66425657,-0.67643964,-0.3181909};
-		up[]={0.61006808,0.73649067,-0.29223409};
-		aside[]={-0.43202272,-3.3923425e-07,-0.90189558};
+		pos[]={16404.496,97.222145,6449.4541};
+		dir[]={-0.44672972,-0.51491475,0.7316407};
+		up[]={-0.26833427,0.85724002,0.43947029};
+		aside[]={0.85348183,1.5343539e-07,0.52112359};
 	};
 };
 binarizationWanted=0;
-sourceName="airgoons_mikeforce";
+sourceName="AirGoon_Vietnarma";
 addons[]=
 {
 	"A3_Ui_F",
@@ -59,6 +59,7 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"characters_f_vietnam_c",
 	"sounds_f_vietnam_c",
+	"jsrs_soundmod_2025_Beta_sog",
 	"cba_jam_vn",
 	"characters_f_vietnam_04_c",
 	"weapons_f_vietnam_03_c",
@@ -82,7 +83,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=42;
+		items=43;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -260,117 +261,124 @@ class AddonsMetaData
 		};
 		class Item25
 		{
+			className="jsrs_soundmod_2025_Beta_sog";
+			name="JSRS Soundmod 2025 Beta - S.O.G. Prairie Fire Compat";
+			author="LordJarhead";
+			url="https://www.arma3.com";
+		};
+		class Item26
+		{
 			className="cba_jam_vn";
 			name="Community Base Addons - Joint Ammo Magazines";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item26
+		class Item27
 		{
 			className="characters_f_vietnam_04_c";
 			name="characters_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="weapons_f_vietnam_03_c";
 			name="weapons_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="characters_f_vietnam_02_c";
 			name="characters_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="characters_f_vietnam_03_c";
 			name="characters_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="weapons_f_vietnam_04_c";
 			name="weapons_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item32
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item33
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item35
 		{
 			className="air_f_vietnam_03_c";
 			name="air_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item36
 		{
 			className="A3_Weapons_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item36
+		class Item37
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item37
+		class Item38
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item39
 		{
 			className="static_f_vietnam_c";
 			name="static_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item39
+		class Item40
 		{
 			className="armor_f_vietnam_c";
 			name="armor_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item41
 		{
 			className="boat_f_vietnam_02_c";
 			name="boat_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item41
+		class Item42
 		{
 			className="boat_f_vietnam_c";
 			name="boat_f_vietnam_c";
@@ -6601,7 +6609,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="[_this#0] execVM ""addHeloGunners.sqf"";";
 						};
 					};
 				};
@@ -6692,7 +6700,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="300";
+							value="120";
 						};
 					};
 				};
@@ -6836,7 +6844,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16400.375,14.98,6532.3379};
+				position[]={16397.859,14.98,6541.5918};
 			};
 			id=1772;
 			type="ModuleRespawnVehicle_F";
@@ -6864,7 +6872,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="[_this#0] execVM ""addHeloGunners.sqf"";";
 						};
 					};
 				};
@@ -6980,7 +6988,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16401.268,14.98,6475};
+				position[]={16403.283,14.98,6491.938};
 			};
 			id=1773;
 			type="ModuleRespawnVehicle_F";
@@ -7008,7 +7016,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="";
+							value="[_this#0] execVM ""addHeloGunners.sqf"";";
 						};
 					};
 				};
@@ -15626,6 +15634,7 @@ class Mission
 					};
 					id=2493;
 					type="vn_b_men_aircrew_47";
+					atlOffset=9.5367432e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15974,6 +15983,7 @@ class Mission
 					};
 					id=2487;
 					type="vn_b_men_aircrew_47";
+					atlOffset=9.5367432e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16322,6 +16332,7 @@ class Mission
 					};
 					id=2490;
 					type="vn_b_men_aircrew_47";
+					atlOffset=9.5367432e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16416,7 +16427,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
+						init="this setVariable [""teamLock"", ""DeltaTroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 						textures="uh1c_20";
 					};
 					id=1886;
@@ -16489,7 +16500,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
+						init="this setVariable [""teamLock"", ""DeltaTroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 					};
 					id=1745;
 					type="vn_b_air_oh6a_05";
@@ -16500,17 +16511,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16445.523,19.080894,6503.1938};
+						position[]={16445.523,19.081377,6503.1938};
 						angles[]={0,4.7155833,0};
 					};
 					side="Empty";
 					class Attributes
 					{
-						init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
+						init="this setVariable [""teamLock"", ""DeltaTroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 					};
 					id=1841;
 					type="vn_b_air_ch47_01_02";
-					atlOffset=0.35065365;
+					atlOffset=0.35113621;
 				};
 				class Item3
 				{
@@ -16524,7 +16535,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
+						init="this setVariable [""teamLock"", ""DeltaTroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 					};
 					id=1747;
 					type="vn_b_air_uh1c_07_02";
@@ -16542,7 +16553,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
+						init="this setVariable [""teamLock"", ""DeltaTroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 					};
 					id=1746;
 					type="vn_b_air_uh1c_07_02";
@@ -16560,7 +16571,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
+						init="this setVariable [""teamLock"", ""DeltaTroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 					};
 					id=1748;
 					type="vn_b_air_uh1c_07_02";
@@ -16568,7 +16579,7 @@ class Mission
 				};
 			};
 			id=2175;
-			atlOffset=0.022044182;
+			atlOffset=0.022073746;
 		};
 		class Item284
 		{
