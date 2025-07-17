@@ -87,10 +87,10 @@ _playersGroup = groupId group _player;
 hint _playersGroup;
 switch (_playersGroup) do
 {
-	case "Alpha Platoon": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team};
-	case "Bravo Aussies": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team};
-	case "Charlie Platoon": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team};
-	default {[_player, "DeltaTroop", nil, false] call vn_mf_fnc_change_team};
+	case "Alpha Platoon": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
+	case "Bravo Aussies": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
+	case "Charlie Platoon": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
+	default {[_player, "DeltaTroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.4"] call TFAR_fnc_setSwFrequency};
 };
 
 // [NOFUN][AJK] This would load the last loadout, but instead we want to always spawn with the equipment preset in the editor
