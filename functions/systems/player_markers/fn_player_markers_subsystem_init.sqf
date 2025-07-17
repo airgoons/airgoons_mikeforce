@@ -25,4 +25,10 @@ vn_mf_player_markers_marker_management_loop = [] spawn {
 		uisleep 2;
 	};
 };
-vn_mf_player_markers_eachFrame_handler = addMissionEventHandler ["EachFrame", vn_mf_fnc_player_markers_update_positions];
+//vn_mf_player_markers_eachFrame_handler = addMissionEventHandler ["EachFrame", vn_mf_fnc_player_markers_update_positions];
+
+//This 
+while {true} do {
+	call vn_mf_fnc_player_markers_update_positions;
+	uisleep 30;
+};
