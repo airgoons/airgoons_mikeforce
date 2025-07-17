@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2463;
+		nextID=2500;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1729;
+		nextID=1749;
 	};
 	class Camera
 	{
-		pos[]={16296.906,38.386982,6540.6245};
-		dir[]={-0.62772584,-0.63689893,0.44757929};
-		up[]={-0.51857984,0.77094591,0.36975598};
-		aside[]={0.5805558,-9.0803951e-08,0.81422555};
+		pos[]={16240.107,36.789787,6562.9355};
+		dir[]={0.66425657,-0.67643964,-0.3181909};
+		up[]={0.61006808,0.73649067,-0.29223409};
+		aside[]={-0.43202272,-3.3923425e-07,-0.90189558};
 	};
 };
 binarizationWanted=0;
@@ -74,13 +74,15 @@ addons[]=
 	"A3_Signs_F_Signs_Ad",
 	"A3_Structures_F_EPA_Civ_Camping",
 	"static_f_vietnam_c",
-	"armor_f_vietnam_c"
+	"armor_f_vietnam_c",
+	"boat_f_vietnam_02_c",
+	"boat_f_vietnam_c"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=40;
+		items=42;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -361,6 +363,20 @@ class AddonsMetaData
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
+		class Item40
+		{
+			className="boat_f_vietnam_02_c";
+			name="boat_f_vietnam_02_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
+		class Item41
+		{
+			className="boat_f_vietnam_c";
+			name="boat_f_vietnam_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
 	};
 };
 class DynamicSimulation
@@ -588,7 +604,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=382;
+		items=396;
 		class Item0
 		{
 			dataType="Marker";
@@ -3325,7 +3341,7 @@ class Mission
 		class Item138
 		{
 			dataType="Marker";
-			position[]={16403.107,14.98,6520.2539};
+			position[]={16462.094,14.98,6521.6543};
 			name="helicopter_spawn";
 			text="@STR_vn_mf_helicopters";
 			type="b_air";
@@ -8193,7 +8209,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16260.624,15.031426,6577.3428};
+						position[]={16260.624,15.031439,6577.3428};
 						angles[]={0,2.0816717,0};
 					};
 					side="West";
@@ -8293,6 +8309,7 @@ class Mission
 					};
 					id=2082;
 					type="vn_b_men_army_01";
+					atlOffset=1.2397766e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11055,6 +11072,7 @@ class Mission
 			{
 			};
 			id=2081;
+			atlOffset=1.2397766e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14512,7 +14530,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -14848,6 +14866,101 @@ class Mission
 						nAttributes=4;
 					};
 				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16264.176,17.524426,6590.5674};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2495;
+					type="vn_b_men_aircrew_47";
+					atlOffset=1.9073486e-06;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16263.722,17.524424,6590.0537};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2496;
+					type="vn_b_men_aircrew_47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -14878,7 +14991,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -15101,6 +15214,101 @@ class Mission
 						nAttributes=2;
 					};
 				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16267.833,17.524426,6588.147};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2498;
+					type="vn_b_men_aircrew_47";
+					atlOffset=1.9073486e-06;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16267.379,17.524424,6587.6333};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2499;
+					type="vn_b_men_aircrew_47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -15131,7 +15339,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -15354,6 +15562,101 @@ class Mission
 						nAttributes=2;
 					};
 				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16262.729,15.031425,6592.0933};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2492;
+					type="vn_b_men_aircrew_47";
+					atlOffset=9.5367432e-07;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16262.275,15.031425,6591.5796};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2493;
+					type="vn_b_men_aircrew_47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -15384,7 +15687,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -15607,6 +15910,101 @@ class Mission
 						nAttributes=2;
 					};
 				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16268.228,15.031425,6587.4663};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2485;
+					type="vn_b_men_aircrew_47";
+					atlOffset=9.5367432e-07;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16267.773,15.031425,6586.9526};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2487;
+					type="vn_b_men_aircrew_47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -15637,7 +16035,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=4;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -15829,6 +16227,101 @@ class Mission
 					id=2173;
 					type="vn_b_men_aircrew_07";
 					atlOffset=9.5367432e-07;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16266.408,15.031425,6589.3188};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2489;
+					type="vn_b_men_aircrew_47";
+					atlOffset=9.5367432e-07;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16265.954,15.031425,6588.8052};
+						angles[]={0,0.55428165,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="3: Crew chief 2";
+					};
+					id=2490;
+					type="vn_b_men_aircrew_47";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16884,7 +17377,7 @@ class Mission
 			text="Short Range Delta Net: Ch4, 60.4";
 			type="mil_box";
 			id=2213;
-			atlOffset=95.491615;
+			atlOffset=95.491623;
 		};
 		class Item305
 		{
@@ -23328,16 +23821,366 @@ class Mission
 			};
 			id=2456;
 		};
+		class Item382
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15905.441,2.7613626,8058.2617};
+				angles[]={0,4.6453748,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2470;
+			type="vn_b_boat_12_02";
+			atlOffset=2.7129641;
+		};
+		class Item383
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15934.148,2.7613626,8080.7168};
+				angles[]={0,4.6183605,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2471;
+			type="vn_b_boat_13_04";
+			atlOffset=3.7323525;
+		};
+		class Item384
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15934.642,1.4422086,8133.126};
+				angles[]={0,4.6723204,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2472;
+			type="vn_b_boat_09_01";
+			atlOffset=4.0955372;
+		};
+		class Item385
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15948.889,3.405767,8111.8154};
+				angles[]={0,6.2605257,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2473;
+			type="vn_b_boat_06_02";
+			atlOffset=3.3386681;
+		};
+		class Item386
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15949.048,3.405767,8143.1611};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2474;
+			type="vn_b_boat_06_01";
+			atlOffset=3.973341;
+		};
+		class Item387
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15950.174,3.405767,8078.832};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2475;
+			type="vn_b_boat_05_01";
+			atlOffset=5.501349;
+		};
+		class Item388
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18211.572,2.7613626,6480.2061};
+				angles[]={0,1.0676609,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2476;
+			type="vn_b_boat_13_02";
+			atlOffset=3.9807689;
+		};
+		class Item389
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18189.654,2.7613626,6470.4014};
+				angles[]={0,1.1264709,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2477;
+			type="vn_b_boat_12_03";
+			atlOffset=4.3265061;
+		};
+		class Item390
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18233.418,2.7613626,6489.0288};
+				angles[]={0,1.044554,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2478;
+			type="vn_b_boat_12_04";
+			atlOffset=9.7898684;
+		};
+		class Item391
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18220.68,3.405767,6461.2632};
+				angles[]={0,1.1851634,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2479;
+			type="vn_b_boat_05_02";
+			atlOffset=6.7350144;
+		};
+		class Item392
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18248.41,3.405767,6473.0659};
+				angles[]={0,1.2036453,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2480;
+			type="vn_b_boat_06_01";
+			atlOffset=11.660604;
+		};
+		class Item393
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18192.133,3.405767,6447.7144};
+				angles[]={0,1.1709201,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2481;
+			type="vn_b_boat_06_02";
+			atlOffset=3.8422499;
+		};
+		class Item394
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15924.242,3.405767,8145.0435};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2482;
+			type="vn_b_boat_06_01";
+			atlOffset=5.6352615;
+		};
+		class Item395
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15953.697,0.00029158592,8046.792};
+			};
+			id=2483;
+			type="ModuleRespawnVehicle_F";
+			atlOffset=2.7490001;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleRespawnVehicle_F_ForcedRespawn";
+					expression="_this setVariable ['ForcedRespawn',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleRespawnVehicle_F_Init";
+					expression="_this setVariable ['Init',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleRespawnVehicle_F_RespawnWhenDisabled";
+					expression="_this setVariable ['RespawnWhenDisabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleRespawnVehicle_F_DesertedDistance";
+					expression="_this setVariable ['DesertedDistance',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleRespawnVehicle_F_PositionType";
+					expression="_this setVariable ['PositionType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="0";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleRespawnVehicle_F_RespawnCount";
+					expression="_this setVariable ['RespawnCount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleRespawnVehicle_F_Position";
+					expression="_this setVariable ['Position',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="0";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleRespawnVehicle_F_Wreck";
+					expression="_this setVariable ['Wreck',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="1";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleRespawnVehicle_F_Delay";
+					expression="_this setVariable ['Delay',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="200";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleRespawnVehicle_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="1";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=83;
+			nextID=90;
 		};
 		class Links
 		{
-			items=83;
+			items=90;
 			class Item0
 			{
 				linkID=0;
@@ -24163,6 +25006,76 @@ class Mission
 				linkID=82;
 				item0=2248;
 				item1=1800;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item83
+			{
+				linkID=83;
+				item0=2483;
+				item1=2475;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item84
+			{
+				linkID=84;
+				item0=2483;
+				item1=2470;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item85
+			{
+				linkID=85;
+				item0=2483;
+				item1=2471;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item86
+			{
+				linkID=86;
+				item0=2483;
+				item1=2482;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item87
+			{
+				linkID=87;
+				item0=2483;
+				item1=2473;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item88
+			{
+				linkID=88;
+				item0=2483;
+				item1=2474;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item89
+			{
+				linkID=89;
+				item0=2483;
+				item1=2472;
 				class CustomData
 				{
 					type="Sync";
