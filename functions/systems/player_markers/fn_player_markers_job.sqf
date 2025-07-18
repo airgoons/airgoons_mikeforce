@@ -44,7 +44,7 @@ vn_mf_player_markers_manned_vehicles = [];
 	if (_unit getUnitTrait "ExplosiveSpecialist") then {_markerType = "b_Ordnance"};
 	if (_unit getUnitTrait "vn_artillery") then {_markerType = "b_support"};
 
-	if (isFormationLeader _unit != true) then {_unitAlpha = 0.25}; //Change the transparency of non-leader units
+	if (isFormationLeader _unit != true) then {_unitAlpha = 0.15}; //Change the transparency of non-leader units
 
 	//Easiest way to check if it exists
 	if (markerShape _unitMarker == "") then {

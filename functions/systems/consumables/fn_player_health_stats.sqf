@@ -27,8 +27,8 @@
 params [
 	["_hunger_loss_factor",1.0],
 	["_thirst_loss_factor",1.0],
-	["_hunger_loss_rate",0.005],
-	["_thirst_loss_rate",0.01],
+	["_hunger_loss_rate",0.008],
+	["_thirst_loss_rate",0.015],
 	["_hunger_min",0],
 	["_thirst_min",0],
 	["_hunger_max",1],
