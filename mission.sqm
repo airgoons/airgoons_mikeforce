@@ -6,9 +6,13 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=513;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
-		nextID=2500;
+		nextID=2506;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1849;
+		nextID=1869;
 	};
 	class Camera
 	{
-		pos[]={16301.59,51.843342,6563.6943};
-		dir[]={-0.33504158,-0.91454071,0.22664918};
-		up[]={-0.7574957,0.40449014,0.51243073};
-		aside[]={0.56031567,-9.7352313e-08,0.8282817};
+		pos[]={16402.67,94.294243,6371.0581};
+		dir[]={0.25010678,-0.54607844,0.79954869};
+		up[]={0.16303676,0.83771133,0.52120334};
+		aside[]={0.95441091,6.4587221e-07,-0.29854792};
 	};
 };
 binarizationWanted=0;
@@ -59,7 +63,6 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"characters_f_vietnam_c",
 	"sounds_f_vietnam_c",
-	"jsrs_soundmod_2025_Beta_sog",
 	"cba_jam_vn",
 	"characters_f_vietnam_04_c",
 	"weapons_f_vietnam_03_c",
@@ -83,7 +86,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=43;
+		items=42;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -261,124 +264,117 @@ class AddonsMetaData
 		};
 		class Item25
 		{
-			className="jsrs_soundmod_2025_Beta_sog";
-			name="JSRS Soundmod 2025 Beta - S.O.G. Prairie Fire Compat";
-			author="LordJarhead";
-			url="https://www.arma3.com";
-		};
-		class Item26
-		{
 			className="cba_jam_vn";
 			name="Community Base Addons - Joint Ammo Magazines";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item27
+		class Item26
 		{
 			className="characters_f_vietnam_04_c";
 			name="characters_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item27
 		{
 			className="weapons_f_vietnam_03_c";
 			name="weapons_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="characters_f_vietnam_02_c";
 			name="characters_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="characters_f_vietnam_03_c";
 			name="characters_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item30
 		{
 			className="weapons_f_vietnam_04_c";
 			name="weapons_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item31
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item32
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item34
 		{
 			className="air_f_vietnam_03_c";
 			name="air_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item36
+		class Item35
 		{
 			className="A3_Weapons_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item37
+		class Item36
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item37
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item39
+		class Item38
 		{
 			className="static_f_vietnam_c";
 			name="static_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item39
 		{
 			className="armor_f_vietnam_c";
 			name="armor_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item41
+		class Item40
 		{
 			className="boat_f_vietnam_02_c";
 			name="boat_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item42
+		class Item41
 		{
 			className="boat_f_vietnam_c";
 			name="boat_f_vietnam_c";
@@ -612,7 +608,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=396;
+		items=401;
 		class Item0
 		{
 			dataType="Marker";
@@ -6580,7 +6576,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16449.125,15.013,6544.189};
+				position[]={16446.596,15.013,6523.1558};
 			};
 			id=1749;
 			type="ModuleRespawnVehicle_F";
@@ -15936,7 +15932,7 @@ class Mission
 			name="Helicopters";
 			class Entities
 			{
-				items=6;
+				items=7;
 				class Item0
 				{
 					dataType="Object";
@@ -16099,9 +16095,26 @@ class Mission
 					type="vn_b_air_uh1c_07_02";
 					atlOffset=0.0001373291;
 				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16445.512,18.405247,6543.062};
+						angles[]={0,4.7155833,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						init="this setVariable [""teamLock"", ""DeltaTroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
+					};
+					id=2505;
+					type="vn_b_air_ch47_01_02";
+					atlOffset=0.35113621;
+				};
 			};
 			id=2175;
-			atlOffset=0.022073746;
+			atlOffset=0.21946907;
 		};
 		class Item284
 		{
@@ -23704,16 +23717,190 @@ class Mission
 				nAttributes=10;
 			};
 		};
+		class Item396
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16439.979,15.019987,6543.3423};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=2500;
+			type="Land_vn_b_helipad_01";
+			atlOffset=0.039987564;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item397
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16435.865,15.170655,6539.3979};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=2501;
+			type="PortableHelipadLight_01_green_F";
+			atlOffset=0.0092830658;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item398
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16435.783,15.162049,6546.9004};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=2502;
+			type="PortableHelipadLight_01_green_F";
+			atlOffset=1.2397766e-05;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item399
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16451.92,15.134056,6547.147};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=2503;
+			type="PortableHelipadLight_01_green_F";
+			atlOffset=0.043375969;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item400
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16451.473,15.111839,6539.8047};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=2504;
+			type="PortableHelipadLight_01_green_F";
+			atlOffset=0.021159172;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=90;
+			nextID=91;
 		};
 		class Links
 		{
-			items=90;
+			items=91;
 			class Item0
 			{
 				linkID=0;
@@ -24609,6 +24796,16 @@ class Mission
 				linkID=89;
 				item0=2483;
 				item1=2472;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item90
+			{
+				linkID=90;
+				item0=2505;
+				item1=1749;
 				class CustomData
 				{
 					type="Sync";
