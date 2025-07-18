@@ -8,6 +8,9 @@
 
 params["_helo"];
 
+// Was having issues with the script executing lots of times. This should maybe help?
+if (!isServer) exitWith {};
+
 // Make some group to stuff these fellas in
 // [TODO] Should check to see if anyone is alive in these slots and if so, add them to that group
 // I am not implementing that yet because I just want it working
@@ -28,9 +31,10 @@ switch (typeOf _helo) do
     {
         for [{_i = 1}, {_i < 2}, {_i = _i + 1}] do
         {
-            if (isNull (_this turretUnit [_i])) then
+            if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -40,9 +44,10 @@ switch (typeOf _helo) do
     {
         for [{_i = 1}, {_i < 3}, {_i = _i + 1}] do
         {
-            if (isNull (_this turretUnit [_i])) then
+            if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;  
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -52,9 +57,10 @@ switch (typeOf _helo) do
     {
         for [{_i = 1}, {_i < 3}, {_i = _i + 1}] do
         {
-            if (isNull (_this turretUnit [_i])) then
+            if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -64,11 +70,15 @@ switch (typeOf _helo) do
     {
         for [{_i = 3}, {_i < 6}, {_i = _i + 1}] do
         {
-            if (isNull (_this turretUnit [_i])) then
+            if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;
                 _u moveInTurret [_helo, [_i]];
             };
         };
     };
 };
+
+// Try to make our boys more aggressive
+_g setBehaviour "COMBAT";
