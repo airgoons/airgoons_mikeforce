@@ -84,7 +84,7 @@ if (_airSupport != 0 || _artySupport != 0) then {
 
 //TODO: Parameterise these
 vn_mf_campAttackFrequency = 600;
-vn_mf_counterAttackTime = 3600;
+vn_mf_counterAttackTime = 2000;
 vn_mf_counterAttackShortenedTime = 600;
 vn_mf_counterattackBaseInfantryMultiplier = 3;
 vn_mf_counterattackCampInfantryMultiplier = 6;
@@ -94,7 +94,7 @@ para_s_bf_respawn_supply_cost = 50;
 // Set desired number of simultaneously active zones.
 vn_mf_targetNumberOfActiveZones = 1;
 // Set number of enemies per player. Scale the default value by the percentage set in the config options.
-para_g_enemiesPerPlayer = ((["ai_scaling", 50] call BIS_fnc_getParamValue) / 100) * 2;
+para_g_enemiesPerPlayer = ((["ai_scaling", 100] call BIS_fnc_getParamValue) / 100) * 2;
 //Global variable, so it needs syncing across the network.
 publicVariable "para_g_enemiesPerPlayer";
 
