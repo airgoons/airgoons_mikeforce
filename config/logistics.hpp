@@ -54,12 +54,12 @@ class vn_logistics
 
 	//APC
 	class vn_b_armor_m113_01 : vn_defaults_medium {};
-	class vn_b_armor_m113_acav_01 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_02 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_03 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_04 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_05 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_06 : vn_defaults_small {};
+	class vn_b_armor_m113_acav_01 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_02 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_03 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_04 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_05 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_06 : vn_defaults_medium {};
 
 	//Transport trucks
 	class vn_b_wheeled_m54_01 : vn_defaults_extra_large {};
@@ -76,9 +76,9 @@ class vn_logistics
 	//Ammo truck
 	class vn_b_wheeled_m54_ammo : vn_defaults_medium {};
 	//Gun trucks
-	class vn_b_wheeled_m54_mg_01 : vn_defaults_small {};
-	class vn_b_wheeled_m54_mg_02 : vn_defaults_small {};
-	class vn_b_wheeled_m54_mg_03 : vn_defaults_small {};
+	class vn_b_wheeled_m54_mg_01 : vn_defaults_medium {};
+	class vn_b_wheeled_m54_mg_02 : vn_defaults_medium {};
+	class vn_b_wheeled_m54_mg_03 : vn_defaults_medium {};
 
 	//Armor
 	class vn_b_armor_m41_01_01 : vn_defaults_tiny {};

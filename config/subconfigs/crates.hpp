@@ -22,6 +22,7 @@ class AmmoCrateLight
 		{"ACRE_PRC77",1},
 		{"vn_m1911_mag",20},
 		{"vn_m16_40_mag",15},
+		{"vn_m60_100_mag",5},
 		{"vn_m61_grenade_mag",10},
 		{"vn_m67_grenade_mag",10},
 		{"vn_v40_grenade_mag",10},
@@ -46,7 +47,6 @@ class AmmoCrateLight
 		{"vn_l1a1_20_mag", 30},
 		{"vn_f1_smg_mag", 30},
 		{"vn_m1918_mag", 30},
-		{"vn_m1_garand_mag", 30},
 		{"vn_mpu_mag", 30},
 		{"vn_m1928_mag", 30}
 	};
@@ -102,11 +102,12 @@ class AmmoCrateExplosives
 		{"vn_m72",7},
 	};
 	magazines[] = {
+		{"vn_m72_mag",4},
 		{"vn_m61_grenade_mag",30},
 		{"vn_m67_grenade_mag",30},
 		{"vn_v40_grenade_mag",30},
 		{"vn_40mm_m651_cs_mag",20},
-		{"vn_40mm_m381_he_mag",20},
+		{"vn_40mm_m381_he_mag",30},
 		{"vn_40mm_m397_ab_mag",20},
 		{"vn_40mm_m406_he_mag",20},
 		{"vn_40mm_m433_hedp_mag",20},

@@ -24,7 +24,7 @@ if (_wipeSave) then {
     ["CLEAR"] call para_s_fnc_profile_db;
 };
 
-vn_mf_enableRanks = (["enable_ranks", 0] call BIS_fnc_getParamValue) > 0;
+vn_mf_enableRanks = (["enable_ranks", 1] call BIS_fnc_getParamValue) > 0;
 publicVariable "vn_mf_enableRanks";
 
 // Create traits hashmap for reference by traits system
@@ -59,7 +59,7 @@ publicVariable "vn_revive_withstand_amount";
 vn_mf_max_players_CharliePlatoon = ["max_players_CharliePlatoon", 99] call BIS_fnc_getParamValue;
 vn_mf_max_players_DeltaTroop = ["max_players_DeltaTroop", 15] call BIS_fnc_getParamValue;;
 vn_mf_max_players_AlphaPlatoon = ["max_players_AlphaPlatoon", 99] call BIS_fnc_getParamValue;;
-vn_mf_max_players_BravoPlatoon = ["max_players_BravoPlatoon", 0] call BIS_fnc_getParamValue;;
+vn_mf_max_players_BravoPlatoon = ["max_players_BravoPlatoon", 99] call BIS_fnc_getParamValue;;
 publicVariable "vn_mf_max_players_CharliePlatoon";
 publicVariable "vn_mf_max_players_DeltaTroop";
 publicVariable "vn_mf_max_players_AlphaPlatoon";
@@ -94,7 +94,7 @@ para_s_bf_respawn_supply_cost = 50;
 // Set desired number of simultaneously active zones.
 vn_mf_targetNumberOfActiveZones = 1;
 // Set number of enemies per player. Scale the default value by the percentage set in the config options.
-para_g_enemiesPerPlayer = ((["ai_scaling", 100] call BIS_fnc_getParamValue) / 100) * 2;
+para_g_enemiesPerPlayer = ((["ai_scaling", 60] call BIS_fnc_getParamValue) / 100) * 2;
 //Global variable, so it needs syncing across the network.
 publicVariable "para_g_enemiesPerPlayer";
 
