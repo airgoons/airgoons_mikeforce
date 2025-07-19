@@ -24,7 +24,7 @@ if (_wipeSave) then {
     ["CLEAR"] call para_s_fnc_profile_db;
 };
 
-vn_mf_enableRanks = (["enable_ranks", 1] call BIS_fnc_getParamValue) > 0;
+vn_mf_enableRanks = (["enable_ranks", 0] call BIS_fnc_getParamValue) > 0;
 publicVariable "vn_mf_enableRanks";
 
 // Create traits hashmap for reference by traits system

@@ -100,7 +100,8 @@ switch (_playersGroup) do
 // 	_player setUnitLoadout [_loadout, false];
 // };
 
-// [NOFUN][AJK] Just set everyone's rank to Private to avoid doing any rank stuff. I had previously
+//THIS BELOW IS NOT CURRENTLY IN USE BUT IS PRESERVED IF NEEDED 
+//[NOFUN][AJK] Just set everyone's rank to Private to avoid doing any rank stuff. I had previously
 // just removed all this but the whole module seems dependent on the existence of the 
 // stupid arsenal module so it is easier to restrict items by making the ranks low.
 // If I can figure out how to decouple the arsenal module we could undo this, but also I don't think we need it so it is probably fine?
@@ -112,8 +113,6 @@ switch (_playersGroup) do
 // {
 // 	_player setUnitRank _rank;
 // };
-
-_player setUnitRank "PRIVATE";
 
 // start player at correct camp for team
 //For now, we're just hardcoding this.
