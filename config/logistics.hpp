@@ -157,13 +157,13 @@ class vn_logistics
 	class vn_b_air_uh1d_01_07 : vn_defaults_small {};
 
 	//UH1D - Slick
-	class vn_b_air_uh1d_02_01 : vn_defaults_small {};
-	class vn_b_air_uh1d_02_02 : vn_defaults_small {};
-	class vn_b_air_uh1d_02_03 : vn_defaults_small {};
-	class vn_b_air_uh1d_02_04 : vn_defaults_small {};
-	class vn_b_air_uh1d_02_05 : vn_defaults_small {};
-	class vn_b_air_uh1d_02_06 : vn_defaults_small {};
-	class vn_b_air_uh1d_02_07 : vn_defaults_small {};
+	class vn_b_air_uh1d_02_01 : vn_defaults_medium {};
+	class vn_b_air_uh1d_02_02 : vn_defaults_medium {};
+	class vn_b_air_uh1d_02_03 : vn_defaults_medium {};
+	class vn_b_air_uh1d_02_04 : vn_defaults_medium {};
+	class vn_b_air_uh1d_02_05 : vn_defaults_medium {};
+	class vn_b_air_uh1d_02_06 : vn_defaults_medium {};
+	class vn_b_air_uh1d_02_07 : vn_defaults_medium {};
 
 	//UH1C - Hog
 	class vn_b_air_uh1c_01_01 : vn_defaults_tiny {};
@@ -221,7 +221,7 @@ class vn_logistics
 	class vn_b_air_uh1b_01_01 : vn_defaults_small {};
 
 	//UH1E - Slick
-	class vn_b_air_uh1e_03_04 : vn_defaults_small {};
+	class vn_b_air_uh1e_03_04 : vn_defaults_medium {};
 
 	//UH1E - Gunship
 	class vn_b_air_uh1e_01_04 : vn_defaults_tiny {};
@@ -253,7 +253,7 @@ class vn_logistics
 	class vn_b_air_uh1e_02_04 : vn_defaults_tiny {};
 
 	//UH1F - Slick
-	class vn_b_air_uh1f_01_03 : vn_defaults_small {};
+	class vn_b_air_uh1f_01_03 : vn_defaults_medium {};
 
 	//Jets
 	// 	Jets don't get any storage.
@@ -314,8 +314,8 @@ class vn_logistics
 	class vn_b_wheeled_m274_mg_03_02: vn_defaults_tiny {};
 
 	// M113A1
-	class vn_b_armor_m125_01: vn_defaults_small {};
-	class vn_b_armor_m132_01: vn_defaults_small {};
+	class vn_b_armor_m125_01: vn_defaults_medium {};
+	class vn_b_armor_m132_01: vn_defaults_medium {};
 	class vn_b_armor_m577_01: vn_defaults_medium {};
 	class vn_b_armor_m577_02: vn_defaults_medium {};
 
