@@ -52,6 +52,19 @@ switch (typeOf _helo) do
             };
         };
     };
+        //Gunship Huey with miniguns, rockets, and doorguns
+        case "vn_b_air_uh1c_02_01":
+    {
+        for [{_i = 1}, {_i < 3}, {_i = _i + 1}] do
+        {
+            if (isNull (_helo turretUnit [_i])) then
+            {
+                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;  
+                _u moveInTurret [_helo, [_i]];
+            };
+        };
+    };
     // Huey Slick has two turrets, slots 1, 2
     case "vn_b_air_uh1c_07_02":
     {
