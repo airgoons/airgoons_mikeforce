@@ -94,7 +94,7 @@ para_s_bf_respawn_supply_cost = 50;
 // Set desired number of simultaneously active zones.
 vn_mf_targetNumberOfActiveZones = 1;
 // Set number of enemies per player. Scale the default value by the percentage set in the config options.
-para_g_enemiesPerPlayer = ((["ai_scaling", 100] call BIS_fnc_getParamValue) / 100) * 2;
+para_g_enemiesPerPlayer = ((["ai_scaling", 50] call BIS_fnc_getParamValue) / 100) * 2;
 //Global variable, so it needs syncing across the network.
 publicVariable "para_g_enemiesPerPlayer";
 
@@ -140,13 +140,13 @@ enableenvironment [[false,true] select _ambientlife,[false,true] select _ambient
 [] call vn_mf_fnc_respawn_points_init;
 
 // start scheduler
-diag_log "VN AlphaPlatoon: Starting scheduler";
+diag_log "VN MikeForce: Starting scheduler";
 [] call para_g_fnc_scheduler_subsystem_init;
 
 // start the event dispatcher, so anything relying on events can fire.
 call para_g_fnc_event_subsystem_init;
 
-diag_log "VN AlphaPlatoon: Initialising Cleanup Routine";
+diag_log "VN MikeForce: Initialising Cleanup Routine";
 // start cleanup subsystem
 [
     createHashmapFromArray [
@@ -160,7 +160,7 @@ diag_log "VN AlphaPlatoon: Initialising Cleanup Routine";
 ] call para_s_fnc_cleanup_subsystem_init;
 
 // creates and initialize groups and duty officers
-diag_log "VN AlphaPlatoon: Initialising groups and duty officers";
+diag_log "VN MikeForce: Initialising groups and duty officers";
 call vn_mf_fnc_group_init;
 
 {
@@ -172,27 +172,27 @@ call vn_mf_fnc_group_init;
 } forEach (vn_mf_secondaryTaskConfigs);
 
 // start generic scheduler functions
-diag_log "VN AlphaPlatoon: Starting game time monitor";
+diag_log "VN MikeForce: Starting game time monitor";
 // broadcast total time elapsed - initial
 missionNamespace setVariable ["para_g_totalgametime",["GET", "game_time", 0] call para_s_fnc_profile_db select 1,true];
-diag_log format ["VN AlphaPlatoon: Total Game Time - %1", para_g_totalgametime];
+diag_log format ["VN MikeForce: Total Game Time - %1", para_g_totalgametime];
 ["save_time_elapsed", {call vn_mf_fnc_save_time_elapsed}, [], 5] call para_g_fnc_scheduler_add_job;
 
 // spawn buildables and init vars
-diag_log "VN AlphaPlatoon: Initialising building system";
+diag_log "VN MikeForce: Initialising building system";
 call para_s_fnc_building_system_init;
 
-diag_log "VN AlphaPlatoon: Creating supply officers";
+diag_log "VN MikeForce: Creating supply officers";
 // spawn supply officers
 {
     [_x] call vn_mf_fnc_create_supply_officer;
 } forEach vn_mf_markers_supply_officer_initial;
 
-diag_log "VN AlphaPlatoon: Starting building state tracker";
+diag_log "VN MikeForce: Starting building state tracker";
 // building state tracking
 ["building_state_tracker", {call para_s_fnc_building_state_tracker}, [], 60] call para_g_fnc_scheduler_add_job;
 
-diag_log "VN AlphaPlatoon: Starting player list tracker";
+diag_log "VN MikeForce: Starting player list tracker";
 // do slow allplayers list updates
 ["loadbal_fps_aggregator", {call para_s_fnc_loadbal_fps_aggregator}, [], 15] call para_g_fnc_scheduler_add_job;
 
@@ -255,36 +255,36 @@ friendlyATMines = [
     "vn_mine_m15"
 ];
 
-diag_log "VN AlphaPlatoon: Initialising stats";
+diag_log "VN MikeForce: Initialising stats";
 [] call vn_mf_fnc_stats_init;
 
 //Set date here - it's as good a place as any. Day is just before a full moon, for good night ops.
 [vn_mf_dawnLength, vn_mf_dayLength, vn_mf_duskLength, vn_mf_nightLength] call para_s_fnc_day_night_subsystem_init;
 
-diag_log "VN AlphaPlatoon: Initialising Loadbalancer";
+diag_log "VN MikeForce: Initialising Loadbalancer";
 //Initialise the AI loadbalancer.
 [] call para_s_fnc_loadbal_subsystem_init;
 
 
-diag_log "VN AlphaPlatoon: Initialising AI Objectives";
+diag_log "VN MikeForce: Initialising AI Objectives";
 // start ai subsystem. Depends on the load balancer subsystem.
 [
-    ["hardAiLimit", ["hard_ai_limit", 80] call BIS_fnc_getParamValue]
+    ["hardAiLimit", ["hard_ai_limit", 50] call BIS_fnc_getParamValue]
 ] call para_s_fnc_ai_obj_subsystem_init;
 
-diag_log "VN AlphaPlatoon: Initialising Harass";
+diag_log "VN MikeForce: Initialising Harass";
 // Start harassment subsystem. Depends on the AI subsystem.
 [] call para_s_fnc_harass_subsystem_init;
 
-diag_log "VN AlphaPlatoon: Initialising Vehicle Manager";
+diag_log "VN MikeForce: Initialising Vehicle Manager";
 // start vehicle asset management subsystem
 [] call vn_mf_fnc_veh_asset_subsystem_init;
 
-diag_log "VN AlphaPlatoon: Initialising Vehicle Creation Detection";
+diag_log "VN MikeForce: Initialising Vehicle Creation Detection";
 // start vehicle creation detection subsystem
 [] call vn_mf_fnc_veh_create_detection_subsystem_init;
 
-diag_log "VN AlphaPlatoon: Initialising AI Behaviour";
+diag_log "VN MikeForce: Initialising AI Behaviour";
 // start the behaviour subsystem
 [] call para_g_fnc_ai_behaviour_subsystem_init;
 
@@ -298,24 +298,24 @@ diag_log "VN AlphaPlatoon: Initialising AI Behaviour";
     []
 ]] call para_g_fnc_event_add_handler;
 
-diag_log "VN AlphaPlatoon: Initialising Zones";
+diag_log "VN MikeForce: Initialising Zones";
 // Initialise the zones
 [] call vn_mf_fnc_zones_init;
 
-diag_log "VN AlphaPlatoon: Initialising Sites";
+diag_log "VN MikeForce: Initialising Sites";
 // Initialise sites - must be done after zones.
 [] call vn_mf_fnc_sites_init;
 
-diag_log "VN AlphaPlatoon: Initialising Gameplay Director";
+diag_log "VN MikeForce: Initialising Gameplay Director";
 // Initialise the gameplay director
 [] call vn_mf_fnc_director_init;
 
-diag_log "VN AlphaPlatoon: Initialising Respawn Scheduler";
+diag_log "VN MikeForce: Initialising Respawn Scheduler";
 // Initialise respawn job
 ["veh_asset_respawner_job", {call vn_mf_fnc_veh_asset_respawn_job}, [], 1] call para_g_fnc_scheduler_add_job;
 
-diag_log "VN AlphaPlatoon: Initialising Performance Logging";
+diag_log "VN MikeForce: Initialising Performance Logging";
 [] call vn_mf_fnc_init_performance_logging;
 
-diag_log "VN AlphaPlatoon: Initialising Dynamic Groups";
+diag_log "VN MikeForce: Initialising Dynamic Groups";
 ["Initialize"] call para_c_fnc_dynamicGroups;

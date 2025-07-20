@@ -42,7 +42,7 @@ class secondary_build : task
 	taskdesc = "Build a %1 in the zone.";
 	taskformatdata = "[(getText (missionConfigFile >> 'gamemode' >> 'buildables' >> (_this getVariable 'buildable') >> 'name')) call para_c_fnc_localize]";
 	tasktype = "repair";
-	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\p\vn_ui_mf_task_p1.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\MikeForce\p\vn_ui_mf_task_p1.jpg";
 	taskgroups[] = {"CharliePlatoon"};
 	rankpoints = 10;
 	taskprogress = 10;
