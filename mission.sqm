@@ -6,6 +6,10 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=513;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
 		nextID=2831;
@@ -16,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2109;
+		nextID=2129;
 	};
 	class Camera
 	{
-		pos[]={16272.3,45.636673,6548.2109};
-		dir[]={-0.624614,-0.65583104,0.42419165};
-		up[]={-0.54255742,0.75487691,0.36846614};
-		aside[]={0.56187135,-9.4113057e-07,0.82734537};
+		pos[]={15730.846,68.676353,7074.6187};
+		dir[]={-0.041367374,-0.53244686,0.84545201};
+		up[]={-0.026021123,0.84646344,0.5318107};
+		aside[]={0.99880517,-1.8626451e-09,0.048870835};
 	};
 };
 binarizationWanted=0;
-sourceName="airgoons_mikeforce";
+sourceName="AirGoon_Vietnarma";
 addons[]=
 {
 	"A3_Ui_F",
@@ -2333,7 +2337,7 @@ class Mission
 					name="supply_officer_initial_3";
 					text="Supply Officer 3";
 					type="Empty";
-					angle=94.263878;
+					angle=94.263863;
 					id=676;
 				};
 				class Item7
@@ -29951,10 +29955,41 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
 				pylons="vn_gunpod_gau4_v_1500_hei_mag[0];vn_gunpod_gau4_v_1500_hei_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];";
 			};
 			id=2829;
 			type="vnx_b_air_ac119_01_01";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_disableNVGEquipment";
+					expression="if (isServer) then {_this disableNVGEquipment _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ENH_disableTIEquipment";
+					expression="if (isServer) then {_this disableTIEquipment _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item462
 		{

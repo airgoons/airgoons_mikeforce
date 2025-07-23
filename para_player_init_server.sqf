@@ -84,7 +84,6 @@ if (_enlisted isEqualTo "0") then {
 
 // Assigns players to the appropriate team based on their group.
 _playersGroup = groupId group _player;
-hint _playersGroup;
 switch (_playersGroup) do
 {
 	case "Alpha Platoon": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
