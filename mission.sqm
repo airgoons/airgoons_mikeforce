@@ -20,11 +20,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2129;
+		nextID=2149;
 	};
 	class Camera
 	{
-		pos[]={15730.846,68.676353,7074.6187};
+		pos[]={15724.804,94.357452,7048.7778};
 		dir[]={-0.041367374,-0.53244686,0.84545201};
 		up[]={-0.026021123,0.84646344,0.5318107};
 		aside[]={0.99880517,-1.8626451e-09,0.048870835};
@@ -29956,7 +29956,7 @@ class Mission
 			class Attributes
 			{
 				init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
-				pylons="vn_gunpod_gau4_v_1500_hei_mag[0];vn_gunpod_gau4_v_1500_hei_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];";
+				pylons="vn_gunpod_gau4_v_1500_hei_mag[1];vn_gunpod_gau4_v_1500_hei_mag[1];vn_gunpod_gau2_v_3500_mag[1];vn_gunpod_gau2_v_3500_mag[1];vn_gunpod_gau2_v_3500_mag[1];vn_gunpod_gau2_v_3500_mag[1];";
 			};
 			id=2829;
 			type="vnx_b_air_ac119_01_01";
@@ -29971,7 +29971,7 @@ class Mission
 						class data
 						{
 							singleType="BOOL";
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -29984,7 +29984,7 @@ class Mission
 						class data
 						{
 							singleType="BOOL";
-							value=1;
+							value=0;
 						};
 					};
 				};
