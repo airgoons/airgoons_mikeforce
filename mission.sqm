@@ -6,13 +6,9 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=513;
-	mods[]=
-	{
-		"3denEnhanced"
-	};
 	class ItemIDProvider
 	{
-		nextID=2834;
+		nextID=2837;
 	};
 	class MarkerIDProvider
 	{
@@ -24,22 +20,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16150.444,45.495277,6981.8281};
-		dir[]={0.10851722,-0.50568938,0.85599768};
-		up[]={0.063607775,0.86266178,0.50173104};
-		aside[]={0.9921689,-6.9817179e-07,-0.12577625};
-		nextID=2149;
-	};
-	class Camera
-	{
-		pos[]={15724.804,94.357452,7048.7778};
-		dir[]={-0.041367374,-0.53244686,0.84545201};
-		up[]={-0.026021123,0.84646344,0.5318107};
-		aside[]={0.99880517,-1.8626451e-09,0.048870835};
+		pos[]={16152.98,54.800472,6972.8433};
+		dir[]={0.4656156,-0.45241368,0.76075941};
+		up[]={0.23621033,0.8917526,0.38593552};
+		aside[]={0.85302401,-6.4074993e-07,-0.52208078};
 	};
 };
 binarizationWanted=0;
-sourceName="AirGoon_Vietnarma";
+sourceName="airgoons_mikeforce";
 addons[]=
 {
 	"A3_Ui_F",
@@ -633,7 +621,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=465;
+		items=466;
 		class Item0
 		{
 			dataType="Marker";
@@ -2346,7 +2334,6 @@ class Mission
 					text="Supply Officer 3";
 					type="Empty";
 					angle=94.26387;
-					angle=94.263863;
 					id=676;
 				};
 				class Item7
@@ -8056,8 +8043,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15983.061,17.869041,7056.0044};
-				angles[]={-0,3.1675982,0};
+				position[]={16075.054,17.869041,7052.6436};
+				angles[]={0,3.1675982,0};
 			};
 			side="Empty";
 			flags=4;
@@ -8067,14 +8054,15 @@ class Mission
 			};
 			id=1897;
 			type="vn_b_air_f4c_hbmb";
+			atlOffset=9.5367432e-07;
 		};
 		class Item260
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15990.477,16.886734,7048.3481};
-				angles[]={-0,1.5571305,0};
+				position[]={16082.47,16.886734,7044.9873};
+				angles[]={0,1.5571305,0};
 			};
 			side="Empty";
 			flags=4;
@@ -29939,55 +29927,24 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15731.307,19.315258,7121.5664};
-				angles[]={-0,3.1653051,0};
+				position[]={15728.37,19.315258,7126.5317};
+				angles[]={0,3.1465669,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this setVariable [""teamLock"", ""DeltaTroop"", true];";
-				pylons="vn_gunpod_gau4_v_1500_hei_mag[1];vn_gunpod_gau4_v_1500_hei_mag[1];vn_gunpod_gau2_v_3500_mag[1];vn_gunpod_gau2_v_3500_mag[1];vn_gunpod_gau2_v_3500_mag[1];vn_gunpod_gau2_v_3500_mag[1];";
+				pylons="vn_gunpod_gau4_v_1500_hei_mag[0];vn_gunpod_gau4_v_1500_hei_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];vn_gunpod_gau2_v_3500_mag[0];";
 			};
 			id=2829;
 			type="vnx_b_air_ac119_01_01";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ENH_disableNVGEquipment";
-					expression="if (isServer) then {_this disableNVGEquipment _value}";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ENH_disableTIEquipment";
-					expression="if (isServer) then {_this disableTIEquipment _value}";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 		class Item461
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15761.375,14.98,7099.3701};
+				position[]={15755.702,14.98,7099.5762};
 			};
 			id=2830;
 			type="ModuleRespawnVehicle_F";
@@ -30131,33 +30088,33 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16170.938,19.315258,7046.5181};
-				angles[]={0,3.14819,0};
+				position[]={15983.823,17.880871,7055.4121};
+				angles[]={0,3.1257799,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addAction [""<t color='#ff0000' shadowColor='#000000' shadowOffset='0.15'>PARADROP</t>"","" " \n "    _target = _this select 0; " \n "    _caller = _this select 1; " \n " " \n "    _pos = getPos _target; " \n "    _speed = 2 * -(speed _target); " \n "    _vel = velocity _target; " \n "    _dir = direction _target; " \n " " \n "    _caller action ['Eject', vehicle _caller]; " \n " " \n "    waitUntil {vehicle _caller == _caller}; " \n " " \n "    sleep 1; " \n " " \n "    _chute = CreateVehicle ['Steerable_Parachute_F', (getPos _caller), [], (_dir -180), 'CAN_COLLIDE']; " \n " " \n "    _caller assignAsDriver _chute; " \n "    _caller moveInDriver _chute; " \n " " \n "    _chute setVelocity [ " \n "        (_vel select 0) + (sin _dir * _speed), " \n "        (_vel select 1) + (cos _dir * _speed), " \n "        (_vel select 2) " \n "    ]; " \n " " \n """,nil,10,true,true,"""",""(((_target getCargoIndex _this == 0) || (_target getCargoIndex _this == 1)) && ((getPosASL _target) select 2 > 150))"",-1];";
+				lock="LOCKED";
 			};
-			id=2831;
-			type="vnx_b_air_ac119_02_01";
+			id=1895;
+			type="vn_b_air_uh1b_01_04";
 		};
 		class Item463
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16246.415,19.315258,7035.0181};
-				angles[]={0,3.5209749,0};
+				position[]={16172.116,19.315258,7050.2319};
+				angles[]={0,3.1705999,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addAction [""<t color='#ff0000' shadowColor='#000000' shadowOffset='0.15'>PARADROP</t>"","" " \n "    _target = _this select 0; " \n "    _caller = _this select 1; " \n " " \n "    _pos = getPos _target; " \n "    _speed = 2 * -(speed _target); " \n "    _vel = velocity _target; " \n "    _dir = direction _target; " \n " " \n "    _caller action ['Eject', vehicle _caller]; " \n " " \n "    waitUntil {vehicle _caller == _caller}; " \n " " \n "    sleep 1; " \n " " \n "    _chute = CreateVehicle ['Steerable_Parachute_F', (getPos _caller), [], (_dir -180), 'CAN_COLLIDE']; " \n " " \n "    _caller assignAsDriver _chute; " \n "    _caller moveInDriver _chute; " \n " " \n "    _chute setVelocity [ " \n "        (_vel select 0) + (sin _dir * _speed), " \n "        (_vel select 1) + (cos _dir * _speed), " \n "        (_vel select 2) " \n "    ]; " \n " " \n """,nil,10,true,true,"""",""(((_target getCargoIndex _this == 0) || (_target getCargoIndex _this == 1)) && ((getPosASL _target) select 2 > 150))"",-1];";
+				init="this addAction [""<t color='#ff0000' shadowColor='#000000' shadowOffset='0.15'>PARADROP</t>"",""" \n "    _target = _this select 0;" \n "    _caller = _this select 1;" \n "" \n "    _pos = getPos _target;" \n "    _speed = 2 * -(speed _target);" \n "    _vel = velocity _target;" \n "    _dir = direction _target;" \n "" \n "    _caller action ['Eject', vehicle _caller];" \n "" \n "    waitUntil {vehicle _caller == _caller};" \n "" \n "    sleep 1;" \n "" \n "    _chute = CreateVehicle ['Steerable_Parachute_F', (getPos _caller), [], (_dir -180), 'CAN_COLLIDE'];" \n "" \n "    _caller assignAsDriver _chute;" \n "    _caller moveInDriver _chute;" \n "" \n "    _chute setVelocity [" \n "        (_vel select 0) + (sin _dir * _speed)," \n "        (_vel select 1) + (cos _dir * _speed)," \n "        (_vel select 2)" \n "    ];" \n "" \n """,nil,10,true,true,"""",""(((_target getCargoIndex _this == 0) || (_target getCargoIndex _this == 1)) && ((getPosASL _target) select 2 > 150))"",-1];";
 			};
-			id=2832;
+			id=2834;
 			type="vnx_b_air_ac119_02_01";
 		};
 		class Item464
@@ -30165,10 +30122,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16202.165,14.98,7040.8188};
+				position[]={16203.75,14.98,7040.0171};
 			};
-			init="this addAction [""<t color='#ff0000' shadowColor='#000000' shadowOffset='0.15'>PARADROP</t>"","" " \n "    _target = _this select 0; " \n "    _caller = _this select 1; " \n " " \n "    _pos = getPos _target; " \n "    _speed = 2 * -(speed _target); " \n "    _vel = velocity _target; " \n "    _dir = direction _target; " \n " " \n "    _caller action ['Eject', vehicle _caller]; " \n " " \n "    waitUntil {vehicle _caller == _caller}; " \n " " \n "    sleep 1; " \n " " \n "    _chute = CreateVehicle ['Steerable_Parachute_F', (getPos _caller), [], (_dir -180), 'CAN_COLLIDE']; " \n " " \n "    _caller assignAsDriver _chute; " \n "    _caller moveInDriver _chute; " \n " " \n "    _chute setVelocity [ " \n "        (_vel select 0) + (sin _dir * _speed), " \n "        (_vel select 1) + (cos _dir * _speed), " \n "        (_vel select 2) " \n "    ]; " \n " " \n """,nil,10,true,true,"""",""(((_target getCargoIndex _this == 0) || (_target getCargoIndex _this == 1)) && ((getPosASL _target) select 2 > 150))"",-1];";
-			id=2833;
+			init="this addAction [""<t color='#ff0000' shadowColor='#000000' shadowOffset='0.15'>PARADROP</t>"",""" \n "    _target = _this select 0;" \n "    _caller = _this select 1;" \n "" \n "    _pos = getPos _target;" \n "    _speed = 2 * -(speed _target);" \n "    _vel = velocity _target;" \n "    _dir = direction _target;" \n "" \n "    _caller action ['Eject', vehicle _caller];" \n "" \n "    waitUntil {vehicle _caller == _caller};" \n "" \n "    sleep 1;" \n "" \n "    _chute = CreateVehicle ['Steerable_Parachute_F', (getPos _caller), [], (_dir -180), 'CAN_COLLIDE'];" \n "" \n "    _caller assignAsDriver _chute;" \n "    _caller moveInDriver _chute;" \n "" \n "    _chute setVelocity [" \n "        (_vel select 0) + (sin _dir * _speed)," \n "        (_vel select 1) + (cos _dir * _speed)," \n "        (_vel select 2)" \n "    ];" \n "" \n """,nil,10,true,true,"""",""(((_target getCargoIndex _this == 0) || (_target getCargoIndex _this == 1)) && ((getPosASL _target) select 2 > 150))"",-1];";
+			id=2835;
 			type="ModuleRespawnVehicle_F";
 			class CustomAttributes
 			{
@@ -30304,6 +30261,23 @@ class Mission
 				};
 				nAttributes=10;
 			};
+		};
+		class Item465
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16253.01,19.315258,7035.6377};
+				angles[]={0,3.7119312,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction [""<t color='#ff0000' shadowColor='#000000' shadowOffset='0.15'>PARADROP</t>"",""" \n "    _target = _this select 0;" \n "    _caller = _this select 1;" \n "" \n "    _pos = getPos _target;" \n "    _speed = 2 * -(speed _target);" \n "    _vel = velocity _target;" \n "    _dir = direction _target;" \n "" \n "    _caller action ['Eject', vehicle _caller];" \n "" \n "    waitUntil {vehicle _caller == _caller};" \n "" \n "    sleep 1;" \n "" \n "    _chute = CreateVehicle ['Steerable_Parachute_F', (getPos _caller), [], (_dir -180), 'CAN_COLLIDE'];" \n "" \n "    _caller assignAsDriver _chute;" \n "    _caller moveInDriver _chute;" \n "" \n "    _chute setVelocity [" \n "        (_vel select 0) + (sin _dir * _speed)," \n "        (_vel select 1) + (cos _dir * _speed)," \n "        (_vel select 2)" \n "    ];" \n "" \n """,nil,10,true,true,"""",""(((_target getCargoIndex _this == 0) || (_target getCargoIndex _this == 1)) && ((getPosASL _target) select 2 > 150))"",-1];";
+			};
+			id=2836;
+			type="vnx_b_air_ac119_02_01";
 		};
 	};
 	class Connections
@@ -31198,8 +31172,8 @@ class Mission
 			class Item88
 			{
 				linkID=88;
-				item0=2833;
-				item1=2831;
+				item0=2835;
+				item1=2834;
 				class CustomData
 				{
 					type="Sync";
@@ -31208,8 +31182,8 @@ class Mission
 			class Item89
 			{
 				linkID=89;
-				item0=2833;
-				item1=2832;
+				item0=2835;
+				item1=2836;
 				class CustomData
 				{
 					type="Sync";
