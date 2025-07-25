@@ -124,6 +124,10 @@ class vn_logistics
 	class vn_b_boat_13_01 : vn_defaults_medium {};
 
 	//Air assets
+
+	//C-119 planes
+	class vnx_b_air_ac119_02_01 : vn_defaults_extra_large {};
+
 	//Cobra Helicopter
 	class vn_b_air_ah1g_01 : vn_defaults_tiny {};
 	class vn_b_air_ah1g_02 : vn_defaults_tiny {};

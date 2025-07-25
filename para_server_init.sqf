@@ -94,7 +94,7 @@ para_s_bf_respawn_supply_cost = 50;
 // Set desired number of simultaneously active zones.
 vn_mf_targetNumberOfActiveZones = 1;
 // Set number of enemies per player. Scale the default value by the percentage set in the config options.
-para_g_enemiesPerPlayer = ((["ai_scaling", 50] call BIS_fnc_getParamValue) / 100) * 2;
+para_g_enemiesPerPlayer = ((["ai_scaling", 100] call BIS_fnc_getParamValue) / 100) * 2;
 //Global variable, so it needs syncing across the network.
 publicVariable "para_g_enemiesPerPlayer";
 
@@ -269,7 +269,7 @@ diag_log "VN MikeForce: Initialising Loadbalancer";
 diag_log "VN MikeForce: Initialising AI Objectives";
 // start ai subsystem. Depends on the load balancer subsystem.
 [
-    ["hardAiLimit", ["hard_ai_limit", 50] call BIS_fnc_getParamValue]
+    ["hardAiLimit", ["hard_ai_limit", 100] call BIS_fnc_getParamValue]
 ] call para_s_fnc_ai_obj_subsystem_init;
 
 diag_log "VN MikeForce: Initialising Harass";
