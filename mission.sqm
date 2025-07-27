@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2837;
+		nextID=2838;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2149;
+		nextID=2189;
 	};
 	class Camera
 	{
-		pos[]={16294.387,58.448383,6521.3042};
-		dir[]={0.90932149,-0.41548988,-0.022737529};
-		up[]={0.4153648,0.90959442,-0.010386215};
-		aside[]={-0.024998974,-3.0340789e-07,-0.99969381};
+		pos[]={16255.416,32.374306,6564.9468};
+		dir[]={0.6106419,-0.66490167,-0.43034986};
+		up[]={0.54352218,0.74688715,-0.38304347};
+		aside[]={-0.57611161,2.0395964e-07,-0.81746787};
 	};
 };
 binarizationWanted=0;
-sourceName="airgoons_mikeforce";
+sourceName="airgoons";
 addons[]=
 {
 	"A3_Ui_F",
@@ -613,7 +613,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=419;
+		items=420;
 		class Item0
 		{
 			dataType="Marker";
@@ -4163,7 +4163,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={16361.027,75.568092,8182.0312};
+								position[]={16361.027,75.568092,8182.0313};
 								angles[]={0,0.23548152,0};
 							};
 							side="Empty";
@@ -5394,7 +5394,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={17390.895,31.370674,5643.2812};
+								position[]={17390.895,31.370674,5643.2813};
 								angles[]={0,1.6621296,0};
 							};
 							side="Empty";
@@ -5804,7 +5804,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={17399.275,30.963905,5618.4062};
+								position[]={17399.275,30.963905,5618.4063};
 								angles[]={0,6.2414103,0};
 							};
 							side="Empty";
@@ -17629,7 +17629,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16417.312,17.364937,6483.2681};
+						position[]={16417.313,17.364937,6483.2681};
 						angles[]={0,4.7007303,0};
 					};
 					side="Empty";
@@ -23074,7 +23074,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15839.912,14.981439,7162.5312};
+						position[]={15839.912,14.981439,7162.5313};
 					};
 					side="Independent";
 					flags=4;
@@ -23089,7 +23089,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15839.912,17.356926,7162.5312};
+						position[]={15839.912,17.356926,7162.5313};
 					};
 					side="Independent";
 					flags=2;
@@ -23105,7 +23105,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15839.912,17.356926,7162.5312};
+						position[]={15839.912,17.356926,7162.5313};
 					};
 					side="Independent";
 					class Attributes
@@ -23120,7 +23120,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15839.912,17.356926,7162.5312};
+						position[]={15839.912,17.356926,7162.5313};
 					};
 					side="Independent";
 					class Attributes
@@ -26383,7 +26383,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[""vn_prop_food_meal_01"",""vn_prop_food_fresh_01"",""vn_prop_food_fresh_02"",""vn_prop_food_sack_01"",""vn_prop_food_sack_02"",""vn_prop_drink_01"",""vn_prop_drink_02"",""vn_prop_drink_03"",""vn_prop_food_lrrp_01_02"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_prop_food_lrrp_01_06"",""vn_prop_food_lrrp_01_07"",""vn_prop_food_lrrp_01_08"",""vn_prop_food_box_02_02"",""vn_prop_food_box_02_03"",""vn_prop_food_box_02_07"",""vn_prop_food_box_02_08"",""vn_prop_drink_07_01"",""vn_prop_drink_07_02"",""vn_prop_drink_09_01"",""vn_prop_food_meal_01_09"",""vn_prop_food_meal_01_17"",""vn_b_item_cigs_01""],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[""vn_prop_food_meal_01"",""vn_prop_food_fresh_01"",""vn_prop_food_fresh_02"",""vn_prop_food_sack_01"",""vn_prop_food_sack_02"",""vn_prop_drink_01"",""vn_prop_drink_02"",""vn_prop_drink_03"",""vn_prop_food_lrrp_01_02"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_prop_food_lrrp_01_06"",""vn_prop_food_lrrp_01_07"",""vn_prop_food_lrrp_01_08"",""vn_prop_food_box_02_02"",""vn_prop_food_box_02_03"",""vn_prop_food_box_02_07"",""vn_prop_food_box_02_08"",""vn_prop_drink_07_01"",""vn_prop_drink_07_02"",""vn_prop_drink_09_01"",""vn_prop_food_meal_01_09"",""vn_prop_food_meal_01_17"",""vn_b_item_cigs_01"",""vn_prop_drink_04"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_01"",""vn_prop_food_lrrp_01_04"",""vn_prop_food_pir_01_01"",""vn_prop_food_pir_01_02"",""vn_prop_food_pir_01_03"",""vn_prop_food_pir_01_04"",""vn_prop_food_pir_01_05"",""vn_prop_food_can_01_01"",""vn_prop_food_can_01_02"",""vn_prop_food_can_01_03"",""vn_prop_food_can_01_04"",""vn_prop_food_can_01_05"",""vn_prop_food_can_01_06"",""vn_prop_food_can_01_07"",""vn_prop_food_can_01_08"",""vn_prop_food_can_01_09"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_prop_food_can_01_12"",""vn_prop_food_can_01_13"",""vn_prop_food_can_01_14"",""vn_prop_food_can_01_15"",""vn_prop_food_can_01_16"",""vn_prop_food_can_02_01"",""vn_prop_food_can_02_02"",""vn_prop_food_can_02_03"",""vn_prop_food_can_02_04"",""vn_prop_food_can_02_05"",""vn_prop_food_can_02_06"",""vn_prop_food_can_02_07"",""vn_prop_food_can_02_08"",""vn_prop_food_can_03_01"",""vn_prop_food_can_03_02"",""vn_prop_food_can_03_03"",""vn_prop_food_can_03_04"",""vn_prop_food_box_01_01"",""vn_prop_food_box_01_02"",""vn_prop_food_box_01_03"",""vn_prop_food_box_02_01"",""vn_prop_food_box_02_04"",""vn_prop_food_box_02_05"",""vn_prop_food_box_02_06"",""vn_prop_drink_07_03"",""vn_prop_food_meal_01_01"",""vn_prop_food_meal_01_02"",""vn_prop_food_meal_01_03"",""vn_prop_food_meal_01_04"",""vn_prop_food_meal_01_05"",""vn_prop_food_meal_01_06"",""vn_prop_food_meal_01_07"",""vn_prop_food_meal_01_08"",""vn_prop_food_meal_01_10"",""vn_prop_food_meal_01_11"",""vn_prop_food_meal_01_12"",""vn_prop_food_meal_01_13"",""vn_prop_food_meal_01_14"",""vn_prop_food_meal_01_15"",""vn_prop_food_meal_01_16"",""vn_prop_food_meal_01_18"",""vn_b_item_rations_01""],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -26395,8 +26395,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16275.04,14.978757,6557.1543};
-				angles[]={0,5.29669,0};
+				position[]={16276.629,15.282214,6552.4595};
+				angles[]={0,3.6480224,0};
 			};
 			side="Empty";
 			flags=4;
@@ -26416,7 +26416,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[""vn_m16_20_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m16_20_t_mag"",""vn_sten_mag"",""vn_f1_smg_mag"",""vn_m60_100_mag"",""vn_m14_10_mag"",""vn_m40a1_mag"",""vn_m40a1_t_mag"",""vn_l1a1_20_t_mag"",""vn_v40_grenade_mag"",""vn_m67_grenade_mag"",""DemoCharge_Remote_Mag"",""vn_mine_m18_wp_range_mag"",""vn_mine_satchel_remote_02_mag"",""vn_mine_m112_remote_mag"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_m1911_mag""],[]],[[],[]],[[],[]]],true]";
+							value="[[[[""vnx_m203_muzzle"",""vnx_xm148_muzzle""],[]],[[""vn_m16_20_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m16_20_t_mag"",""vn_sten_mag"",""vn_f1_smg_mag"",""vn_m60_100_mag"",""vn_m14_10_mag"",""vn_m40a1_mag"",""vn_m40a1_t_mag"",""vn_l1a1_20_t_mag"",""vn_m67_grenade_mag"",""DemoCharge_Remote_Mag"",""vn_mine_m18_wp_range_mag"",""vn_mine_satchel_remote_02_mag"",""vn_mine_m112_remote_mag"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_m1911_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_40mm_m651_cs_mag"",""vn_l1a1_30_mag"",""vn_l1a1_30_t_mag"",""vn_l1a1_30_02_mag"",""vn_l1a1_30_02_t_mag"",""vn_m34_grenade_mag"",""vn_m61_grenade_mag"",""SatchelCharge_Remote_Mag""],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -26537,7 +26537,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[""vn_prop_drink_05"",""vn_prop_med_dysentery"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder""],[]],[[""vn_b_item_firstaidkit""],[]],[[],[]]],true]";
+							value="[[[[],[]],[[""vn_prop_drink_05"",""vn_prop_med_dysentery"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_b_item_bandage_01"",""vn_b_item_bugjuice_01""],[]],[[""vn_b_item_firstaidkit""],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -26572,7 +26572,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_bandage_01"",""vn_b_item_bugjuice_01"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_b_item_rations_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_l1a1_20_mag"",""vn_l1a1_20_t_mag"",""vn_hp_mag"",""vn_m10_mag"",""vn_f1_smg_mag"",""vn_f1_smg_t_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16""],[]],[[],[]]],true]";
+							value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vnx_m203_muzzle"",""vnx_xm148_muzzle"",""vn_mx991_red""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_bandage_01"",""vn_b_item_bugjuice_01"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_b_item_rations_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_l1a1_20_mag"",""vn_l1a1_20_t_mag"",""vn_hp_mag"",""vn_m10_mag"",""vn_f1_smg_mag"",""vn_f1_smg_t_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_l1a1_30_mag"",""vn_l1a1_30_t_mag"",""vn_l1a1_30_02_mag"",""vn_l1a1_30_02_t_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_l1a1"",""vn_b_m1897""],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -26607,7 +26607,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_bandage_01"",""vn_b_item_bugjuice_01"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_b_item_rations_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_l1a1_20_mag"",""vn_l1a1_20_t_mag"",""vn_hp_mag"",""vn_m10_mag"",""vn_f1_smg_mag"",""vn_f1_smg_t_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16""],[]],[[],[]]],true]";
+							value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vnx_m203_muzzle"",""vnx_xm148_muzzle"",""vn_mx991_red""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_bandage_01"",""vn_b_item_bugjuice_01"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_b_item_rations_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_l1a1_20_mag"",""vn_l1a1_20_t_mag"",""vn_hp_mag"",""vn_m10_mag"",""vn_f1_smg_mag"",""vn_f1_smg_t_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_l1a1_30_mag"",""vn_l1a1_30_t_mag"",""vn_l1a1_30_02_mag"",""vn_l1a1_30_02_t_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_l1a1"",""vn_b_m1897""],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -26970,6 +26970,40 @@ class Mission
 			};
 			id=2836;
 			type="vnx_b_air_ac119_02_01";
+		};
+		class Item419
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16274.518,14.978124,6557.542};
+				angles[]={0,5.2477512,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Arsenal3";
+			};
+			id=2837;
+			type="vn_b_ammobox_full_05";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vnx_m203_muzzle"",""vnx_xm148_muzzle"",""vn_mx991_red""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_bandage_01"",""vn_b_item_bugjuice_01"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_b_item_rations_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_l1a1_20_mag"",""vn_l1a1_20_t_mag"",""vn_hp_mag"",""vn_m10_mag"",""vn_f1_smg_mag"",""vn_f1_smg_t_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_l1a1_30_mag"",""vn_l1a1_30_t_mag"",""vn_l1a1_30_02_mag"",""vn_l1a1_30_02_t_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_l1a1"",""vn_b_m1897""],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
