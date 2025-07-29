@@ -53,7 +53,7 @@ enableDebugConsole[] = {
 
 allowFunctionsLog = 1;
 allowFunctionsRecompile = 1;
-joinUnassigned = 0;
+joinUnassigned = 1;
 forceRotorLibSimulation = 0;
 saving = 0;
 skipLobby = 0;
