@@ -8,7 +8,7 @@ class support_mf_reinforce : support_task
 	tasktype = "defend";
 	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\su\vn_ui_mf_task_mfs1.jpg";
 	taskgroups[] = {"AlphaPlatoon"};
-	requestgroups[] = {"BravoPlatoon","CharliePlatoon"};
+	requestgroups[] = {"BravoPlatoon","CharlieSquad"};
 	rankpoints = 10;
 	taskprogress = 0;
 

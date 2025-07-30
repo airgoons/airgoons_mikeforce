@@ -3,9 +3,9 @@ class green_hornet
 	lockTeam = "DeltaTroop";
 };
 
-class CharliePlatoon
+class CharlieSquad
 {
-	lockTeam = "CharliePlatoon";
+	lockTeam = "CharlieSquad";
 };
 
 class mike_force
@@ -38,49 +38,49 @@ class vn_c_car_03_01 : unlocked {};
 class vn_c_car_04_01 : unlocked {};
 
 //APC
-class vn_b_armor_m113_01 : CharliePlatoon {};
-class vn_b_armor_m113_acav_01 : CharliePlatoon {};
-class vn_b_armor_m113_acav_02 : CharliePlatoon {};
-class vn_b_armor_m113_acav_03 : CharliePlatoon {};
-class vn_b_armor_m113_acav_04 : CharliePlatoon {};
-class vn_b_armor_m113_acav_05 : CharliePlatoon {};
-class vn_b_armor_m113_acav_06 : CharliePlatoon {};
+class vn_b_armor_m113_01 : CharlieSquad {};
+class vn_b_armor_m113_acav_01 : CharlieSquad {};
+class vn_b_armor_m113_acav_02 : CharlieSquad {};
+class vn_b_armor_m113_acav_03 : CharlieSquad {};
+class vn_b_armor_m113_acav_04 : CharlieSquad {};
+class vn_b_armor_m113_acav_05 : CharlieSquad {};
+class vn_b_armor_m113_acav_06 : CharlieSquad {};
 
 // M113 mortar and flamethrower
-class vn_b_armor_m125_01 : CharliePlatoon {};
-class vn_b_armor_m132_01 : CharliePlatoon {};
+class vn_b_armor_m125_01 : CharlieSquad {};
+class vn_b_armor_m132_01 : CharlieSquad {};
 
 //M41 Walker bulldog
-class vn_b_armor_m41_01_01 : CharliePlatoon {};
+class vn_b_armor_m41_01_01 : CharlieSquad {};
 
 //Type 63 tank
-class vn_o_armor_type63_01 : CharliePlatoon {};
+class vn_o_armor_type63_01 : CharlieSquad {};
 
 // M48 Patton
-class vn_b_armor_m48_01_01 : CharliePlatoon {};
+class vn_b_armor_m48_01_01 : CharlieSquad {};
 
 // M67 flame tank
-class vn_b_armor_m67_01_01 : CharliePlatoon {};
+class vn_b_armor_m67_01_01 : CharlieSquad {};
 
 //Transport trucks
-class vn_b_wheeled_m54_01 : CharliePlatoon {};
-class vn_b_wheeled_m54_01_airport : CharliePlatoon {};
-class vn_b_wheeled_m54_02 : CharliePlatoon {};
+class vn_b_wheeled_m54_01 : CharlieSquad {};
+class vn_b_wheeled_m54_01_airport : CharlieSquad {};
+class vn_b_wheeled_m54_02 : CharlieSquad {};
 //M109 Command Truck
-class vn_b_wheeled_m54_03 : CharliePlatoon {};
+class vn_b_wheeled_m54_03 : CharlieSquad {};
 //Repair Truck
-class vn_b_wheeled_m54_repair : CharliePlatoon {};
+class vn_b_wheeled_m54_repair : CharlieSquad {};
 class vn_b_wheeled_m54_repair_airport : green_hornet {};
 //Fuel trucks
-class vn_b_wheeled_m54_fuel : CharliePlatoon {};
+class vn_b_wheeled_m54_fuel : CharlieSquad {};
 class vn_b_wheeled_m54_fuel_airport : green_hornet {};
 //Ammo truck
-class vn_b_wheeled_m54_ammo : CharliePlatoon {};
+class vn_b_wheeled_m54_ammo : CharlieSquad {};
 class vn_b_wheeled_m54_ammo_airport : green_hornet {};
 //Gun trucks
-class vn_b_wheeled_m54_mg_01 : CharliePlatoon {};
-class vn_b_wheeled_m54_mg_02 : CharliePlatoon {};
-class vn_b_wheeled_m54_mg_03 : CharliePlatoon {};
+class vn_b_wheeled_m54_mg_01 : CharlieSquad {};
+class vn_b_wheeled_m54_mg_02 : CharlieSquad {};
+class vn_b_wheeled_m54_mg_03 : CharlieSquad {};
 
 //Wooden boats
 class vn_c_boat_01_01 : unlocked {};
@@ -154,8 +154,8 @@ class vn_b_air_uh1b_01_01 : green_hornet {};
 
 
 // M113 command and ambulance variants
-class vn_b_armor_m577_01 : CharliePlatoon {};
-class vn_b_armor_m577_02 : CharliePlatoon {};
+class vn_b_armor_m577_01 : CharlieSquad {};
+class vn_b_armor_m577_02 : CharlieSquad {};
 
 
 //class UH1D : green_hornet {}; - Dustoff
@@ -298,8 +298,8 @@ class vn_b_air_f4b_navy_sead : green_hornet {};
 class vn_b_air_f100d_at : green_hornet {};
 
 //Howitzer
-class vn_b_army_static_m101_02 : CharliePlatoon {};
-class vn_b_sf_static_m101_02 : CharliePlatoon {};
+class vn_b_army_static_m101_02 : CharlieSquad {};
+class vn_b_sf_static_m101_02 : CharlieSquad {};
 
 //Unsung
 //Jeeps + Small Cars
@@ -314,14 +314,14 @@ class uns_willys_2_m60 : unlocked {};
 class uns_willys_2_m1919 : unlocked {};
 
 //Trucks
-class uns_m37b1 : CharliePlatoon {};
-class uns_m37b1_m1919 : CharliePlatoon {};
-class uns_M35A2 : CharliePlatoon {};
-class uns_M35A2_Open : CharliePlatoon {};
+class uns_m37b1 : CharlieSquad {};
+class uns_m37b1_m1919 : CharlieSquad {};
+class uns_M35A2 : CharlieSquad {};
+class uns_M35A2_Open : CharlieSquad {};
 
 //Armoured Cars
-class uns_xm706e1 : CharliePlatoon {};
-class uns_xm706e2 : CharliePlatoon {};
+class uns_xm706e1 : CharlieSquad {};
+class uns_xm706e2 : CharlieSquad {};
 
 //US Boats
 class uns_pbr : unlocked {};

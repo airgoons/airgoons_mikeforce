@@ -4,7 +4,7 @@
 class purple_heart
 {
 	title = "STR_vn_mf_purple_heart";
-	desc = "KIA while serving in CharliePlatoon / Green Hornets";
+	desc = "KIA while serving in CharlieSquad / Green Hornets";
 
 	levels[] =
 	{
@@ -313,7 +313,7 @@ class rvn_training_service_medal
 class rvn_technical_service_medal
 {
 	title = "STR_vn_mf_rvn_technical_service_medal";
-	desc = "Achieving LT rank in CharliePlatoon Team";
+	desc = "Achieving LT rank in CharlieSquad Team";
 	levels[] =
 	{
 		{"\vn\ui_f_vietnam\data\medals\vn_medal_a_18_02.paa", "\vn\ui_f_vietnam\data\medals\vn_ribbon_a_18_02.paa"}

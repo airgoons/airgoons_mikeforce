@@ -108,7 +108,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			text = "img\AirGoonIcons\Charlie.paa";
 			textUp = "img\AirGoonIcons\Charlie.paa"
 			
-			onButtonClick = "['CharliePlatoon'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['CharlieSquad'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		class logoTR: vn_mf_RscButton_ImgSwitch
 		{

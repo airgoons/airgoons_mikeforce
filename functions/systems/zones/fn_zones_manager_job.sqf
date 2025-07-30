@@ -71,7 +71,7 @@
 
 //private _mfPlayers = (allPlayers select {groupId group _x == "AlphaPlatoon"});
 //private _ghPlayers = (allPlayers select {groupId group _x == "DeltaTroop"});
-//private _CharliePlatoonPlayers = (allPlayers select {groupId group _x == "CharliePlatoon"});
+//private _CharlieSquadPlayers = (allPlayers select {groupId group _x == "CharlieSquad"});
 
 //Evaluated in context. Environment variables:
 // _vehicleStrength - Vehicle strength in the zone (0-1)

@@ -1983,7 +1983,7 @@ class Mission
 			dataType="Marker";
 			position[]={17351.273,29.465,5555.9219};
 			name="marker_ban_me_thuot";
-			text="@STR_vn_mf_respawn_CharliePlatoon";
+			text="@STR_vn_mf_respawn_CharlieSquad";
 			type="b_hq";
 			colorName="ColorWEST";
 			id=567;
@@ -2024,8 +2024,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={17350.045,30.045,5583.4712};
-			name="mf_respawn_CharliePlatoon";
-			text="@STR_vn_mf_respawn_CharliePlatoon";
+			name="mf_respawn_CharlieSquad";
+			text="@STR_vn_mf_respawn_CharlieSquad";
 			type="Empty";
 			id=600;
 			atlOffset=-1.1849995;
@@ -2453,7 +2453,7 @@ class Mission
 				{
 					dataType="Marker";
 					position[]={17360.148,30.643188,5588.3667};
-					name="duty_officer_CharliePlatoon";
+					name="duty_officer_CharlieSquad";
 					text="@STR_vn_mf_duty_officer";
 					type="mil_dot";
 					colorName="ColorWhite";
@@ -8609,7 +8609,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										name="vn_mf_CharliePlatoon_teleporter";
+										name="vn_mf_CharlieSquad_teleporter";
 										disableSimulation=1;
 									};
 									id=1044;

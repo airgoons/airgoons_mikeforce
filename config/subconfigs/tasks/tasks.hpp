@@ -7,7 +7,7 @@ class task
 	taskformatdata = "[(_this getVariable 'taskMarker') call vn_mf_fnc_zone_marker_to_name]";
 	taskdesc = "This should not be seen. If you are seeing this, something is mis-configured.";
 	taskimage = "\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa";
-	taskgroups[] = {"AlphaPlatoon","BravoPlatoon","CharliePlatoon","DeltaTroop"}; // all
+	taskgroups[] = {"AlphaPlatoon","BravoPlatoon","CharlieSquad","DeltaTroop"}; // all
 	requestgroups[] = {};
 	tasktype = "walk";
 	rankpoints = 0;

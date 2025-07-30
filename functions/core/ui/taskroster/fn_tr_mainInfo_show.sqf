@@ -33,7 +33,7 @@ _text = switch _groupID do {
 	case "AlphaPlatoon":{"STR_vn_mf_taskRoster_Main_AlphaPlatoonDescription"};
 	case "BravoPlatoon":{"STR_vn_mf_taskRoster_Main_BravoPlatoonDescription"};
 	case "DeltaTroop":{"STR_vn_mf_taskRoster_Main_DeltaTroopTeamDescription"};
-	case "CharliePlatoon":{"STR_vn_mf_taskRoster_Main_ArmouredCavalryDescription"};
+	case "CharlieSquad":{"STR_vn_mf_taskRoster_Main_ArmouredCavalryDescription"};
 	default {""};
 };
 

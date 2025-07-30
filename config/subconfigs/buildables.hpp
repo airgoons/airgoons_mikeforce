@@ -4,7 +4,7 @@
 #define CONDITION_IS_ENGINEER { $STR_vn_mf_buildingMenu_condition_isEngineer, "player getUnitTrait 'engineer'"}
 #define CONDITION_IS_ON_FOOT { $STR_vn_mf_buildingMenu_condition_rnFoot, "isNull objectParent player"}
 #define CONDITION_NOT_IN_RESTRICTED_ZONE { $STR_vn_mf_buildingMenu_condition_inRestrictedZone, "vn_mf_markers_blocked_areas findIf {_pos inArea _x} isEqualTo -1"}
-#define CONDITION_IS_CharliePlatoon { $STR_vn_mf_buildingMenu_condition_inCharliePlatoon, "player getVariable ['vn_mf_db_player_group', 'AlphaPlatoon'] isEqualTo 'CharliePlatoon'"}
+#define CONDITION_IS_CharlieSquad { $STR_vn_mf_buildingMenu_condition_inCharlieSquad, "player getVariable ['vn_mf_db_player_group', 'AlphaPlatoon'] isEqualTo 'CharlieSquad'"}
 
 //Takes "Capacity" in supply units, and "Lifetime" in seconds.
 #define DAYS_TO_SECONDS(days) (days * 86400)
@@ -28,7 +28,7 @@ class Land_vn_guardhouse_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -65,7 +65,7 @@ class Land_vn_tent_mash_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -97,7 +97,7 @@ class Land_vn_b_tower_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -129,7 +129,7 @@ class Land_vn_hlaska
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -161,7 +161,7 @@ class Land_vn_watertower1
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -193,7 +193,7 @@ class Land_vn_reservoirtower_aircav_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -225,7 +225,7 @@ class Land_vn_sm_01_reservoirtower_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -257,7 +257,7 @@ class Land_vn_concretewell_01_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -289,7 +289,7 @@ class Land_vn_b_prop_m149_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -321,7 +321,7 @@ class Land_vn_latrine_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -352,7 +352,7 @@ class Land_vn_shower_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -385,7 +385,7 @@ class vn_b_ammobox_supply_07
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -427,7 +427,7 @@ class vn_b_ammobox_supply_08
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -469,7 +469,7 @@ class vn_b_ammobox_supply_09
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -511,7 +511,7 @@ class Land_vn_usaf_fueltank_75_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -560,7 +560,7 @@ class Land_vn_bridge_bailey_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -598,7 +598,7 @@ class Land_vn_bridge_bailey_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -636,7 +636,7 @@ class Land_vn_bridge_bailey_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -674,7 +674,7 @@ class Land_vn_bridge_bailey_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -708,7 +708,7 @@ class Land_vn_bridge_ramp_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -747,7 +747,7 @@ class Land_vn_bridge_small_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -785,7 +785,7 @@ class Land_vn_bridge_small_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -823,7 +823,7 @@ class Land_vn_bridge_small_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -862,7 +862,7 @@ class Land_vn_bridge_small_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -886,7 +886,7 @@ class Land_vn_bunker_small_01
 {
 	name = "";
 	type = "bunkers";
-	categories[] = {"bunkers", "fortifications", "nonCharliePlatoon"};
+	categories[] = {"bunkers", "fortifications", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -925,7 +925,7 @@ class Land_vn_bunker_big_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -957,7 +957,7 @@ class Land_vn_bunker_big_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -989,7 +989,7 @@ class Land_vn_pillboxbunker_01_big_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1021,7 +1021,7 @@ class Land_vn_pillboxbunker_01_hex_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1053,7 +1053,7 @@ class Land_vn_pillboxbunker_02_hex_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1085,7 +1085,7 @@ class Land_vn_pillboxbunker_01_rectangle_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1121,7 +1121,7 @@ class Land_vn_b_trench_wall_01_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1152,7 +1152,7 @@ class Land_vn_b_trench_wall_01_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1183,7 +1183,7 @@ class Land_vn_b_trench_wall_01_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1214,7 +1214,7 @@ class Land_vn_b_trench_wall_03_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1245,7 +1245,7 @@ class Land_vn_b_trench_wall_03_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1276,7 +1276,7 @@ class Land_vn_b_trench_wall_03_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1307,7 +1307,7 @@ class Land_vn_b_trench_wall_05_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1339,7 +1339,7 @@ class Land_vn_b_trench_wall_05_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1370,7 +1370,7 @@ class Land_vn_b_trench_wall_05_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1401,7 +1401,7 @@ class Land_vn_b_trench_wall_10_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1432,7 +1432,7 @@ class Land_vn_b_trench_wall_10_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1464,7 +1464,7 @@ class Land_vn_b_trench_wall_10_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1496,7 +1496,7 @@ class Land_vn_b_trench_tee_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1518,7 +1518,7 @@ class Land_vn_b_trench_stair_01
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -1548,7 +1548,7 @@ class Land_vn_b_trench_stair_02
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -1579,7 +1579,7 @@ class Land_vn_b_trench_revetment_tall_09
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon", "fences"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad", "fences"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -1610,7 +1610,7 @@ class Land_vn_b_trench_revetment_tall_03
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon", "fences"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad", "fences"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -1641,7 +1641,7 @@ class Land_vn_b_trench_revetment_90_01
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon", "fences"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad", "fences"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -1672,7 +1672,7 @@ class Land_vn_b_trench_revetment_05_01
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon", "fences"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad", "fences"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -1712,7 +1712,7 @@ class Land_vn_b_trench_firing_05
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1744,7 +1744,7 @@ class Land_vn_b_trench_firing_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1776,7 +1776,7 @@ class Land_vn_b_trench_firing_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1808,7 +1808,7 @@ class Land_vn_b_trench_firing_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1831,7 +1831,7 @@ class Land_vn_b_trench_firing_01
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(250, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -1871,7 +1871,7 @@ class Land_vn_o_trench_firing_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1903,7 +1903,7 @@ class Land_vn_b_trench_end_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1935,7 +1935,7 @@ class Land_vn_b_trench_cross_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1967,7 +1967,7 @@ class Land_vn_b_trench_cross_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -1990,7 +1990,7 @@ class Land_vn_b_trench_corner_01
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications","nonCharliePlatoon"};
+	categories[] = {"trenches", "fortifications","nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -2031,7 +2031,7 @@ class Land_vn_b_trench_bunker_06_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2063,7 +2063,7 @@ class Land_vn_b_trench_bunker_06_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2095,7 +2095,7 @@ class Land_vn_b_trench_bunker_05_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2127,7 +2127,7 @@ class Land_vn_b_trench_bunker_05_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2159,7 +2159,7 @@ class Land_vn_b_trench_bunker_04_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2191,7 +2191,7 @@ class Land_vn_b_trench_bunker_03_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2227,7 +2227,7 @@ class Land_vn_b_trench_bunker_03_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2259,7 +2259,7 @@ class Land_vn_b_trench_bunker_03_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2298,7 +2298,7 @@ class Land_vn_b_trench_bunker_03_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2337,7 +2337,7 @@ class Land_vn_b_trench_bunker_02_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2376,7 +2376,7 @@ class Land_vn_b_trench_bunker_02_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2415,7 +2415,7 @@ class Land_vn_b_trench_bunker_02_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2454,7 +2454,7 @@ class Land_vn_b_trench_bunker_02_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2493,7 +2493,7 @@ class Land_vn_b_trench_bunker_01_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2525,7 +2525,7 @@ class Land_vn_b_trench_bunker_01_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2557,7 +2557,7 @@ class Land_vn_b_trench_bunker_01_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2593,7 +2593,7 @@ class Land_vn_b_trench_90_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2625,7 +2625,7 @@ class Land_vn_b_trench_90_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2657,7 +2657,7 @@ class Land_vn_b_trench_45_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2689,7 +2689,7 @@ class Land_vn_b_trench_45_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2721,7 +2721,7 @@ class Land_vn_b_trench_20_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2753,7 +2753,7 @@ class Land_vn_b_trench_20_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2776,7 +2776,7 @@ class Land_vn_b_trench_05_03
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -2807,7 +2807,7 @@ class Land_vn_b_trench_05_02
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon", "fences"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad", "fences"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -2838,7 +2838,7 @@ class Land_vn_b_trench_05_01
 {
 	name = "";
 	type = "trenches";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -2878,7 +2878,7 @@ class Land_vn_b_mortarpit_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2910,7 +2910,7 @@ class Land_vn_b_helipad_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 
 	class build_states
@@ -2948,7 +2948,7 @@ class Land_vn_b_gunpit_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -2971,7 +2971,7 @@ class Land_vn_b_foxhole_01
 {
 	name = "";
 	type = "foxholes";
-	categories[] = {"trenches", "fortifications", "nonCharliePlatoon", "bunkers"};
+	categories[] = {"trenches", "fortifications", "nonCharlieSquad", "bunkers"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -3011,7 +3011,7 @@ class Land_vn_o_tower_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3044,7 +3044,7 @@ class Land_vn_o_tower_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3076,7 +3076,7 @@ class Land_vn_o_tower_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3108,7 +3108,7 @@ class Land_vn_cave_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3140,7 +3140,7 @@ class Land_vn_cave_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3172,7 +3172,7 @@ class Land_vn_cave_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3204,7 +3204,7 @@ class Land_vn_cave_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3236,7 +3236,7 @@ class Land_vn_b_prop_barrels_water_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3268,7 +3268,7 @@ class Land_vn_steeldrum_bbq_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3300,7 +3300,7 @@ class Land_vn_steeldrum_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3332,7 +3332,7 @@ class Land_vn_us_common_lantern_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3364,7 +3364,7 @@ class Land_vn_lampazel
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3396,7 +3396,7 @@ class Land_vn_lampshabby_f_dir_normal
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3428,7 +3428,7 @@ class Land_vn_lampshabby_f_dir_close
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3460,7 +3460,7 @@ class Land_vn_lampshabby_f_dir_far
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3492,7 +3492,7 @@ class Land_vn_o_bunker_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3524,7 +3524,7 @@ class Land_vn_o_bunker_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3556,7 +3556,7 @@ class Land_vn_o_bunker_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3588,7 +3588,7 @@ class Land_vn_o_bunker_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3620,7 +3620,7 @@ class Land_vn_o_platform_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3652,7 +3652,7 @@ class Land_vn_o_platform_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3684,7 +3684,7 @@ class Land_vn_o_platform_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3716,7 +3716,7 @@ class Land_vn_o_platform_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3739,7 +3739,7 @@ class Land_vn_o_platform_05
 {
 	name = "";
 	type = "towers";
-	categories[] = {"towers", "nonCharliePlatoon", "shelters"};
+	categories[] = {"towers", "nonCharlieSquad", "shelters"};
 	rank = 0;
 	SUPPLY_CAPACITY(300, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -3770,7 +3770,7 @@ class Land_vn_o_platform_06
 {
 	name = "";
 	type = "towers";
-	categories[] = {"towers", "nonCharliePlatoon", "shelters"};
+	categories[] = {"towers", "nonCharlieSquad", "shelters"};
 	rank = 0;
 	SUPPLY_CAPACITY(300, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -3810,7 +3810,7 @@ class Land_vn_o_shelter_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3842,7 +3842,7 @@ class Land_vn_o_shelter_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3874,7 +3874,7 @@ class Land_vn_o_shelter_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3906,7 +3906,7 @@ class Land_vn_o_shelter_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3938,7 +3938,7 @@ class Land_vn_o_shelter_05
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -3970,7 +3970,7 @@ class Land_vn_o_shelter_06
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4002,7 +4002,7 @@ class Land_vn_o_wallfoliage_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4034,7 +4034,7 @@ class Land_vn_o_snipertree_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4066,7 +4066,7 @@ class Land_vn_o_snipertree_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4098,7 +4098,7 @@ class Land_vn_o_snipertree_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4130,7 +4130,7 @@ class Land_vn_o_snipertree_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4153,7 +4153,7 @@ class Land_vn_fence_punji_01_10
 {
 	name = "";
 	type = "fences";
-	categories[] = {"fences", "nonCharliePlatoon"};
+	categories[] = {"fences", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -4184,7 +4184,7 @@ class Land_vn_razorwire_f
 {
 	name = "";
 	type = "fences";
-	categories[] = {"fences", "nonCharliePlatoon"};
+	categories[] = {"fences", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -4215,7 +4215,7 @@ class Land_vn_czechhedgehog_01_f
 {
 	name = "";
 	type = "fences";
-	categories[] = {"fences", "fortifications", "nonCharliePlatoon"};
+	categories[] = {"fences", "fortifications", "nonCharlieSquad"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -4255,7 +4255,7 @@ class Land_vn_hut_tower_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4287,7 +4287,7 @@ class Land_vn_hut_village_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4319,7 +4319,7 @@ class Land_vn_fence_bamboo_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4351,7 +4351,7 @@ class Land_vn_fence_bamboo_02_gate
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4374,7 +4374,7 @@ class Land_vn_bagfence_long_f
 {
 	name = "";
 	type = "walls";
-	categories[] = {"fortifications", "nonCharliePlatoon", "fences"};
+	categories[] = {"fortifications", "nonCharlieSquad", "fences"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -4405,7 +4405,7 @@ class Land_vn_barricade_01_10m_f
 {
 	name = "";
 	type = "walls";
-	categories[] = {"fortifications", "nonCharliePlatoon", "fences"};
+	categories[] = {"fortifications", "nonCharlieSquad", "fences"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -4436,7 +4436,7 @@ class Land_vn_d_fallentrunk_clear_f
 {
 	name = "";
 	type = "walls";
-	categories[] = {"fences", "nonCharliePlatoon", "shelters"};
+	categories[] = {"fences", "nonCharlieSquad", "shelters"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -4476,7 +4476,7 @@ class Land_vn_pillboxwall_01_3m_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4508,7 +4508,7 @@ class Land_vn_pillboxwall_01_6m_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4540,7 +4540,7 @@ class Land_vn_tropo_antenna_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4572,7 +4572,7 @@ class Land_vn_tower_signal_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4604,7 +4604,7 @@ class Land_vn_ttowersmall_2_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4636,7 +4636,7 @@ class Land_vn_hootch_02_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4672,7 +4672,7 @@ class Land_vn_hootch_01_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4708,7 +4708,7 @@ class Land_vn_hootch_01_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4740,7 +4740,7 @@ class Land_vn_hootch_01_03
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4772,7 +4772,7 @@ class Land_vn_hootch_01_11
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4804,7 +4804,7 @@ class Land_vn_hootch_01_12
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4836,7 +4836,7 @@ class Land_vn_hootch_01_13
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4868,7 +4868,7 @@ class Land_vn_hootch_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4900,7 +4900,7 @@ class Land_vn_hootch_02_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4932,7 +4932,7 @@ class Land_vn_hootch_02_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4964,7 +4964,7 @@ class Land_vn_hootch_02_11
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -4996,7 +4996,7 @@ class Land_vn_slum_03_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5028,7 +5028,7 @@ class Land_vn_barracks_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5062,7 +5062,7 @@ class Land_vn_barracks_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5094,7 +5094,7 @@ class Land_vn_i_barracks_v1_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5126,7 +5126,7 @@ class Land_vn_barracks_02_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5158,7 +5158,7 @@ class Land_vn_barracks_03_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5190,7 +5190,7 @@ class Land_vn_barracks_04_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5222,7 +5222,7 @@ class Land_vn_i_shed_ind_old_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 
 	class build_states
@@ -5574,7 +5574,7 @@ class Land_vn_radar_01_hq_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5606,7 +5606,7 @@ class Land_vn_radar_01_antenna_base_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5638,7 +5638,7 @@ class Land_vn_army_hut3_long_int
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5670,7 +5670,7 @@ class Land_vn_usaf_hangar_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5702,7 +5702,7 @@ class Land_vn_usaf_hangar_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5741,7 +5741,7 @@ class Land_vn_fuel_tank_stairs
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5764,7 +5764,7 @@ class Land_vn_fireplace_f
 {
 	name = "";
 	type = "lighting";
-	categories[] = {"lighting", "nonCharliePlatoon", "sanitation"};
+	categories[] = {"lighting", "nonCharlieSquad", "sanitation"};
 	rank = 0;
 	SUPPLY_CAPACITY(20, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -5804,7 +5804,7 @@ class Land_vn_pierwooden_01_dock_f
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -5932,7 +5932,7 @@ class vn_o_vc_spiderhole_01
 {
 	name = "";
 	type = "spiderholes";
-	categories[] = {"nonCharliePlatoon", "bunkers", "shelters"};
+	categories[] = {"nonCharlieSquad", "bunkers", "shelters"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -5963,7 +5963,7 @@ class vn_o_vc_spiderhole_02
 {
 	name = "";
 	type = "spiderholes";
-	categories[] = {"nonCharliePlatoon", "bunkers", "shelters"};
+	categories[] = {"nonCharlieSquad", "bunkers", "shelters"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -5994,7 +5994,7 @@ class vn_o_vc_spiderhole_03
 {
 	name = "";
 	type = "spiderholes";
-	categories[] = {"nonCharliePlatoon", "bunkers", "shelters"};
+	categories[] = {"nonCharlieSquad", "bunkers", "shelters"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -6034,7 +6034,7 @@ class vn_b_prop_fmradio_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 	class build_states
 	{
@@ -6071,7 +6071,7 @@ class Land_vn_usaf_revetment_helipad_02
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_CharlieSquad
 	};
 
 	class build_states

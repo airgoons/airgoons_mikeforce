@@ -176,7 +176,7 @@
       <Key ID="STR_vn_mf_respawn_spike_team">
         <Original>MSS LEGHORN - LAOS PATROL BASE</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_CharliePlatoon">
+      <Key ID="STR_vn_mf_respawn_CharlieSquad">
         <Original>FOB 5 BAN ME THUOT - Vehicle Base</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force_khe_sanh">
@@ -188,8 +188,8 @@
       <Key ID="STR_vn_mf_respawn_spike_team_khe_sanh">
         <Original>KHE SANH SF CAMP - SPIKE TEAM</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_CharliePlatoon_khe_sanh">
-        <Original>KHE SANH SF CAMP - CharliePlatoon</Original>
+      <Key ID="STR_vn_mf_respawn_CharlieSquad_khe_sanh">
+        <Original>KHE SANH SF CAMP - CharlieSquad</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_spike_team_altis">
         <Original>MOLOS VILLAGE - SPIKE TEAM</Original>
@@ -200,8 +200,8 @@
       <Key ID="STR_vn_mf_respawn_green_hornets_altis">
         <Original>MOLOS AIRFIELD - GREEN HORNETS</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_CharliePlatoon_altis">
-        <Original>FOB 1 - CharliePlatoon</Original>
+      <Key ID="STR_vn_mf_respawn_CharlieSquad_altis">
+        <Original>FOB 1 - CharlieSquad</Original>
       </Key>
       <Key ID="STR_vn_mf_supply_officer">
         <Original>Supply Officer</Original>
@@ -720,9 +720,9 @@
         <English>Search</English>
       </Key>
 
-      <Key ID="STR_vn_mf_buildingMenu_condition_inCharliePlatoon">
-        <Original>In CharliePlatoon</Original>
-        <English>In CharliePlatoon</English>
+      <Key ID="STR_vn_mf_buildingMenu_condition_inCharlieSquad">
+        <Original>In CharlieSquad</Original>
+        <English>In CharlieSquad</English>
       </Key>
     </Container>
     <Container name="params">
@@ -859,9 +859,9 @@
         <Original>======== Team Settings ========</Original>
         <English>======== Team Settings ========</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_CharliePlatoon">
-        <Original>==== Max players on CharliePlatoon ====</Original>
-        <English>==== Max players on CharliePlatoon ====</English>
+      <Key ID="STR_vn_mf_max_players_CharlieSquad">
+        <Original>==== Max players on CharlieSquad ====</Original>
+        <English>==== Max players on CharlieSquad ====</English>
       </Key>
       <Key ID="STR_vn_mf_max_players_DeltaTroop">
         <Original>==== Max players on Green Hornets ====</Original>
@@ -1147,9 +1147,9 @@
         <Original>Anyone Can Build</Original>
         <English>Anyone Can Build</English>
       </Key>
-      <Key ID="STR_vn_mf_buildingMenu_category_nonCharliePlatoon">
-        <Original>Non-CharliePlatoon</Original>
-        <English>Non-CharliePlatoon</English>
+      <Key ID="STR_vn_mf_buildingMenu_category_nonCharlieSquad">
+        <Original>Non-CharlieSquad</Original>
+        <English>Non-CharlieSquad</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_caves">
         <Original>Caves and Rocks</Original>

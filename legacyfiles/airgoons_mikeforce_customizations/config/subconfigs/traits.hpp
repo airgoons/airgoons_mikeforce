@@ -19,7 +19,7 @@ class BravoPlatoon
 	explosiveSpecialist = 1;
 	radioOperator = 1;
 };
-class CharliePlatoon
+class CharlieSquad
 {
 	medic = 2;
 	engineer = 40;

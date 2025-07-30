@@ -7,7 +7,7 @@ class support_gh_cas : support_task
 	tasktype = "attack";
 	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_gh3.jpg";
 	taskgroups[] = {"DeltaTroop"};
-	requestgroups[] = {"CharliePlatoon", "AlphaPlatoon", "BravoPlatoon"};
+	requestgroups[] = {"CharlieSquad", "AlphaPlatoon", "BravoPlatoon"};
 	rankpoints = 10;
 	taskprogress = 0;
 

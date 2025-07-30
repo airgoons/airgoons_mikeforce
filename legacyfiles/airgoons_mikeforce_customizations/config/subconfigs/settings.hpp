@@ -2,14 +2,14 @@ groups[] =
 {
 	{"AlphaPlatoon","vn_b_men_army_01"},
 	{"BravoPlatoon","vn_b_men_army_01"},
-	{"CharliePlatoon","vn_b_men_army_01"},
+	{"CharlieSquad","vn_b_men_army_01"},
 	{"DeltaTroop","vn_b_men_army_01"}
 };
 
 class teams
 {
     //["Regular Name", "path to Icon", "Shortname"]
-    CharliePlatoon[] = {"Armored Cavalry [Ground Support]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_acav_HL.paa", "CharliePlatoon"};
+    CharlieSquad[] = {"Armored Cavalry [Ground Support]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_acav_HL.paa", "CharlieSquad"};
     DeltaTroop[] = {"Green Hornets [Air Support]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets_HL.paa", "Green Hornets"};
     AlphaPlatoon[] = {"Mike Force [Infantry]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_mikeforce_HL.paa", "Mike Force"};
     BravoPlatoon[] = {"Spike Team [Special Forces]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_spiketeam_HL.paa", "Spike Team"};

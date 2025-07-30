@@ -66,7 +66,7 @@ class BravoPlatoon
     onJoin = "";
     onLeave = "";
 };
-class CharliePlatoon
+class CharlieSquad
 {
     name = "Charlie Platoon[Engineers]";
     icon = "img\AirGoonIcons\Charlie.paa";
