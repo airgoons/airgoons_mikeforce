@@ -86,9 +86,14 @@ if (_enlisted isEqualTo "0") then {
 _playersGroup = groupId group _player;
 switch (_playersGroup) do
 {
-	case "Alpha Platoon": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
-	case "Bravo Aussies": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
-	case "Charlie Platoon": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
+	case "Alpha Platoon HQ": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
+	case "Alpha Rifle Platoon 1": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
+	case "Alpha Rifle Platoon 2": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
+	case "Alpha Scout Section": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
+	case "Bravo Platoon HQ Aussies": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
+	case "Bravo Section 1": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
+	case "Bravo Section 2": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
+	case "Charlie Squad": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
 	default {[_player, "DeltaTroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.4"] call TFAR_fnc_setSwFrequency};
 };
 
