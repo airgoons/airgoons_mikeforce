@@ -2,14 +2,14 @@ class deaths
 {
 	class purple_heart
 	{
-		// KIA while serving in CharlieSquad / Green Hornets
+		// KIA while serving in CharliePlatoon / Green Hornets
 
-		required_teams[] = {"CharlieSquad","DeltaTroop"};
+		required_teams[] = {"CharliePlatoon","DeltaTroop"};
 		levels[] =
 		{
 			{1}
 		};
-		// requires 1 death while a member of  CharlieSquad / Green Hornets
+		// requires 1 death while a member of  CharliePlatoon / Green Hornets
 	};
 	class rvn_wound_medal
 	{
@@ -83,7 +83,7 @@ class kills
 	class bronze_star
 	{
 		// 1 kill
-		required_teams[] = {"CharlieSquad","AlphaPlatoon","BravoPlatoon"};
+		required_teams[] = {"CharliePlatoon","AlphaPlatoon","BravoPlatoon"};
 
 		levels[] =
 		{
@@ -93,7 +93,7 @@ class kills
 	class silver_star
 	{
 		// 1 kill
-		required_teams[] = {"CharlieSquad","AlphaPlatoon","BravoPlatoon"};
+		required_teams[] = {"CharliePlatoon","AlphaPlatoon","BravoPlatoon"};
 
 		levels[] =
 		{
@@ -200,7 +200,7 @@ class teamtaskscomplete
 	class army_commendation_medal
 	{
 		// Completion of 20 (secondary) Team tasks
-		required_teams[] = {"CharlieSquad","BravoPlatoon","AlphaPlatoon"};
+		required_teams[] = {"CharliePlatoon","BravoPlatoon","AlphaPlatoon"};
 
 		levels[] =
 		{
@@ -263,7 +263,7 @@ class teamtaskscomplete
 	class meritorious_unit_citation
 	{
 		// Completion of 30 Team tasks
-		required_teams[] = {"AlphaPlatoon", "CharlieSquad"};
+		required_teams[] = {"AlphaPlatoon", "CharliePlatoon"};
 
 		levels[] =
 		{
@@ -278,7 +278,7 @@ class supplytaskscomplete
 	class meritorious_service_medal
 	{
 		// 10 air to air kills
-		required_teams[] = {"CharlieSquad","DeltaTroop"};
+		required_teams[] = {"CharliePlatoon","DeltaTroop"};
 
 		levels[] =
 		{
@@ -380,8 +380,8 @@ class rank
 	};
 	class rvn_technical_service_medal
 	{
-		// Achieving LT rank in CharlieSquad Team
-		required_teams[] = {"CharlieSquad"};
+		// Achieving LT rank in CharliePlatoon Team
+		required_teams[] = {"CharliePlatoon"};
 
 		required_code = "rank _player isEqualTo 'LIEUTENANT'";
 		levels[] =

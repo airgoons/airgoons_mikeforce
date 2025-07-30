@@ -14,7 +14,7 @@
 	   	Team join successful [BOOLEAN]
     
     Example(s):
-		[_myPlayer, "CharlieSquad"] call vn_mf_fnc_change_team
+		[_myPlayer, "CharliePlatoon"] call vn_mf_fnc_change_team
 */
 
 // Added new 4th parameter to allow overriding the officer check.

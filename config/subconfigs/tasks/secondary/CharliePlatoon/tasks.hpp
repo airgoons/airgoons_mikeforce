@@ -6,7 +6,7 @@ class secondary_ac2 : task
 	taskdesc = "A minefield has been spotted near this location. Clear it of mines and VC traps.";
 	tasktype = "mine";
 	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_ac2.jpg";
-	taskgroups[] = {"CharlieSquad"};
+	taskgroups[] = {"CharliePlatoon"};
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -43,7 +43,7 @@ class secondary_build : task
 	taskformatdata = "[(getText (missionConfigFile >> 'gamemode' >> 'buildables' >> (_this getVariable 'buildable') >> 'name')) call para_c_fnc_localize]";
 	tasktype = "repair";
 	taskimage = "vn\missions_f_vietnam\data\img\MikeForce\p\vn_ui_mf_task_p1.jpg";
-	taskgroups[] = {"CharlieSquad"};
+	taskgroups[] = {"CharliePlatoon"};
 	rankpoints = 10;
 	taskprogress = 10;
 

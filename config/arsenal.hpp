@@ -84,7 +84,7 @@ class vn_whitelisted_arsenal_loadouts
 			//---
 			//Submachine Guns
 			{"vn_k50m",{2,2,2,2}},
-			{"vn_m3a1",{2,2,2,2}}, //Default CharlieSquad loadout
+			{"vn_m3a1",{2,2,2,2}}, //Default CharliePlatoon loadout
 			{"vn_m3sd",{2,2,2,2}}, //Not available in arsenal
 			{"vn_m45",{2,2,2,2}},
 			{"vn_m45_camo",{2,2,2,2}},

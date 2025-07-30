@@ -437,7 +437,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={17360.148,30.643188,5588.3667};
-			name="duty_officer_CharlieSquad";
+			name="duty_officer_CharliePlatoon";
 			text="@STR_vn_mf_duty_officer";
 			type="mil_dot";
 			colorName="ColorWhite";
@@ -4609,7 +4609,7 @@ class Mission
 			dataType="Marker";
 			position[]={17351.273,29.465,5555.9219};
 			name="marker_ban_me_thuot";
-			text="@STR_vn_mf_respawn_CharlieSquad";
+			text="@STR_vn_mf_respawn_CharliePlatoon";
 			type="b_hq";
 			colorName="ColorWEST";
 			id=567;
@@ -4673,8 +4673,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={17350.045,30.045,5583.4712};
-			name="mf_respawn_CharlieSquad";
-			text="@STR_vn_mf_respawn_CharlieSquad";
+			name="mf_respawn_CharliePlatoon";
+			text="@STR_vn_mf_respawn_CharliePlatoon";
 			type="Empty";
 			id=600;
 			atlOffset=-1.1849995;
@@ -5271,7 +5271,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=462;
 					type="vn_b_wheeled_m54_repair";
@@ -5288,7 +5288,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=459;
 					type="vn_b_wheeled_m54_repair";
@@ -5305,7 +5305,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=464;
 					type="vn_b_wheeled_m54_fuel";
@@ -5322,7 +5322,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=465;
 					type="vn_b_wheeled_m54_fuel";
@@ -5340,7 +5340,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=460;
 					type="vn_b_wheeled_m54_ammo";
@@ -5358,7 +5358,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=463;
 					type="vn_b_wheeled_m54_ammo";
@@ -5376,7 +5376,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=688;
 					type="vn_b_wheeled_m54_mg_03";
@@ -5394,7 +5394,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=687;
 					type="vn_b_wheeled_m54_mg_01";
@@ -5431,7 +5431,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=689;
 					type="vn_b_wheeled_m54_mg_02";
@@ -5468,7 +5468,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=461;
 					type="vn_b_wheeled_m54_01";
@@ -5486,7 +5486,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=466;
 					type="vn_b_wheeled_m54_01";
@@ -5504,7 +5504,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=467;
 					type="vn_b_wheeled_m54_01";
@@ -5522,7 +5522,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=468;
 					type="vn_b_wheeled_m54_02";
@@ -5540,7 +5540,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=469;
 					type="vn_b_wheeled_m54_02";
@@ -6089,7 +6089,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=1440;
 					type="vn_b_wheeled_m54_ammo";
@@ -6107,7 +6107,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=1441;
 					type="vn_b_wheeled_m54_ammo";
@@ -6125,7 +6125,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=1442;
 					type="vn_b_wheeled_m54_mg_03";
@@ -6143,7 +6143,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=1443;
 					type="vn_b_wheeled_m54_mg_01";
@@ -6212,7 +6212,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=1489;
 					type="vn_b_wheeled_m54_ammo";
@@ -6229,7 +6229,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=1490;
 					type="vn_b_wheeled_m54_ammo";
@@ -6246,7 +6246,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=1491;
 					type="vn_b_wheeled_m54_mg_03";
@@ -6263,7 +6263,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=1492;
 					type="vn_b_wheeled_m54_mg_01";
@@ -6372,7 +6372,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;";
+						init="[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;";
 					};
 					id=1841;
 					type="vn_b_wheeled_m54_ammo";
@@ -6390,7 +6390,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=1842;
 					type="vn_b_wheeled_m54_mg_03";
@@ -6407,7 +6407,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this, [""CharlieSquad""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
+						init="call{[this, [""CharliePlatoon""]] call vn_mf_fnc_lock_vehicle_to_teams;}";
 					};
 					id=1843;
 					type="vn_b_wheeled_m54_mg_01";
@@ -8822,7 +8822,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="vn_mf_CharlieSquad_teleporter";
+				name="vn_mf_CharliePlatoon_teleporter";
 				disableSimulation=1;
 			};
 			id=1044;
@@ -9271,7 +9271,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={17363.574,49.911869,5588.3711};
-			name="arsenal_CharlieSquad";
+			name="arsenal_CharliePlatoon";
 			text="@STR_vn_mf_arsenal";
 			type="mil_dot";
 			colorName="ColorPink";

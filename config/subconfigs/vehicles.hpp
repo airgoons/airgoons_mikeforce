@@ -2,7 +2,7 @@
 #define CONDITION_IS_ENGINEER { $STR_vn_mf_buildingMenu_condition_isEngineer, "player getUnitTrait 'engineer'"}
 #define CONDITION_IS_ON_FOOT { $STR_vn_mf_buildingMenu_condition_rnFoot, "isNull objectParent player"}
 #define CONDITION_NOT_IN_RESTRICTED_ZONE {  $STR_vn_mf_buildingMenu_condition_inRestrictedZone, "vn_mf_markers_blocked_areas findIf {_pos inArea _x} isEqualTo -1"}
-#define CONDITION_IS_CharlieSquad { $STR_vn_mf_buildingMenu_condition_inCharlieSquad, "player getVariable ['vn_mf_db_player_group', 'AlphaPlatoon'] isEqualTo 'CharlieSquad'"}
+#define CONDITION_IS_CharliePlatoon { $STR_vn_mf_buildingMenu_condition_inCharliePlatoon, "player getVariable ['vn_mf_db_player_group', 'AlphaPlatoon'] isEqualTo 'CharliePlatoon'"}
 
 //Takes "Capacity" in supply units, and "Lifetime" in seconds.
 #define DAYS_TO_SECONDS(days) (days * 86400)
@@ -16,7 +16,7 @@ class vn_b_wheeled_m54_mg_01
 {
 	name = "";
 	type = "wheeled";
-	categories[] = {"armed", "us", "CharlieSquad"};
+	categories[] = {"armed", "us", "CharliePlatoon"};
 	rank = 0;
 	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
 
@@ -26,7 +26,7 @@ class vn_b_wheeled_m54_mg_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharlieSquad
+		CONDITION_IS_CharliePlatoon
 	};
 
 	class features

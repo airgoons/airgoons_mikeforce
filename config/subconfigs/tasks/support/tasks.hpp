@@ -6,7 +6,7 @@ class support_resupply : support_task
 	taskdesc = $STR_vn_mf_task_support_resupply_desc;
 	tasktype = "box";
 	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_ac1.jpg";
-	taskgroups[] = {"CharlieSquad", "DeltaTroop"};
+	taskgroups[] = {"CharliePlatoon", "DeltaTroop"};
 	requestgroups[] = {"AlphaPlatoon","BravoPlatoon"};
 	rankpoints = 10;
 	taskprogress = 0;
@@ -95,9 +95,9 @@ class support_transport : support_task
 	taskname = "Collect Squad";
 	taskdesc = "Collect %1 from the given position, and drop them at their desired location.";
 	tasktype = "land";
-	taskgroups[] = {"CharlieSquad", "DeltaTroop"};
-	//TODO: Remove DeltaTroop and CharlieSquad
-	requestgroups[] = {"AlphaPlatoon","BravoPlatoon", "CharlieSquad", "DeltaTroop"};
+	taskgroups[] = {"CharliePlatoon", "DeltaTroop"};
+	//TODO: Remove DeltaTroop and CharliePlatoon
+	requestgroups[] = {"AlphaPlatoon","BravoPlatoon", "CharliePlatoon", "DeltaTroop"};
 	rankpoints = 10;
 	taskprogress = 0;
 
@@ -127,7 +127,7 @@ class support_transport : support_task
 	};
 };
 
-#include "CharlieSquad\tasks.hpp"
+#include "CharliePlatoon\tasks.hpp"
 #include "DeltaTroop\tasks.hpp"
 #include "AlphaPlatoon\tasks.hpp"
 #include "BravoPlatoon\tasks.hpp"

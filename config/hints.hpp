@@ -105,7 +105,7 @@ class CfgHints
 		class Construction {
 			displayName = "Construction";
 			displayNameShort = "Construction";
-			description = "Engineers can place building and structures to help their team. Engineers on CharlieSquad have access to more structures than engineers on other teams. To start building, open the building menu using the N key (default).";
+			description = "Engineers can place building and structures to help their team. Engineers on CharliePlatoon have access to more structures than engineers on other teams. To start building, open the building menu using the N key (default).";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\build_menu.paa";
 		};
 
@@ -188,7 +188,7 @@ class CfgHints
 		class Supplies {
 			displayName = "Supplies";
 			displayNameShort = "Supplies";
-			description = "A good supply line is an important aspect of gameplay. Without building, ammo, food and medical supplies, your team won't stand a chance against the NVA. Supplies can be ordered from a supply officer at the Green Hornets or CharlieSquad base, then driven or slingloaded to their destination.";
+			description = "A good supply line is an important aspect of gameplay. Without building, ammo, food and medical supplies, your team won't stand a chance against the NVA. Supplies can be ordered from a supply officer at the Green Hornets or CharliePlatoon base, then driven or slingloaded to their destination.";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\supply_officer.paa";
 		};
 
@@ -257,7 +257,7 @@ class CfgHints
 		class Mike_Force {
 			displayName = "Mike Force";
 			displayNameShort = "Mike Force, attack and clear those objectives.";
-			description = "Mike Force, attack and clear those objectives! Mike Force's primary mission is to clear hostiles from the zone and eliminate enemy sites such as AA and artillery. You'll be in the thick of it, supported by CharlieSquad on the ground and Green Hornets in the air.";
+			description = "Mike Force, attack and clear those objectives! Mike Force's primary mission is to clear hostiles from the zone and eliminate enemy sites such as AA and artillery. You'll be in the thick of it, supported by CharliePlatoon on the ground and Green Hornets in the air.";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\mike_force.paa";
 		};
 
@@ -268,11 +268,11 @@ class CfgHints
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\green_hornet.paa";
 		};
 
-		class CharlieSquad {
-			displayName = "CharlieSquad";
-			displayNameShort = "CharlieSquad, Build, Supply, Win!";
-			description = "You'll never get anywhere without a base. With unlimited numbers of engineers, CharlieSquad are perfectly positioned to build all of the necessary structures to allow all your team to capture, hold and deploy from the current zone. CharlieSquad also fill the role of heavy fire support on the ground, wading into battle with tanks and gun trucks.";
-			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\CharlieSquad.paa";
+		class CharliePlatoon {
+			displayName = "CharliePlatoon";
+			displayNameShort = "CharliePlatoon, Build, Supply, Win!";
+			description = "You'll never get anywhere without a base. With unlimited numbers of engineers, CharliePlatoon are perfectly positioned to build all of the necessary structures to allow all your team to capture, hold and deploy from the current zone. CharliePlatoon also fill the role of heavy fire support on the ground, wading into battle with tanks and gun trucks.";
+			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\CharliePlatoon.paa";
 		};
 
 		class Close_Air {

@@ -56,11 +56,11 @@ publicVariable "vn_revive_withstand_allow";
 vn_revive_withstand_amount = 4;
 publicVariable "vn_revive_withstand_amount";
 //Set number of max players per team
-vn_mf_max_players_CharlieSquad = ["max_players_CharlieSquad", 99] call BIS_fnc_getParamValue;
+vn_mf_max_players_CharliePlatoon = ["max_players_CharliePlatoon", 99] call BIS_fnc_getParamValue;
 vn_mf_max_players_DeltaTroop = ["max_players_DeltaTroop", 15] call BIS_fnc_getParamValue;;
 vn_mf_max_players_AlphaPlatoon = ["max_players_AlphaPlatoon", 99] call BIS_fnc_getParamValue;;
 vn_mf_max_players_BravoPlatoon = ["max_players_BravoPlatoon", 99] call BIS_fnc_getParamValue;;
-publicVariable "vn_mf_max_players_CharlieSquad";
+publicVariable "vn_mf_max_players_CharliePlatoon";
 publicVariable "vn_mf_max_players_DeltaTroop";
 publicVariable "vn_mf_max_players_AlphaPlatoon";
 publicVariable "vn_mf_max_players_BravoPlatoon";
@@ -119,7 +119,7 @@ vn_mf_secondaryTasksBySide = false call para_g_fnc_create_namespace;
 vn_mf_secondaryTasksBySide setVariable ["AlphaPlatoon", []];
 vn_mf_secondaryTasksBySide setVariable ["BravoPlatoon", []];
 vn_mf_secondaryTasksBySide setVariable ["DeltaTroop", []];
-vn_mf_secondaryTasksBySide setVariable ["CharlieSquad", []];
+vn_mf_secondaryTasksBySide setVariable ["CharliePlatoon", []];
 
 
 // vn_mf_allowed_functions = ("isClass _x && getNumber _x >> 'rec' isEqualTo 1" configClasses (missionConfigFile >> "cfgfunctions" >> "vn_mf" >> "rehandler") apply {configName _x});

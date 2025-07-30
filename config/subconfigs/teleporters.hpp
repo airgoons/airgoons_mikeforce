@@ -2,20 +2,20 @@ class objects
 {
 	class vn_mf_DeltaTroop_teleporter 
 	{
-		destinations[] = {"AlphaPlatoon_base", "CharlieSquad_base", "BravoPlatoon_base"};
+		destinations[] = {"AlphaPlatoon_base", "CharliePlatoon_base", "BravoPlatoon_base"};
 	};
 
 	class vn_mf_BravoPlatoon_teleporter
 	{
-		destinations[] = {"AlphaPlatoon_base", "CharlieSquad_base", "DeltaTroop_base"};
+		destinations[] = {"AlphaPlatoon_base", "CharliePlatoon_base", "DeltaTroop_base"};
 	};
 
 	class vn_mf_AlphaPlatoon_teleporter
 	{
-		destinations[] = {"BravoPlatoon_base", "CharlieSquad_base", "DeltaTroop_base"};
+		destinations[] = {"BravoPlatoon_base", "CharliePlatoon_base", "DeltaTroop_base"};
 	};
 
-	class vn_mf_CharlieSquad_teleporter
+	class vn_mf_CharliePlatoon_teleporter
 	{
 		destinations[] = {"AlphaPlatoon_base", "BravoPlatoon_base", "DeltaTroop_base"};
 	};
@@ -35,10 +35,10 @@ class destinations
 		position_marker = "mf_respawn_AlphaPlatoon";
 	};
 
-	class CharlieSquad_base
+	class CharliePlatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_CharlieSquadbase_ca.paa";
-		position_marker = "mf_respawn_CharlieSquad";
+		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_CharliePlatoonbase_ca.paa";
+		position_marker = "mf_respawn_CharliePlatoon";
 	};
 
 	class DeltaTroop_base

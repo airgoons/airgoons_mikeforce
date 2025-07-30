@@ -19,7 +19,7 @@
 
 
 		player setVariable ["vn_mf_db_seenIntro", false];
-		player setVariable ["vn_mf_db_playedCharlieSquad", false];
+		player setVariable ["vn_mf_db_playedCharliePlatoon", false];
 		player setVariable ["vn_mf_db_playedGH", false];
 		player setVariable ["vn_mf_db_playedMF", false];
 		player setVariable ["vn_mf_db_playedEng", false];
@@ -63,15 +63,15 @@ if (!_seenIntro) then {
 		params ["_handlerParams", "_eventParams"];
 		_handlerParams params [];
 		_eventParams params ["_player", "_groupID"];
-		private _playedCharlieSquad = _player getVariable ["vn_mf_db_playedCharlieSquad", false];
+		private _playedCharliePlatoon = _player getVariable ["vn_mf_db_playedCharliePlatoon", false];
 		private _playedGH = _player getVariable ["vn_mf_db_playedGH", false];
 		private _playedMF = _player getVariable ["vn_mf_db_playedMF", false];
 		switch (_groupID) do {
-			case "CharlieSquad": {
-				if (!_playedCharlieSquad) then {
-				["Team", "CharlieSquad"] call para_c_fnc_ui_hints_show_hint;
+			case "CharliePlatoon": {
+				if (!_playedCharliePlatoon) then {
+				["Team", "CharliePlatoon"] call para_c_fnc_ui_hints_show_hint;
 				["Logistics", "Supplies"] call para_c_fnc_ui_hints_show_hint;
-				_player setVariable ["vn_mf_db_playedCharlieSquad", true];
+				_player setVariable ["vn_mf_db_playedCharliePlatoon", true];
 				};
 			};
 			case "DeltaTroop": {
@@ -88,7 +88,7 @@ if (!_seenIntro) then {
 				};
 			};
 		};
-		if (_playedCharlieSquad && _playedGH && _playedMF) then {
+		if (_playedCharliePlatoon && _playedGH && _playedMF) then {
 			private _handler = _currentEventHandler;
 			["changedTeams", _handler] call para_g_fnc_event_remove_handler;
 		};
