@@ -389,6 +389,15 @@ class vn_logistics
 		//Sandbag supplies
 		class vn_b_ammobox_supply_10 : vn_b_ammobox_supply_05 {};
 
+		//Mortar Ammo
+		class vn_b_ammobox_full_14
+		{
+			item_weight = 50;
+			item_size = 1;
+			spawn_distance = 2;
+			rotation_offset = 0;
+		};
+
 		//Small US ammo
 		class vn_b_ammobox_supply_04
 		{
