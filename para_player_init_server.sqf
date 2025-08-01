@@ -93,7 +93,9 @@ switch (_playersGroup) do
 	case "Bravo Platoon HQ Aussies": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
 	case "Bravo Section 1": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
 	case "Bravo Section 2": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
-	case "Charlie Squad Engineers": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
+	case "Charlie Platoon HQ": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
+	case "Charlie Platoon Engineers": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
+	case "Charlie Platoon Mortar": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
 	default {[_player, "DeltaTroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.4"] call TFAR_fnc_setSwFrequency};
 };
 
