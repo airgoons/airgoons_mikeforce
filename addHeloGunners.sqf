@@ -95,3 +95,4 @@ switch (typeOf _helo) do
 
 // Try to make our boys more aggressive
 _g setBehaviour "COMBAT";
+_g setCombatMode "RED";
