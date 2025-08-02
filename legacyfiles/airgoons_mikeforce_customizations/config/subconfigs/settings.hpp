@@ -9,10 +9,10 @@ groups[] =
 class teams
 {
     //["Regular Name", "path to Icon", "Shortname"]
-    CharliePlatoon[] = {"Armored Cavalry [Ground Support]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_acav_HL.paa", "CharliePlatoon"};
-    DeltaTroop[] = {"Green Hornets [Air Support]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets_HL.paa", "Green Hornets"};
-    AlphaPlatoon[] = {"Mike Force [Infantry]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_mikeforce_HL.paa", "Mike Force"};
-    BravoPlatoon[] = {"Spike Team [Special Forces]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_spiketeam_HL.paa", "Spike Team"};
+    CharliePlatoon[] = {"Combat Engineers [Ground Support]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_acav_HL.paa", "Charlie"};
+    DeltaTroop[] = {"Army Aviation [Air Support]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets_HL.paa", "Delta"};
+    AlphaPlatoon[] = {"US Army [Infantry]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_mikeforce_HL.paa", "Alpha"};
+    BravoPlatoon[] = {"AUS Army [Infantry]", "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_spiketeam_HL.paa", "Bravo"};
     FAILED[] = {"NO TEAM","\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa", "FAILED"};
 };
 
