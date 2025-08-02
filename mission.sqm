@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3623;
+		nextID=3626;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2956;
+		nextID=3015;
 	};
 	class Camera
 	{
-		pos[]={15900.37,70.930611,6947.9985};
-		dir[]={0.0030818514,-0.51030964,0.86012632};
-		up[]={0.0018275683,0.8598823,0.51040006};
-		aside[]={1.0000378,1.6729716e-06,-0.0035678416};
+		pos[]={15709.137,72.24234,7069.5942};
+		dir[]={0.86163503,-0.4741151,-0.18178368};
+		up[]={0.46400121,0.88034624,-0.097890712};
+		aside[]={-0.20642141,2.8216164e-06,-0.97850156};
 	};
 };
 binarizationWanted=0;
@@ -604,7 +604,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=51;
+		items=52;
 		class Item0
 		{
 			dataType="Logic";
@@ -4426,7 +4426,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15755.702,14.98,7099.5762};
+				position[]={15729.15,14.98,7114.8638};
 			};
 			name="GunshipRespawn";
 			id=2830;
@@ -4574,7 +4574,7 @@ class Mission
 				position[]={15841.896,14.98,7087.7959};
 			};
 			name="TransportRespawn";
-			init="this addAction [""<t color='#ff9900' shadowColor='#000000' shadowOffset='0.15'>Supply Drop</t>"","" " \n "  " \n " if ((count allMissionObjects 'IG_supplyCrate_F') > 0) then ( " \n "   " \n "  " \n " _target = _this select 0; " \n " _caller = _this select 1; " \n "  " \n "  " \n " {  " \n "  _pos = getPos _target; " \n "  _speed = 2 * -(speed _target); " \n "  _vel = velocity _target; " \n "  _dir = direction _target; " \n " " \n "  _chute = CreateVehicle ['vn_b_parachute_01_02', [getPos _target select 0,(getpos _target select 1)-20,(getpos _target select 2) +100], [], (_dir -180), 'CAN_COLLIDE']; " \n "   " \n "  _crate = CreateVehicle ['vn_b_ammobox_supply_05', [0,0,0], [], (_dir -180), 'CAN_COLLIDE']; " \n "   " \n "  _crate attachTo [_chute,[0,0,0]]; " \n "   " \n "  clearWeaponCargoGlobal _crate; " \n "  clearMagazineCargoGlobal _crate; " \n "  clearItemCargoGlobal _crate; " \n "  clearBackpackCargoGlobal _crate; " \n " " \n "  { " \n "    _crate addWeaponCargoGlobal _x; " \n "  } forEach [['vn_m72', 2]]; " \n " " \n "  { " \n "    _crate addMagazineCargoGlobal _x; " \n "  } forEach [['vn_m16_20_mag', 50], ['vn_m60_100_mag', 10], ['vn_m67_grenade_mag', 10], ['vn_40mm_m381_he_mag', 10], ['vn_40mm_m433_hedp_mag', 10], ['vn_40mm_m680_smoke_w_mag', 10], ['vn_40mm_m583_flare_w_mag', 10], ['vn_prop_med_painkillers', 10], ['vn_prop_med_antivenom', 10], ['vn_prop_med_antimalaria', 10], ['vn_m1911_mag', 10]]; " \n " " \n "  { " \n "    _crate addItemCargoGlobal _x; " \n "  } forEach [['vn_b_item_firstaidkit', 20]]; " \n " " \n "  { " \n "    _crate addBackpackCargoGlobal _x; " \n "  } forEach [['vn_b_pack_static_m29_01', 1], ['vn_b_pack_static_base_01', 1]]; " \n "   " \n "   " \n "  _chute setVelocity [ " \n "   (_vel select 0) + (sin _dir * _speed), " \n "   (_vel select 1) + (cos _dir * _speed), " \n "   (_vel select 2) " \n "  ]; " \n "   " \n "  _flare = 'F_40mm_Green' createVehicle (getPos _crate); " \n "  _flare attachTo [_crate,[0,0,0.6]];  " \n "   " \n "  waitUntil {(getPosATL _chute select 2) < 20}; " \n "   " \n "  _smoke = 'G_40mm_SmokeGreen' createVehicle (getPos _crate); " \n "  _smoke attachTo [_crate,[0,0,0.6]]; " \n " }; " \n "  " \n """,nil,10,true,false,"""",""((driver _target == _this) && (_target emptyPositions 'cargo' > 29))"",-1];";
+			init="this addAction [""<t color='#ff0000' shadowColor='#000000' shadowOffset='0.15'>PARADROP</t>"","" " \n " _target = _this select 0; " \n " _caller = _this select 1; " \n " " \n " _pos = getPos _target; " \n " _speed = 2 * -(speed _target); " \n " _vel = velocity _target; " \n " _dir = direction _target; " \n "  " \n " _caller action ['Eject', vehicle _caller]; " \n "  " \n " waitUntil {vehicle _caller == _caller}; " \n "  " \n " sleep 1; " \n " " \n " _chute = CreateVehicle ['vn_b_parachute_01_02', (getPos _caller), [], (_dir -180), 'CAN_COLLIDE']; " \n "  " \n " _caller assignAsDriver _chute; " \n " _caller moveInDriver _chute; " \n "  " \n " _chute setVelocity [ " \n "  (_vel select 0) + (sin _dir * _speed), " \n "  (_vel select 1) + (cos _dir * _speed), " \n "  (_vel select 2) " \n " ]; " \n "  " \n " if (_target emptyPositions 'cargo' > 29) then { " \n "  " \n "   " \n "  _pos = getPos _target; " \n "  _speed = 2 * -(speed _target); " \n "  _vel = velocity _target; " \n "  _dir = direction _target; " \n " " \n "  _chute = CreateVehicle ['vn_b_parachute_01_02', _pos, [], 0]; " \n "   " \n "  _crate = CreateVehicle ['IG_supplyCrate_F', [0,0,0], [],0]; " \n "   " \n "  _crate attachTo [_chute,[0,0,0]]; " \n "   " \n "  clearWeaponCargoGlobal _crate; " \n "  clearMagazineCargoGlobal _crate; " \n "  clearItemCargoGlobal _crate; " \n "  clearBackpackCargoGlobal _crate; " \n " " \n "  { " \n "    _crate addWeaponCargoGlobal _x; " \n "  } forEach [['vn_m72', 2],['vn_m_axe_01', 1]]; " \n " " \n "  { " \n "    _crate addMagazineCargoGlobal _x; " \n "  } forEach [['vn_m16_20_mag', 50], ['vn_m60_100_mag', 10], ['vn_m67_grenade_mag', 10], ['vn_40mm_m381_he_mag', 10], ['vn_40mm_m433_hedp_mag', 10], ['vn_40mm_m680_smoke_w_mag', 10], ['vn_40mm_m583_flare_w_mag', 10], ['vn_prop_med_painkillers', 10], ['vn_prop_med_antivenom', 10], ['vn_prop_med_antimalaria', 10], ['vn_m1911_mag', 10],['vn_m72_mag',2]]; " \n " " \n "  { " \n "    _crate addItemCargoGlobal _x; " \n "  } forEach [['vn_b_item_firstaidkit', 20]]; " \n " " \n "  { " \n "    _crate addBackpackCargoGlobal _x; " \n "  } forEach [['vn_b_pack_static_m29_01', 1], ['vn_b_pack_static_base_01', 1]]; " \n "   " \n "   " \n "  _chute setVelocity [ " \n "   (_vel select 0) + (sin _dir * _speed), " \n "   (_vel select 1) + (cos _dir * _speed), " \n "   (_vel select 2) " \n "  ]; " \n "   " \n " " \n "   " \n "  _chem1 = 'Chemlight_green' CreateVehicle (getPos _crate); " \n "  _chem1 attachto [_crate,[0,0.38,0.3]]; " \n "  _chem1 setVectorDirAndUp [[0,1,3],[0,0,1]]; " \n "   " \n "  _chem2 = 'Chemlight_green' CreateVehicle (getPos _crate); " \n "  _chem2 attachto [_crate,[0,-0.38,0.3]]; " \n "  _chem2 setVectorDirAndUp [[0,1,3],[0,0,1]]; " \n "   " \n "   " \n "  while {(getPosATL _chute select 2) > 30} do {  " \n "   _flare = 'F_40mm_Green' createVehicle (getPos _crate); " \n "   _flare attachTo [_crate,[0,0,0.45]]; " \n "   sleep 11; " \n "  }; " \n "   " \n "  waitUntil {(getPosATL _chute select 2) < 30}; " \n "   " \n "  _smoke = 'G_40mm_SmokeGreen' createVehicle (getPos _crate); " \n "  _smoke attachTo [_crate,[0,0,0.45]]; " \n " }; " \n " " \n """,nil,10,true,true,"""",""(((_target getCargoIndex _this == 0) || (_target getCargoIndex _this == 1)) && ((getPosASL _target) select 2 > 150))"",-1];";
 			id=2835;
 			type="ModuleRespawnVehicle_F";
 			class CustomAttributes
@@ -4816,7 +4816,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={16104.974,17.880871,7055.4468};
-								angles[]={-0,3.1257799,0};
+								angles[]={0,3.1257799,0};
 							};
 							side="Empty";
 							flags=4;
@@ -4833,7 +4833,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={16132.587,17.880871,7055.9346};
-								angles[]={-0,3.1257799,0};
+								angles[]={0,3.1257799,0};
 							};
 							side="Empty";
 							flags=4;
@@ -4918,7 +4918,7 @@ class Mission
 				};
 			};
 			id=2850;
-			atlOffset=-202.99561;
+			atlOffset=-202.03119;
 		};
 		class Item29
 		{
@@ -8621,6 +8621,7 @@ class Mission
 										speedMode="LIMITED";
 									};
 									id=2249;
+									atlOffset=103.16;
 								};
 								class Item1
 								{
@@ -8693,6 +8694,7 @@ class Mission
 									{
 									};
 									id=2338;
+									atlOffset=103.16;
 								};
 								class Item2
 								{
@@ -8765,6 +8767,7 @@ class Mission
 									{
 									};
 									id=2339;
+									atlOffset=103.16;
 								};
 								class Item3
 								{
@@ -8871,6 +8874,7 @@ class Mission
 										};
 									};
 									id=2331;
+									atlOffset=103.16;
 								};
 								class Item4
 								{
@@ -8908,6 +8912,7 @@ class Mission
 								};
 							};
 							id=2855;
+							atlOffset=28.17;
 						};
 						class Item2
 						{
@@ -12261,7 +12266,7 @@ class Mission
 						};
 					};
 					id=2857;
-					atlOffset=0.92299747;
+					atlOffset=0.91568375;
 				};
 				class Item6
 				{
@@ -12466,7 +12471,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15960.079,16.347357,7103.2188};
-										angles[]={-0,1.546378,0};
+										angles[]={0,1.546378,0};
 									};
 									side="Empty";
 									flags=4;
@@ -12527,7 +12532,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15944.991,16.886734,7103.6045};
-										angles[]={-0,1.5571305,0};
+										angles[]={0,1.5571305,0};
 									};
 									side="Empty";
 									flags=4;
@@ -12707,6 +12712,7 @@ class Mission
 										};
 									};
 									id=2352;
+									atlOffset=103.16;
 								};
 								class Item1
 								{
@@ -12885,6 +12891,7 @@ class Mission
 										speedMode="LIMITED";
 									};
 									id=2255;
+									atlOffset=103.16;
 								};
 								class Item3
 								{
@@ -13018,9 +13025,11 @@ class Mission
 										speedMode="LIMITED";
 									};
 									id=2252;
+									atlOffset=103.16;
 								};
 							};
 							id=2866;
+							atlOffset=24.309362;
 						};
 						class Item2
 						{
@@ -13035,7 +13044,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15857.995,16.406326,7103.2432};
-										angles[]={-0,3.1938534,0};
+										angles[]={0,3.1938534,0};
 									};
 									side="Empty";
 									flags=4;
@@ -13044,6 +13053,7 @@ class Mission
 									};
 									id=3608;
 									type="vn_b_wheeled_m274_01_01";
+									atlOffset=9.5367432e-07;
 								};
 								class Item1
 								{
@@ -13051,7 +13061,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15853.032,16.406326,7103.7681};
-										angles[]={-0,3.1911809,0};
+										angles[]={0,3.1911809,0};
 									};
 									side="Empty";
 									flags=4;
@@ -13060,6 +13070,7 @@ class Mission
 									};
 									id=3607;
 									type="vn_b_wheeled_m274_01_01";
+									atlOffset=9.5367432e-07;
 								};
 								class Item2
 								{
@@ -13932,8 +13943,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={15728.37,19.315258,7126.5317};
-										angles[]={0,3.1465669,0};
+										position[]={15702.969,19.315258,7072.1636};
+										angles[]={-0,3.1465669,0};
 									};
 									side="Empty";
 									flags=4;
@@ -13950,7 +13961,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15820.547,19.315258,7066.626};
-										angles[]={-0,3.1663535,0};
+										angles[]={0,3.1663535,0};
 									};
 									side="Empty";
 									flags=4;
@@ -13967,7 +13978,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={15863.133,19.315258,7065.3247};
-										angles[]={-0,3.1533589,0};
+										angles[]={0,3.1533589,0};
 									};
 									side="Empty";
 									flags=4;
@@ -14150,7 +14161,7 @@ class Mission
 						};
 					};
 					id=2865;
-					atlOffset=-0.080127716;
+					atlOffset=-0.1825304;
 				};
 				class Item7
 				{
@@ -14740,7 +14751,7 @@ class Mission
 				};
 			};
 			id=2891;
-			atlOffset=9.8106422;
+			atlOffset=9.7973862;
 		};
 		class Item32
 		{
@@ -28635,7 +28646,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15965.885,19.781,7057.312};
+				position[]={15961.903,19.781,7056.7388};
 			};
 			areaSize[]={22,0,22};
 			flags=1;
@@ -28693,16 +28704,107 @@ class Mission
 			id=3622;
 			type="EmptyDetectorArea10x10";
 		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15774.182,19.315258,7071.7852};
+				angles[]={-0,3.1678741,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="ac119_08";
+			};
+			id=3624;
+			type="vnx_b_air_ac119_03_01";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ac119_08";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="door_cargo_left";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=120;
+			nextID=121;
 		};
 		class Links
 		{
-			items=120;
+			items=121;
 			class Item0
 			{
 				linkID=0;
@@ -29898,6 +30000,16 @@ class Mission
 				linkID=119;
 				item0=3608;
 				item1=2248;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item120
+			{
+				linkID=120;
+				item0=2830;
+				item1=3624;
 				class CustomData
 				{
 					type="Sync";
