@@ -1,7 +1,7 @@
 // limits and vanilla/custom trait values
 class AlphaPlatoon
 {
-    name = "Alpha Platoon[Infantry]";
+    name = "Alpha Platoon [Infantry]";
     icon = "img\AirGoonIcons\Alpha.paa";
     shortname = "Alpha";
     unit = "vn_b_men_army_01";
@@ -68,7 +68,7 @@ class BravoPlatoon
 };
 class CharliePlatoon
 {
-    name = "Charlie Platoon[Engineers]";
+    name = "Charlie Platoon [Engineers & Fire Support]";
     icon = "img\AirGoonIcons\Charlie.paa";
     shortname = "Charlie";
     unit = "vn_b_men_army_01";

@@ -106,7 +106,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			tooltip = "";
 			
 			text = "img\AirGoonIcons\Charlie.paa";
-			textUp = "img\AirGoonIcons\Charlie.paa"
+			textUp = "img\AirGoonIcons\Charlie.paa";
 			
 			onButtonClick = "['CharliePlatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -121,7 +121,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			tooltip = "";
 			
 			text = "img\AirGoonIcons\Delta.paa";
-			textUp = "img\AirGoonIcons\Delta.paa"
+			textUp = "img\AirGoonIcons\Delta.paa";
 			
 			onButtonClick = "['DeltaTroop'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -136,7 +136,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			tooltip = "";
 			
 			text = "img\AirGoonIcons\Alpha.paa";
-			textUp = "img\AirGoonIcons\Alpha.paa"
+			textUp = "img\AirGoonIcons\Alpha.paa";
 			
 			onButtonClick = "['AlphaPlatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -151,7 +151,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			tooltip = "";
 			
 			text = "img\AirGoonIcons\Bravo.paa";
-			textUp = "img\AirGoonIcons\Bravo.paa"
+			textUp = "img\AirGoonIcons\Bravo.paa";
 			
 			onButtonClick = "['BravoPlatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};

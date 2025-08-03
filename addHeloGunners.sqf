@@ -33,7 +33,7 @@ switch (typeOf _helo) do
         {
             if (isNull (_helo turretUnit [_i])) then
             {
-                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
                 _u setSkill 1;
                 _u moveInTurret [_helo, [_i]];
             };
@@ -46,20 +46,20 @@ switch (typeOf _helo) do
         {
             if (isNull (_helo turretUnit [_i])) then
             {
-                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
                 _u setSkill 1;  
                 _u moveInTurret [_helo, [_i]];
             };
         };
     };
         //Gunship Huey with miniguns, rockets, and doorguns
-        case "vn_b_air_uh1c_02_01":
+        case "vn_b_air_uh1c_02_02":
     {
         for [{_i = 1}, {_i < 3}, {_i = _i + 1}] do
         {
             if (isNull (_helo turretUnit [_i])) then
             {
-                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
                 _u setSkill 1;  
                 _u moveInTurret [_helo, [_i]];
             };
@@ -72,7 +72,7 @@ switch (typeOf _helo) do
         {
             if (isNull (_helo turretUnit [_i])) then
             {
-                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
                 _u setSkill 1;
                 _u moveInTurret [_helo, [_i]];
             };
@@ -85,7 +85,7 @@ switch (typeOf _helo) do
         {
             if (isNull (_helo turretUnit [_i])) then
             {
-                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
                 _u setSkill 1;
                 _u moveInTurret [_helo, [_i]];
             };
@@ -98,7 +98,7 @@ switch (typeOf _helo) do
         {
             if (isNull (_helo turretUnit [_i])) then
             {
-                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
                 _u setSkill 1;
                 _u moveInTurret [_helo, [_i]];
             };

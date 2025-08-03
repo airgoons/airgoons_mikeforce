@@ -90,4 +90,10 @@ class ammo
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
 		crateConfig = "AmmoCrateExplosives";
 	};
+	class MortarSupplies
+	{
+		name = "STR_vn_mf_mortar_supplies";
+		className =	"vn_b_ammobox_full_14";
+		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
+	};
 };

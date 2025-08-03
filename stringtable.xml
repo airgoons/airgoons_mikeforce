@@ -1222,6 +1222,9 @@
       <Key ID="STR_vn_mf_explosives_supplies">
         <Original>Explosives Supplies</Original>
       </Key>
+	   <Key ID="STR_vn_mf_mortar_supplies">
+        <Original>Mortar Ammo Supplies</Original>
+      </Key>
       <Key ID="STR_vn_mf_building_supplies_crate">
         <Original>Building Supplies (Small)</Original>
       </Key>

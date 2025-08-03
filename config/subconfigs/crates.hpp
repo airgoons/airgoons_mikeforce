@@ -79,10 +79,9 @@ class AmmoCrateExplosives
 {
 	objectClassname = "vn_b_ammobox_supply_01";
 	weapons[] = {
-		{"vn_m72",6},
+		{"vn_m72",10},
 	};
 	magazines[] = {
-		{"vn_m72_mag",12},
 		{"vn_m61_grenade_mag",30},
 		{"vn_m67_grenade_mag",30},
 		{"vn_40mm_m651_cs_mag",20},

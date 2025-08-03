@@ -87,8 +87,8 @@ _playersGroup = groupId group _player;
 switch (_playersGroup) do
 {
 	case "Alpha Platoon HQ": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
-	case "Alpha Rifle Platoon 1": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
-	case "Alpha Rifle Platoon 2": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
+	case "Alpha Rifle Squad 1": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
+	case "Alpha Rifle Squad 2": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
 	case "Alpha Scout Section": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
 	case "Bravo Platoon HQ Aussies": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
 	case "Bravo Section 1": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
