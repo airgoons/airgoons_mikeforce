@@ -78,6 +78,19 @@ switch (typeOf _helo) do
             };
         };
     };
+    // Huey Slick D-model has two turrets, slots 1, 2
+    case "vn_b_air_uh1d_02_02":
+    {
+        for [{_i = 1}, {_i < 3}, {_i = _i + 1}] do
+        {
+            if (isNull (_helo turretUnit [_i])) then
+            {
+                _u = _g createUnit ["vn_b_men_aircrew_12", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;
+                _u moveInTurret [_helo, [_i]];
+            };
+        };
+    };
     // Chinook has three turrets, slots 3, 4, 5
     case "vn_b_air_ch47_01_02":
     {
@@ -93,6 +106,6 @@ switch (typeOf _helo) do
     };
 };
 
-// Try to make our boys more aggressive
+// Try to make our boys more aggressive grrrr
 _g setBehaviour "COMBAT";
 _g setCombatMode "RED";
