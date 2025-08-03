@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3671;
+		nextID=3680;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3309;
+		nextID=3367;
 	};
 	class Camera
 	{
-		pos[]={16299.882,55.990231,6540.9893};
-		dir[]={-0.66325283,-0.64277691,0.38362008};
-		up[]={-0.55641878,0.76603496,0.32182744};
-		aside[]={0.50073063,1.7578714e-08,0.86572695};
+		pos[]={16290.99,43.664776,6547.9419};
+		dir[]={-0.67815304,-0.59623748,0.42992574};
+		up[]={-0.50360495,0.80274045,0.31927177};
+		aside[]={0.53548861,8.4053318e-07,0.84466106};
 	};
 };
 binarizationWanted=0;
@@ -75,8 +75,8 @@ addons[]=
 	"characters_f_vietnam_02_c",
 	"sounds_f_vietnam_c",
 	"cba_jam_vn",
-	"characters_f_vietnam_04_c",
-	"weapons_f_vietnam_04_c"
+	"weapons_f_vietnam_04_c",
+	"characters_f_vietnam_04_c"
 };
 class AddonsMetaData
 {
@@ -365,15 +365,15 @@ class AddonsMetaData
 		};
 		class Item40
 		{
-			className="characters_f_vietnam_04_c";
-			name="characters_f_vietnam_04_c";
+			className="weapons_f_vietnam_04_c";
+			name="weapons_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
 		class Item41
 		{
-			className="weapons_f_vietnam_04_c";
-			name="weapons_f_vietnam_04_c";
+			className="characters_f_vietnam_04_c";
+			name="characters_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
@@ -604,7 +604,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=53;
+		items=54;
 		class Item0
 		{
 			dataType="Logic";
@@ -11310,15 +11310,16 @@ class Mission
 									class PositionInfo
 									{
 										position[]={16261.849,15.896832,6538.6025};
-										angles[]={0,2.0825105,0};
+										angles[]={0,2.2082298,-0};
 									};
 									side="Empty";
-									flags=5;
+									flags=1;
 									class Attributes
 									{
 									};
 									id=2411;
 									type="Land_vn_radio";
+									atlOffset=0.86464024;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -11342,8 +11343,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={16262.475,15.472017,6538.542};
-										angles[]={0,5.1756592,0.012000273};
+										position[]={16262.46,15.472017,6538.4634};
+										angles[]={0.0015047706,5.3013897,0.011905559};
 									};
 									side="Empty";
 									flags=4;
@@ -11353,7 +11354,7 @@ class Mission
 									};
 									id=2412;
 									type="Land_WoodenTable_small_F";
-									atlOffset=1.9073486e-06;
+									atlOffset=0.00017738342;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -13426,6 +13427,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="ARVN Guards";
+							state=1;
 							class Entities
 							{
 								items=4;
@@ -16319,7 +16321,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
@@ -16635,6 +16637,168 @@ class Mission
 							};
 						};
 						nAttributes=5;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16271.55,15.248366,6540.2593};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Combat Photographer";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="vn_m16";
+								class primaryMuzzleMag
+								{
+									name="vn_m16_40_t_mag";
+									ammoLeft=36;
+								};
+							};
+							class binocular
+							{
+								name="vn_camera_01";
+							};
+							class uniform
+							{
+								typeName="vn_b_uniform_macv_03_01";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_m16_40_t_mag";
+										count=3;
+										ammoLeft=36;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_b_item_firstaidkit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="vn_b_vest_usarmy_04";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="vn_m67_grenade_mag";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m18_yellow_mag";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="vn_b_pack_01_02";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="vn_m16_20_t_mag";
+										count=10;
+										ammoLeft=18;
+									};
+									class Item1
+									{
+										name="vn_m61_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="vn_m18_yellow_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="vn_m18_purple_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="vn_b_item_firstaidkit";
+										count=2;
+									};
+								};
+							};
+							map="vn_b_item_map";
+							compass="vn_b_item_compass";
+							watch="vn_b_item_watch";
+							radio="vn_b_item_radio_urc10";
+							goggles="vn_b_aviator";
+							headgear="vn_b_helmet_m1_07_01";
+						};
+					};
+					id=3672;
+					type="vn_b_men_army_19";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -17428,7 +17592,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={16237.605,15.031439,6559.7798};
-						angles[]={0,3.5282481,-0};
+						angles[]={0,3.5282481,0};
 					};
 					side="West";
 					flags=7;
@@ -30412,6 +30576,16 @@ class Mission
 			};
 			id=3639;
 			type="EmptyDetectorArea10x10";
+		};
+		class Item53
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16347.402,71.823036,8233.1953};
+			};
+			id=3676;
+			type="vn_module_photo_camera_enable_screenshots";
 		};
 	};
 	class Connections
