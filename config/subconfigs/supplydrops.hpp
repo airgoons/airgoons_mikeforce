@@ -40,6 +40,27 @@ class vehicles
 		className = "vn_b_ammobox_supply_06";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_work_ca.paa";
 	};
+	
+	class M2High
+	{
+		name = "STR_vn_mf_m2_high";
+		className = "vn_b_army_static_m2_high";
+		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
+	};
+	
+	class M2Low
+	{
+		name = "STR_vn_mf_m2_low";
+		className = "vn_b_army_static_m2_low";
+		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
+	};
+	
+	class M45Quad
+	{
+		name = "STR_vn_mf_m45_quad";
+		className = "vn_b_army_static_m45";
+		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
+	};
 };
 
 class support

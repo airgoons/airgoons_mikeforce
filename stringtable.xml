@@ -1241,6 +1241,15 @@
       <Key ID="STR_vn_mf_workshop_supplies">
         <Original>Workshop Supplies</Original>
       </Key>
+	  <Key ID="STR_vn_mf_m2_high">
+        <Original>M2HB .50cal (High)</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_m2_low">
+        <Original>M2HB .50cal (low)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_m45_quad">
+        <Original>M45 Quadmount</Original>
+      </Key>
       <Key ID="STR_vn_mf_food_supplies">
         <Original>Food Supplies</Original>
       </Key>

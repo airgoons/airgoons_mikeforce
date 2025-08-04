@@ -6063,7 +6063,7 @@ class vn_b_army_static_m2_low
 	type = "static";
 	categories[] = {"static"};
 	rank = 0;
-	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	SUPPLY_CAPACITY(250, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
 	conditions[] = {
 		CONDITION_HAS_RANK,
@@ -6095,7 +6095,7 @@ class vn_b_army_static_m2_high
 	type = "static";
 	categories[] = {"static"};
 	rank = 0;
-	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	SUPPLY_CAPACITY(250, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
 	conditions[] = {
 		CONDITION_HAS_RANK,
@@ -6127,7 +6127,7 @@ class vn_b_army_static_m45
 	type = "static";
 	categories[] = {"static"};
 	rank = 0;
-	SUPPLY_CAPACITY(250, DAYS_TO_SECONDS(1));
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
 	conditions[] = {
 		CONDITION_HAS_RANK,
