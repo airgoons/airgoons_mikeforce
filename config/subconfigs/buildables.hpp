@@ -5416,7 +5416,7 @@ class Land_vn_i_shed_ind_old_f
 					icon = VEHICLE_ICON_STATIC;
 					name = "STR_vn_mf_vic_static";
 
-					class vn_b_sf_static_m2_high
+					class vn_b_army_static_m2_high
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -5424,7 +5424,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m2_low
+					class vn_b_army_static_m2_low
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -5432,7 +5432,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m1919a4_high
+					class vn_b_army_static_m1919a4_high
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -5440,14 +5440,14 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m1919a4_low
+					class vn_b_army_static_m1919a4_low
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
 						icon = VEHICLE_ICON_STATIC;
 						//side = "WEST";
 					};
-					class vn_b_sf_static_mk18
+					class vn_b_army_static_mk18
 					{
 						cost[] = {{"BuildingSupplies", 300}};
 						cooldown = 120;
@@ -5455,7 +5455,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m1919a6
+					class vn_b_army_static_m1919a6
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -5463,7 +5463,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m40a1rr
+					class vn_b_army_static_m40a1rr
 					{
 						cost[] = {{"BuildingSupplies", 300}};
 						cooldown = 120;
@@ -5471,7 +5471,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_o_pl_static_at3
+					class vn_b_army_static_tow
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -6054,6 +6054,102 @@ class vn_b_prop_fmradio_01
 	class features
 	{
 		class radio {};
+	};
+};
+
+class vn_b_army_static_m2_low
+{
+	name = "";
+	type = "static";
+	categories[] = {"static"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_CharliePlatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_bar_01_campchair_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_b_army_static_m2_low";
+		};
+		class final_state
+		{
+			object_class = "vn_b_army_static_m2_low";
+		};
+	};
+};
+
+class vn_b_army_static_m2_high
+{
+	name = "";
+	type = "static";
+	categories[] = {"static"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_CharliePlatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_bar_01_campchair_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_b_army_static_m2_high";
+		};
+		class final_state
+		{
+			object_class = "vn_b_army_static_m2_high";
+		};
+	};
+};
+
+class vn_b_army_static_m45
+{
+	name = "";
+	type = "static";
+	categories[] = {"static"};
+	rank = 0;
+	SUPPLY_CAPACITY(250, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_CharliePlatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_ammobox_supply_07_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_b_army_static_m45";
+		};
+		class final_state
+		{
+			object_class = "vn_b_army_static_m45";
+		};
 	};
 };
 
