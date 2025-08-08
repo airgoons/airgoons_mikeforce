@@ -43,7 +43,7 @@ if (_spawnPosition isEqualTo []) then
 {
 	private _validAttackAngles = [getPos _objective] call para_g_fnc_spawning_valid_attack_angles;
 	private _tracerDirection = (_validAttackAngles select 0) + random ((_validAttackAngles select 1) - (_validAttackAngles select 0));
-	private _tracerResult = [_objectivePos, nil,  _tracerDirection, 300] call para_g_fnc_spawning_find_valid_position_tracer;
+	private _tracerResult = [_objectivePos, nil,  _tracerDirection, 600] call para_g_fnc_spawning_find_valid_position_tracer;
 	if !(_tracerResult isEqualTo []) then {_spawnPosition = _tracerResult select 0;};
 };
 
