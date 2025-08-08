@@ -98,6 +98,9 @@
       <Key ID="STR_vn_mf_vehicle_workshop">
         <Original>Vehicle Workshop</Original>
       </Key>
+	  <Key ID="STR_vn_mf_statics">
+        <Original>Static Weapons</Original>
+      </Key>
       <Key ID="STR_vn_mf_bridgebailey01">
         <Original>Bailey Bridge 1</Original>
       </Key>
@@ -1082,6 +1085,10 @@
       <Key ID="STR_vn_mf_buildingMenu_category_functional">
         <Original>Special Buildings</Original>
         <English>Special Buildings</English>
+      </Key>
+	  <Key ID="STR_vn_mf_buildingMenu_category_statics">
+        <Original>Static Weapons</Original>
+        <English>Static Weapons</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_us">
         <Original>U.S</Original>
