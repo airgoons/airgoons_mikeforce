@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3541;
+		nextID=3599;
 	};
 	class Camera
 	{
-		pos[]={16289.846,35.14851,6549.7334};
-		dir[]={-0.7478928,-0.47857717,0.46008202};
-		up[]={-0.40763682,0.87803614,0.25076491};
-		aside[]={0.52398014,4.3888576e-08,0.85176325};
+		pos[]={15465.926,63.410042,11952.143};
+		dir[]={-0.054443661,-0.39655617,0.91639632};
+		up[]={-0.023518262,0.91800952,0.39585954};
+		aside[]={0.99824208,-4.2164174e-09,0.059306148};
 	};
 };
 binarizationWanted=0;
-sourceName="airgoons";
+sourceName="airgoons_mikeforce";
 addons[]=
 {
 	"modules_f_vietnam",
@@ -1527,7 +1527,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={16361.027,75.568092,8182.0313};
+								position[]={16361.027,75.568092,8182.0312};
 								angles[]={0,0.23548152,0};
 							};
 							side="Empty";
@@ -2758,7 +2758,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={17390.895,31.370674,5643.2813};
+								position[]={17390.895,31.370674,5643.2812};
 								angles[]={0,1.6621296,0};
 							};
 							side="Empty";
@@ -3168,7 +3168,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={17399.275,30.963905,5618.4063};
+								position[]={17399.275,30.963905,5618.4062};
 								angles[]={0,6.2414103,0};
 							};
 							side="Empty";
@@ -13443,7 +13443,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={15839.912,14.981439,7162.5313};
+												position[]={15839.912,14.981439,7162.5312};
 											};
 											side="Independent";
 											flags=4;
@@ -13458,7 +13458,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={15839.912,17.356926,7162.5313};
+												position[]={15839.912,17.356926,7162.5312};
 											};
 											side="Independent";
 											flags=2;
@@ -13474,7 +13474,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={15839.912,17.356926,7162.5313};
+												position[]={15839.912,17.356926,7162.5312};
 											};
 											side="Independent";
 											class Attributes
@@ -13489,7 +13489,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={15839.912,17.356926,7162.5313};
+												position[]={15839.912,17.356926,7162.5312};
 											};
 											side="Independent";
 											class Attributes
