@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15465.926,63.410042,11952.143};
-		dir[]={-0.054443661,-0.39655617,0.91639632};
-		up[]={-0.023518262,0.91800952,0.39585954};
-		aside[]={0.99824208,-4.2164174e-09,0.059306148};
+		pos[]={16268.754,53.758331,6493.4692};
+		dir[]={0.0014271853,-0.53566527,0.84443986};
+		up[]={0.00090620853,0.84442759,0.53567004};
+		aside[]={1.0000093,4.4528633e-07,-0.0016916014};
 	};
 };
 binarizationWanted=0;
@@ -39,13 +39,13 @@ addons[]=
 	"A3_Modules_F",
 	"A3_Modules_F_Multiplayer",
 	"A3_Data_F_Curator_Virtual",
-	"characters_f_vietnam_c",
-	"static_f_vietnam_c",
 	"A3_Structures_F_Mil_Cargo",
 	"armor_f_vietnam_03_c",
 	"air_f_vietnam_03_c",
+	"characters_f_vietnam_c",
 	"wheeled_f_vietnam_c",
 	"armor_f_vietnam_c",
+	"static_f_vietnam_c",
 	"objects_f_vietnam_c",
 	"weapons_f_vietnam_03_c",
 	"weapons_f_vietnam_c",
@@ -141,50 +141,50 @@ class AddonsMetaData
 		};
 		class Item8
 		{
-			className="characters_f_vietnam_c";
-			name="characters_f_vietnam_c";
-			author="Savage Game Design";
-			url="https://www.arma3.com";
-		};
-		class Item9
-		{
-			className="static_f_vietnam_c";
-			name="static_f_vietnam_c";
-			author="Savage Game Design";
-			url="https://www.arma3.com";
-		};
-		class Item10
-		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item9
 		{
 			className="armor_f_vietnam_03_c";
 			name="armor_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item10
 		{
 			className="air_f_vietnam_03_c";
 			name="air_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item11
+		{
+			className="characters_f_vietnam_c";
+			name="characters_f_vietnam_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
+		class Item12
 		{
 			className="wheeled_f_vietnam_c";
 			name="wheeled_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item13
 		{
 			className="armor_f_vietnam_c";
 			name="armor_f_vietnam_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
+			className="static_f_vietnam_c";
+			name="static_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
@@ -604,7 +604,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=54;
+		items=52;
 		class Item0
 		{
 			dataType="Logic";
@@ -4357,72 +4357,6 @@ class Mission
 		};
 		class Item24
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11432.77,82.417587,14610.429};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-					};
-					id=2600;
-					type="vn_o_men_nva_11";
-				};
-			};
-			class Attributes
-			{
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=1;
-				};
-				class Links
-				{
-					items=1;
-					class Item0
-					{
-						linkID=0;
-						item0=2600;
-						item1=2599;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-				};
-			};
-			id=2598;
-		};
-		class Item25
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={11432.77,84.410194,14610.378};
-				angles[]={0,4.1228895,0};
-			};
-			side="East";
-			flags=6;
-			class Attributes
-			{
-			};
-			id=2599;
-			type="vn_o_nva_static_pk_high";
-		};
-		class Item26
-		{
 			dataType="Logic";
 			class PositionInfo
 			{
@@ -4566,7 +4500,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item27
+		class Item25
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4712,7 +4646,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item28
+		class Item26
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4858,7 +4792,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item29
+		class Item27
 		{
 			dataType="Layer";
 			name="Random Stuff";
@@ -5124,7 +5058,7 @@ class Mission
 			id=2881;
 			atlOffset=58.814518;
 		};
-		class Item30
+		class Item28
 		{
 			dataType="Layer";
 			name="Bases";
@@ -16029,7 +15963,7 @@ class Mission
 			id=2891;
 			atlOffset=9.8163567;
 		};
-		class Item31
+		class Item29
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -16174,7 +16108,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item32
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -16319,7 +16253,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item33
+		class Item31
 		{
 			dataType="Group";
 			side="West";
@@ -16831,7 +16765,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item34
+		class Item32
 		{
 			dataType="Group";
 			side="West";
@@ -17583,7 +17517,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item35
+		class Item33
 		{
 			dataType="Group";
 			side="West";
@@ -19397,7 +19331,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item36
+		class Item34
 		{
 			dataType="Group";
 			side="West";
@@ -21223,7 +21157,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item37
+		class Item35
 		{
 			dataType="Group";
 			side="West";
@@ -21584,7 +21518,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item38
+		class Item36
 		{
 			dataType="Group";
 			side="West";
@@ -22305,7 +22239,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item39
+		class Item37
 		{
 			dataType="Group";
 			side="West";
@@ -23475,7 +23409,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Group";
 			side="West";
@@ -24518,7 +24452,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Group";
 			side="West";
@@ -25270,7 +25204,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Group";
 			side="West";
@@ -27546,7 +27480,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Group";
 			side="West";
@@ -28332,7 +28266,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Group";
 			side="West";
@@ -29158,7 +29092,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Layer";
 			name="Airgoons map Info";
@@ -29261,7 +29195,7 @@ class Mission
 			id=3598;
 			atlOffset=99.160683;
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Layer";
 			name="Map Stuff";
@@ -30512,7 +30446,7 @@ class Mission
 			id=3603;
 			atlOffset=93.098152;
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -30554,7 +30488,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item48
+		class Item46
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -30596,7 +30530,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item49
+		class Item47
 		{
 			dataType="Trigger";
 			position[]={15913.051,14.98,7073.9443};
@@ -30616,7 +30550,7 @@ class Mission
 			id=3622;
 			type="EmptyDetectorArea10x10";
 		};
-		class Item50
+		class Item48
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -30659,7 +30593,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item51
+		class Item49
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -30702,7 +30636,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item52
+		class Item50
 		{
 			dataType="Trigger";
 			position[]={15751.989,14.98,6872.2754};
@@ -30722,7 +30656,7 @@ class Mission
 			id=3639;
 			type="EmptyDetectorArea10x10";
 		};
-		class Item53
+		class Item51
 		{
 			dataType="Logic";
 			class PositionInfo
