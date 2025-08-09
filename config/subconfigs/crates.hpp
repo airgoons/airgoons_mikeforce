@@ -20,7 +20,10 @@ class MedicalCrate
 class AmmoCrateLight
 {
 	objectClassname = "vn_b_ammobox_supply_01";
-	weapons[] = {{"vn_m127",3}};
+	weapons[] = {
+		{"vn_m127",3},
+		{"vn_m72",4}
+		};
 	magazines[] = {
 		{"vn_m1911_mag",20},
 		{"vn_hp_mag",20},
@@ -37,7 +40,8 @@ class AmmoCrateLight
 		{"vn_m127_mag",15},
 		{"vn_m14_mag",40},
 		{"vn_m14_t_mag",40},
-		{"vn_l1a1_20_mag", 60}
+		{"vn_l1a1_20_mag", 60},
+		{"vn_m72_mag",4}
 	};
 	items[] = {};
 	backpacks[] = {};
@@ -79,7 +83,7 @@ class AmmoCrateExplosives
 {
 	objectClassname = "vn_b_ammobox_supply_01";
 	weapons[] = {
-		{"vn_m72",10},
+		{"vn_m72",10}
 	};
 	magazines[] = {
 		{"vn_m61_grenade_mag",30},
@@ -109,7 +113,8 @@ class AmmoCrateExplosives
 		{"vn_mine_m112_remote_mag",15},
 		{"vn_mine_m18_x3_mag",20},
 		{"vn_mine_m18_x3_range_mag",20},
-		{"vn_mine_satchel_remote_02_mag",10}
+		{"vn_mine_satchel_remote_02_mag",10},
+		{"vn_m72_mag",10}
 	};
 	items[] = {};
 	backpacks[] = {};
