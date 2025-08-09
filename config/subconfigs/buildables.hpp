@@ -6040,7 +6040,7 @@ class vn_b_ammobox_wpn_01
 	type = "ammocrates";
 	categories[] = {"statics", "functional"};
 	rank = 0;
-	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+	SUPPLY_CAPACITY(600, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
 	conditions[] = {
 		CONDITION_HAS_RANK,
@@ -6096,14 +6096,14 @@ class vn_b_ammobox_wpn_01
 					class vn_b_army_static_mk18
 					{
 						cost[] = {{"BuildingSupplies", 200}};
-						cooldown = 120;
+						cooldown = 60;
 						icon = VEHICLE_ICON_STATIC;
 						//side = "WEST";
 					};
 
 					class vn_b_army_static_m40a1rr
 					{
-						cost[] = {{"BuildingSupplies", 400}};
+						cost[] = {{"BuildingSupplies", 300}};
 						cooldown = 120;
 						icon = VEHICLE_ICON_STATIC;
 						//side = "WEST";
@@ -6112,15 +6112,15 @@ class vn_b_ammobox_wpn_01
 					class vn_b_army_static_tow
 					{
 						cost[] = {{"BuildingSupplies", 300}};
-						cooldown = 60;
+						cooldown = 120;
 						icon = VEHICLE_ICON_STATIC;
 						//side = "WEST";
 					};
 				};
 			};
 			
-			spawnPositionModelSpace[] = {15.973,5.42801,-1.2};
-			spawnDirectionModelSpace = 270;
+			spawnPositionModelSpace[] = {8.973,5.42801,0};
+			spawnDirectionModelSpace = 0;
 
 		};
 	};
