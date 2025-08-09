@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4038;
+		nextID=4049;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3960;
+		nextID=4021;
 	};
 	class Camera
 	{
-		pos[]={16099.932,96.567116,11038.242};
-		dir[]={0.80228829,-0.59597361,0.036665998};
-		up[]={0.59552717,0.80286247,0.027215865};
-		aside[]={0.045660723,-5.2859832e-08,-0.99904811};
+		pos[]={16299.733,47.743057,6541.8799};
+		dir[]={-0.66495502,-0.60740095,0.43476644};
+		up[]={-0.50839275,0.79437214,0.33240098};
+		aside[]={0.54726934,-7.5102434e-08,0.8370263};
 	};
 };
 binarizationWanted=0;
@@ -33,8 +33,8 @@ addons[]=
 	"modules_f_vietnam",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Ui_F",
-	"structures_f_vietnam_c",
 	"A3_Characters_F",
+	"structures_f_vietnam_c",
 	"A3_Misc_F_Helpers",
 	"A3_Modules_F",
 	"A3_Modules_F_Multiplayer",
@@ -107,16 +107,16 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="structures_f_vietnam_c";
-			name="structures_f_vietnam_c";
-			author="Savage Game Design";
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item4
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
+			className="structures_f_vietnam_c";
+			name="structures_f_vietnam_c";
+			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
 		class Item5
@@ -701,7 +701,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=51;
+		items=48;
 		class Item0
 		{
 			dataType="Logic";
@@ -1455,56 +1455,6 @@ class Mission
 		};
 		class Item5
 		{
-			dataType="Layer";
-			name="Mission: Wiretap";
-			state=1;
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Marker";
-					position[]={4460.646,131.922,16678.199};
-					name="mission_wiretap_1_pole";
-					text="Mission Wiretap: Pole";
-					type="Empty";
-					id=938;
-					atlOffset=0.035003662;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4460.6431,137.10428,16678.188};
-						angles[]={0,5.8483715,0};
-					};
-					side="Empty";
-					flags=5;
-					class Attributes
-					{
-						name="vn_mf_mission_wiretap_1_pole";
-					};
-					id=940;
-					type="Land_vn_powerpolewooden_f";
-					atlOffset=0.035079956;
-				};
-				class Item2
-				{
-					dataType="Marker";
-					position[]={4525.2539,296.99976,16930.924};
-					name="mission_wiretap_1_AA";
-					text="Mission Wiretap: AA";
-					type="Empty";
-					id=959;
-					atlOffset=62.900787;
-				};
-			};
-			id=939;
-			atlOffset=59.675079;
-		};
-		class Item6
-		{
 			dataType="Logic";
 			class PositionInfo
 			{
@@ -1532,7 +1482,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1544,7 +1494,7 @@ class Mission
 			id=1124;
 			type="HeadlessClient_F";
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1556,7 +1506,7 @@ class Mission
 			id=1125;
 			type="HeadlessClient_F";
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1568,14 +1518,14 @@ class Mission
 			id=1126;
 			type="HeadlessClient_F";
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Layer";
 			name="Vehicle spawn point";
 			state=1;
 			class Entities
 			{
-				items=13;
+				items=7;
 				class Item0
 				{
 					dataType="Layer";
@@ -2563,116 +2513,6 @@ class Mission
 				class Item3
 				{
 					dataType="Layer";
-					name="Airport transport";
-					id=1393;
-					atlOffset=103.16;
-				};
-				class Item4
-				{
-					dataType="Layer";
-					name="Air fire support";
-					id=1425;
-					atlOffset=103.16;
-				};
-				class Item5
-				{
-					dataType="Layer";
-					name="Jets";
-					class Entities
-					{
-						items=3;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={20880.379,1.1902204,13284.432};
-								angles[]={0,4.8479128,0};
-							};
-							side="Empty";
-							flags=1;
-							class Attributes
-							{
-								disableSimulation=1;
-							};
-							id=1442;
-							type="vn_signad_sponsors_f";
-							atlOffset=86.747734;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=0;
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item1
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={20873.344,0,13286.652};
-								angles[]={0,4.3838196,0};
-							};
-							init="['jets', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
-							id=1443;
-							type="Logic";
-							atlOffset=86.747734;
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={20864.758,0.93561417,13305.926};
-								angles[]={0,3.2181232,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-							};
-							id=1444;
-							type="Sign_Arrow_Direction_Green_F";
-							atlOffset=87.748123;
-						};
-					};
-					id=1445;
-					atlOffset=87.24614;
-				};
-				class Item6
-				{
-					dataType="Layer";
-					name="Scout helicopters";
-					id=1455;
-					atlOffset=103.16;
-				};
-				class Item7
-				{
-					dataType="Layer";
-					name="Air heavy fire support";
-					id=1438;
-					atlOffset=103.16;
-				};
-				class Item8
-				{
-					dataType="Layer";
-					name="Air transport";
-					id=1397;
-					atlOffset=103.16;
-				};
-				class Item9
-				{
-					dataType="Layer";
 					name="Utility";
 					class Entities
 					{
@@ -2869,7 +2709,7 @@ class Mission
 					id=1466;
 					atlOffset=0.87312889;
 				};
-				class Item10
+				class Item4
 				{
 					dataType="Layer";
 					name="Heavy fire support";
@@ -3008,7 +2848,7 @@ class Mission
 					id=1506;
 					atlOffset=0.5184269;
 				};
-				class Item11
+				class Item5
 				{
 					dataType="Layer";
 					name="Heavy transport";
@@ -3206,7 +3046,7 @@ class Mission
 					id=1504;
 					atlOffset=0.58190918;
 				};
-				class Item12
+				class Item6
 				{
 					dataType="Layer";
 					name="Light fire support";
@@ -3407,9 +3247,9 @@ class Mission
 				};
 			};
 			id=1325;
-			atlOffset=-5.117239;
+			atlOffset=0.47711945;
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3556,7 +3396,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3609,7 +3449,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3754,7 +3594,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3899,7 +3739,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3965,7 +3805,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4004,7 +3844,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4070,7 +3910,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4109,7 +3949,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4120,7 +3960,7 @@ class Mission
 			id=1912;
 			type="vn_module_dynamicradiomusic";
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4265,7 +4105,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4411,7 +4251,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4556,7 +4396,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4702,7 +4542,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4848,14 +4688,14 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Layer";
 			name="Random Stuff";
 			state=1;
 			class Entities
 			{
-				items=6;
+				items=7;
 				class Item0
 				{
 					dataType="Object";
@@ -5110,11 +4950,61 @@ class Mission
 					id=2850;
 					atlOffset=0.054458618;
 				};
+				class Item6
+				{
+					dataType="Layer";
+					name="Mission: Wiretap";
+					state=1;
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Marker";
+							position[]={4460.646,131.922,16678.199};
+							name="mission_wiretap_1_pole";
+							text="Mission Wiretap: Pole";
+							type="Empty";
+							id=938;
+							atlOffset=0.035003662;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4460.6431,137.10428,16678.188};
+								angles[]={0,5.8483715,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								name="vn_mf_mission_wiretap_1_pole";
+							};
+							id=940;
+							type="Land_vn_powerpolewooden_f";
+							atlOffset=0.035079956;
+						};
+						class Item2
+						{
+							dataType="Marker";
+							position[]={4525.2539,296.99976,16930.924};
+							name="mission_wiretap_1_AA";
+							text="Mission Wiretap: AA";
+							type="Empty";
+							id=959;
+							atlOffset=62.900787;
+						};
+					};
+					id=939;
+					atlOffset=59.675079;
+				};
 			};
 			id=2881;
-			atlOffset=58.814518;
+			atlOffset=111.70168;
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Layer";
 			name="Bases";
@@ -6558,6 +6448,7 @@ class Mission
 										speedMode="LIMITED";
 									};
 									id=2364;
+									atlOffset=103.16;
 								};
 								class Item1
 								{
@@ -6665,7 +6556,7 @@ class Mission
 										};
 									};
 									id=2367;
-									atlOffset=-1.9073486e-06;
+									atlOffset=103.16;
 								};
 								class Item2
 								{
@@ -6775,11 +6666,11 @@ class Mission
 									{
 									};
 									id=2374;
-									atlOffset=1.8191528;
+									atlOffset=103.16;
 								};
 							};
 							id=2889;
-							atlOffset=0.93958473;
+							atlOffset=28.368114;
 						};
 						class Item1
 						{
@@ -7040,7 +6931,7 @@ class Mission
 								};
 							};
 							id=2854;
-							atlOffset=2.357933;
+							atlOffset=0.032438278;
 						};
 						class Item3
 						{
@@ -7319,7 +7210,7 @@ class Mission
 						};
 					};
 					id=2878;
-					atlOffset=-1.5126152;
+					atlOffset=-4.8351917;
 				};
 				class Item3
 				{
@@ -9584,7 +9475,7 @@ class Mission
 									};
 									id=1745;
 									type="vn_b_air_oh6a_05";
-									atlOffset=0.00013637543;
+									atlOffset=0.0001373291;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -16562,9 +16453,9 @@ class Mission
 				};
 			};
 			id=2891;
-			atlOffset=9.8861351;
+			atlOffset=9.8381119;
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -16709,7 +16600,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -16854,7 +16745,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Layer";
 			name="Airgoons map Info";
@@ -16957,7 +16848,7 @@ class Mission
 			id=3598;
 			atlOffset=99.160683;
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Layer";
 			name="Map Stuff";
@@ -18208,7 +18099,7 @@ class Mission
 			id=3603;
 			atlOffset=93.098152;
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -18251,7 +18142,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -18294,7 +18185,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -18304,7 +18195,7 @@ class Mission
 			id=3676;
 			type="vn_module_photo_camera_enable_screenshots";
 		};
-		class Item34
+		class Item33
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -18449,7 +18340,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item35
+		class Item34
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -18502,20 +18393,21 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item36
+		class Item35
 		{
 			dataType="Layer";
 			name="FOB Khe Gio";
+			state=3;
 			class Entities
 			{
-				items=7;
+				items=9;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16179.68,70.092545,11049.652};
-						angles[]={-0,4.6782327,0};
+						position[]={16182.874,70.096504,11049.89};
+						angles[]={0.035984326,4.6782327,0};
 					};
 					side="Empty";
 					flags=4;
@@ -18525,6 +18417,7 @@ class Mission
 					};
 					id=3739;
 					type="vn_b_armor_m113_acav_01";
+					atlOffset=-0.0015258789;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18561,7 +18454,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16155.962,70.094208,11045.419};
+						position[]={16155.767,70.094208,11045.644};
 						angles[]={-0,4.3315578,0};
 					};
 					side="Empty";
@@ -18608,7 +18501,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16166.569,70.092545,11048.722};
+						position[]={16166.752,70.092545,11049.283};
 						angles[]={-0,4.4115467,0};
 					};
 					side="Empty";
@@ -19212,157 +19105,577 @@ class Mission
 						nAttributes=2;
 					};
 				};
+				class Item7
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=6;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16129.208,67.891396,11037.594};
+								angles[]={0.017997233,0,0.017997233};
+							};
+							side="West";
+							flags=7;
+							class Attributes
+							{
+								description="Tank Commander@Charlie Tank Section";
+							};
+							id=4013;
+							type="vn_b_men_army_23";
+							atlOffset=7.6293945e-06;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male12ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.01;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="vn_b_insignia_11_acr_01";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16131.708,67.983902,11035.144};
+								angles[]={0.055941612,0,0.019996032};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								description="Tank Driver";
+							};
+							id=4014;
+							type="vn_b_men_army_24";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male01ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.03;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="vn_b_insignia_11_acr_01";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16126.708,67.890488,11035.144};
+								angles[]={0.019999012,0,0.017997233};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								description="Tank Gunner";
+							};
+							id=4015;
+							type="vn_b_men_army_25";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male11ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.02;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="vn_b_insignia_11_acr_01";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16144.108,67.771439,11038.266};
+								angles[]={0.017989019,6.1774988,0.0200064};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								description="Tank Commander";
+							};
+							id=4016;
+							type="vn_b_men_army_23";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male12ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.01;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="vn_b_insignia_11_acr_01";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16146.858,67.793747,11036.043};
+								angles[]={6.2335587,6.1774635,0.050991654};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								description="Tank Driver";
+							};
+							id=4017;
+							type="vn_b_men_army_24";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male01ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.03;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="vn_b_insignia_11_acr_01";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16141.886,67.771439,11035.516};
+								angles[]={0.015308552,6.1774569,6.2526412};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								description="Tank Gunner";
+							};
+							id=4018;
+							type="vn_b_men_army_25";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male11ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.02;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="vn_b_insignia_11_acr_01";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					class Attributes
+					{
+						behaviour="SAFE";
+						formation="DIAMOND";
+					};
+					id=4012;
+					atlOffset=103.16;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_sr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60.5";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Charlie Tank Section";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="32.0";
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item8
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={16157.07,67.994591,11033.152};
+						angles[]={0,0,6.2764907};
+					};
+					name="FOBtankrespawn";
+					id=3753;
+					type="ModuleRespawnVehicle_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleRespawnVehicle_F_ForcedRespawn";
+							expression="_this setVariable ['ForcedRespawn',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleRespawnVehicle_F_Init";
+							expression="_this setVariable ['Init',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[_this#0] execVM ""addtankgunners.sqf"";";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleRespawnVehicle_F_RespawnWhenDisabled";
+							expression="_this setVariable ['RespawnWhenDisabled',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleRespawnVehicle_F_DesertedDistance";
+							expression="_this setVariable ['DesertedDistance',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1000";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ModuleRespawnVehicle_F_PositionType";
+							expression="_this setVariable ['PositionType',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="0";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ModuleRespawnVehicle_F_RespawnCount";
+							expression="_this setVariable ['RespawnCount',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ModuleRespawnVehicle_F_Position";
+							expression="_this setVariable ['Position',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="0";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ModuleRespawnVehicle_F_Wreck";
+							expression="_this setVariable ['Wreck',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="2";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ModuleRespawnVehicle_F_Delay";
+							expression="_this setVariable ['Delay',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="60";
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ModuleRespawnVehicle_F_ShowNotification";
+							expression="_this setVariable ['ShowNotification',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="1";
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
 			};
 			id=3752;
-			atlOffset=0.020774841;
+			atlOffset=-213.81702;
 		};
-		class Item37
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={16157.07,67.994591,11033.152};
-				angles[]={0,0,6.2764907};
-			};
-			name="FOBtankrespawn";
-			id=3753;
-			type="ModuleRespawnVehicle_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleRespawnVehicle_F_ForcedRespawn";
-					expression="_this setVariable ['ForcedRespawn',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleRespawnVehicle_F_Init";
-					expression="_this setVariable ['Init',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[_this#0] execVM ""addtankgunners.sqf"";";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleRespawnVehicle_F_RespawnWhenDisabled";
-					expression="_this setVariable ['RespawnWhenDisabled',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleRespawnVehicle_F_DesertedDistance";
-					expression="_this setVariable ['DesertedDistance',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="1000";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleRespawnVehicle_F_PositionType";
-					expression="_this setVariable ['PositionType',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="0";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleRespawnVehicle_F_RespawnCount";
-					expression="_this setVariable ['RespawnCount',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="ModuleRespawnVehicle_F_Position";
-					expression="_this setVariable ['Position',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="0";
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="ModuleRespawnVehicle_F_Wreck";
-					expression="_this setVariable ['Wreck',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="2";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="ModuleRespawnVehicle_F_Delay";
-					expression="_this setVariable ['Delay',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="60";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="ModuleRespawnVehicle_F_ShowNotification";
-					expression="_this setVariable ['ShowNotification',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="1";
-						};
-					};
-				};
-				nAttributes=10;
-			};
-		};
-		class Item38
+		class Item36
 		{
 			dataType="Group";
 			side="West";
@@ -19874,7 +20187,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item39
+		class Item37
 		{
 			dataType="Group";
 			side="West";
@@ -20736,7 +21049,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Group";
 			side="West";
@@ -22805,7 +23118,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Group";
 			side="West";
@@ -24887,7 +25200,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Group";
 			side="West";
@@ -25369,7 +25682,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Group";
 			side="West";
@@ -26198,7 +26511,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Group";
 			side="West";
@@ -28024,7 +28337,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Group";
 			side="West";
@@ -29863,7 +30176,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Group";
 			side="West";
@@ -30726,7 +31039,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Group";
 			side="West";
@@ -33000,7 +33313,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item48
+		class Item46
 		{
 			dataType="Group";
 			side="West";
@@ -33915,433 +34228,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item49
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={16129.208,67.891396,11037.594};
-						angles[]={0.017997233,0,0.017997233};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Tank Commander@Charlie Tank Section";
-						isPlayable=1;
-					};
-					id=4013;
-					type="vn_b_men_army_23";
-					atlOffset=7.6293945e-06;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.01;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="vn_b_insignia_11_acr_01";
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={16131.708,67.983902,11035.144};
-						angles[]={0.055941612,0,0.019996032};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Tank Driver";
-						isPlayable=1;
-					};
-					id=4014;
-					type="vn_b_men_army_24";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.03;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="vn_b_insignia_11_acr_01";
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={16126.708,67.890488,11035.144};
-						angles[]={0.019999012,0,0.017997233};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Tank Gunner";
-						isPlayable=1;
-					};
-					id=4015;
-					type="vn_b_men_army_25";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.02;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="vn_b_insignia_11_acr_01";
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={16144.108,67.771439,11038.266};
-						angles[]={0.017989019,6.1774988,0.0200064};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Tank Commander";
-						isPlayable=1;
-					};
-					id=4016;
-					type="vn_b_men_army_23";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.01;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="vn_b_insignia_11_acr_01";
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={16146.858,67.793747,11036.043};
-						angles[]={6.2335587,6.1774635,0.050991654};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Tank Driver";
-						isPlayable=1;
-					};
-					id=4017;
-					type="vn_b_men_army_24";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.03;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="vn_b_insignia_11_acr_01";
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={16141.886,67.771439,11035.516};
-						angles[]={0.015308552,6.1774569,6.2526412};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Tank Gunner";
-						isPlayable=1;
-					};
-					id=4018;
-					type="vn_b_men_army_25";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.02;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="unitInsignia";
-							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="vn_b_insignia_11_acr_01";
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-				behaviour="SAFE";
-				formation="DIAMOND";
-			};
-			id=4012;
-			atlOffset=7.6293945e-06;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TFAR_freq_sr";
-					expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="60.5";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Charlie Tank Section";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="TFAR_freq_lr";
-					expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="32.0";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item50
+		class Item47
 		{
 			dataType="Group";
 			side="West";
@@ -35172,11 +35059,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=140;
+			nextID=133;
 		};
 		class Links
 		{
-			items=140;
+			items=133;
 			class Item0
 			{
 				linkID=0;
@@ -35320,8 +35207,8 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=1444;
-				item1=1443;
+				item0=1458;
+				item1=1457;
 				class CustomData
 				{
 					type="Sync";
@@ -35330,8 +35217,8 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=1442;
-				item1=1443;
+				item0=1456;
+				item1=1457;
 				class CustomData
 				{
 					type="Sync";
@@ -35340,8 +35227,8 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=1458;
-				item1=1457;
+				item0=1462;
+				item1=1461;
 				class CustomData
 				{
 					type="Sync";
@@ -35350,8 +35237,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=1456;
-				item1=1457;
+				item0=1460;
+				item1=1461;
 				class CustomData
 				{
 					type="Sync";
@@ -35360,8 +35247,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=1462;
-				item1=1461;
+				item0=1465;
+				item1=1464;
 				class CustomData
 				{
 					type="Sync";
@@ -35370,8 +35257,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=1460;
-				item1=1461;
+				item0=1463;
+				item1=1464;
 				class CustomData
 				{
 					type="Sync";
@@ -35380,8 +35267,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=1465;
-				item1=1464;
+				item0=1469;
+				item1=1467;
 				class CustomData
 				{
 					type="Sync";
@@ -35390,8 +35277,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=1463;
-				item1=1464;
+				item0=1468;
+				item1=1467;
 				class CustomData
 				{
 					type="Sync";
@@ -35400,8 +35287,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=1469;
-				item1=1467;
+				item0=1472;
+				item1=1470;
 				class CustomData
 				{
 					type="Sync";
@@ -35410,8 +35297,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=1468;
-				item1=1467;
+				item0=1471;
+				item1=1470;
 				class CustomData
 				{
 					type="Sync";
@@ -35420,8 +35307,8 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=1472;
-				item1=1470;
+				item0=1481;
+				item1=1479;
 				class CustomData
 				{
 					type="Sync";
@@ -35430,8 +35317,8 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=1471;
-				item1=1470;
+				item0=1480;
+				item1=1479;
 				class CustomData
 				{
 					type="Sync";
@@ -35440,8 +35327,8 @@ class Mission
 			class Item26
 			{
 				linkID=26;
-				item0=1481;
-				item1=1479;
+				item0=1487;
+				item1=1485;
 				class CustomData
 				{
 					type="Sync";
@@ -35450,8 +35337,8 @@ class Mission
 			class Item27
 			{
 				linkID=27;
-				item0=1480;
-				item1=1479;
+				item0=1486;
+				item1=1485;
 				class CustomData
 				{
 					type="Sync";
@@ -35460,8 +35347,8 @@ class Mission
 			class Item28
 			{
 				linkID=28;
-				item0=1487;
-				item1=1485;
+				item0=1490;
+				item1=1488;
 				class CustomData
 				{
 					type="Sync";
@@ -35470,8 +35357,8 @@ class Mission
 			class Item29
 			{
 				linkID=29;
-				item0=1486;
-				item1=1485;
+				item0=1489;
+				item1=1488;
 				class CustomData
 				{
 					type="Sync";
@@ -35480,8 +35367,8 @@ class Mission
 			class Item30
 			{
 				linkID=30;
-				item0=1490;
-				item1=1488;
+				item0=1497;
+				item1=1495;
 				class CustomData
 				{
 					type="Sync";
@@ -35490,8 +35377,8 @@ class Mission
 			class Item31
 			{
 				linkID=31;
-				item0=1489;
-				item1=1488;
+				item0=1496;
+				item1=1495;
 				class CustomData
 				{
 					type="Sync";
@@ -35500,8 +35387,8 @@ class Mission
 			class Item32
 			{
 				linkID=32;
-				item0=1497;
-				item1=1495;
+				item0=1500;
+				item1=1498;
 				class CustomData
 				{
 					type="Sync";
@@ -35510,8 +35397,8 @@ class Mission
 			class Item33
 			{
 				linkID=33;
-				item0=1496;
-				item1=1495;
+				item0=1499;
+				item1=1498;
 				class CustomData
 				{
 					type="Sync";
@@ -35520,8 +35407,8 @@ class Mission
 			class Item34
 			{
 				linkID=34;
-				item0=1500;
-				item1=1498;
+				item0=1503;
+				item1=1501;
 				class CustomData
 				{
 					type="Sync";
@@ -35530,8 +35417,8 @@ class Mission
 			class Item35
 			{
 				linkID=35;
-				item0=1499;
-				item1=1498;
+				item0=1502;
+				item1=1501;
 				class CustomData
 				{
 					type="Sync";
@@ -35540,8 +35427,8 @@ class Mission
 			class Item36
 			{
 				linkID=36;
-				item0=1503;
-				item1=1501;
+				item0=1543;
+				item1=1544;
 				class CustomData
 				{
 					type="Sync";
@@ -35550,8 +35437,8 @@ class Mission
 			class Item37
 			{
 				linkID=37;
-				item0=1502;
-				item1=1501;
+				item0=1542;
+				item1=1544;
 				class CustomData
 				{
 					type="Sync";
@@ -35560,8 +35447,8 @@ class Mission
 			class Item38
 			{
 				linkID=38;
-				item0=1543;
-				item1=1544;
+				item0=1546;
+				item1=1547;
 				class CustomData
 				{
 					type="Sync";
@@ -35570,8 +35457,8 @@ class Mission
 			class Item39
 			{
 				linkID=39;
-				item0=1542;
-				item1=1544;
+				item0=1545;
+				item1=1547;
 				class CustomData
 				{
 					type="Sync";
@@ -35580,8 +35467,8 @@ class Mission
 			class Item40
 			{
 				linkID=40;
-				item0=1546;
-				item1=1547;
+				item0=1549;
+				item1=1550;
 				class CustomData
 				{
 					type="Sync";
@@ -35590,8 +35477,8 @@ class Mission
 			class Item41
 			{
 				linkID=41;
-				item0=1545;
-				item1=1547;
+				item0=1548;
+				item1=1550;
 				class CustomData
 				{
 					type="Sync";
@@ -35600,8 +35487,8 @@ class Mission
 			class Item42
 			{
 				linkID=42;
-				item0=1549;
-				item1=1550;
+				item0=1552;
+				item1=1553;
 				class CustomData
 				{
 					type="Sync";
@@ -35610,8 +35497,8 @@ class Mission
 			class Item43
 			{
 				linkID=43;
-				item0=1548;
-				item1=1550;
+				item0=1551;
+				item1=1553;
 				class CustomData
 				{
 					type="Sync";
@@ -35620,8 +35507,8 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=1552;
-				item1=1553;
+				item0=1555;
+				item1=1556;
 				class CustomData
 				{
 					type="Sync";
@@ -35630,8 +35517,8 @@ class Mission
 			class Item45
 			{
 				linkID=45;
-				item0=1551;
-				item1=1553;
+				item0=1554;
+				item1=1556;
 				class CustomData
 				{
 					type="Sync";
@@ -35640,8 +35527,8 @@ class Mission
 			class Item46
 			{
 				linkID=46;
-				item0=1555;
-				item1=1556;
+				item0=1558;
+				item1=1559;
 				class CustomData
 				{
 					type="Sync";
@@ -35650,8 +35537,8 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=1554;
-				item1=1556;
+				item0=1557;
+				item1=1559;
 				class CustomData
 				{
 					type="Sync";
@@ -35660,8 +35547,8 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=1558;
-				item1=1559;
+				item0=1561;
+				item1=1562;
 				class CustomData
 				{
 					type="Sync";
@@ -35670,8 +35557,8 @@ class Mission
 			class Item49
 			{
 				linkID=49;
-				item0=1557;
-				item1=1559;
+				item0=1560;
+				item1=1562;
 				class CustomData
 				{
 					type="Sync";
@@ -35680,8 +35567,8 @@ class Mission
 			class Item50
 			{
 				linkID=50;
-				item0=1561;
-				item1=1562;
+				item0=1564;
+				item1=1565;
 				class CustomData
 				{
 					type="Sync";
@@ -35690,8 +35577,8 @@ class Mission
 			class Item51
 			{
 				linkID=51;
-				item0=1560;
-				item1=1562;
+				item0=1563;
+				item1=1565;
 				class CustomData
 				{
 					type="Sync";
@@ -35700,8 +35587,8 @@ class Mission
 			class Item52
 			{
 				linkID=52;
-				item0=1564;
-				item1=1565;
+				item0=1755;
+				item1=3614;
 				class CustomData
 				{
 					type="Sync";
@@ -35710,8 +35597,8 @@ class Mission
 			class Item53
 			{
 				linkID=53;
-				item0=1563;
-				item1=1565;
+				item0=1755;
+				item1=3611;
 				class CustomData
 				{
 					type="Sync";
@@ -35721,7 +35608,7 @@ class Mission
 			{
 				linkID=54;
 				item0=1755;
-				item1=3614;
+				item1=3609;
 				class CustomData
 				{
 					type="Sync";
@@ -35730,8 +35617,8 @@ class Mission
 			class Item55
 			{
 				linkID=55;
-				item0=1755;
-				item1=3611;
+				item0=1772;
+				item1=3528;
 				class CustomData
 				{
 					type="Sync";
@@ -35740,8 +35627,8 @@ class Mission
 			class Item56
 			{
 				linkID=56;
-				item0=1755;
-				item1=3609;
+				item0=1773;
+				item1=1745;
 				class CustomData
 				{
 					type="Sync";
@@ -35750,8 +35637,8 @@ class Mission
 			class Item57
 			{
 				linkID=57;
-				item0=1772;
-				item1=3528;
+				item0=1834;
+				item1=1836;
 				class CustomData
 				{
 					type="Sync";
@@ -35760,8 +35647,8 @@ class Mission
 			class Item58
 			{
 				linkID=58;
-				item0=1773;
-				item1=1745;
+				item0=1837;
+				item1=1838;
 				class CustomData
 				{
 					type="Sync";
@@ -35770,8 +35657,8 @@ class Mission
 			class Item59
 			{
 				linkID=59;
-				item0=1834;
-				item1=1836;
+				item0=1749;
+				item1=1841;
 				class CustomData
 				{
 					type="Sync";
@@ -35780,8 +35667,8 @@ class Mission
 			class Item60
 			{
 				linkID=60;
-				item0=1837;
-				item1=1838;
+				item0=1773;
+				item1=1886;
 				class CustomData
 				{
 					type="Sync";
@@ -35790,8 +35677,8 @@ class Mission
 			class Item61
 			{
 				linkID=61;
-				item0=1749;
-				item1=1841;
+				item0=2248;
+				item1=1855;
 				class CustomData
 				{
 					type="Sync";
@@ -35800,8 +35687,8 @@ class Mission
 			class Item62
 			{
 				linkID=62;
-				item0=1773;
-				item1=1886;
+				item0=2248;
+				item1=1851;
 				class CustomData
 				{
 					type="Sync";
@@ -35811,7 +35698,7 @@ class Mission
 			{
 				linkID=63;
 				item0=2248;
-				item1=1855;
+				item1=1852;
 				class CustomData
 				{
 					type="Sync";
@@ -35821,7 +35708,7 @@ class Mission
 			{
 				linkID=64;
 				item0=2248;
-				item1=1851;
+				item1=1810;
 				class CustomData
 				{
 					type="Sync";
@@ -35831,7 +35718,7 @@ class Mission
 			{
 				linkID=65;
 				item0=2248;
-				item1=1852;
+				item1=1809;
 				class CustomData
 				{
 					type="Sync";
@@ -35841,7 +35728,7 @@ class Mission
 			{
 				linkID=66;
 				item0=2248;
-				item1=1810;
+				item1=2329;
 				class CustomData
 				{
 					type="Sync";
@@ -35851,7 +35738,7 @@ class Mission
 			{
 				linkID=67;
 				item0=2248;
-				item1=1809;
+				item1=2330;
 				class CustomData
 				{
 					type="Sync";
@@ -35861,7 +35748,7 @@ class Mission
 			{
 				linkID=68;
 				item0=2248;
-				item1=2329;
+				item1=1799;
 				class CustomData
 				{
 					type="Sync";
@@ -35871,7 +35758,7 @@ class Mission
 			{
 				linkID=69;
 				item0=2248;
-				item1=2330;
+				item1=1798;
 				class CustomData
 				{
 					type="Sync";
@@ -35881,7 +35768,7 @@ class Mission
 			{
 				linkID=70;
 				item0=2248;
-				item1=1799;
+				item1=2410;
 				class CustomData
 				{
 					type="Sync";
@@ -35891,7 +35778,7 @@ class Mission
 			{
 				linkID=71;
 				item0=2248;
-				item1=1798;
+				item1=1805;
 				class CustomData
 				{
 					type="Sync";
@@ -35901,7 +35788,7 @@ class Mission
 			{
 				linkID=72;
 				item0=2248;
-				item1=2410;
+				item1=2842;
 				class CustomData
 				{
 					type="Sync";
@@ -35910,8 +35797,8 @@ class Mission
 			class Item73
 			{
 				linkID=73;
-				item0=2248;
-				item1=1805;
+				item0=2483;
+				item1=2475;
 				class CustomData
 				{
 					type="Sync";
@@ -35920,8 +35807,8 @@ class Mission
 			class Item74
 			{
 				linkID=74;
-				item0=2248;
-				item1=2842;
+				item0=2483;
+				item1=2470;
 				class CustomData
 				{
 					type="Sync";
@@ -35931,7 +35818,7 @@ class Mission
 			{
 				linkID=75;
 				item0=2483;
-				item1=2475;
+				item1=2471;
 				class CustomData
 				{
 					type="Sync";
@@ -35941,7 +35828,7 @@ class Mission
 			{
 				linkID=76;
 				item0=2483;
-				item1=2470;
+				item1=2482;
 				class CustomData
 				{
 					type="Sync";
@@ -35951,7 +35838,7 @@ class Mission
 			{
 				linkID=77;
 				item0=2483;
-				item1=2471;
+				item1=2473;
 				class CustomData
 				{
 					type="Sync";
@@ -35961,7 +35848,7 @@ class Mission
 			{
 				linkID=78;
 				item0=2483;
-				item1=2482;
+				item1=2474;
 				class CustomData
 				{
 					type="Sync";
@@ -35971,7 +35858,7 @@ class Mission
 			{
 				linkID=79;
 				item0=2483;
-				item1=2473;
+				item1=2472;
 				class CustomData
 				{
 					type="Sync";
@@ -35980,8 +35867,8 @@ class Mission
 			class Item80
 			{
 				linkID=80;
-				item0=2483;
-				item1=2474;
+				item0=2248;
+				item1=1857;
 				class CustomData
 				{
 					type="Sync";
@@ -35990,8 +35877,8 @@ class Mission
 			class Item81
 			{
 				linkID=81;
-				item0=2483;
-				item1=2472;
+				item0=1773;
+				item1=3540;
 				class CustomData
 				{
 					type="Sync";
@@ -36000,8 +35887,8 @@ class Mission
 			class Item82
 			{
 				linkID=82;
-				item0=2248;
-				item1=1857;
+				item0=2835;
+				item1=2834;
 				class CustomData
 				{
 					type="Sync";
@@ -36010,8 +35897,8 @@ class Mission
 			class Item83
 			{
 				linkID=83;
-				item0=1773;
-				item1=3540;
+				item0=2835;
+				item1=2836;
 				class CustomData
 				{
 					type="Sync";
@@ -36020,8 +35907,8 @@ class Mission
 			class Item84
 			{
 				linkID=84;
-				item0=2835;
-				item1=2834;
+				item0=2839;
+				item1=2248;
 				class CustomData
 				{
 					type="Sync";
@@ -36030,8 +35917,8 @@ class Mission
 			class Item85
 			{
 				linkID=85;
-				item0=2835;
-				item1=2836;
+				item0=2840;
+				item1=2248;
 				class CustomData
 				{
 					type="Sync";
@@ -36040,7 +35927,7 @@ class Mission
 			class Item86
 			{
 				linkID=86;
-				item0=2839;
+				item0=2841;
 				item1=2248;
 				class CustomData
 				{
@@ -36050,8 +35937,8 @@ class Mission
 			class Item87
 			{
 				linkID=87;
-				item0=2840;
-				item1=2248;
+				item0=2476;
+				item1=2863;
 				class CustomData
 				{
 					type="Sync";
@@ -36060,8 +35947,8 @@ class Mission
 			class Item88
 			{
 				linkID=88;
-				item0=2841;
-				item1=2248;
+				item0=2477;
+				item1=2863;
 				class CustomData
 				{
 					type="Sync";
@@ -36070,7 +35957,7 @@ class Mission
 			class Item89
 			{
 				linkID=89;
-				item0=2476;
+				item0=2478;
 				item1=2863;
 				class CustomData
 				{
@@ -36080,7 +35967,7 @@ class Mission
 			class Item90
 			{
 				linkID=90;
-				item0=2477;
+				item0=2479;
 				item1=2863;
 				class CustomData
 				{
@@ -36090,7 +35977,7 @@ class Mission
 			class Item91
 			{
 				linkID=91;
-				item0=2478;
+				item0=2480;
 				item1=2863;
 				class CustomData
 				{
@@ -36100,7 +35987,7 @@ class Mission
 			class Item92
 			{
 				linkID=92;
-				item0=2479;
+				item0=2481;
 				item1=2863;
 				class CustomData
 				{
@@ -36110,8 +35997,8 @@ class Mission
 			class Item93
 			{
 				linkID=93;
-				item0=2480;
-				item1=2863;
+				item0=3613;
+				item1=1755;
 				class CustomData
 				{
 					type="Sync";
@@ -36120,8 +36007,8 @@ class Mission
 			class Item94
 			{
 				linkID=94;
-				item0=2481;
-				item1=2863;
+				item0=3612;
+				item1=1755;
 				class CustomData
 				{
 					type="Sync";
@@ -36130,7 +36017,7 @@ class Mission
 			class Item95
 			{
 				linkID=95;
-				item0=3613;
+				item0=3610;
 				item1=1755;
 				class CustomData
 				{
@@ -36140,8 +36027,8 @@ class Mission
 			class Item96
 			{
 				linkID=96;
-				item0=3612;
-				item1=1755;
+				item0=3614;
+				item1=3129;
 				class CustomData
 				{
 					type="Sync";
@@ -36150,8 +36037,8 @@ class Mission
 			class Item97
 			{
 				linkID=97;
-				item0=3610;
-				item1=1755;
+				item0=3611;
+				item1=3129;
 				class CustomData
 				{
 					type="Sync";
@@ -36160,7 +36047,7 @@ class Mission
 			class Item98
 			{
 				linkID=98;
-				item0=3614;
+				item0=3609;
 				item1=3129;
 				class CustomData
 				{
@@ -36170,7 +36057,7 @@ class Mission
 			class Item99
 			{
 				linkID=99;
-				item0=3611;
+				item0=3613;
 				item1=3129;
 				class CustomData
 				{
@@ -36180,7 +36067,7 @@ class Mission
 			class Item100
 			{
 				linkID=100;
-				item0=3609;
+				item0=3612;
 				item1=3129;
 				class CustomData
 				{
@@ -36190,7 +36077,7 @@ class Mission
 			class Item101
 			{
 				linkID=101;
-				item0=3613;
+				item0=3610;
 				item1=3129;
 				class CustomData
 				{
@@ -36200,8 +36087,8 @@ class Mission
 			class Item102
 			{
 				linkID=102;
-				item0=3612;
-				item1=3129;
+				item0=1764;
+				item1=1773;
 				class CustomData
 				{
 					type="Sync";
@@ -36210,8 +36097,8 @@ class Mission
 			class Item103
 			{
 				linkID=103;
-				item0=3610;
-				item1=3129;
+				item0=1571;
+				item1=3132;
 				class CustomData
 				{
 					type="Sync";
@@ -36220,8 +36107,8 @@ class Mission
 			class Item104
 			{
 				linkID=104;
-				item0=1764;
-				item1=1773;
+				item0=1572;
+				item1=3132;
 				class CustomData
 				{
 					type="Sync";
@@ -36230,7 +36117,7 @@ class Mission
 			class Item105
 			{
 				linkID=105;
-				item0=1571;
+				item0=1573;
 				item1=3132;
 				class CustomData
 				{
@@ -36240,7 +36127,7 @@ class Mission
 			class Item106
 			{
 				linkID=106;
-				item0=1572;
+				item0=1574;
 				item1=3132;
 				class CustomData
 				{
@@ -36250,7 +36137,7 @@ class Mission
 			class Item107
 			{
 				linkID=107;
-				item0=1573;
+				item0=1576;
 				item1=3132;
 				class CustomData
 				{
@@ -36260,7 +36147,7 @@ class Mission
 			class Item108
 			{
 				linkID=108;
-				item0=1574;
+				item0=1575;
 				item1=3132;
 				class CustomData
 				{
@@ -36270,8 +36157,8 @@ class Mission
 			class Item109
 			{
 				linkID=109;
-				item0=1576;
-				item1=3132;
+				item0=1772;
+				item1=3537;
 				class CustomData
 				{
 					type="Sync";
@@ -36280,8 +36167,8 @@ class Mission
 			class Item110
 			{
 				linkID=110;
-				item0=1575;
-				item1=3132;
+				item0=1772;
+				item1=3538;
 				class CustomData
 				{
 					type="Sync";
@@ -36290,8 +36177,8 @@ class Mission
 			class Item111
 			{
 				linkID=111;
-				item0=1772;
-				item1=3537;
+				item0=3539;
+				item1=1749;
 				class CustomData
 				{
 					type="Sync";
@@ -36300,8 +36187,8 @@ class Mission
 			class Item112
 			{
 				linkID=112;
-				item0=1772;
-				item1=3538;
+				item0=2248;
+				item1=3570;
 				class CustomData
 				{
 					type="Sync";
@@ -36310,8 +36197,8 @@ class Mission
 			class Item113
 			{
 				linkID=113;
-				item0=3539;
-				item1=1749;
+				item0=3571;
+				item1=2248;
 				class CustomData
 				{
 					type="Sync";
@@ -36320,8 +36207,8 @@ class Mission
 			class Item114
 			{
 				linkID=114;
-				item0=2248;
-				item1=3570;
+				item0=1853;
+				item1=2248;
 				class CustomData
 				{
 					type="Sync";
@@ -36330,7 +36217,7 @@ class Mission
 			class Item115
 			{
 				linkID=115;
-				item0=3571;
+				item0=3607;
 				item1=2248;
 				class CustomData
 				{
@@ -36340,7 +36227,7 @@ class Mission
 			class Item116
 			{
 				linkID=116;
-				item0=1853;
+				item0=3608;
 				item1=2248;
 				class CustomData
 				{
@@ -36350,8 +36237,8 @@ class Mission
 			class Item117
 			{
 				linkID=117;
-				item0=3607;
-				item1=2248;
+				item0=2830;
+				item1=2829;
 				class CustomData
 				{
 					type="Sync";
@@ -36360,8 +36247,8 @@ class Mission
 			class Item118
 			{
 				linkID=118;
-				item0=3608;
-				item1=2248;
+				item0=1755;
+				item1=3638;
 				class CustomData
 				{
 					type="Sync";
@@ -36370,8 +36257,8 @@ class Mission
 			class Item119
 			{
 				linkID=119;
-				item0=2830;
-				item1=2829;
+				item0=3129;
+				item1=3638;
 				class CustomData
 				{
 					type="Sync";
@@ -36380,8 +36267,8 @@ class Mission
 			class Item120
 			{
 				linkID=120;
-				item0=1755;
-				item1=3638;
+				item0=3624;
+				item1=2835;
 				class CustomData
 				{
 					type="Sync";
@@ -36390,8 +36277,8 @@ class Mission
 			class Item121
 			{
 				linkID=121;
-				item0=3129;
-				item1=3638;
+				item0=3722;
+				item1=3732;
 				class CustomData
 				{
 					type="Sync";
@@ -36400,8 +36287,8 @@ class Mission
 			class Item122
 			{
 				linkID=122;
-				item0=3624;
-				item1=2835;
+				item0=3723;
+				item1=3732;
 				class CustomData
 				{
 					type="Sync";
@@ -36410,7 +36297,7 @@ class Mission
 			class Item123
 			{
 				linkID=123;
-				item0=3722;
+				item0=3724;
 				item1=3732;
 				class CustomData
 				{
@@ -36420,7 +36307,7 @@ class Mission
 			class Item124
 			{
 				linkID=124;
-				item0=3723;
+				item0=3727;
 				item1=3732;
 				class CustomData
 				{
@@ -36430,7 +36317,7 @@ class Mission
 			class Item125
 			{
 				linkID=125;
-				item0=3724;
+				item0=3728;
 				item1=3732;
 				class CustomData
 				{
@@ -36440,7 +36327,7 @@ class Mission
 			class Item126
 			{
 				linkID=126;
-				item0=3727;
+				item0=3729;
 				item1=3732;
 				class CustomData
 				{
@@ -36450,7 +36337,7 @@ class Mission
 			class Item127
 			{
 				linkID=127;
-				item0=3728;
+				item0=3720;
 				item1=3732;
 				class CustomData
 				{
@@ -36460,7 +36347,7 @@ class Mission
 			class Item128
 			{
 				linkID=128;
-				item0=3729;
+				item0=3721;
 				item1=3732;
 				class CustomData
 				{
@@ -36470,7 +36357,7 @@ class Mission
 			class Item129
 			{
 				linkID=129;
-				item0=3720;
+				item0=3725;
 				item1=3732;
 				class CustomData
 				{
@@ -36480,8 +36367,8 @@ class Mission
 			class Item130
 			{
 				linkID=130;
-				item0=3721;
-				item1=3732;
+				item0=3729;
+				item1=3735;
 				class CustomData
 				{
 					type="Sync";
@@ -36490,8 +36377,8 @@ class Mission
 			class Item131
 			{
 				linkID=131;
-				item0=3725;
-				item1=3732;
+				item0=3727;
+				item1=3735;
 				class CustomData
 				{
 					type="Sync";
@@ -36500,78 +36387,8 @@ class Mission
 			class Item132
 			{
 				linkID=132;
-				item0=3729;
-				item1=3735;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item133
-			{
-				linkID=133;
-				item0=3727;
-				item1=3735;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item134
-			{
-				linkID=134;
 				item0=3728;
 				item1=3735;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item135
-			{
-				linkID=135;
-				item0=3739;
-				item1=3753;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item136
-			{
-				linkID=136;
-				item0=3741;
-				item1=3753;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item137
-			{
-				linkID=137;
-				item0=3740;
-				item1=3753;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item138
-			{
-				linkID=138;
-				item0=3737;
-				item1=3753;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item139
-			{
-				linkID=139;
-				item0=3738;
-				item1=3753;
 				class CustomData
 				{
 					type="Sync";
