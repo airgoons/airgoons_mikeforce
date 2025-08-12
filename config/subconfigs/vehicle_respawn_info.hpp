@@ -197,15 +197,15 @@ class vehicles {
 	};
 
 	class vn_b_sf_static_tow {
-		tags[] = {"bgm71","armed","firesupport","static","antitank"};
+		tags[] = {"bgm71","armed","firesupport","static","antitank","nodisassemble"};
 	};
 
 	class vn_b_navy_static_l60mk3 {
-		tags[] = {"l60","armed","firesupport","static","antiair","nodisassemble"};
+		tags[] = {"l60","armed","firesupport","static","nodisassemble"};
 	};
 
 	class vn_b_navy_static_l70mk2 {
-		tags[] = {"l70","armed","firesupport","static","antiair","nodisassemble"};
+		tags[] = {"l70","armed","firesupport","static","nodisassemble"};
 	};
 
 	class vn_b_army_static_m101_01 {
@@ -465,7 +465,7 @@ class vehicles {
 	};
 
 	class vn_i_fank_70_static_zgu1_01 {
-		tags[] = {"zgu1","static","antiair","nodisassemble"};
+		tags[] = {"zgu1","static","nodisassemble"};
 	};
 };
 
