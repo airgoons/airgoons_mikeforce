@@ -36,5 +36,5 @@
 0 fadeSound 0;
 //Play some intro music
 0 fadeMusic 0;
-playMusic selectRandom ["vn_blues_for_suzy", "vn_kitty_bar_blues", "vn_drafted"];
+playMusic selectRandom ["vn_blues_for_suzy", "vn_kitty_bar_blues", "vn_drafted", "vn_trippin", "vn_up_here_looking_down", "vn_unsung_heroes", "vn_route_9", "vn_voodoo_girl", "vn_tequila_highway", "vn_there_it_is", "vn_fire_in_the_sky", "vn_freedom_bird", "vn_dont_cry_baby", "vn_jungle_boots"];
 4 fadeMusic 1;
