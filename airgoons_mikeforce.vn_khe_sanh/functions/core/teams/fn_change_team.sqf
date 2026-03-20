@@ -14,7 +14,7 @@
 	   	Team join successful [BOOLEAN]
     
     Example(s):
-		[_myPlayer, "ACAV"] call vn_mf_fnc_change_team
+		[_myPlayer, "bravoplatoon"] call vn_mf_fnc_change_team
 */
 
 params ["_player", "_team", ["_fullTeamBehaviour", "ABORT"]];
@@ -22,13 +22,13 @@ params ["_player", "_team", ["_fullTeamBehaviour", "ABORT"]];
 private _currentTeam = _player getVariable ["vn_mf_db_player_group", "FAILED"];
 
 // cover the case where a custom player team has been removed from the teams subconfig
-// by putting the player into the MikeForce team.
+// by putting the player into the alphaplatoon team.
 private _teams = (
 	"isClass(_x)" configClasses (missionConfigFile >> "gamemode" >> "teams")
 ) apply {configName _x};
 
 if !(_team in _teams) then {
-	_team = "MikeForce";
+	_team = "alphaplatoon";
 };
 
 if (_currentTeam isEqualTo _team) exitWith { false };
@@ -42,10 +42,10 @@ private _tooManyPlayers = [_team] call vn_mf_fnc_is_team_full;
 
 
 if (_tooManyPlayers && _fullTeamBehaviour == "DEFAULT") then {
-	_team = "MikeForce";
+	_team = "alphaplatoon";
 };
 
-if (_tooManyPlayers && _team != "MikeForce") exitWith {
+if (_tooManyPlayers && _team != "alphaplatoon") exitWith {
 	["TaskFailed",["","STR_vn_mf_notification_title_team_full"]] remoteExecCall ["para_c_fnc_show_notification",_player];
 	false
 };

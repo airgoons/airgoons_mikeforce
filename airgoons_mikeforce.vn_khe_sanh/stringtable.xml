@@ -176,8 +176,8 @@
       <Key ID="STR_vn_mf_respawn_spike_team">
         <Original>FOB2 KONTUM - SPIKE TEAM</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_acav">
-        <Original>FOB 5 BAN ME THUOT - ACAV</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon">
+        <Original>FOB 5 BAN ME THUOT - bravoplatoon</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force_khe_sanh">
         <Original>KHE SANH SF CAMP - MIKE FORCE</Original>
@@ -188,8 +188,8 @@
       <Key ID="STR_vn_mf_respawn_spike_team_khe_sanh">
         <Original>KHE SANH SF CAMP - SPIKE TEAM</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_acav_khe_sanh">
-        <Original>KHE SANH SF CAMP - ACAV</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_khe_sanh">
+        <Original>KHE SANH SF CAMP - bravoplatoon</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force_the_bra">
         <Original>CAMP STRIKER - MIKE FORCE</Original>
@@ -200,8 +200,8 @@
       <Key ID="STR_vn_mf_respawn_spike_team_the_bra">
         <Original>CAMP STRIKER - SPIKE TEAM</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_acav_the_bra">
-        <Original>CAMP STRIKER - ACAV</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_the_bra">
+        <Original>CAMP STRIKER - bravoplatoon</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_spike_team_altis">
         <Original>MOLOS VILLAGE - SPIKE TEAM</Original>
@@ -212,8 +212,8 @@
       <Key ID="STR_vn_mf_respawn_green_hornets_altis">
         <Original>MOLOS AIRFIELD - GREEN HORNETS</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_acav_altis">
-        <Original>FOB 1 - ACAV</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_altis">
+        <Original>FOB 1 - bravoplatoon</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force_dong_giang">
         <Original>FOB MILLER - MIKE FORCE</Original>
@@ -221,8 +221,8 @@
       <Key ID="STR_vn_mf_respawn_green_hornets_dong_giang">
         <Original>FOB MILLER - GREEN HORNETS</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_acav_dong_giang">
-        <Original>FOB MILLER - ACAV</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_dong_giang">
+        <Original>FOB MILLER - bravoplatoon</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_spike_team_dong_giang">
         <Original>FOB MITCH - SPIKE TEAM</Original>
@@ -410,13 +410,13 @@
       <Key ID="STR_vn_mf_keybindings_interactionOverlay_toggle">
         <Original>Toggle Interaction Overlay</Original>
       </Key>
-      <Key ID="STR_vn_mf_taskRoster_Main_MikeForceDescription">
-        <Original>As special forces infantry, your team's role is to:&lt;br/&gt;- Sweep and clear areas of enemy&lt;br/&gt;- Secure and hold zones&lt;br/&gt;- Protect populations, logistics and supplies&lt;br/&gt;- Reinforce other teams&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by ACAV or Green Hornets.</Original>
+      <Key ID="STR_vn_mf_taskRoster_Main_alphaplatoonDescription">
+        <Original>As special forces infantry, your team's role is to:&lt;br/&gt;- Sweep and clear areas of enemy&lt;br/&gt;- Secure and hold zones&lt;br/&gt;- Protect populations, logistics and supplies&lt;br/&gt;- Reinforce other teams&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by bravoplatoon or Green Hornets.</Original>
       </Key>
-      <Key ID="STR_vn_mf_taskRoster_Main_SpikeTeamDescription">
-        <Original>As special forces recon, your team's role is to:&lt;br/&gt;- Carry out reconnaissance to locate enemy infrastructure&lt;br/&gt;- Ambush and assault the enemy&lt;br/&gt;- Direct air and armour support onto enemy concentrations&lt;br/&gt;- Support other teams with reconnaissance and search and rescue&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams. &lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by ACAV or Green Hornets.</Original>
+      <Key ID="STR_vn_mf_taskRoster_Main_charlieplatoonDescription">
+        <Original>As special forces recon, your team's role is to:&lt;br/&gt;- Carry out reconnaissance to locate enemy infrastructure&lt;br/&gt;- Ambush and assault the enemy&lt;br/&gt;- Direct air and armour support onto enemy concentrations&lt;br/&gt;- Support other teams with reconnaissance and search and rescue&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams. &lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by bravoplatoon or Green Hornets.</Original>
       </Key>
-      <Key ID="STR_vn_mf_taskRoster_Main_GreenHornetsTeamDescription">
+      <Key ID="STR_vn_mf_taskRoster_Main_deltatroopTeamDescription">
         <Original>As a Green Hornet, your team's role is to fly helicopters and jets to:&lt;br/&gt;- Insert and extract troops to their desired location&lt;br/&gt;- Carry out aerial reconnaissance to find enemy infrastructure&lt;br/&gt;- Support other teams with close air support&lt;br/&gt;- Deliver supplies to build new infrastructure&lt;br/&gt;- Engage enemy aircraft&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example search and rescue is provided for you by Spike Team.</Original>
       </Key>
       <Key ID="STR_vn_mf_taskRoster_Main_ArmouredCavalryDescription">
@@ -753,9 +753,9 @@
         <English>Search</English>
       </Key>
 
-      <Key ID="STR_vn_mf_buildingMenu_condition_inACav">
-        <Original>In ACav</Original>
-        <English>In ACav</English>
+      <Key ID="STR_vn_mf_buildingMenu_condition_inbravoplatoon">
+        <Original>In bravoplatoon</Original>
+        <English>In bravoplatoon</English>
       </Key>
     </Container>
     <Container name="params">
@@ -892,19 +892,19 @@
         <Original>======== Team Settings ========</Original>
         <English>======== Team Settings ========</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_acav">
-        <Original>==== Max players on ACAV ====</Original>
-        <English>==== Max players on ACAV ====</English>
+      <Key ID="STR_vn_mf_max_players_bravoplatoon">
+        <Original>==== Max players on bravoplatoon ====</Original>
+        <English>==== Max players on bravoplatoon ====</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_greenhornets">
+      <Key ID="STR_vn_mf_max_players_deltatroop">
         <Original>==== Max players on Green Hornets ====</Original>
         <English>==== Max players on Green Hornets ====</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_mikeforce">
+      <Key ID="STR_vn_mf_max_players_alphaplatoon">
         <Original>==== Max players on Mike Force ====</Original>
         <English>==== Max players on Mike Force ====</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_spiketeam">
+      <Key ID="STR_vn_mf_max_players_charlieplatoon">
         <Original>==== Max players on Spike Team ====</Original>
         <English>==== Max players on Spike Team ====</English>
       </Key>
@@ -1180,9 +1180,9 @@
         <Original>Anyone Can Build</Original>
         <English>Anyone Can Build</English>
       </Key>
-      <Key ID="STR_vn_mf_buildingMenu_category_nonACAV">
-        <Original>Non-ACAV</Original>
-        <English>Non-ACAV</English>
+      <Key ID="STR_vn_mf_buildingMenu_category_nonbravoplatoon">
+        <Original>Non-bravoplatoon</Original>
+        <English>Non-bravoplatoon</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_caves">
         <Original>Caves and Rocks</Original>
@@ -1393,7 +1393,7 @@
     </Container>
     <Container name="KeybindingsMenu">
       <Key ID="STR_vn_mf_keybindings_title">
-        <Original>Mikeforce Keybindings</Original>
+        <Original>alphaplatoon Keybindings</Original>
       </Key>
       <Key ID="STR_vn_mf_keybindings_header_action">
         <Original>Action</Original>

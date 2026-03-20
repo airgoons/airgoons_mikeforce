@@ -275,33 +275,33 @@ class teams_header
 
 class Spacer13 : Spacer1 {};
 
-class max_players_acav
+class max_players_bravoplatoon
 {
-    title = $STR_vn_mf_max_players_acav;
+    title = $STR_vn_mf_max_players_bravoplatoon;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 99;
 };
 
-class max_players_greenhornets
+class max_players_deltatroop
 {
-    title = $STR_vn_mf_max_players_greenhornets;
+    title = $STR_vn_mf_max_players_deltatroop;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 99;
 };
 
-class max_players_mikeforce
+class max_players_alphaplatoon
 {
-    title = $STR_vn_mf_max_players_mikeforce;
+    title = $STR_vn_mf_max_players_alphaplatoon;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 99;
 };
 
-class max_players_spiketeam
+class max_players_charlieplatoon
 {
-    title = $STR_vn_mf_max_players_spiketeam;
+    title = $STR_vn_mf_max_players_charlieplatoon;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 6;

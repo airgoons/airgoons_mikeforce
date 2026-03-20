@@ -78,9 +78,9 @@ if (_enlisted isEqualTo "0") then {
 
 };
 
-// last group, or if not one assign MikeForce
-private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "MikeForce"];
-// Attempt team change, defaulting to MikeForce is team is full.
+// last group, or if not one assign alphaplatoon
+private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "alphaplatoon"];
+// Attempt team change, defaulting to alphaplatoon is team is full.
 [_player, _lastTeamName, "DEFAULT"] call vn_mf_fnc_change_team;
 
 
@@ -101,7 +101,7 @@ if !(rank _player isEqualTo _rank) then
 
 // start player at correct camp for team
 //For now, we're just hardcoding this.
-private _playerGroup = _player getVariable ["vn_mf_db_player_group", "MikeForce"];
+private _playerGroup = _player getVariable ["vn_mf_db_player_group", "alphaplatoon"];
 private _respawnMarker = format ["mf_respawn_%1", _playerGroup];
 _player setPos getMarkerPos _respawnMarker;
 // set player's direction to match the direction of the respawn marker

@@ -105,10 +105,10 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_ACAV.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_ACAV_HL.paa";
+			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_bravoplatoon.paa";
+			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_bravoplatoon_HL.paa";
 			
-			onButtonClick = "['ACAV'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['bravoplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		class logoTR: vn_mf_RscButton_ImgSwitch
 		{
@@ -123,7 +123,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets.paa";
 			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets_HL.paa";
 			
-			onButtonClick = "['GreenHornets'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['deltatroop'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		class logoBL: vn_mf_RscButton_ImgSwitch
 		{
@@ -135,10 +135,10 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce_HL.paa";
+			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_alphaplatoon.paa";
+			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_alphaplatoon_HL.paa";
 			
-			onButtonClick = "['MikeForce'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['alphaplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		class logoBR: vn_mf_RscButton_ImgSwitch
 		{
@@ -150,10 +150,10 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_SpikeTeam.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_SpikeTeam_HL.paa";
+			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_charlieplatoon.paa";
+			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_charlieplatoon_HL.paa";
 			
-			onButtonClick = "['SpikeTeam'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['charlieplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		
 		
@@ -873,7 +873,7 @@ class vn_tr_MainInfo_base : vn_mf_RscControlsGroupNoScrollbarHV
 			h = UIH(3);
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {1,1,1,1};
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce_HL.paa";
+			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_alphaplatoon_HL.paa";
 			tooltip = "";
 		};
 		

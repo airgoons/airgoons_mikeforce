@@ -14,7 +14,7 @@
 		True if player on the given team, false otherwise.
 	
 	Example(s):
-		[player, "MikeForce"] call vn_mf_fnc_playerInTeam
+		[player, "alphaplatoon"] call vn_mf_fnc_playerInTeam
 */
 
 params ["_player", "_team"];

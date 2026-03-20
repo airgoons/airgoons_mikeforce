@@ -5,14 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
-	mods[]=
-	{
-		"3denEnhanced"
-	};
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=669;
+		nextID=676;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=662;
+		nextID=773;
 	};
 	class Camera
 	{
-		pos[]={0,31.920967,-25};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={10740.636,121.61595,3176.1907};
+		dir[]={0.89332783,-0.44893691,0.020518851};
+		up[]={0.4488185,0.89356339,0.010308915};
+		aside[]={0.022962946,9.3132257e-10,-0.99973625};
 	};
 };
 binarizationWanted=0;
-sourceName="vn_mikeforce_1_00_04";
+sourceName="airgoons_mikeforce";
 addons[]=
 {
 	"A3_Ui_F",
@@ -49,13 +45,15 @@ addons[]=
 	"A3_Structures_F_Items_Tools",
 	"characters_f_vietnam_c",
 	"sounds_f_vietnam_c",
+	"jsrs2025_compat_sog",
+	"cba_jam_vn",
 	"A3_Misc_F_Helpers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=16;
+		items=18;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -163,6 +161,20 @@ class AddonsMetaData
 		};
 		class Item15
 		{
+			className="jsrs2025_compat_sog";
+			name="JSRS SOUNDMOD 2025 - S.O.G. Prairie Fire Compat";
+			author="LordJarhead";
+			url="https://www.arma3.com";
+		};
+		class Item16
+		{
+			className="cba_jam_vn";
+			name="Community Base Addons - Joint Ammo Magazines";
+			author="CBA Team";
+			url="https://www.github.com/CBATeam/CBA_A3";
+		};
+		class Item17
+		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
@@ -228,6 +240,24 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -246,8 +276,7 @@ class Mission
 		year=1968;
 		month=6;
 		day=21;
-		hour=8;
-		minute=0;
+		minute=-15;
 		startFogBase=150;
 		forecastFogBase=150;
 		startFogDecay=0.017999999;
@@ -1708,7 +1737,7 @@ class Mission
 				class Item11
 				{
 					dataType="Marker";
-					position[]={10827.002,114.197,3825.074};
+					position[]={10736.893,62.757195,4352.7939};
 					name="zone_khe_sanh";
 					markerType="ELLIPSE";
 					type="ellipse";
@@ -1717,12 +1746,12 @@ class Mission
 					a=-800;
 					b=-800;
 					id=112;
-					atlOffset=9.5587082;
+					atlOffset=9.5587654;
 				};
 				class Item12
 				{
 					dataType="Marker";
-					position[]={9702.9521,241.911,6637.0269};
+					position[]={8461.9414,203.81497,7715.2285};
 					name="zone_khe_sanh_base";
 					markerType="ELLIPSE";
 					type="ellipse";
@@ -1731,7 +1760,7 @@ class Mission
 					a=-800;
 					b=-800;
 					id=96;
-					atlOffset=10.249725;
+					atlOffset=10.24942;
 				};
 				class Item13
 				{
@@ -1918,7 +1947,7 @@ class Mission
 				class Item26
 				{
 					dataType="Marker";
-					position[]={14499.33,21.011,6693.5249};
+					position[]={14988.967,43.613274,7053.2354};
 					name="zone_river_edge";
 					markerType="ELLIPSE";
 					type="ellipse";
@@ -1927,7 +1956,7 @@ class Mission
 					a=-500;
 					b=-500;
 					id=95;
-					atlOffset=10.247552;
+					atlOffset=10.248047;
 				};
 				class Item27
 				{
@@ -1987,7 +2016,7 @@ class Mission
 				};
 			};
 			id=125;
-			atlOffset=219.7001;
+			atlOffset=233.04663;
 		};
 		class Item16
 		{
@@ -2041,7 +2070,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10818.231,98.151878,3190.4063};
+						position[]={10818.231,98.151878,3190.4062};
 						angles[]={6.2778587,3.2119818,0.044792738};
 					};
 					side="Empty";
@@ -2938,7 +2967,7 @@ class Mission
 					};
 					id=312;
 					type="Land_vn_usaf_fueltank_10_case_01";
-					atlOffset=-0.0024414063;
+					atlOffset=-0.0024414062;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3523,15 +3552,15 @@ class Mission
 		class Item39
 		{
 			dataType="Marker";
-			position[]={10695.389,41.604774,3165.2441};
+			position[]={10695.389,41.605,3165.2439};
 			name="blocked_area1";
 			text="Base Block 1";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=173.35889;
-			b=177.25171;
+			a=273.35901;
+			b=277.25201;
 			id=344;
-			atlOffset=-56.997299;
+			atlOffset=-56.997074;
 		};
 		class Item40
 		{
@@ -3541,8 +3570,8 @@ class Mission
 			text="Base Block 2";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=117.289;
-			b=414.79599;
+			a=147.289;
+			b=454.79599;
 			id=345;
 			atlOffset=-22.669006;
 		};

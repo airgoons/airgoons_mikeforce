@@ -1,21 +1,21 @@
 class green_hornet
 {
-	lockTeam = "GreenHornets";
+	lockTeam = "deltatroop";
 };
 
-class acav
+class bravoplatoon
 {
-	lockTeam = "ACAV";
+	lockTeam = "bravoplatoon";
 };
 
 class mike_force
 {
-	lockTeam = "MikeForce";
+	lockTeam = "alphaplatoon";
 };
 
 class spike_team
 {
-	lockTeam = "SpikeTeam";
+	lockTeam = "charlieplatoon";
 };
 
 class unlocked
@@ -38,49 +38,49 @@ class vn_c_car_03_01 : unlocked {};
 class vn_c_car_04_01 : unlocked {};
 
 //APC
-class vn_b_armor_m113_01 : acav {};
-class vn_b_armor_m113_acav_01 : acav {};
-class vn_b_armor_m113_acav_02 : acav {};
-class vn_b_armor_m113_acav_03 : acav {};
-class vn_b_armor_m113_acav_04 : acav {};
-class vn_b_armor_m113_acav_05 : acav {};
-class vn_b_armor_m113_acav_06 : acav {};
+class vn_b_armor_m113_01 : bravoplatoon {};
+class vn_b_armor_m113_acav_01 : bravoplatoon {};
+class vn_b_armor_m113_acav_02 : bravoplatoon {};
+class vn_b_armor_m113_acav_03 : bravoplatoon {};
+class vn_b_armor_m113_acav_04 : bravoplatoon {};
+class vn_b_armor_m113_acav_05 : bravoplatoon {};
+class vn_b_armor_m113_acav_06 : bravoplatoon {};
 
 // M113 mortar and flamethrower
-class vn_b_armor_m125_01 : acav {};
-class vn_b_armor_m132_01 : acav {};
+class vn_b_armor_m125_01 : bravoplatoon {};
+class vn_b_armor_m132_01 : bravoplatoon {};
 
 //M41 Walker bulldog
-class vn_b_armor_m41_01_01 : acav {};
+class vn_b_armor_m41_01_01 : bravoplatoon {};
 
 //Type 63 tank
-class vn_o_armor_type63_01 : acav {};
+class vn_o_armor_type63_01 : bravoplatoon {};
 
 // M48 Patton
-class vn_b_armor_m48_01_01 : acav {};
+class vn_b_armor_m48_01_01 : bravoplatoon {};
 
 // M67 flame tank
-class vn_b_armor_m67_01_01 : acav {};
+class vn_b_armor_m67_01_01 : bravoplatoon {};
 
 //Transport trucks
-class vn_b_wheeled_m54_01 : acav {};
-class vn_b_wheeled_m54_01_airport : acav {};
-class vn_b_wheeled_m54_02 : acav {};
+class vn_b_wheeled_m54_01 : bravoplatoon {};
+class vn_b_wheeled_m54_01_airport : bravoplatoon {};
+class vn_b_wheeled_m54_02 : bravoplatoon {};
 //M109 Command Truck
-class vn_b_wheeled_m54_03 : acav {};
+class vn_b_wheeled_m54_03 : bravoplatoon {};
 //Repair Truck
-class vn_b_wheeled_m54_repair : acav {};
+class vn_b_wheeled_m54_repair : bravoplatoon {};
 class vn_b_wheeled_m54_repair_airport : green_hornet {};
 //Fuel trucks
-class vn_b_wheeled_m54_fuel : acav {};
+class vn_b_wheeled_m54_fuel : bravoplatoon {};
 class vn_b_wheeled_m54_fuel_airport : green_hornet {};
 //Ammo truck
-class vn_b_wheeled_m54_ammo : acav {};
+class vn_b_wheeled_m54_ammo : bravoplatoon {};
 class vn_b_wheeled_m54_ammo_airport : green_hornet {};
 //Gun trucks
-class vn_b_wheeled_m54_mg_01 : acav {};
-class vn_b_wheeled_m54_mg_02 : acav {};
-class vn_b_wheeled_m54_mg_03 : acav {};
+class vn_b_wheeled_m54_mg_01 : bravoplatoon {};
+class vn_b_wheeled_m54_mg_02 : bravoplatoon {};
+class vn_b_wheeled_m54_mg_03 : bravoplatoon {};
 
 //Wooden boats
 class vn_c_boat_01_01 : unlocked {};
@@ -162,8 +162,8 @@ class vn_b_air_uh1b_01_01 : green_hornet {};
 
 
 // M113 command and ambulance variants
-class vn_b_armor_m577_01 : acav {};
-class vn_b_armor_m577_02 : acav {};
+class vn_b_armor_m577_01 : bravoplatoon {};
+class vn_b_armor_m577_02 : bravoplatoon {};
 
 
 //class UH1D : green_hornet {}; - Dustoff
@@ -306,8 +306,8 @@ class vn_b_air_f4b_navy_sead : green_hornet {};
 class vn_b_air_f100d_at : green_hornet {};
 
 //Howitzer
-class vn_b_army_static_m101_02 : acav {};
-class vn_b_sf_static_m101_02 : acav {};
+class vn_b_army_static_m101_02 : bravoplatoon {};
+class vn_b_sf_static_m101_02 : bravoplatoon {};
 
 //Unsung
 //Jeeps + Small Cars
@@ -322,14 +322,14 @@ class uns_willys_2_m60 : unlocked {};
 class uns_willys_2_m1919 : unlocked {};
 
 //Trucks
-class uns_m37b1 : acav {};
-class uns_m37b1_m1919 : acav {};
-class uns_M35A2 : acav {};
-class uns_M35A2_Open : acav {};
+class uns_m37b1 : bravoplatoon {};
+class uns_m37b1_m1919 : bravoplatoon {};
+class uns_M35A2 : bravoplatoon {};
+class uns_M35A2_Open : bravoplatoon {};
 
 //Armoured Cars
-class uns_xm706e1 : acav {};
-class uns_xm706e2 : acav {};
+class uns_xm706e1 : bravoplatoon {};
+class uns_xm706e2 : bravoplatoon {};
 
 //US Boats
 class uns_pbr : unlocked {};

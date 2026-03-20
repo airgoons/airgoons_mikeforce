@@ -1,9 +1,9 @@
 // limits and vanilla/custom trait values
-class MikeForce
+class alphaplatoon
 {
-    name = "Mike Force [Infantry]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce_HL.paa";
-    shortname = "Mike Force";
+    name = "Alpha Platoon [Infantry]";
+    icon = "img\AirGoonIcons\Alpha.paa";
+    shortname = "Alpha";
     unit = "vn_b_men_army_01";
 
     class rolelimits 
@@ -32,11 +32,11 @@ class MikeForce
     onJoin = "";
     onLeave = "";
 };
-class SpikeTeam
+class charlieplatoon
 {
-    name = "Spike Team [Special Forces]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_SpikeTeam_HL.paa";
-    shortname = "Spike Team";
+    name = "Charlie Platoon [Scouts]";
+    icon = "img\AirGoonIcons\charlie.paa";
+    shortname = "Charlie";
     unit = "vn_b_men_army_01";
 
     class rolelimits 
@@ -66,11 +66,11 @@ class SpikeTeam
     onJoin = "";
     onLeave = "";
 };
-class ACAV
+class bravoplatoon
 {
-    name = "Armored Cavalry [Ground Support]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_ACAV_HL.paa";
-    shortname = "ACAV";
+    name = "Bravo Engineer Platoon [Ground Support]";
+    icon = "img\AirGoonIcons\Bravo.paa";
+    shortname = "bravoplatoon";
     unit = "vn_b_men_army_01";
 
     class rolelimits 
@@ -99,11 +99,11 @@ class ACAV
     onJoin = "";
     onLeave = "";
 };
-class GreenHornets
+class deltatroop
 {
-    name = "Green Hornets [Air Support]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets_HL.paa";
-    shortname = "Green Hornets";
+    name = "Delta Troop, Army Cav [Air Support]";
+    icon = "img\AirGoonIcons\Delta.paa";
+    shortname = "Delta Troop";
     unit = "vn_b_men_army_01";
     
     class rolelimits 

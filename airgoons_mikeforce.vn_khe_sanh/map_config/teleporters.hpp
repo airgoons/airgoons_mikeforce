@@ -1,49 +1,49 @@
 class objects
 {
-	class vn_mf_greenhornets_teleporter 
+	class vn_mf_deltatroop_teleporter 
 	{
-		destinations[] = {"mikeforce_base", "acav_base", "spiketeam_base"};
+		destinations[] = {"alphaplatoon_base", "bravoplatoon_base", "charlieplatoon_base"};
 	};
 
-	class vn_mf_spiketeam_teleporter
+	class vn_mf_charlieplatoon_teleporter
 	{
-		destinations[] = {"mikeforce_base", "acav_base", "greenhornets_base"};
+		destinations[] = {"alphaplatoon_base", "bravoplatoon_base", "deltatroop_base"};
 	};
 
-	class vn_mf_mikeforce_teleporter
+	class vn_mf_alphaplatoon_teleporter
 	{
-		destinations[] = {"spiketeam_base", "acav_base", "greenhornets_base"};
+		destinations[] = {"charlieplatoon_base", "bravoplatoon_base", "deltatroop_base"};
 	};
 
-	class vn_mf_acav_teleporter
+	class vn_mf_bravoplatoon_teleporter
 	{
-		destinations[] = {"mikeforce_base", "spiketeam_base", "greenhornets_base"};
+		destinations[] = {"alphaplatoon_base", "charlieplatoon_base", "deltatroop_base"};
 	};
 };
 
 class destinations
 {
-	class spiketeam_base
+	class charlieplatoon_base
 	{
 		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_spikebase_ca.paa";
-		position_marker = "mf_respawn_spiketeam";
+		position_marker = "mf_respawn_charlieplatoon";
 	};
 
-	class mikeforce_base
+	class alphaplatoon_base
 	{
 		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_mikebase_ca.paa";
-		position_marker = "mf_respawn_mikeforce";
+		position_marker = "mf_respawn_alphaplatoon";
 	};
 
-	class acav_base
+	class bravoplatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_acavbase_ca.paa";
-		position_marker = "mf_respawn_acav";
+		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_bravoplatoonbase_ca.paa";
+		position_marker = "mf_respawn_bravoplatoon";
 	};
 
-	class greenhornets_base
+	class deltatroop_base
 	{
 		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_airbase_ca.paa";
-		position_marker = "mf_respawn_greenhornets";
+		position_marker = "mf_respawn_deltatroop";
 	};
 };
