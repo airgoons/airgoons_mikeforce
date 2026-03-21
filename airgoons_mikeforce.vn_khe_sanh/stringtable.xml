@@ -98,6 +98,9 @@
       <Key ID="STR_vn_mf_vehicle_workshop">
         <Original>Vehicle Workshop</Original>
       </Key>
+	   <Key ID="STR_vn_mf_statics">
+        <Original>Static Weapons</Original>
+      </Key>
       <Key ID="STR_vn_mf_bridgebailey01">
         <Original>Bailey Bridge 1</Original>
       </Key>
@@ -279,7 +282,7 @@
         <Original>shining boots...</Original>
       </Key>
       <Key ID="STR_vn_mf_loading10">
-        <Original>ready for action...</Original>
+        <Original>readying for the suck...</Original>
       </Key>
       <Key ID="STR_vn_mf_howtobuild">
         <Original>How to Build</Original>
@@ -1116,6 +1119,10 @@
         <Original>Special Buildings</Original>
         <English>Special Buildings</English>
       </Key>
+	   <Key ID="STR_vn_mf_buildingMenu_category_statics">
+        <Original>Static Weapons</Original>
+        <English>Static Weapons</English>
+      </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_us">
         <Original>U.S</Original>
         <English>U.S</English>
@@ -1255,6 +1262,9 @@
       <Key ID="STR_vn_mf_explosives_supplies">
         <Original>Explosives Supplies</Original>
       </Key>
+	   <Key ID="STR_vn_mf_mortar_supplies">
+        <Original>Mortar Ammo Supplies</Original>
+      </Key>
       <Key ID="STR_vn_mf_building_supplies_crate">
         <Original>Building Supplies (Small)</Original>
       </Key>
@@ -1270,6 +1280,15 @@
       </Key>
       <Key ID="STR_vn_mf_workshop_supplies">
         <Original>Workshop Supplies</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_m2_high">
+        <Original>M2HB .50cal (High)</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_m2_low">
+        <Original>M2HB .50cal (low)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_m45_quad">
+        <Original>M45 Quadmount</Original>
       </Key>
       <Key ID="STR_vn_mf_food_supplies">
         <Original>Food Supplies</Original>

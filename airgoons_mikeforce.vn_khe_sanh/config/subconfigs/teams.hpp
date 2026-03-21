@@ -8,10 +8,10 @@ class alphaplatoon
 
     class rolelimits 
     {
-        medic = 2;
-        engineer = 2;
-        explosiveSpecialist = 2;
-        vn_artillery = 2;
+        medic = 1;
+        engineer = 1;
+        explosiveSpecialist = 1;
+        vn_artillery = 1;
     };
     
     class defaultTraits
@@ -41,9 +41,9 @@ class charlieplatoon
 
     class rolelimits 
     {
-        medic = 2;
-        engineer = 2;
-        explosiveSpecialist = 2;
+        medic = 1;
+        engineer = 0;
+        explosiveSpecialist = 1;
         vn_artillery = 1;
     };
     
@@ -75,7 +75,7 @@ class bravoplatoon
 
     class rolelimits 
     {
-        medic = 3;
+        medic = 2;
         engineer = 40;
         explosiveSpecialist = 2;
         vn_artillery = 2;
@@ -108,10 +108,10 @@ class deltatroop
     
     class rolelimits 
     {
-        medic = 2;
-        engineer = 2;
-        explosiveSpecialist = 2;
-        vn_artillery = 2;
+        medic = 1;
+        engineer = 1;
+        explosiveSpecialist = 1;
+        vn_artillery = 1;
     };
     
     class defaultTraits

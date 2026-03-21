@@ -1,0 +1,54 @@
+params["_tank"];
+
+_c = createGroup [west, true];
+
+if (!isServer) exitWith {};
+
+_tank setVariable ["teamLock", "Charlie", true];
+
+switch (typeOf _tank) do
+{
+	// M48A3 Patton Tank, driver [-1] loader [0,1]
+	case "vn_b_armor_m48_01_01":
+    {
+        for [{_i = 1}, {_i < 2}, {_i = _i + 1}] do
+        {
+            if (isNull (_tank turretUnit [_i])) then
+            {
+                _u = _c createUnit ["vn_b_men_army_24", [0,0,0], [], 0, "NONE"];
+				_u = _c createUnit ["vn_b_men_army_25", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;
+                _u moveInTurret [_tank, [_i]];
+            };
+        };
+    };
+	
+	// M41A3 Walker Bulldog, driver [-1] loader [0,1]
+	case "vn_b_armor_m41_01_01":
+    {
+        for [{_i = 1}, {_i < 3}, {_i = _i + 1}] do
+        {
+            if (isNull (_tank turretUnit [_i])) then
+            {
+                _u = _c createUnit ["vn_b_men_army_24", [0,0,0], [], 0, "NONE"];
+				_u = _c createUnit ["vn_b_men_army_25", [0,0,0], [], 0, "NONE"];
+                _u setSkill 1;
+                _u moveInTurret [_tank, [_i]];
+            };
+        };
+    };
+	
+	// M67A2 Flame Tank, driver [-1]
+	case "vn_b_armor_m67_01_01":
+    {
+        for [{_i = 1}, {_i < 2}, {_i = _i + 1}] do
+        {
+            if (isNull (_tank turretUnit [_i])) then
+            {
+                _u = _g createUnit ["vn_b_men_army_24", [0,0,0], [], 0, "NONE"];
+				_u setSkill 1;
+                _u moveInTurret [_tank, [_i]];
+            };
+        };
+    };
+};

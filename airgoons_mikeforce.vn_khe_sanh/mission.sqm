@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=995;
+		nextID=810;
 	};
 	class Camera
 	{
-		pos[]={10681.425,132.06865,3164.3667};
-		dir[]={0.89535946,-0.44249627,0.050284479};
-		up[]={0.44180006,0.89677036,0.024812032};
-		aside[]={0.056072861,1.8626451e-09,-0.99842674};
+		pos[]={10696.949,121.61595,3216.761};
+		dir[]={0.33088678,-0.53830826,-0.77507752};
+		up[]={0.21135429,0.84274578,-0.49508286};
+		aside[]={-0.91970122,-3.9770384e-08,-0.39262763};
 	};
 };
 binarizationWanted=0;
@@ -45,7 +45,6 @@ addons[]=
 	"A3_Structures_F_Items_Tools",
 	"characters_f_vietnam_c",
 	"sounds_f_vietnam_c",
-	"jsrs2025_compat_sog",
 	"cba_jam_vn",
 	"A3_Misc_F_Helpers"
 };
@@ -53,7 +52,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=17;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -161,19 +160,12 @@ class AddonsMetaData
 		};
 		class Item15
 		{
-			className="jsrs2025_compat_sog";
-			name="JSRS SOUNDMOD 2025 - S.O.G. Prairie Fire Compat";
-			author="LordJarhead";
-			url="https://www.arma3.com";
-		};
-		class Item16
-		{
 			className="cba_jam_vn";
 			name="Community Base Addons - Joint Ammo Magazines";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item17
+		class Item16
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
@@ -2070,7 +2062,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10818.231,98.151878,3190.4062};
+						position[]={10818.231,98.151878,3190.4063};
 						angles[]={6.2778587,3.2119818,0.044792738};
 					};
 					side="Empty";
@@ -2269,7 +2261,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={10813.69,98.557999,3141.7671};
-			name="mf_respawn_charlieplatoon";
+			name="mf_respawn_spiketeam";
 			text="@STR_vn_mf_respawn_spike_team_khe_sanh";
 			type="Empty";
 			angle=39.819992;
@@ -2289,21 +2281,22 @@ class Mission
 		class Item28
 		{
 			dataType="Marker";
-			position[]={10617.57,98.410187,3196.5627};
-			name="mf_respawn_alphaplatoon";
+			position[]={10602.046,80.530273,3199.5322};
+			name="mf_respawn_mikeforce";
 			text="@STR_vn_mf_respawn_mike_force_khe_sanh";
 			type="Empty";
 			id=206;
+			atlOffset=-17.943504;
 		};
 		class Item29
 		{
 			dataType="Marker";
-			position[]={11002.336,97.839996,3158.8};
-			name="mf_respawn_deltatroop";
+			position[]={11002.336,97.840088,3158.8003};
+			name="mf_respawn_greenhornets";
 			text="@STR_vn_mf_respawn_green_hornets_khe_sanh";
 			type="Empty";
 			id=207;
-			atlOffset=-0.64000702;
+			atlOffset=-0.63991547;
 		};
 		class Item30
 		{
@@ -2966,7 +2959,7 @@ class Mission
 					};
 					id=312;
 					type="Land_vn_usaf_fueltank_10_case_01";
-					atlOffset=-0.0024414062;
+					atlOffset=-0.0024414063;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10222,7 +10215,7 @@ class Mission
 					};
 					id=562;
 					type="Sign_Arrow_Direction_Green_F";
-					atlOffset=0.9671402;
+					atlOffset=0.96001434;
 				};
 				class Item1
 				{
@@ -10235,7 +10228,7 @@ class Mission
 					init="['air_fire_support', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
 					id=563;
 					type="Logic";
-					atlOffset=0.021980286;
+					atlOffset=0.0018081665;
 				};
 				class Item2
 				{
@@ -10273,7 +10266,7 @@ class Mission
 				};
 			};
 			id=561;
-			atlOffset=0.22589111;
+			atlOffset=0.21876526;
 		};
 		class Item81
 		{
@@ -10296,7 +10289,7 @@ class Mission
 					};
 					id=565;
 					type="Sign_Arrow_Direction_Green_F";
-					atlOffset=0.9671402;
+					atlOffset=0.96001434;
 				};
 				class Item1
 				{
@@ -10347,7 +10340,7 @@ class Mission
 				};
 			};
 			id=568;
-			atlOffset=0.22264099;
+			atlOffset=0.21551514;
 		};
 		class Item82
 		{
@@ -10926,7 +10919,7 @@ class Mission
 							};
 							id=538;
 							type="Sign_Arrow_Direction_Green_F";
-							atlOffset=0.97059631;
+							atlOffset=0.96353912;
 						};
 						class Item2
 						{
@@ -10942,7 +10935,7 @@ class Mission
 						};
 					};
 					id=536;
-					atlOffset=0.21885681;
+					atlOffset=0.20279694;
 				};
 				class Item1
 				{
@@ -10965,7 +10958,7 @@ class Mission
 							};
 							id=542;
 							type="Sign_Arrow_Direction_Green_F";
-							atlOffset=0.96391296;
+							atlOffset=0.95677185;
 						};
 						class Item1
 						{
@@ -11016,7 +11009,7 @@ class Mission
 						};
 					};
 					id=540;
-					atlOffset=0.22554016;
+					atlOffset=0.21833038;
 				};
 				class Item2
 				{
@@ -11039,7 +11032,7 @@ class Mission
 							};
 							id=550;
 							type="Sign_Arrow_Direction_Green_F";
-							atlOffset=0.96640015;
+							atlOffset=0.9593277;
 						};
 						class Item1
 						{
@@ -11052,7 +11045,7 @@ class Mission
 							init="['air_light', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
 							id=551;
 							type="Logic";
-							atlOffset=0.01474762;
+							atlOffset=0.032249451;
 						};
 						class Item2
 						{
@@ -11090,7 +11083,7 @@ class Mission
 						};
 					};
 					id=549;
-					atlOffset=0.22445679;
+					atlOffset=0.21743011;
 				};
 				class Item3
 				{
@@ -11113,7 +11106,7 @@ class Mission
 							};
 							id=554;
 							type="Sign_Arrow_Direction_Green_F";
-							atlOffset=0.9671402;
+							atlOffset=0.96001434;
 						};
 						class Item1
 						{
@@ -11126,7 +11119,7 @@ class Mission
 							init="['air_light', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
 							id=555;
 							type="Logic";
-							atlOffset=0.01474762;
+							atlOffset=0.010787964;
 						};
 						class Item2
 						{
@@ -11164,7 +11157,7 @@ class Mission
 						};
 					};
 					id=553;
-					atlOffset=0.2208252;
+					atlOffset=0.21369934;
 				};
 			};
 			id=583;
@@ -11198,7 +11191,7 @@ class Mission
 							};
 							id=546;
 							type="Sign_Arrow_Direction_Green_F";
-							atlOffset=0.9671402;
+							atlOffset=0.96001434;
 						};
 						class Item1
 						{
@@ -11249,7 +11242,7 @@ class Mission
 						};
 					};
 					id=545;
-					atlOffset=0.22589111;
+					atlOffset=0.21876526;
 				};
 				class Item1
 				{
@@ -11272,7 +11265,7 @@ class Mission
 							};
 							id=558;
 							type="Sign_Arrow_Direction_Green_F";
-							atlOffset=0.9671402;
+							atlOffset=0.96001434;
 						};
 						class Item1
 						{
@@ -11323,7 +11316,7 @@ class Mission
 						};
 					};
 					id=557;
-					atlOffset=0.22589111;
+					atlOffset=0.21876526;
 				};
 			};
 			id=584;

@@ -54,12 +54,12 @@ class vn_logistics
 
 	//APC
 	class vn_b_armor_m113_01 : vn_defaults_medium {};
-	class vn_b_armor_m113_bravoplatoon_01 : vn_defaults_small {};
-	class vn_b_armor_m113_bravoplatoon_02 : vn_defaults_small {};
-	class vn_b_armor_m113_bravoplatoon_03 : vn_defaults_small {};
-	class vn_b_armor_m113_bravoplatoon_04 : vn_defaults_small {};
-	class vn_b_armor_m113_bravoplatoon_05 : vn_defaults_small {};
-	class vn_b_armor_m113_bravoplatoon_06 : vn_defaults_small {};
+	class vn_b_armor_m113_acav_01 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_02 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_03 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_04 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_05 : vn_defaults_medium {};
+	class vn_b_armor_m113_acav_06 : vn_defaults_medium {};
 
 	//Transport trucks
 	class vn_b_wheeled_m54_01 : vn_defaults_extra_large {};
@@ -396,7 +396,16 @@ class vn_logistics
 
 		//Sandbag supplies
 		class vn_b_ammobox_supply_10 : vn_b_ammobox_supply_05 {};
-
+		
+		//Mortar Ammo
+		class vn_b_ammobox_full_14
+		{
+			item_weight = 50;
+			item_size = 1;
+			spawn_distance = 2;
+			rotation_offset = 0;
+		};
+		
 		//Small US ammo
 		class vn_b_ammobox_supply_04
 		{

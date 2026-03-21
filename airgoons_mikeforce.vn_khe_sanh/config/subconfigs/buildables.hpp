@@ -4,7 +4,7 @@
 #define CONDITION_IS_ENGINEER { $STR_vn_mf_buildingMenu_condition_isEngineer, "player getUnitTrait 'engineer'"}
 #define CONDITION_IS_ON_FOOT { $STR_vn_mf_buildingMenu_condition_rnFoot, "isNull objectParent player"}
 #define CONDITION_NOT_IN_RESTRICTED_ZONE { $STR_vn_mf_buildingMenu_condition_inRestrictedZone, "vn_mf_markers_blocked_areas findIf {_pos inArea _x} isEqualTo -1"}
-#define CONDITION_IS_bravoplatoon { $STR_vn_mf_buildingMenu_condition_inbravoplatoon, "player getVariable ['vn_mf_db_player_group', 'alphaplatoon'] isEqualTo 'bravoplatoon'"}
+#define CONDITION_IS_bravoplatoon { $STR_vn_mf_buildingMenu_condition_inbravoplatoon, "player getVariable ['vn_mf_db_player_group', 'AlphaPlatoon'] isEqualTo 'bravoplatoon'"}
 
 //Takes "Capacity" in supply units, and "Lifetime" in seconds.
 #define DAYS_TO_SECONDS(days) (days * 86400)
@@ -5416,7 +5416,7 @@ class Land_vn_i_shed_ind_old_f
 					icon = VEHICLE_ICON_STATIC;
 					name = "STR_vn_mf_vic_static";
 
-					class vn_b_sf_static_m2_high
+					class vn_b_army_static_m2_high
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -5424,7 +5424,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m2_low
+					class vn_b_army_static_m2_low
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -5432,22 +5432,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m1919a4_high
-					{
-						cost[] = {{"BuildingSupplies", 100}};
-						cooldown = 60;
-						icon = VEHICLE_ICON_STATIC;
-						//side = "WEST";
-					};
-
-					class vn_b_sf_static_m1919a4_low
-					{
-						cost[] = {{"BuildingSupplies", 100}};
-						cooldown = 60;
-						icon = VEHICLE_ICON_STATIC;
-						//side = "WEST";
-					};
-					class vn_b_sf_static_mk18
+					class vn_b_army_static_mk18
 					{
 						cost[] = {{"BuildingSupplies", 300}};
 						cooldown = 120;
@@ -5455,15 +5440,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_sf_static_m1919a6
-					{
-						cost[] = {{"BuildingSupplies", 100}};
-						cooldown = 60;
-						icon = VEHICLE_ICON_STATIC;
-						//side = "WEST";
-					};
-
-					class vn_b_sf_static_m40a1rr
+					class vn_b_army_static_m40a1rr
 					{
 						cost[] = {{"BuildingSupplies", 300}};
 						cooldown = 120;
@@ -5471,7 +5448,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_o_pl_static_at3
+					class vn_b_army_static_tow
 					{
 						cost[] = {{"BuildingSupplies", 100}};
 						cooldown = 60;
@@ -5513,7 +5490,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_armor_m113_bravoplatoon_01
+					class vn_b_armor_m113_acav_01
 					{
 						cost[] = {{"BuildingSupplies", 1000}};
 						cooldown = 480;
@@ -5521,7 +5498,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_armor_m113_bravoplatoon_05
+					class vn_b_armor_m113_acav_05
 					{
 						cost[] = {{"BuildingSupplies", 1250}};
 						cooldown = 600;
@@ -5529,7 +5506,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_armor_m113_bravoplatoon_04
+					class vn_b_armor_m113_acav_04
 					{
 						cost[] = {{"BuildingSupplies", 1250}};
 						cooldown = 600;
@@ -5537,7 +5514,7 @@ class Land_vn_i_shed_ind_old_f
 						//side = "WEST";
 					};
 
-					class vn_b_armor_m113_bravoplatoon_06
+					class vn_b_armor_m113_acav_06
 					{
 						cost[] = {{"BuildingSupplies", 1500}};
 						cooldown = 900;
@@ -6054,6 +6031,98 @@ class vn_b_prop_fmradio_01
 	class features
 	{
 		class radio {};
+	};
+};
+
+class vn_b_ammobox_wpn_01
+{
+	name = "STR_vn_mf_statics";
+	type = "ammocrates";
+	categories[] = {"statics", "functional"};
+	rank = 0;
+	SUPPLY_CAPACITY(600, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_ammobox_supply_07_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_b_ammobox_wpn_01";
+		};
+		class final_state
+		{
+			object_class = "vn_b_ammobox_wpn_01";
+		};
+	};
+
+	class features
+	{
+		class vehicle_spawning
+		{
+			class vehicle_class
+			{
+				class statics
+				{
+					icon = VEHICLE_ICON_STATIC;
+					name = "STR_vn_mf_vic_static";
+
+					class vn_b_army_static_m2_high
+					{
+						cost[] = {{"BuildingSupplies", 100}};
+						cooldown = 60;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+
+					class vn_b_army_static_m2_low
+					{
+						cost[] = {{"BuildingSupplies", 100}};
+						cooldown = 60;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+
+					class vn_b_army_static_mk18
+					{
+						cost[] = {{"BuildingSupplies", 200}};
+						cooldown = 60;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+
+					class vn_b_army_static_m40a1rr
+					{
+						cost[] = {{"BuildingSupplies", 300}};
+						cooldown = 120;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+
+					class vn_b_army_static_tow
+					{
+						cost[] = {{"BuildingSupplies", 300}};
+						cooldown = 120;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+				};
+			};
+			
+			spawnPositionModelSpace[] = {8.973,5.42801,0};
+			spawnDirectionModelSpace = 0;
+
+		};
 	};
 };
 
