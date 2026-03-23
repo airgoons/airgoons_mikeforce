@@ -6,7 +6,7 @@
 	Public: No
 	
 	Description:
-	    Called periodically to maintain player markers. 
+	    Called periodically to maintain player markers. Modified by Cooked Auto to emphasize group leaders, reducing map clutter
 	
 	Parameter(s): none
 	
@@ -36,6 +36,7 @@ vn_mf_player_markers_manned_vehicles = [];
 	private _unit = _x;
 	private _unitMarker = format ["player_marker_%1", getPlayerUID _unit];
 	private _unitGroup = _unit getVariable ["vn_mf_db_player_group", "alphaplatoon"];
+	private _unitAlpha = 1; // Default transparency 
 
 	private _markerType = "b_inf";
 	if (_unit getUnitTrait "Medic") then {_markerType = "b_med"};
@@ -43,6 +44,8 @@ vn_mf_player_markers_manned_vehicles = [];
 	if (_unit getUnitTrait "ExplosiveSpecialist") then {_markerType = "b_Ordnance"};
 	if (_unit getUnitTrait "vn_artillery") then {_markerType = "b_support"};
 
+	if (isFormationLeader _unit != true) then {_unitAlpha = 0.15}; //Change the transparency of non-leader units
+	
 	//Easiest way to check if it exists
 	if (markerShape _unitMarker == "") then {
 		createMarkerLocal [_unitMarker, [0,0,0]];
@@ -71,7 +74,7 @@ vn_mf_player_markers_manned_vehicles = [];
 		vn_mf_player_markers_manned_vehicles pushBackUnique vehicle _unit;
 		_unitMarker setMarkerAlphaLocal 0;
 	} else {
-		_unitMarker setMarkerAlphaLocal 1;
+		_unitMarker setMarkerAlphaLocal _unitAlpha;
 	};
 } forEach allPlayers;
 

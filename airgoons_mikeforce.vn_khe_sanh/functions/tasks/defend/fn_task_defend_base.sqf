@@ -111,7 +111,7 @@ _taskDataStore setVariable ["defend_base", {
 	private _startTime = _taskDataStore getVariable "startTime";
 
 	//Area has been held long enough, or they've killed enough attackers for the AI objective to complete.
-	if (serverTime - _startTime > (_taskDataStore getVariable ["holdDuration", 1200]) 
+	if (serverTime - _startTime > (_taskDataStore getVariable ["holdDuration", 600]) 
 	    || isNull (_taskDataStore getVariable "attackObjective")
 	) then {
 		_taskDataStore setVariable ["areaDefended", true];

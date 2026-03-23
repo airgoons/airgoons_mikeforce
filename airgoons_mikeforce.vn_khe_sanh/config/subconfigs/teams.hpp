@@ -101,7 +101,7 @@ class bravoplatoon
 };
 class deltatroop
 {
-    name = "Delta Troop, Army Cav [Air Support]";
+    name = "Delta Troop, Army Air Cav [Air Support]";
     icon = "img\AirGoonIcons\Delta.paa";
     shortname = "Delta Troop";
     unit = "vn_b_men_army_01";

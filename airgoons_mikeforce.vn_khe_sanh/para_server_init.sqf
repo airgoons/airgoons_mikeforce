@@ -269,7 +269,7 @@ diag_log "VN MikeForce: Initialising Loadbalancer";
 diag_log "VN MikeForce: Initialising AI Objectives";
 // start ai subsystem. Depends on the load balancer subsystem.
 [
-    ["hardAiLimit", ["hard_ai_limit", 80] call BIS_fnc_getParamValue]
+    ["hardAiLimit", ["hard_ai_limit", 100] call BIS_fnc_getParamValue]
 ] call para_s_fnc_ai_obj_subsystem_init;
 
 diag_log "VN MikeForce: Initialising Harass";
