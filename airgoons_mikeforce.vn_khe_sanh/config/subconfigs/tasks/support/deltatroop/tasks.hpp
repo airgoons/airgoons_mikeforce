@@ -5,7 +5,7 @@ class support_gh_cas : support_task
 	taskname = "Close Air Support";
 	taskdesc = "Provide close air support to %1";
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_gh3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_gh3.jpg";
 	taskgroups[] = {"deltatroop"};
 	requestgroups[] = {"bravoplatoon", "alphaplatoon", "charlieplatoon"};
 	rankpoints = 10;

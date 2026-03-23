@@ -105,8 +105,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_bravoplatoon.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_bravoplatoon_HL.paa";
+			text = "img\AirGoonIcons\Bravo.paa";
+			textUp = "img\AirGoonIcons\Bravo.paa";
 			
 			onButtonClick = "['bravoplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -120,8 +120,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets_HL.paa";
+			text = "img\AirGoonIcons\Delta.paa";
+			textUp = "img\AirGoonIcons\Delta.paa";
 			
 			onButtonClick = "['deltatroop'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -135,8 +135,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_alphaplatoon.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_alphaplatoon_HL.paa";
+			text = "img\AirGoonIcons\Alpha.paa";
+			textUp = "img\AirGoonIcons\Alpha.paa";
 			
 			onButtonClick = "['alphaplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -150,8 +150,8 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_charlieplatoon.paa";
-			textUp = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_charlieplatoon_HL.paa";
+			text = "img\AirGoonIcons\Charlie.paa";
+			textUp = "img\AirGoonIcons\Charlie.paa";
 			
 			onButtonClick = "['charlieplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
@@ -873,7 +873,7 @@ class vn_tr_MainInfo_base : vn_mf_RscControlsGroupNoScrollbarHV
 			h = UIH(3);
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {1,1,1,1};
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_alphaplatoon_HL.paa";
+			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce_HL.paa";
 			tooltip = "";
 		};
 		

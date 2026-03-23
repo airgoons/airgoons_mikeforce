@@ -5,7 +5,7 @@ class support_resupply : support_task
 	taskname = $STR_vn_mf_task_support_resupply_title;
 	taskdesc = $STR_vn_mf_task_support_resupply_desc;
 	tasktype = "box";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_ac1.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_ac1.jpg";
 	taskgroups[] = {"bravoplatoon", "deltatroop"};
 	requestgroups[] = {"alphaplatoon","charlieplatoon"};
 	rankpoints = 10;

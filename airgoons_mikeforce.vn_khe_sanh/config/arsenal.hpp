@@ -1,6 +1,6 @@
 class vn_whitelisted_arsenal_loadouts
 {
-	class vn_alphaplatoon
+	class vn_mikeforce
 	{
 		displayname = "$STR_VN_DLC_DEFAULT_DN";
 		/*

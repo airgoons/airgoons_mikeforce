@@ -5,7 +5,7 @@ class support_st_brightlight : support_task
 	taskname = "Brightlight";
 	taskdesc = "Rescue the crew of the downed helicopter, %1.";
 	tasktype = "box";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\su\vn_ui_mf_task_sts1.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\su\vn_ui_mf_task_sts1.jpg";
 	taskgroups[] = {"charlieplatoon"};
 	requestgroups[] = {"deltatroop"};
 	rankpoints = 10;

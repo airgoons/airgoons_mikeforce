@@ -5,7 +5,7 @@ class secondary_st2 : task
 	taskname = "Destroy Gun Emplacement";
 	taskdesc = "Destroy the hostile gun emplacement near to the given position.";
 	tasktype = "destroy";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_st2.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_st2.jpg";
 	taskgroups[] = {"charlieplatoon", "alphaplatoon"};
 	rankpoints = 10;
 	taskprogress = 5;
@@ -41,7 +41,7 @@ class secondary_st3 : task
 	taskname = "Kill Enemy Officer";
 	taskdesc = "Kill the enemy officer near to the target position";
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_st3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_st3.jpg";
 	taskgroups[] = {"charlieplatoon"};
 	rankpoints = 10;
 	taskprogress = 10;
@@ -70,7 +70,7 @@ class secondary_spike_wiretap : task
 	taskname = "Wiretap";
 	taskdesc = "Mount a recording device to an enemy communications line.";
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_st3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_st3.jpg";
 	taskgroups[] = {"charlieplatoon"};
 	rankpoints = 10;
 	taskprogress = 30;

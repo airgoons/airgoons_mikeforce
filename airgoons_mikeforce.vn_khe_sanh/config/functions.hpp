@@ -422,4 +422,12 @@ class CfgFunctions
 			class task_zone_connector { file = "functions\tasks\fn_zone_connector.sqf";};
 		};
 	};
+	
+	class Gib 
+	{
+		class Gear 
+		{
+			class gearScript { file = "functions\gear\fn_gearscript.sqf"};
+		};
+	};
 };

@@ -98,7 +98,7 @@ para_g_enemiesPerPlayer = ((["ai_scaling", 100] call BIS_fnc_getParamValue) / 10
 //Global variable, so it needs syncing across the network.
 publicVariable "para_g_enemiesPerPlayer";
 
-diag_log "VN alphaplatoon: Initialising markers";
+diag_log "VN MikeForce: Initialising markers";
 //Read map markers and populate appropriate arrays
 call vn_mf_fnc_marker_init;
 
@@ -140,13 +140,13 @@ enableenvironment [[false,true] select _ambientlife,[false,true] select _ambient
 [] call vn_mf_fnc_respawn_points_init;
 
 // start scheduler
-diag_log "VN alphaplatoon: Starting scheduler";
+diag_log "VN MikeForce: Starting scheduler";
 [] call para_g_fnc_scheduler_subsystem_init;
 
 // start the event dispatcher, so anything relying on events can fire.
 call para_g_fnc_event_subsystem_init;
 
-diag_log "VN alphaplatoon: Initialising Cleanup Routine";
+diag_log "VN MikeForce: Initialising Cleanup Routine";
 // start cleanup subsystem
 [
     createHashmapFromArray [

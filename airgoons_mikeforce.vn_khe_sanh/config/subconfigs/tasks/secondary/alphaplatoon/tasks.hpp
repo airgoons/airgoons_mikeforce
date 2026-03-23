@@ -5,7 +5,7 @@ class secondary_mf1 : task
 	taskname = "Reinforce ARVN";
 	taskdesc = "Reinforce troops at their location";
 	tasktype = "defend";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf1.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf1.jpg";
 	taskgroups[] = {"alphaplatoon"};
 	rankprogress = 10;
 	taskprogress = 4;
@@ -41,7 +41,7 @@ class secondary_mf3 : task
 	taskdesc = "There's rumours of a VC camp in the area. Find it, eliminate it.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -69,7 +69,7 @@ class secondary_destroy_mortar : task
 	taskname = "Eliminate Mortar";
 	taskdesc = "Eliminate the mortar set up near this position.";
 	tasktype = "box";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_st2.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_st2.jpg";
 	taskgroups[] = {"alphaplatoon"};
 	rankpoints = 10;
 	taskprogress = 10;
@@ -106,7 +106,7 @@ class secondary_destroy_supplies : task
 	taskdesc = "Destroy the enemy weapons caches found in this area. Explosives are advised.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 15;
 
@@ -147,7 +147,7 @@ class secondary_patrol : task
 	taskdesc = "Patrol along the designated route and ensure the area is secure.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "walk";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 

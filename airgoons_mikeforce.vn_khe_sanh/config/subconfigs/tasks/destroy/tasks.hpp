@@ -6,7 +6,7 @@ class destroy_aa_site : task
 	taskdesc = "Enemy AA has been seen firing near this position. Take it out.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -35,7 +35,7 @@ class destroy_artillery_site : task
 	taskdesc = "Enemy artillery has been seen firing from this position. Take it out.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -64,7 +64,7 @@ class destroy_camp : task
 	taskdesc = "There's rumours of a VC camp in the area. Find it, eliminate it.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -93,7 +93,7 @@ class destroy_tunnel : task
 	taskdesc = "Intelligence places an enemy tunnel exit in this area. Seal it up.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -122,7 +122,7 @@ class destroy_vehicle_depot : task
 	taskdesc = "An enemy vehicle maintenance point has been placed in this area. Destroy it, and any vehicles you find.";
 	taskgroups[] = {"alphaplatoon"}; // all
 	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\alphaplatoon\s\vn_ui_mf_task_mf3.jpg";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_mf3.jpg";
 	rankpoints = 10;
 	taskprogress = 10;
 

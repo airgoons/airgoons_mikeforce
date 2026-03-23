@@ -1219,7 +1219,7 @@ class vn_mf_RscTotalArmorProgress : vn_mf_RscProgress
 };
 
 // loading screen
-class alphaplatoon_loadingScreen
+class MikeForce_loadingScreen
 {
 	idd = -1;
 	onLoad = "uiNamespace setVariable ['vn_mf_loadingScreen',_this select 0]";

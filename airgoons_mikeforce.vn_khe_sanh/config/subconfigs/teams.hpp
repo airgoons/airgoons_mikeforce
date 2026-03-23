@@ -34,7 +34,7 @@ class alphaplatoon
 };
 class charlieplatoon
 {
-    name = "Charlie Platoon [Scouts]";
+    name = "Charlie Platoon [Mortar & Scouts]";
     icon = "img\AirGoonIcons\charlie.paa";
     shortname = "Charlie";
     unit = "vn_b_men_army_01";
