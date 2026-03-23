@@ -79,53 +79,33 @@ if (_enlisted isEqualTo "0") then {
 };
 
 // last group, or if not one assign alphaplatoon
-// private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "alphaplatoon"];
+private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "alphaplatoon"];
 // Attempt team change, defaulting to alphaplatoon is team is full.
+[_player, _lastTeamName, "DEFAULT"] call vn_mf_fnc_change_team;
 
-// Assigns players to the appropriate team based on their group.
-// Group is determined by the FIRST WORD of their group name in the Eden editor. Valid options are:
-// Alpha, Bravo, Charlie, Delta
-// Text after the first word (and space) is not considered so go fucking nuts.
 
-// Uses a regex pattern to extract the first word of the group name. This is buried thrice-deep in arrays because ~ARMA~
-_playersGroup = (groupID group _player regexFind ["^[a-zA-Z]*"])#0#0#0;
-switch (_playersGroup) do
+// load last loadout
+(["GET", (_uid + "_loadout"), []] call para_s_fnc_profile_db) params ["","_loadout"];
+if !(_loadout isEqualTo []) then
 {
-	case "Alpha": {[_player, "alphaplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
-	case "Company": {[_player, "alphaplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
-	case "Bravo": {[_player, "bravoplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
-	case "Charlie": {[_player, "charlieplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
-	default {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.4"] call TFAR_fnc_setSwFrequency};
+	_player setUnitLoadout [_loadout, false];
 };
 
-// [NOFUN][AJK] This would load the last loadout, but instead we want to always spawn with the equipment preset in the editor
-// (["GET", (_uid + "_loadout"), []] call para_s_fnc_profile_db) params ["","_loadout"];
-// if !(_loadout isEqualTo []) then
-// {
-// 	_player setUnitLoadout [_loadout, false];
-// };
-
-//THIS BELOW IS NOT CURRENTLY IN USE BUT IS PRESERVED IF NEEDED 
-//[NOFUN][AJK] Just set everyone's rank to Private to avoid doing any rank stuff. I had previously
-// just removed all this but the whole module seems dependent on the existence of the 
-// stupid arsenal module so it is easier to restrict items by making the ranks low.
-// If I can figure out how to decouple the arsenal module we could undo this, but also I don't think we need it so it is probably fine?
-
 // restore players rank
-// ([_player] call vn_mf_fnc_unit_to_rank) params ["", "_rank", ""];
-// _rank = toUpper _rank;
-// if !(rank _player isEqualTo _rank) then
-// {
-// 	_player setUnitRank _rank;
-// };
+([_player] call vn_mf_fnc_unit_to_rank) params ["", "_rank", ""];
+_rank = toUpper _rank;
+if !(rank _player isEqualTo _rank) then
+{
+	_player setUnitRank _rank;
+};
 
 // start player at correct camp for team
 //For now, we're just hardcoding this.
-
-// [NOFUN][AJK] This code enables the AlphaPlatoon special spawn system
-//private _playerGroup = _player getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
-//private _respawnMarker = format ["mf_respawn_%1", _playerGroup];
-//_player setPos getMarkerPos _respawnMarker;
+private _playerGroup = _player getVariable ["vn_mf_db_player_group", "alphaplatoon"];
+private _respawnMarker = format ["mf_respawn_%1", _playerGroup];
+_player setPos getMarkerPos _respawnMarker;
+// set player's direction to match the direction of the respawn marker
+_player setDir markerDir _respawnMarker;
 
 // add event handlers from the harass subsystem.
 [_player] call para_s_fnc_harass_add_player_event_handlers;

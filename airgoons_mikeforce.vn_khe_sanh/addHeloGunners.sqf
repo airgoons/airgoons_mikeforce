@@ -17,7 +17,7 @@ if (!isServer) exitWith {};
 _g = createGroup [west, true];
 
 // Ensure the newly spawned Helo is appropriately teamlocked
-_helo setVariable ["teamLock", "DeltaTroop", true];
+_helo setVariable ["teamLock", "deltatroop", true];
 
 // We want to make sure that we add the appropriate gunners to each Helo type
 // [TODO] At some point it would be wise to maybe make this as general as possible

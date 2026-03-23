@@ -184,7 +184,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			colorText[] = {0.1,0.1,0.1,0.9};
 			colorBackground[] = {0,0,0,0};
 			size = TXT_S;
-			text = "Take the fight to the VC in close quarter combat. Access to static weapon emplacements";	//loc
+			text = "Combat engineers build and handle heavy equipment";	//loc
 			tooltip = "";
 		};
 	};

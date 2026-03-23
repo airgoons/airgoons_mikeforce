@@ -8,10 +8,10 @@ class alphaplatoon
 
     class rolelimits 
     {
-        medic = 1;
-        engineer = 1;
-        explosiveSpecialist = 1;
-        vn_artillery = 1;
+        medic = 4;
+        engineer = 3;
+        explosiveSpecialist = 3;
+        vn_artillery = 4;
     };
     
     class defaultTraits
@@ -41,10 +41,10 @@ class charlieplatoon
 
     class rolelimits 
     {
-        medic = 1;
-        engineer = 0;
-        explosiveSpecialist = 1;
-        vn_artillery = 1;
+        medic = 4;
+        engineer = 2;
+        explosiveSpecialist = 2;
+        vn_artillery = 2;
     };
     
     class defaultTraits
@@ -57,7 +57,7 @@ class charlieplatoon
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = false;
+        harassable = true;
         scout = true;
         scout_multiple = true;
     };
@@ -70,14 +70,14 @@ class bravoplatoon
 {
     name = "Bravo Engineer Platoon [Ground Support]";
     icon = "img\AirGoonIcons\Bravo.paa";
-    shortname = "bravoplatoon";
+    shortname = "Bravo";
     unit = "vn_b_men_army_01";
 
     class rolelimits 
     {
-        medic = 2;
+        medic = 5;
         engineer = 40;
-        explosiveSpecialist = 2;
+        explosiveSpecialist = 40;
         vn_artillery = 2;
     };
     
@@ -111,7 +111,7 @@ class deltatroop
         medic = 1;
         engineer = 1;
         explosiveSpecialist = 1;
-        vn_artillery = 1;
+        vn_artillery = 2;
     };
     
     class defaultTraits

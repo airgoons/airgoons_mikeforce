@@ -4,7 +4,7 @@
 #define CONDITION_IS_ENGINEER { $STR_vn_mf_buildingMenu_condition_isEngineer, "player getUnitTrait 'engineer'"}
 #define CONDITION_IS_ON_FOOT { $STR_vn_mf_buildingMenu_condition_rnFoot, "isNull objectParent player"}
 #define CONDITION_NOT_IN_RESTRICTED_ZONE { $STR_vn_mf_buildingMenu_condition_inRestrictedZone, "vn_mf_markers_blocked_areas findIf {_pos inArea _x} isEqualTo -1"}
-#define CONDITION_IS_bravoplatoon { $STR_vn_mf_buildingMenu_condition_inbravoplatoon, "player getVariable ['vn_mf_db_player_group', 'AlphaPlatoon'] isEqualTo 'bravoplatoon'"}
+#define CONDITION_IS_bravoplatoon { $STR_vn_mf_buildingMenu_condition_inbravoplatoon, "player getVariable ['vn_mf_db_player_group', 'alphaplatoon'] isEqualTo 'bravoplatoon'"}
 
 //Takes "Capacity" in supply units, and "Lifetime" in seconds.
 #define DAYS_TO_SECONDS(days) (days * 86400)
