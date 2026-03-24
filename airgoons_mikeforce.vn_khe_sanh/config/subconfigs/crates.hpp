@@ -42,9 +42,11 @@ class AmmoCrateLight
 		{"vn_m1897_buck_mag",50},
 		{"vn_m40a1_mag",50},
 		{"vn_m40a1_t_mag",50},
-		{"vn_m72_mag",20}
-		{"vn_40mm_m406_he_mag",30}
-		{"vn_40mm_m397_ab_mag",30}
+		{"vn_m72_mag",20},
+		{"vn_40mm_m406_he_mag",20},
+		{"vn_40mm_m397_ab_mag",20},
+		{"vn_m20a1b1_heat_mag",5},
+		{"vn_m20a1b1_wp_mag",5},
 		{"vn_40mm_m680_smoke_w_mag",20}
 	};
 	items[] = {};
@@ -85,7 +87,7 @@ class AmmoCrateSupport
 
 class AmmoCrateExplosives
 {
-	objectClassname = "vn_b_ammobox_supply_01";
+	objectClassname = "vn_b_ammobox_wpn_02";
 	weapons[] = {
 		{"vn_m72",30}
 	};
@@ -118,7 +120,9 @@ class AmmoCrateExplosives
 		{"vn_mine_m18_x3_mag",20},
 		{"vn_mine_m18_x3_range_mag",20},
 		{"vn_mine_satchel_remote_02_mag",10},
-		{"vn_m72_mag",30}
+		{"vn_m20a1b1_heat_mag",20},
+		{"vn_m20a1b1_wp_mag",20},
+		{"vn_m72_mag",30}		
 	};
 	items[] = {};
 	backpacks[] = {};
