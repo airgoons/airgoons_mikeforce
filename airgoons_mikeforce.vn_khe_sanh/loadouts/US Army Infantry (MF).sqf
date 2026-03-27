@@ -1205,16 +1205,17 @@
 		comment "Add containers";
 		_unit forceAddUniform "vn_b_uniform_k2b_02_01";
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_m1911_mag";};
-		_unit addVest "vn_b_vest_aircrew_05";
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_m10_mag";};
+		_unit addVest "vn_b_vest_aircrew_04";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m18_white_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m18_red_mag";};
-		_unit addHeadgear "vn_b_helmet_svh4_02_03";
+		_unit addBackpack "vn_b_pack_ba18_01";
+		_unit addHeadgear "vn_b_helmet_aph6_02_02";
 
 		comment "Add weapons";
-		_unit addWeapon "vn_m1911";
-		_unit addHandgunItem "vn_m1911_mag";
+		_unit addWeapon "vn_m10";
+		_unit addHandgunItem "vn_m10_mag";
 
 		comment "Add items";
 		_unit linkItem "vn_b_item_map";

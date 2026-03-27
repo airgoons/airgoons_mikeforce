@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2142;
+		nextID=2189;
 	};
 	class MarkerIDProvider
 	{
-		nextID=14;
+		nextID=17;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1676;
+		nextID=1811;
 	};
 	class Camera
 	{
-		pos[]={10479.532,162.33771,3197.2625};
-		dir[]={0.90696758,-0.42060924,-0.027548926};
-		up[]={0.42059976,0.90712136,-0.012776711};
-		aside[]={-0.030362036,-1.6203594e-06,-0.99961901};
+		pos[]={10485.521,169.42567,3188.533};
+		dir[]={0.91220444,-0.40582117,-0.056646276};
+		up[]={0.40504453,0.91394889,-0.025152508};
+		aside[]={-0.061978552,1.0291842e-08,-0.99808294};
 	};
 };
 binarizationWanted=0;
@@ -383,13 +383,13 @@ dlcs[]=
 randomSeed=521005;
 class ScenarioData
 {
-	author="Savage Game Design";
+	author="Savage Game Design, modified by the Airgoons Mission Devs";
 	disabledAI=1;
 	class Header
 	{
 		gameType="mikefrc";
 		minPlayers=1;
-		maxPlayers=30;
+		maxPlayers=6;
 	};
 	corpseManagerMode=2;
 	corpseLimit=2;
@@ -438,10 +438,11 @@ class CustomAttributes
 };
 class Mission
 {
-	assetType="Free";
+	appId=1227700;
 	class Intel
 	{
-		briefingName="Mike Force (v1.00.04)";
+		briefingName="Mike Force - No Fun Grunts Only";
+		overviewText="Air Goons No-Fun Vietnarma. Visit www.airgoons.com for more info and come join us! ";
 		timeOfChanges=1800.0002;
 		startWeather=0.25;
 		startWind=0.1;
@@ -451,9 +452,9 @@ class Mission
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=1968;
-		month=6;
-		day=21;
-		minute=-15;
+		month=2;
+		day=6;
+		minute=-3;
 		startFogBase=150;
 		forecastFogBase=150;
 		startFogDecay=0.017999999;
@@ -461,14 +462,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=63;
+		items=66;
 		class Item0
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={10536.991,112.65936,3182.3171};
-				angles[]={0,3.1781414,-0};
+				angles[]={0,3.1781414,0};
 			};
 			id=1451;
 			type="ModuleCurator_F";
@@ -536,11 +537,11 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10536.977,112.5106,3187.2639};
-				angles[]={0,3.1781414,-0};
+				angles[]={0,3.1781414,0};
 			};
 			id=1452;
 			type="ModuleCurator_F";
-			atlOffset=22.310852;
+			atlOffset=22.310844;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -604,11 +605,11 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10537.061,112.86736,3176.0859};
-				angles[]={0,3.1781414,-0};
+				angles[]={0,3.1781414,0};
 			};
 			id=1453;
 			type="ModuleCurator_F";
-			atlOffset=22.824387;
+			atlOffset=22.824394;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -672,7 +673,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10540.46,112.84825,3182.5964};
-				angles[]={0,1.6693394,-0};
+				angles[]={0,1.6693394,0};
 			};
 			isPlayable=1;
 			id=1474;
@@ -713,7 +714,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10540.67,112.51324,3187.1938};
-				angles[]={0,1.6660887,-0};
+				angles[]={0,1.6660887,0};
 			};
 			isPlayable=1;
 			id=1475;
@@ -754,7 +755,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10540.529,113.34307,3176.3645};
-				angles[]={0,1.6799157,-0};
+				angles[]={0,1.6799157,0};
 			};
 			isPlayable=1;
 			id=1476;
@@ -1012,7 +1013,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Airgoons map Info";
-			state=1;
 			class Entities
 			{
 				items=12;
@@ -1298,7 +1298,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Base";
-			state=1;
 			class Entities
 			{
 				items=3;
@@ -1991,6 +1990,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Trash cans";
+							state=1;
 							class Entities
 							{
 								items=3;
@@ -3555,7 +3555,6 @@ class Mission
 						{
 							dataType="Layer";
 							name="Rearm Points";
-							state=1;
 							class Entities
 							{
 								items=6;
@@ -3735,7 +3734,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -3786,7 +3785,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -3837,7 +3836,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -3868,7 +3867,7 @@ class Mission
 							state=1;
 							class Entities
 							{
-								items=6;
+								items=7;
 								class Item0
 								{
 									dataType="Object";
@@ -4146,9 +4145,56 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item6
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10756.906,100.18528,3190.4661};
+										angles[]={0.0026520467,4.0164261,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2159;
+									type="Land_vn_billboard_f";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="img\comms.jpg";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=1082;
-							atlOffset=-3.0517578e-05;
+							atlOffset=-0.017868042;
 						};
 						class Item8
 						{
@@ -6559,7 +6605,7 @@ class Mission
 						};
 					};
 					id=679;
-					atlOffset=66.688927;
+					atlOffset=66.511055;
 				};
 				class Item1
 				{
@@ -7900,7 +7946,7 @@ class Mission
 							state=1;
 							class Entities
 							{
-								items=20;
+								items=21;
 								class Item0
 								{
 									dataType="Object";
@@ -8089,7 +8135,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11008.378,98.480003,3241.0991};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8124,7 +8170,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11008.43,98.480003,3236.7861};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8159,7 +8205,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11008.378,98.480003,3232.4268};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8194,7 +8240,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11008.415,98.480003,3228.0681};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8229,7 +8275,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11008.478,98.480003,3223.7756};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8264,7 +8310,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11020.837,98.480003,3225.938};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8299,7 +8345,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11020.767,98.480003,3230.2615};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8334,7 +8380,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11020.834,98.480003,3234.5774};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8369,7 +8415,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11020.732,98.480003,3239.009};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8404,7 +8450,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11020.816,98.480003,3243.4363};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8439,7 +8485,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11008.457,98.480003,3243.6604};
-										angles[]={-0,1.5619988,0};
+										angles[]={0,1.5619988,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8474,7 +8520,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11029.051,98.480003,3228.0693};
-										angles[]={-0,4.7224188,0};
+										angles[]={0,4.7224188,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8509,7 +8555,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11029.013,98.480003,3232.4277};
-										angles[]={-0,4.7224188,0};
+										angles[]={0,4.7224188,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8544,7 +8590,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11029.054,98.480003,3236.812};
-										angles[]={-0,4.7224188,0};
+										angles[]={0,4.7224188,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8579,7 +8625,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11028.953,98.480003,3241.1921};
-										angles[]={-0,4.7224188,0};
+										angles[]={0,4.7224188,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8614,7 +8660,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11028.843,98.480003,3226.0977};
-										angles[]={-0,4.7224188,0};
+										angles[]={0,4.7224188,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8649,7 +8695,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11029.019,98.480003,3242.9897};
-										angles[]={-0,4.7224188,0};
+										angles[]={0,4.7224188,0};
 									};
 									side="Empty";
 									flags=4;
@@ -8678,6 +8724,21 @@ class Mission
 										nAttributes=1;
 									};
 								};
+								class Item20
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={11029.04,98.477654,3241.7795};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=2164;
+									type="Land_vn_us_vehicleammo";
+								};
 							};
 							id=2085;
 						};
@@ -8689,6 +8750,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Field Hospital";
+					state=1;
 					class Entities
 					{
 						items=11;
@@ -9094,13 +9156,12 @@ class Mission
 				};
 			};
 			id=678;
-			atlOffset=-1.6912155;
+			atlOffset=-1.6929092;
 		};
 		class Item11
 		{
 			dataType="Layer";
 			name="Dev Stuff";
-			state=1;
 			class Entities
 			{
 				items=5;
@@ -9128,7 +9189,7 @@ class Mission
 						class Item1
 						{
 							dataType="Trigger";
-							position[]={2631.3979,529.59418,8540.7578};
+							position[]={2587.1582,541.79614,8568.918};
 							class Attributes
 							{
 								sizeA=500;
@@ -9176,7 +9237,7 @@ class Mission
 						class Item5
 						{
 							dataType="Trigger";
-							position[]={8428.3682,193.83847,7706.4941};
+							position[]={8638.0391,150.85254,5645.9819};
 							class Attributes
 							{
 								sizeA=800;
@@ -9188,7 +9249,7 @@ class Mission
 						class Item6
 						{
 							dataType="Trigger";
-							position[]={10726.034,52.919643,4337.8877};
+							position[]={10711.438,52.080002,4340.2427};
 							class Attributes
 							{
 								sizeA=800;
@@ -9200,7 +9261,7 @@ class Mission
 						class Item7
 						{
 							dataType="Trigger";
-							position[]={11211.797,73.110001,1863.3453};
+							position[]={11199.74,73.110001,1880.7417};
 							class Attributes
 							{
 								sizeA=500;
@@ -9212,7 +9273,7 @@ class Mission
 						class Item8
 						{
 							dataType="Trigger";
-							position[]={4590.0552,45.775295,926.90277};
+							position[]={4589.8398,45.644642,924.79236};
 							class Attributes
 							{
 								sizeA=800;
@@ -9220,12 +9281,11 @@ class Mission
 							};
 							id=20;
 							type="EmptyDetectorAreaR250";
-							atlOffset=0.0030822754;
 						};
 						class Item9
 						{
 							dataType="Trigger";
-							position[]={2574.2896,42.300381,891.73645};
+							position[]={2570.2222,42.503593,900.97418};
 							class Attributes
 							{
 								sizeA=500;
@@ -9237,7 +9297,7 @@ class Mission
 						class Item10
 						{
 							dataType="Trigger";
-							position[]={2604.4656,182.54134,3447.1389};
+							position[]={2592.6011,181.08803,3407.1887};
 							class Attributes
 							{
 								sizeA=500;
@@ -9249,7 +9309,7 @@ class Mission
 						class Item11
 						{
 							dataType="Trigger";
-							position[]={1293.3423,162.51941,6579.8921};
+							position[]={1288.2362,162.37785,6574.3472};
 							class Attributes
 							{
 								sizeA=500;
@@ -9261,7 +9321,7 @@ class Mission
 						class Item12
 						{
 							dataType="Trigger";
-							position[]={5906.8711,164.20143,4491.0981};
+							position[]={5922.5327,163.72235,4476.1177};
 							class Attributes
 							{
 								sizeA=500;
@@ -9273,7 +9333,7 @@ class Mission
 						class Item13
 						{
 							dataType="Trigger";
-							position[]={4196.5649,349.99155,6318.4971};
+							position[]={4202.478,350.18329,6333.5498};
 							class Attributes
 							{
 								sizeA=500;
@@ -9309,7 +9369,7 @@ class Mission
 						class Item16
 						{
 							dataType="Trigger";
-							position[]={14805.909,31.164179,4437.9121};
+							position[]={14815.891,31.646601,4453.2139};
 							class Attributes
 							{
 								sizeA=500;
@@ -9317,12 +9377,11 @@ class Mission
 							};
 							id=40;
 							type="EmptyDetectorAreaR250";
-							atlOffset=-0.00066566467;
 						};
 						class Item17
 						{
 							dataType="Trigger";
-							position[]={13038.64,324.52393,2711.3672};
+							position[]={13019.418,320.76584,2719.8967};
 							class Attributes
 							{
 								sizeA=500;
@@ -9330,12 +9389,11 @@ class Mission
 							};
 							id=55;
 							type="EmptyDetectorAreaR250";
-							atlOffset=5.9663391;
 						};
 						class Item18
 						{
 							dataType="Trigger";
-							position[]={14547.996,4.4175787,1021.1618};
+							position[]={14583.362,10.003715,871.74866};
 							class Attributes
 							{
 								sizeA=500;
@@ -9343,7 +9401,6 @@ class Mission
 							};
 							id=54;
 							type="EmptyDetectorAreaR250";
-							atlOffset=14.234993;
 						};
 						class Item19
 						{
@@ -9361,7 +9418,7 @@ class Mission
 						class Item20
 						{
 							dataType="Trigger";
-							position[]={4445.7964,249.9761,12792.813};
+							position[]={4433.3345,255.74423,12823.587};
 							class Attributes
 							{
 								sizeA=500;
@@ -9369,7 +9426,6 @@ class Mission
 							};
 							id=66;
 							type="EmptyDetectorAreaR250";
-							atlOffset=0.0010070801;
 						};
 						class Item21
 						{
@@ -9411,7 +9467,7 @@ class Mission
 						class Item24
 						{
 							dataType="Trigger";
-							position[]={5786.5488,270.5755,14553.28};
+							position[]={5779.6787,272.67072,14580.018};
 							class Attributes
 							{
 								text="Republic Banana";
@@ -9420,12 +9476,11 @@ class Mission
 							};
 							id=9;
 							type="EmptyDetectorAreaR250";
-							atlOffset=-0.0023803711;
 						};
 						class Item25
 						{
 							dataType="Trigger";
-							position[]={10754.485,293.71429,13472.794};
+							position[]={10737.149,293.73251,13500.559};
 							class Attributes
 							{
 								sizeA=500;
@@ -9433,12 +9488,11 @@ class Mission
 							};
 							id=12;
 							type="EmptyDetectorAreaR250";
-							atlOffset=0.0043029785;
 						};
 						class Item26
 						{
 							dataType="Trigger";
-							position[]={13155.048,629.47101,14043.124};
+							position[]={13150.146,631.72241,14028.724};
 							class Attributes
 							{
 								sizeA=600;
@@ -9446,12 +9500,11 @@ class Mission
 							};
 							id=13;
 							type="EmptyDetectorAreaR250";
-							atlOffset=0.0035400391;
 						};
 						class Item27
 						{
 							dataType="Trigger";
-							position[]={13464.043,397.61774,11131.404};
+							position[]={13486.154,395.80072,11144.016};
 							class Attributes
 							{
 								sizeA=600;
@@ -9459,12 +9512,11 @@ class Mission
 							};
 							id=78;
 							type="EmptyDetectorAreaR250";
-							atlOffset=0.16513062;
 						};
 						class Item28
 						{
 							dataType="Trigger";
-							position[]={13877.549,76.744522,9734.4658};
+							position[]={13881.256,77.220444,9733.7031};
 							class Attributes
 							{
 								sizeA=500;
@@ -9476,7 +9528,7 @@ class Mission
 						class Item29
 						{
 							dataType="Trigger";
-							position[]={12168.444,516.28442,9486.0957};
+							position[]={12145.054,521.34741,9524.1064};
 							class Attributes
 							{
 								sizeA=500;
@@ -9484,7 +9536,7 @@ class Mission
 							};
 							id=30;
 							type="EmptyDetectorAreaR250";
-							atlOffset=0.0026245117;
+							atlOffset=6.1035156e-05;
 						};
 						class Item30
 						{
@@ -9519,13 +9571,12 @@ class Mission
 						};
 					};
 					id=58;
-					atlOffset=-43.68914;
+					atlOffset=-43.295898;
 				};
 				class Item1
 				{
 					dataType="Layer";
 					name="Undecided";
-					state=2;
 					class Entities
 					{
 						items=22;
@@ -9844,7 +9895,7 @@ class Mission
 						class Item0
 						{
 							dataType="Marker";
-							position[]={4190.8262,359.92401,6321.23};
+							position[]={4202.5718,350.1777,6333.5571};
 							name="zone_a_bung";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9853,12 +9904,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=100;
-							atlOffset=10.248077;
 						};
 						class Item1
 						{
 							dataType="Marker";
-							position[]={2594.283,192.539,3447.4509};
+							position[]={2592.7029,181.08871,3407.3584};
 							name="zone_co_put";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9867,12 +9917,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=103;
-							atlOffset=10.247757;
 						};
 						class Item2
 						{
 							dataType="Marker";
-							position[]={11223.6,83.358002,1882.839};
+							position[]={11199.837,73.110001,1880.7062};
 							name="zone_french_fort";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9881,12 +9930,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=108;
-							atlOffset=4.9550552;
 						};
 						class Item3
 						{
 							dataType="Marker";
-							position[]={9321.752,620.21997,10408.185};
+							position[]={9321.752,609.97198,10408.185};
 							name="zone_hickory_hill";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9895,7 +9943,6 @@ class Mission
 							a=-500;
 							b=-500;
 							id=88;
-							atlOffset=10.247986;
 						};
 						class Item4
 						{
@@ -9914,7 +9961,7 @@ class Mission
 						class Item5
 						{
 							dataType="Marker";
-							position[]={13464.7,408.37399,11131.469};
+							position[]={13485.971,395.88196,11144.117};
 							name="zone_hill_399";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9923,12 +9970,11 @@ class Mission
 							a=-600;
 							b=-600;
 							id=91;
-							atlOffset=10.763428;
 						};
 						class Item6
 						{
 							dataType="Marker";
-							position[]={12179.151,527.01398,9486.332};
+							position[]={12145.131,521.2923,9523.6709};
 							name="zone_hill_538";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9937,12 +9983,12 @@ class Mission
 							a=-500;
 							b=-500;
 							id=93;
-							atlOffset=10.249451;
+							atlOffset=6.1035156e-05;
 						};
 						class Item7
 						{
 							dataType="Marker";
-							position[]={2626.2151,536.12903,8532.4424};
+							position[]={2587.0054,541.79657,8571.3018};
 							name="zone_hill_881";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9951,7 +9997,6 @@ class Mission
 							a=-500;
 							b=-500;
 							id=99;
-							atlOffset=10.247559;
 						};
 						class Item8
 						{
@@ -9970,7 +10015,7 @@ class Mission
 						class Item9
 						{
 							dataType="Marker";
-							position[]={4454.7979,262.091,12811.655};
+							position[]={4433.5591,255.75128,12823.618};
 							name="zone_northwest_jungle";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9979,12 +10024,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=83;
-							atlOffset=10.248306;
 						};
 						class Item10
 						{
 							dataType="Marker";
-							position[]={13881.15,87.578003,9733.9209};
+							position[]={13881.15,77.195244,9733.9209};
 							name="zone_kate";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -9993,12 +10037,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=92;
-							atlOffset=10.382759;
 						};
 						class Item11
 						{
 							dataType="Marker";
-							position[]={10736.893,62.757195,4352.7939};
+							position[]={10711.483,52.080002,4339.8223};
 							name="zone_khe_sanh";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10007,12 +10050,11 @@ class Mission
 							a=-800;
 							b=-800;
 							id=112;
-							atlOffset=9.5587654;
 						};
 						class Item12
 						{
 							dataType="Marker";
-							position[]={8428.2451,193.87999,7706.9116};
+							position[]={8642.7422,150.66718,5649.0762};
 							name="zone_khe_sanh_base";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10025,7 +10067,7 @@ class Mission
 						class Item13
 						{
 							dataType="Marker";
-							position[]={13035.676,329.28,2713.041};
+							position[]={13020.003,320.76514,2720.1279};
 							name="zone_koanphan";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10034,7 +10076,6 @@ class Mission
 							a=-500;
 							b=-500;
 							id=109;
-							atlOffset=10.248291;
 						};
 						class Item14
 						{
@@ -10053,7 +10094,7 @@ class Mission
 						class Item15
 						{
 							dataType="Marker";
-							position[]={1293.101,172.407,6576.6758};
+							position[]={1288.3282,162.36984,6574.3105};
 							name="zone_lang_hoan_tap";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10062,12 +10103,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=101;
-							atlOffset=10.247528;
 						};
 						class Item16
 						{
 							dataType="Marker";
-							position[]={5915.0928,174.157,4485.2051};
+							position[]={5922.3062,163.729,4476.3237};
 							name="zone_lang_temp";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10076,12 +10116,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=102;
-							atlOffset=10.248123;
 						};
 						class Item17
 						{
 							dataType="Marker";
-							position[]={4589.9619,55.887001,924.914};
+							position[]={4589.9619,45.635544,924.914};
 							name="zone_lang_vei";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10090,12 +10129,11 @@ class Mission
 							a=-800;
 							b=-800;
 							id=106;
-							atlOffset=10.251457;
 						};
 						class Item18
 						{
 							dataType="Marker";
-							position[]={690.00403,479.43799,11493.14};
+							position[]={690.00403,469.19,11493.14};
 							name="zone_mouang_nong";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10104,12 +10142,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=81;
-							atlOffset=10.247986;
 						};
 						class Item19
 						{
 							dataType="Marker";
-							position[]={5780.0352,282.87299,14579.287};
+							position[]={5780.0352,272.62424,14579.287};
 							name="zone_mu_ta";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10118,12 +10155,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=85;
-							atlOffset=10.248749;
 						};
 						class Item20
 						{
 							dataType="Marker";
-							position[]={14815.82,41.894001,4453.2739};
+							position[]={14815.82,31.644003,4453.2739};
 							name="zone_nabo";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10132,12 +10168,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=111;
-							atlOffset=10.249998;
 						};
 						class Item21
 						{
 							dataType="Marker";
-							position[]={10749.233,303.96201,13497.56};
+							position[]={10737.091,293.73633,13500.696};
 							name="zone_nam_hung";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10146,12 +10181,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=89;
-							atlOffset=10.252014;
 						};
 						class Item22
 						{
 							dataType="Marker";
-							position[]={2570.335,52.757999,900.96503};
+							position[]={2570.335,42.510338,900.96503};
 							name="zone_lang_ou_hi";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10160,12 +10194,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=104;
-							atlOffset=10.247662;
 						};
 						class Item23
 						{
 							dataType="Marker";
-							position[]={2201.99,310.935,12734.009};
+							position[]={2201.99,300.68695,12734.009};
 							name="zone_ro_ro";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10174,7 +10207,6 @@ class Mission
 							a=-500;
 							b=-500;
 							id=82;
-							atlOffset=10.248047;
 						};
 						class Item24
 						{
@@ -10193,7 +10225,7 @@ class Mission
 						class Item25
 						{
 							dataType="Marker";
-							position[]={6738.543,11.461,10675.861};
+							position[]={6738.543,3.9804058,10675.861};
 							name="zone_pomkhoun";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10202,7 +10234,7 @@ class Mission
 							a=-800;
 							b=-800;
 							id=87;
-							atlOffset=7.4805946;
+							atlOffset=2.3841858e-07;
 						};
 						class Item26
 						{
@@ -10221,7 +10253,7 @@ class Mission
 						class Item27
 						{
 							dataType="Marker";
-							position[]={4149.0381,31.948,11180.932};
+							position[]={4149.0381,21.700001,11180.932};
 							name="zone_sei_na";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10230,12 +10262,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=84;
-							atlOffset=10.247999;
 						};
 						class Item28
 						{
 							dataType="Marker";
-							position[]={14544.41,0.23199999,1044.652};
+							position[]={14581.521,10.21637,870.69409};
 							name="zone_that";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10244,12 +10275,11 @@ class Mission
 							a=-500;
 							b=-500;
 							id=110;
-							atlOffset=10.24774;
 						};
 						class Item29
 						{
 							dataType="Marker";
-							position[]={13153.616,640.21997,14040.99};
+							position[]={13150.285,631.72211,14028.761};
 							name="zone_xom_bau";
 							markerType="ELLIPSE";
 							type="ellipse";
@@ -10258,7 +10288,6 @@ class Mission
 							a=-600;
 							b=-600;
 							id=90;
-							atlOffset=10.246521;
 						};
 						class Item30
 						{
@@ -10276,7 +10305,7 @@ class Mission
 						};
 					};
 					id=125;
-					atlOffset=232.62738;
+					atlOffset=215.09259;
 				};
 				class Item4
 				{
@@ -10326,7 +10355,7 @@ class Mission
 				};
 			};
 			id=676;
-			atlOffset=-195.47107;
+			atlOffset=-195.09622;
 		};
 		class Item12
 		{
@@ -10360,14 +10389,14 @@ class Mission
 		class Item13
 		{
 			dataType="Marker";
-			position[]={10754.552,98.445,3200.177};
+			position[]={10802.095,98.563286,3160.0195};
 			name="duty_officer_bravoplatoon";
 			text="Duty Officer";
 			type="mil_dot";
 			colorName="ColorWhite";
-			angle=52.673;
+			angle=262.61743;
 			id=197;
-			atlOffset=-7.6293945e-06;
+			atlOffset=7.6293945e-06;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10389,14 +10418,13 @@ class Mission
 		class Item14
 		{
 			dataType="Marker";
-			position[]={10802.133,98.559998,3161.1731};
+			position[]={10610.993,98.512627,3196.0676};
 			name="duty_officer_charlieplatoon";
 			text="Duty Officer";
 			type="mil_dot";
 			colorName="ColorWhite";
-			angle=269.92401;
+			angle=359.39755;
 			id=200;
-			atlOffset=-0.00020599365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10418,14 +10446,13 @@ class Mission
 		class Item15
 		{
 			dataType="Marker";
-			position[]={10753.868,98.467003,3221.729};
+			position[]={10754.826,98.443504,3199.8918};
 			name="duty_officer_deltatroop";
 			text="Duty Officer";
 			type="mil_dot";
 			colorName="ColorWhite";
-			angle=179.14299;
+			angle=50.523632;
 			id=198;
-			atlOffset=-0.00044250488;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10447,13 +10474,14 @@ class Mission
 		class Item16
 		{
 			dataType="Marker";
-			position[]={10697.076,98.389999,3223.1084};
-			name="mf_respawn_acav";
-			text="ACAV respawn";
+			position[]={10797.061,98.532997,3167.532};
+			name="mf_respawn_bravoplatoon";
+			text="Bravo Platoon respawn";
 			type="Empty";
 			colorName="ColorPink";
-			angle=178.38704;
+			angle=2.3900001;
 			id=203;
+			atlOffset=-0.00025177002;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10475,13 +10503,14 @@ class Mission
 		class Item17
 		{
 			dataType="Marker";
-			position[]={10695.134,98.389999,3223.1016};
-			name="mf_respawn_greenhornets";
-			text="Green Hornets Respawn";
+			position[]={10756.335,98.477997,3218.261};
+			name="mf_respawn_deltatroop";
+			text="Delta Troop Respawn";
 			type="Empty";
 			colorName="ColorPink";
-			angle=179.17755;
+			angle=185.19;
 			id=207;
+			atlOffset=2.2888184e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10503,13 +10532,14 @@ class Mission
 		class Item18
 		{
 			dataType="Marker";
-			position[]={10690.991,98.389999,3223.2832};
-			name="mf_respawn_mikeforce";
-			text="Mike Force Respawn";
+			position[]={10791.312,99.091003,3224.0491};
+			name="mf_respawn_alphaplatoon";
+			text="Alpha Platoon Respawn";
 			type="Empty";
 			colorName="ColorPink";
-			angle=184.20793;
+			angle=184.20798;
 			id=206;
+			atlOffset=-0.00018310547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10531,13 +10561,14 @@ class Mission
 		class Item19
 		{
 			dataType="Marker";
-			position[]={10692.952,98.389999,3223.2295};
-			name="mf_respawn_spiketeam";
-			text="Spike Team Respawn";
+			position[]={10602.16,98.461998,3200.7051};
+			name="mf_respawn_charlieplatoon";
+			text="Charlite Platoon Respawn";
 			type="Empty";
 			colorName="ColorPink";
-			angle=178.81894;
+			angle=1.0509999;
 			id=204;
+			atlOffset=0.00042724609;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11964,7 +11995,7 @@ class Mission
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="[this, ""CO""] call Gib_fnc_Gearscript;";
+						init="[this, ""CO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Company CO"", true];";
 						description="Company CO@Company HQ";
 						isPlayable=1;
 						class Inventory
@@ -12084,7 +12115,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="30";
+									value="31";
 								};
 							};
 						};
@@ -12130,7 +12161,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""XO""] call Gib_fnc_Gearscript;";
+						init="[this, ""XO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Company XO"", true];";
 						description="Company XO";
 						isPlayable=1;
 					};
@@ -12174,7 +12205,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="30";
+									value="31";
 								};
 							};
 						};
@@ -12220,7 +12251,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""FO""] call Gib_fnc_Gearscript;";
+						init="[this, ""FO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Forward Observer"", true];";
 						description="Forward Observer";
 						isPlayable=1;
 					};
@@ -12309,7 +12340,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="[this, ""CAM""] call Gib_fnc_Gearscript;";
+						init="[this, ""CAM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Photographer"", true];";
 						description="Combat Photographer";
 						isPlayable=1;
 						class Inventory
@@ -12468,7 +12499,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="30";
+									value="31";
 								};
 							};
 						};
@@ -12534,7 +12565,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""PL""] call Gib_fnc_Gearscript;";
+						init="[this, ""PL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Platoon Leader"", true];";
 						description="Alpha Platoon Leader@Alpha 1-6";
 						isPlayable=1;
 						class Inventory
@@ -12710,7 +12741,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""PL""] call Gib_fnc_Gearscript;";
+						init="[this, ""PL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Platoon Sergeant"", true];";
 						description="Platoon Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -12909,7 +12940,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""FO""] call Gib_fnc_Gearscript;";
+						init="[this, ""FO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Forward Observer"", true];";
 						description="Forward Observer";
 						isPlayable=1;
 						class Inventory
@@ -13131,8 +13162,8 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
-						description="Medic ";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Platoon Medic"", true];";
+						description="Platoon Medic ";
 						isPlayable=1;
 						class Inventory
 						{
@@ -13393,15 +13424,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10805.567,98.747658,3243.5129};
-						angles[]={6.2816596,6.1269569,6.2748966};
+						position[]={10805.567,98.747749,3243.5129};
+						angles[]={6.2816668,6.1269612,6.2748947};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SL""] call Gib_fnc_Gearscript;";
+						init="[this, ""SL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Squad Leader"", true];";
 						description="Squad Leader@Alpha 1-1";
 						isPlayable=1;
 						class Inventory
@@ -13530,6 +13561,7 @@ class Mission
 					};
 					id=1484;
 					type="vn_b_men_army_02";
+					atlOffset=9.1552734e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13605,15 +13637,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10807.361,98.747658,3246.4014};
-						angles[]={0.002455767,3.0989735,0.0080622304};
+						position[]={10807.361,98.74733,3246.4011};
+						angles[]={0.0024609142,3.0989716,0.0080634216};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Fire Team Leader"", true];";
 						description="Alpha Fire Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -13735,6 +13767,7 @@ class Mission
 					};
 					id=1485;
 					type="vn_b_men_army_15";
+					atlOffset=0.18699646;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13810,14 +13843,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10808.645,98.747658,3243.7444};
-						angles[]={6.2810764,6.1653857,6.2776222};
+						position[]={10808.645,98.747704,3243.7441};
+						angles[]={6.2810736,6.1653929,6.2776175};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Machine Gunner"", true];";
 						description="Alpha Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -13936,6 +13969,7 @@ class Mission
 					};
 					id=1486;
 					type="vn_b_men_army_06";
+					atlOffset=4.5776367e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14011,14 +14045,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10810.414,98.747658,3245.8704};
-						angles[]={0.0053225914,3.1220009,0.0026586435};
+						position[]={10810.414,98.747986,3245.8701};
+						angles[]={0.0053232545,3.1219926,0.0026529003};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GL""] call Gib_fnc_Gearscript;";
+						init="[this, ""GL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Grenadier"", true];";
 						description="Alpha Grenadier";
 						isPlayable=1;
 						class Inventory
@@ -14149,6 +14183,7 @@ class Mission
 					};
 					id=1487;
 					type="vn_b_men_army_07";
+					atlOffset=0.00032806396;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14224,14 +14259,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10812.378,98.747658,3243.7632};
-						angles[]={0,6.1440434,0};
+						position[]={10812.378,98.747459,3243.7629};
+						angles[]={0,6.1440477,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""RAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""RAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Rifleman (Anti-Tank)"", true];";
 						description="Alpha Rifleman (AT)";
 						isPlayable=1;
 						class Inventory
@@ -14341,6 +14376,7 @@ class Mission
 					};
 					id=1488;
 					type="vn_b_men_army_21";
+					atlOffset=0.15999603;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14416,15 +14452,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10814.189,98.747658,3245.676};
-						angles[]={6.2795758,2.9333835,0.004729745};
+						position[]={10814.189,98.748116,3245.676};
+						angles[]={6.2795725,2.9333749,0.0047298423};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Fire Team Leader"", true];";
 						description="Bravo Fire Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -14547,6 +14583,7 @@ class Mission
 					};
 					id=1489;
 					type="vn_b_men_army_15";
+					atlOffset=0.00045776367;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14622,14 +14659,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10815.588,98.747658,3243.4814};
-						angles[]={0.0028213859,6.1987143,6.2807155};
+						position[]={10815.588,98.747276,3243.481};
+						angles[]={0.0028274334,6.1987114,6.2807069};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Machine Gunner"", true];";
 						description="Bravo Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -14733,6 +14770,7 @@ class Mission
 					};
 					id=1490;
 					type="vn_b_men_army_27";
+					atlOffset=0.14498901;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14808,14 +14846,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10816.49,98.747658,3245.6831};
-						angles[]={6.280304,3.0323827,0.0023995305};
+						position[]={10816.49,98.747444,3245.6831};
+						angles[]={6.2803054,3.0323873,0.0023911009};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GL""] call Gib_fnc_Gearscript;";
+						init="[this, ""GL""] call Gib_fnc_Gearscript; " \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Grenadier"", true];";
 						description="Bravo Grenadier";
 						isPlayable=1;
 						class Inventory
@@ -14939,6 +14977,7 @@ class Mission
 					};
 					id=1491;
 					type="vn_b_men_army_17";
+					atlOffset=0.14600372;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15014,14 +15053,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10818.456,98.747658,3245.8894};
-						angles[]={0,2.6407521,0};
+						position[]={10818.456,98.747444,3245.8892};
+						angles[]={0,2.640753,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""RAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""RAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Rifleman (Anti-Tank)"", true];";
 						description="Bravo Rifleman (AT)";
 						isPlayable=1;
 						class Inventory
@@ -15130,6 +15169,7 @@ class Mission
 					};
 					id=1492;
 					type="vn_b_men_army_12";
+					atlOffset=0.14600372;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15205,14 +15245,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10820.388,98.747658,3243.8569};
-						angles[]={0,6.2382717,0};
+						position[]={10820.388,98.747444,3243.8569};
+						angles[]={0,6.2382779,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Rifleman (Demo)"", true];";
 						description="Bravo Rifleman (Demolitions)";
 						isPlayable=1;
 						class Inventory
@@ -15360,6 +15400,7 @@ class Mission
 					};
 					id=1493;
 					type="vn_b_men_army_05";
+					atlOffset=0.14600372;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15437,6 +15478,7 @@ class Mission
 				formation="FILE";
 			};
 			id=1483;
+			atlOffset=9.1552734e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15467,15 +15509,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10805.368,98.749573,3230.7258};
-						angles[]={6.2814784,6.1212568,6.2774858};
+						position[]={10805.368,98.74939,3230.7261};
+						angles[]={6.2814751,6.1212535,6.2774782};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SL""] call Gib_fnc_Gearscript;";
+						init="[this, ""SL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Squad Leader"", true];";
 						description="Squad Leader@Alpha 1-2";
 						isPlayable=1;
 						class Inventory
@@ -15609,6 +15651,7 @@ class Mission
 					};
 					id=1495;
 					type="vn_b_men_army_02";
+					atlOffset=0.20500183;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15692,7 +15735,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Fire Team Leader"", true];";
 						description="Alpha Fire Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -15896,7 +15939,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Machine Gunner"", true];";
 						description="Alpha Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -16098,7 +16141,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GL""] call Gib_fnc_Gearscript;";
+						init="[this, ""GL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Grenadier"", true];";
 						description="Alpha Grenadier";
 						isPlayable=1;
 						class Inventory
@@ -16311,7 +16354,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""RAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""RAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Rifleman (Anti-Tank)"", true];";
 						description="Alpha Rifleman (AT)";
 						isPlayable=1;
 						class Inventory
@@ -16505,7 +16548,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Fire Team Leader"", true];";
 						description="Bravo Fire Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -16710,7 +16753,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Machine Gunner"", true];";
 						description="Bravo Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -16896,7 +16939,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GL""] call Gib_fnc_Gearscript;";
+						init="[this, ""GL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Grenadier"", true];";
 						description="Bravo Grenadier";
 						isPlayable=1;
 						class Inventory
@@ -17102,7 +17145,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""RAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""RAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Rifleman (Anti-Tank)"", true];";
 						description="Bravo Rifleman (AT)";
 						isPlayable=1;
 						class Inventory
@@ -17293,7 +17336,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Rifleman (Demo)"", true];";
 						description="Bravo Rifleman (Demolitions)";
 						isPlayable=1;
 						class Inventory
@@ -17518,6 +17561,7 @@ class Mission
 				formation="FILE";
 			};
 			id=1494;
+			atlOffset=0.20500183;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17548,15 +17592,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10805.443,98.707451,3218.5317};
-						angles[]={0.00070795685,6.0120325,6.2806296};
+						position[]={10805.443,98.707443,3218.532};
+						angles[]={0.00071558502,6.0120306,6.2806373};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SL""] call Gib_fnc_Gearscript;";
+						init="[this, ""SL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Squad Leader"", true];";
 						description="Squad Leader@Alpha 1-3";
 						isPlayable=1;
 						class Inventory
@@ -17690,6 +17734,7 @@ class Mission
 					};
 					id=1707;
 					type="vn_b_men_army_02";
+					atlOffset=0.1760025;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17773,7 +17818,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Fire Team Leader"", true];";
 						description="Alpha Fire Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -17977,7 +18022,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Machine Gunner"", true];";
 						description="Alpha Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -18179,7 +18224,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GL""] call Gib_fnc_Gearscript;";
+						init="[this, ""GL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Grenadier"", true];";
 						description="Alpha Grenadier";
 						isPlayable=1;
 						class Inventory
@@ -18392,7 +18437,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""RAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""RAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Rifleman (Anti-Tank)"", true];";
 						description="Alpha Rifleman (AT)";
 						isPlayable=1;
 						class Inventory
@@ -18586,7 +18631,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""TL""] call Gib_fnc_Gearscript;";
+						init="[this, ""TL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Fire Team Leader"", true];";
 						description="Bravo Fire Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -18791,7 +18836,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""AR""] call Gib_fnc_Gearscript;";
+						init="[this, ""AR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Machine Gunner"", true];";
 						description="Bravo Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -18977,7 +19022,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""GL""] call Gib_fnc_Gearscript;";
+						init="[this, ""GL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Grenadier"", true];";
 						description="Bravo Grenadier";
 						isPlayable=1;
 						class Inventory
@@ -19183,7 +19228,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""RAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""RAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Rifleman (Anti-Tank)"", true];";
 						description="Bravo Rifleman (AT)";
 						isPlayable=1;
 						class Inventory
@@ -19374,7 +19419,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""BOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""BOOM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Rifleman (Demo)"", true];";
 						description="Bravo Rifleman (Demolitions)";
 						isPlayable=1;
 						class Inventory
@@ -19599,6 +19644,7 @@ class Mission
 				formation="FILE";
 			};
 			id=1706;
+			atlOffset=0.1760025;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19637,7 +19683,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SL""] call Gib_fnc_Gearscript;";
+						init="[this, ""SL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Squad Leader (Weapons)"", true];";
 						description="Squad Leader@Alpha 1-4";
 						isPlayable=1;
 						class Inventory
@@ -19854,7 +19900,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MG""] call Gib_fnc_Gearscript;";
+						init="[this, ""MG""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Machine Gunner"", true];";
 						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -20057,7 +20103,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""MGA""] call Gib_fnc_Gearscript;";
+						init="[this, ""MGA""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Asst. Machine Gunner"", true];";
 						description="Assistant Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -20267,7 +20313,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""AMMO""] call Gib_fnc_Gearscript;";
+						init="[this, ""AMMO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Ammobearer"", true];";
 						description="Ammobearer";
 						isPlayable=1;
 						class Inventory
@@ -20472,7 +20518,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""MG""] call Gib_fnc_Gearscript;";
+						init="[this, ""MG""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Machine Gunner"", true];";
 						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -20675,7 +20721,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""MGA""] call Gib_fnc_Gearscript;";
+						init="[this, ""MGA""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Asst. Machine Gunner"", true];";
 						description="Assistant Machine Gunner";
 						isPlayable=1;
 						class Inventory
@@ -20885,7 +20931,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""AMMO""] call Gib_fnc_Gearscript;";
+						init="[this, ""AMMO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Ammobearer"", true];";
 						description="Ammobearer";
 						isPlayable=1;
 						class Inventory
@@ -21091,7 +21137,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""HAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""HAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""AT Gunner"", true];";
 						description="AT Gunner";
 						isPlayable=1;
 						class Inventory
@@ -21319,7 +21365,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""HATA""] call Gib_fnc_Gearscript;";
+						init="[this, ""HATA""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Asst. AT Gunner"", true];";
 						description="Assistant AT Gunner";
 						isPlayable=1;
 						class Inventory
@@ -21538,7 +21584,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""HAT""] call Gib_fnc_Gearscript;";
+						init="[this, ""HAT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""AT Gunner"", true];";
 						description="AT Gunner";
 						isPlayable=1;
 						class Inventory
@@ -21766,7 +21812,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""HATA""] call Gib_fnc_Gearscript;";
+						init="[this, ""HATA""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Asst. AT Gunner"", true];";
 						description="Assistant AT Gunner";
 						isPlayable=1;
 						class Inventory
@@ -22018,7 +22064,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""PL""] call Gib_fnc_Gearscript;";
+						init="[this, ""PL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Platoon Leader"", true];";
 						description="Bravo Platoon Leader@Bravo 1-6";
 						isPlayable=1;
 						class Inventory
@@ -22207,7 +22253,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""PL""] call Gib_fnc_Gearscript;";
+						init="[this, ""PL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Platoon Sergeant"", true];";
 						description="Platoon Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -22420,7 +22466,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""FO""] call Gib_fnc_Gearscript;";
+						init="[this, ""FO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Forward Observer"", true];";
 						description="Forward Observer";
 						isPlayable=1;
 						class Inventory
@@ -22642,8 +22688,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
-						description="Medic ";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Platoon Medic"", true];";
+						description="Platoon Medic ";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22912,7 +22958,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""ESL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ESL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Squad Leader"", true];";
 						description="Squad Leader@Bravo 1-1 (Engineers)";
 						isPlayable=1;
 						class Inventory
@@ -23131,7 +23177,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""ETL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ETL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Team Leader"", true];";
 						description="Alpha Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -23355,8 +23401,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EGL""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer M203";
+						init="[this, ""EGL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (M203)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23600,8 +23646,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EMG""] call Gib_fnc_Gearscript;";
-						description="Engineer Machinegunner";
+						init="[this, ""EMG""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (Machine Gunner)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23827,7 +23873,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;";
+						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sapper"", true];";
 						description="Sapper with Axe";
 						isPlayable=1;
 						class Inventory
@@ -24045,7 +24091,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""ETL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ETL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Team Leader"", true];";
 						description="Bravo Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -24269,8 +24315,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EGL""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer M203";
+						init="[this, ""EGL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer M203";
 						isPlayable=1;
 						class Inventory
 						{
@@ -24514,8 +24560,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ENGI""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer";
+						init="[this, ""ENGI""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -24732,8 +24778,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ENGI""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer";
+						init="[this, ""ENGI""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -24956,7 +25002,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;";
+						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sapper"", true];";
 						description="Sapper with Axe";
 						isPlayable=1;
 						class Inventory
@@ -25207,7 +25253,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""ESL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ESL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Squad Leader"", true];";
 						description="Squad Leader@Bravo 1-2 (Engineers)";
 						isPlayable=1;
 						class Inventory
@@ -25426,7 +25472,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""ETL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ETL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Team Leader"", true];";
 						description="Alpha Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -25642,15 +25688,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10809.271,98.612297,3128.7703};
-						angles[]={6.2733202,6.0103126,6.2791352};
+						position[]={10809.271,98.612206,3128.77};
+						angles[]={6.273324,6.0103207,6.2791362};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EGL""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer M203";
+						init="[this, ""EGL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (M203)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -25811,6 +25857,7 @@ class Mission
 					};
 					id=1759;
 					type="vn_b_men_army_04";
+					atlOffset=0.16100311;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25886,15 +25933,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10811.329,98.612297,3128.8254};
-						angles[]={6.2757406,6.0273924,6.2802768};
+						position[]={10811.329,98.612648,3128.825};
+						angles[]={6.2757325,6.0273895,6.2802706};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EMG""] call Gib_fnc_Gearscript;";
-						description="Engineer Machinegunner";
+						init="[this, ""EMG""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (Machine Gunner)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26037,6 +26084,7 @@ class Mission
 					};
 					id=1760;
 					type="vn_b_men_army_04";
+					atlOffset=0.00035095215;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26119,7 +26167,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;";
+						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sapper"", true];";
 						description="Sapper with Axe";
 						isPlayable=1;
 						class Inventory
@@ -26336,7 +26384,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""ETL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ETL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Team Leader"", true];";
 						description="Bravo Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -26559,8 +26607,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EGL""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer M203";
+						init="[this, ""EGL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (M203)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26803,8 +26851,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ENGI""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer";
+						init="[this, ""ENGI""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -27020,8 +27068,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ENGI""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer";
+						init="[this, ""ENGI""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -27243,7 +27291,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;";
+						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sapper"", true];";
 						description="Sapper with Axe";
 						isPlayable=1;
 						class Inventory
@@ -27493,7 +27541,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""ESL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ESL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Squad Leader"", true];";
 						description="Squad Leader@Bravo 1-3 (Engineers)";
 						isPlayable=1;
 						class Inventory
@@ -27711,7 +27759,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""ETL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ETL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Team Leader"", true];";
 						description="Alpha Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -27927,15 +27975,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10809.406,98.541183,3116.0298};
-						angles[]={0.0026411004,3.053072,0.00024012304};
+						position[]={10809.406,98.541443,3116.03};
+						angles[]={0.0026354471,3.0530694,0.0002443461};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EGL""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer M203";
+						init="[this, ""EGL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (M203)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -28096,6 +28144,7 @@ class Mission
 					};
 					id=1770;
 					type="vn_b_men_army_04";
+					atlOffset=0.00025939941;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -28171,15 +28220,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10811.097,98.541183,3114.2673};
-						angles[]={6.2806153,6.0361362,6.2825313};
+						position[]={10811.097,98.541443,3114.2671};
+						angles[]={6.2806196,6.0361338,6.2825222};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EMG""] call Gib_fnc_Gearscript;";
-						description="Engineer Machinegunner";
+						init="[this, ""EMG""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (Machine Gunner)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -28322,6 +28371,7 @@ class Mission
 					};
 					id=1771;
 					type="vn_b_men_army_04";
+					atlOffset=0.00025939941;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -28404,7 +28454,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;";
+						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sapper"", true];";
 						description="Sapper with Axe";
 						isPlayable=1;
 						class Inventory
@@ -28621,7 +28671,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="[this, ""ETL""] call Gib_fnc_Gearscript;";
+						init="[this, ""ETL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Team Leader"", true];";
 						description="Bravo Team Leader";
 						isPlayable=1;
 						class Inventory
@@ -28844,8 +28894,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""EGL""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer M203";
+						init="[this, ""EGL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer (M203)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29088,8 +29138,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ENGI""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer";
+						init="[this, ""ENGI""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29305,8 +29355,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""ENGI""] call Gib_fnc_Gearscript;";
-						description="Construction Engineer";
+						init="[this, ""ENGI""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Combat Engineer"", true];";
+						description="Combat Engineer";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29528,7 +29578,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;";
+						init="[this, ""SAPPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sapper"", true];";
 						description="Sapper with Axe";
 						isPlayable=1;
 						class Inventory
@@ -29777,7 +29827,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""MPL""] call Gib_fnc_Gearscript;";
+						init="[this, ""MPL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Charlie Platoon Leader"", true];";
 						description="Charlie Platoon Leader@Charlie 1-6";
 						isPlayable=1;
 						class Inventory
@@ -29992,7 +30042,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""SL""] call Gib_fnc_Gearscript;";
+						init="[this, ""SL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Charlie Platoon Sergeant"", true];";
 						description="Platoon Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -30192,7 +30242,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""FO""] call Gib_fnc_Gearscript;";
+						init="[this, ""FO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Charlie Forward Observer"", true];";
 						description="Forward Observer";
 						isPlayable=1;
 						class Inventory
@@ -30414,8 +30464,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""CM""] call Gib_fnc_Gearscript;";
-						description="Medic ";
+						init="[this, ""CM""] call Gib_fnc_Gearscript;" \n "" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Charlie Platoon Medic"", true];";
+						description="Platoon Medic ";
 						isPlayable=1;
 						class Inventory
 						{
@@ -30684,8 +30734,8 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="[this, ""MPL""] call Gib_fnc_Gearscript;";
-						description="Squad Leader@Charlie 1-1 (Mortars)";
+						init="[this, ""MPL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Section Leader"", true];";
+						description="Section Leader@Charlie 1-1 (Mortars)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -30902,8 +30952,8 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="[this, ""TUBE""] call Gib_fnc_Gearscript;";
-						description="Gunner";
+						init="[this, ""TUBE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Gunner"", true];";
+						description="Mortar Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31070,8 +31120,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""PLATE""] call Gib_fnc_Gearscript;";
-						description="Assisstant Gunner";
+						init="[this, ""PLATE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Asst. Gunner"", true];";
+						description="Mortar Assisstant Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31238,7 +31288,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""TUBE""] call Gib_fnc_Gearscript;";
+						init="[this, ""TUBE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Gunner"", true];";
 						description="Gunner";
 						isPlayable=1;
 						class Inventory
@@ -31406,8 +31456,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""PLATE""] call Gib_fnc_Gearscript;";
-						description="Assisstant Gunner";
+						init="[this, ""PLATE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Asst. Gunner"", true];";
+						description="Mortar Assisstant Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31574,7 +31624,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="[this, ""TUBE""] call Gib_fnc_Gearscript;";
+						init="[this, ""TUBE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Gunner"", true];";
 						description="Gunner";
 						isPlayable=1;
 						class Inventory
@@ -31742,8 +31792,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this, ""PLATE""] call Gib_fnc_Gearscript;";
-						description="Assisstant Gunner";
+						init="[this, ""PLATE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Asst. Gunner"", true];";
+						description="Mortar Assisstant Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31943,8 +31993,8 @@ class Mission
 					flags=2;
 					class Attributes
 					{
-						init="[this, ""SPL""] call Gib_fnc_Gearscript;";
-						description="Patrol Leader@Charlie 1-2 (Scouts)";
+						init="[this, ""SPL""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Scout Patrol Leader"", true];";
+						description="Scout Patrol Leader@Charlie 1-2 (Scouts)";
 						isPlayable=1;
 					};
 					id=2061;
@@ -32012,19 +32062,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10596.88,98.813347,3192.304};
+						position[]={10596.88,98.813072,3192.304};
 						angles[]={0,4.7759018,0};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
-						init="[this, ""SRTO""] call Gib_fnc_Gearscript;";
+						init="[this, ""SRTO""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Patrol Forward Observer"", true];";
 						description="Patrol Forward Observer";
 						isPlayable=1;
 					};
 					id=2063;
 					type="vn_b_men_army_08";
+					atlOffset=0.28399658;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32074,19 +32124,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10594.005,98.813347,3192.1318};
+						position[]={10594.005,98.81324,3192.1321};
 						angles[]={0,1.4833902,0};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCM""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Patrol Medic"", true];";
 						description="Patrol Medic";
 						isPlayable=1;
 					};
 					id=2094;
 					type="vn_b_men_army_03";
+					atlOffset=0.29000092;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32136,19 +32186,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10596.222,98.813347,3190.3474};
+						position[]={10596.222,98.81311,3190.3472};
 						angles[]={0,4.9052305,0};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
-						init="[this, ""SAR""] call Gib_fnc_Gearscript;";
+						init="[this, ""SAR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Scout Machine Gunner"", true];";
 						description="Scout Machine Gunner";
 						isPlayable=1;
 					};
 					id=2071;
 					type="vn_b_men_army_09";
+					atlOffset=0.26999664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32211,19 +32261,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10593.118,98.813347,3190.384};
+						position[]={10593.118,98.8134,3190.384};
 						angles[]={0,1.369141,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SBOOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""SBOOM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Scout Demolitions"", true];";
 						description="Scout Demolitions";
 						isPlayable=1;
 					};
 					id=2096;
 					type="vn_b_men_army_09";
+					atlOffset=5.3405762e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32286,19 +32337,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10596.909,98.813347,3188.0813};
+						position[]={10596.91,98.813187,3188.0811};
 						angles[]={0,4.7054777,0};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
-						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;";
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Senior Scout-Observer"", true];";
 						description="Senior Scout-Observer";
 						isPlayable=1;
 					};
 					id=2067;
 					type="vn_b_men_army_09";
+					atlOffset=0.2559967;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32361,34 +32412,48 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10593.468,98.813347,3188.6816};
-						angles[]={0,1.3691415,0};
+						position[]={10593.468,98.812889,3188.6821};
+						angles[]={0,1.369141,0};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
+						init="[this, ""SCOUT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Scout-Observer"", true];";
 						description="Scout-Observer";
 						isPlayable=1;
 					};
 					id=2069;
 					type="vn_b_men_army_09";
+					atlOffset=0.26200867;
 					class CustomAttributes
 					{
 						class Attribute0
 						{
-							property="TFAR_freq_lr";
-							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							property="speaker";
+							expression="_this setspeaker _value;";
 							class Value
 							{
 								class data
 								{
 									singleType="STRING";
-									value="63";
+									value="Male02ENG";
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
@@ -32401,7 +32466,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="63";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -32449,7 +32527,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="[this, ""SENIOR""] call Gib_fnc_Gearscript;";
+						init="[this, ""SENIOR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Senior Sniper"", true];";
 						description="Senior Sniper@Charlie 1-3 (Snipers)";
 						isPlayable=1;
 					};
@@ -32518,19 +32596,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10593.083,98.813347,3186.4075};
-						angles[]={0,1.721351,0};
+						position[]={10593.083,98.812935,3186.407};
+						angles[]={0,1.7213484,0};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
-						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;";
-						description="Sniper";
+						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sniper"", true];";
+						description="Sniper / Spotter";
 						isPlayable=1;
 					};
 					id=2056;
 					type="vn_b_men_army_09";
+					atlOffset=0.2519989;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32593,34 +32671,48 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10595.823,98.813347,3182.5303};
-						angles[]={0,4.7068443,0};
+						position[]={10595.823,98.813438,3182.53};
+						angles[]={0,4.7068391,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SENIOR""] call Gib_fnc_Gearscript;";
+						init="[this, ""SENIOR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Senior Sniper"", true];";
 						isPlayable=1;
 					};
 					id=2058;
 					type="vn_b_men_army_11";
+					atlOffset=9.1552734e-05;
 					class CustomAttributes
 					{
 						class Attribute0
 						{
-							property="TFAR_freq_lr";
-							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							property="speaker";
+							expression="_this setspeaker _value;";
 							class Value
 							{
 								class data
 								{
 									singleType="STRING";
-									value="63";
+									value="Male11ENG";
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="TFAR_freq_sr";
 							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; } else { _value = [str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_sr',_value,true]; }";
@@ -32633,7 +32725,20 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="TFAR_freq_lr";
+							expression="if (_value isEqualTo '' || _value isEqualTo []) exitWith {}; if (_value isEqualType '') then { _value = [_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; } else { _value = [str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput; _this setVariable ['TFAR_freq_lr',_value,true]; }";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="63";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item3
@@ -32641,19 +32746,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10593.133,98.813347,3184.4514};
-						angles[]={0,1.485685,0};
+						position[]={10593.133,98.813416,3184.4509};
+						angles[]={0,1.4856766,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;";
-						description="Sniper";
+						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sniper"", true];";
+						description="Sniper / Spotter";
 						isPlayable=1;
 					};
 					id=2059;
 					type="vn_b_men_army_09";
+					atlOffset=6.8664551e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32749,16 +32855,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10754.552,99.42804,3227.9751};
+						position[]={10754.266,99.427856,3228.123};
 						angles[]={0,1.4853799,0};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=0.90159261;
 						rank="MAJOR";
-						init="[this, ""ACOM""] call Gib_fnc_Gearscript;";
+						init="[this, ""ACOM""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Troop Commander"", true];";
 						name="PCom";
 						description="Commander Pilot@Delta Troop";
 						isPlayable=1;
@@ -32842,7 +32948,7 @@ class Mission
 					};
 					id=1561;
 					type="vn_b_men_aircrew_05";
-					atlOffset=9.1552734e-05;
+					atlOffset=1.0009995;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32918,20 +33024,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10758.114,99.427948,3228.1318};
-						angles[]={0,4.1288624,0};
+						position[]={10758.394,99.427666,3228.1531};
+						angles[]={0,4.7132444,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;";
+						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""TC Co-pilot"", true];";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=1562;
 					type="vn_b_men_aircrew_46";
+					atlOffset=0.99200439;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33007,20 +33114,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10754.242,99.427948,3231.5359};
-						angles[]={0,1.6758701,0};
+						position[]={10754.809,99.428276,3231.3};
+						angles[]={0,1.4853799,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="[this, ""PILOT""] call Gib_fnc_Gearscript;";
+						init="[this, ""PILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Flight Pilot"", true];";
 						description="Pilot";
 						isPlayable=1;
 					};
 					id=1563;
 					type="vn_b_men_aircrew_05";
+					atlOffset=0.00032806396;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33096,20 +33204,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10754.598,99.427948,3230.1904};
-						angles[]={0,1.6629415,0};
+						position[]={10754.817,99.427544,3229.708};
+						angles[]={0,1.4853799,0};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;";
+						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Alpha Flight Copilot"", true];";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=1564;
 					type="vn_b_men_aircrew_46";
+					atlOffset=1.0090103;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33185,20 +33293,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10757.892,99.427948,3230.4771};
-						angles[]={0,4.8832912,0};
+						position[]={10758.465,99.428146,3231.48};
+						angles[]={0,4.6445827,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="[this, ""PILOT""] call Gib_fnc_Gearscript;";
+						init="[this, ""PILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Flight Pilot"", true];";
 						description="Pilot";
 						isPlayable=1;
 					};
 					id=1565;
 					type="vn_b_men_aircrew_05";
+					atlOffset=0.00019836426;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33274,8 +33383,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10758.049,99.427948,3231.6135};
-						angles[]={0,4.4573164,0};
+						position[]={10758.355,99.428192,3230.345};
+						angles[]={0,4.6725259,0};
 					};
 					side="West";
 					flags=4;
@@ -33283,12 +33392,13 @@ class Mission
 					{
 						ammo=0.53353232;
 						rank="LIEUTENANT";
-						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;";
+						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Bravo Flight Copilot"", true];";
 						description="Copilot";
 						isPlayable=1;
 					};
 					id=1566;
 					type="vn_b_men_aircrew_46";
+					atlOffset=0.00024414063;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33364,20 +33474,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10761.061,99.427948,3233.802};
-						angles[]={0,3.1392341,0};
+						position[]={10761.013,99.428032,3233.7651};
+						angles[]={0,3.1330752,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="[this, ""PILOT""] call Gib_fnc_Gearscript;";
+						init="[this, ""PILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Charlie Flight Pilot"", true];";
 						description="Pilot";
 						isPlayable=1;
 					};
 					id=1567;
 					type="vn_b_men_aircrew_05";
+					atlOffset=8.392334e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33453,20 +33564,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10759.589,99.427948,3231.4683};
-						angles[]={6.2829328,1.4729842,0.0026399742};
+						position[]={10759.671,99.427864,3231.3291};
+						angles[]={0,1.4853799,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;";
+						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Charlie Flight Copilot"", true];";
 						description="Pilot";
 						isPlayable=1;
 					};
 					id=1568;
 					type="vn_b_men_aircrew_46";
+					atlOffset=1.0049973;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33542,20 +33654,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10760.878,99.427948,3225.6333};
-						angles[]={0,0.15945068,0};
+						position[]={10760.957,99.42807,3225.582};
+						angles[]={0,0.0027227136,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="[this, ""FAC""] call Gib_fnc_Gearscript;";
+						init="[this, ""FAC""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Covey"", true];";
 						description="FAC Pilot (Covey)";
 						isPlayable=1;
 					};
 					id=1788;
 					type="vn_b_men_aircrew_25";
+					atlOffset=0.00012207031;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33631,20 +33744,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10759.952,99.427948,3225.8062};
-						angles[]={0,0.17764583,0};
+						position[]={10759.89,99.428032,3225.606};
+						angles[]={0,0.022095868,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="[this, ""FAC""] call Gib_fnc_Gearscript;";
-						description="FAC CoPilot (Covey Rider)";
+						init="[this, ""FAC""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Covey Rider"", true];";
+						description="FAC Copilot (Covey Rider)";
 						isPlayable=1;
 					};
 					id=1789;
 					type="vn_b_men_aircrew_26";
+					atlOffset=8.392334e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33720,10 +33834,10 @@ class Mission
 			{
 				combatMode="GREEN";
 				behaviour="SAFE";
-				formation="DIAMOND";
+				formation="FILE";
 			};
 			id=1560;
-			atlOffset=9.1552734e-05;
+			atlOffset=1.0009995;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33795,16 +33909,97 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item63
+		{
+			dataType="Marker";
+			position[]={10759.574,98.620003,3116.5171};
+			name="marker_14";
+			text="Motor Pool (Wheeled)";
+			type="b_motor_inf";
+			id=2142;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item64
+		{
+			dataType="Marker";
+			position[]={10617.954,98.544998,3241.197};
+			name="marker_15";
+			text="Motor Pool (Tracked)";
+			type="b_mech_inf";
+			id=2143;
+			atlOffset=-0.00043487549;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item65
+		{
+			dataType="Marker";
+			position[]={10694.544,98.389999,3224.5869};
+			name="respawn_west";
+			text="Field hospital";
+			type="Empty";
+			colorName="ColorPink";
+			angle=179.97707;
+			id=2188;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=42;
+			nextID=43;
 		};
 		class Links
 		{
-			items=42;
+			items=43;
 			class Item0
 			{
 				linkID=0;
@@ -34220,6 +34415,16 @@ class Mission
 				linkID=41;
 				item0=2072;
 				item1=1472;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item42
+			{
+				linkID=42;
+				item0=1445;
+				item1=2164;
 				class CustomData
 				{
 					type="Sync";

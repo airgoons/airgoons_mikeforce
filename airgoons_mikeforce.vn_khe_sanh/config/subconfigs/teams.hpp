@@ -3,15 +3,15 @@ class alphaplatoon
 {
     name = "Alpha Platoon [Infantry]";
     icon = "img\AirGoonIcons\Alpha.paa";
-    shortname = "Alpha";
+    shortname = "Alpha Plt";
     unit = "vn_b_men_army_01";
 
     class rolelimits 
     {
-        medic = 4;
+        medic = 5;
         engineer = 3;
         explosiveSpecialist = 3;
-        vn_artillery = 4;
+        vn_artillery = 2;
     };
     
     class defaultTraits
@@ -36,15 +36,15 @@ class charlieplatoon
 {
     name = "Charlie Platoon [Mortar & Scouts]";
     icon = "img\AirGoonIcons\charlie.paa";
-    shortname = "Charlie";
-    unit = "vn_b_men_army_01";
+    shortname = "Charlie Plt";
+    unit = "vn_b_men_sf_19";
 
     class rolelimits 
     {
         medic = 4;
         engineer = 2;
-        explosiveSpecialist = 2;
-        vn_artillery = 2;
+        explosiveSpecialist = 3;
+        vn_artillery = 3;
     };
     
     class defaultTraits
@@ -68,10 +68,10 @@ class charlieplatoon
 };
 class bravoplatoon
 {
-    name = "Bravo Engineer Platoon [Ground Support]";
+    name = "Bravo Combat Engineer Platoon [Support]";
     icon = "img\AirGoonIcons\Bravo.paa";
-    shortname = "Bravo";
-    unit = "vn_b_men_army_01";
+    shortname = "Bravo Plt";
+    unit = "vn_b_men_army_04";
 
     class rolelimits 
     {
@@ -86,8 +86,8 @@ class bravoplatoon
         camouflageCoef = 0.8;
         audibleCoef = 0.6;
         loadCoef = 1;
-        engineer = false;
-        explosiveSpecialist = false;
+        engineer = true;
+        explosiveSpecialist = true;
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
@@ -101,10 +101,10 @@ class bravoplatoon
 };
 class deltatroop
 {
-    name = "Delta Troop, Army Air Cav [Air Support]";
+    name = "Delta Troop, Air Cav [Air Support]";
     icon = "img\AirGoonIcons\Delta.paa";
     shortname = "Delta Troop";
-    unit = "vn_b_men_army_01";
+    unit = "vn_b_men_aircrew_05";
     
     class rolelimits 
     {

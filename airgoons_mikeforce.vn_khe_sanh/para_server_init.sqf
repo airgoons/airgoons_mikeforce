@@ -52,9 +52,11 @@ publicVariable "vn_mf_param_set_stamina";
 //Set whether withstand is always available.
 vn_revive_withstand_allow = (["always_allow_withstand", 1] call BIS_fnc_getParamValue) > 0;
 publicVariable "vn_revive_withstand_allow";
+
 //Set number of bandages needed to withstand.
 vn_revive_withstand_amount = 4;
 publicVariable "vn_revive_withstand_amount";
+
 //Set number of max players per team
 vn_mf_max_players_bravoplatoon = ["max_players_bravoplatoon", 99] call BIS_fnc_getParamValue;
 vn_mf_max_players_deltatroop = ["max_players_deltatroop", 99] call BIS_fnc_getParamValue;;
@@ -64,6 +66,7 @@ publicVariable "vn_mf_max_players_bravoplatoon";
 publicVariable "vn_mf_max_players_deltatroop";
 publicVariable "vn_mf_max_players_alphaplatoon";
 publicVariable "vn_mf_max_players_charlieplatoon";
+
 //Disable RTO Support if desired
 private _airSupport = ["enable_air_support", 1] call BIS_fnc_getParamValue;
 private _artySupport = ["enable_arty_support", 1] call BIS_fnc_getParamValue;
@@ -93,12 +96,15 @@ para_s_bf_respawn_supply_cost = 50;
 
 // Set desired number of simultaneously active zones.
 vn_mf_targetNumberOfActiveZones = 1;
+
 // Set number of enemies per player. Scale the default value by the percentage set in the config options.
 para_g_enemiesPerPlayer = ((["ai_scaling", 100] call BIS_fnc_getParamValue) / 100) * 2;
+
 //Global variable, so it needs syncing across the network.
 publicVariable "para_g_enemiesPerPlayer";
 
 diag_log "VN MikeForce: Initialising markers";
+
 //Read map markers and populate appropriate arrays
 call vn_mf_fnc_marker_init;
 
@@ -108,8 +114,10 @@ vn_mf_enlisted_counter = _enlisted_counter;
 
 //Initialise task list
 vn_mf_tasks = [];
+
 //Counts the number of tasks that have been created, to let us have unique IDs.
 vn_mf_taskCounter = 0;
+
 //Build the lists of secondary tasks, so we can create them later.
 //Tasks without a marker aren't valid secondary tasks.
 vn_mf_secondaryTaskConfigs = "getText (_x >> 'taskCategory') == 'SEC' && getText (_x >> 'taskname') != ''" configClasses (missionConfigFile >> "gamemode" >> "tasks");

@@ -4,7 +4,7 @@
 class purple_heart
 {
 	title = "STR_vn_mf_purple_heart";
-	desc = "KIA while serving in bravoplatoon / Green Hornets";
+	desc = "KIA while serving in Charlie Platoon / Delta Troop";
 
 	levels[] =
 	{
@@ -14,7 +14,7 @@ class purple_heart
 class rvn_wound_medal
 {
 	title = "STR_vn_mf_rvn_wound_medal";
-	desc = "KIA while operating in Mike Force / Spike team";
+	desc = "KIA while operating in Alpha Platoon / Charlie Platoon";
 	levels[] =
 	{
 		{"\vn\ui_f_vietnam\data\medals\vn_medal_a_01_02.paa", "\vn\ui_f_vietnam\data\medals\vn_ribbon_a_01_02.paa"} // 0
@@ -84,7 +84,7 @@ class silver_star
 class air_medal
 {
 	title = "STR_vn_mf_air_medal";
-	desc = "300 enemy kills in the service of Green Hornets";
+	desc = "300 enemy kills in the service of Delta Troop";
 	levels[] =
 	{
 		{"\vn\ui_f_vietnam\data\medals\vn_medal_m_01_04.paa", "\vn\ui_f_vietnam\data\medals\vn_ribbon_m_01_04.paa"}
@@ -313,7 +313,7 @@ class rvn_training_service_medal
 class rvn_technical_service_medal
 {
 	title = "STR_vn_mf_rvn_technical_service_medal";
-	desc = "Achieving LT rank in bravoplatoon Team";
+	desc = "Achieving LT rank in Bravo Platoon";
 	levels[] =
 	{
 		{"\vn\ui_f_vietnam\data\medals\vn_medal_a_18_02.paa", "\vn\ui_f_vietnam\data\medals\vn_ribbon_a_18_02.paa"}
@@ -331,7 +331,7 @@ class rvn_military_merit_first_republic_medal
 class rvn_civil_action_unit_citation
 {
 	title = "STR_vn_mf_rvn_civil_action_unit_citation";
-	desc = "Completed defend the meeting/ checkpoint";
+	desc = "Completed defend the meeting/checkpoint";
 	levels[] =
 	{
 		{"\vn\ui_f_vietnam\data\medals\vn_medal_a_15_01_c1.paa", "\vn\ui_f_vietnam\data\medals\vn_ribbon_a_15_01_c1.paa"},

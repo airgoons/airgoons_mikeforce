@@ -25,25 +25,25 @@ class destinations
 {
 	class charlieplatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_spikebase_ca.paa";
+		image = "img\AirGoonIcons\Charlie.paa";
 		position_marker = "mf_respawn_charlieplatoon";
 	};
 
 	class alphaplatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_mikebase_ca.paa";
+		image = "img\AirGoonIcons\Alpha.paa";
 		position_marker = "mf_respawn_alphaplatoon";
 	};
 
 	class bravoplatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_bravoplatoonbase_ca.paa";
+		image = "img\AirGoonIcons\Bravo.paa";
 		position_marker = "mf_respawn_bravoplatoon";
 	};
 
 	class deltatroop_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_airbase_ca.paa";
+		image = "img\AirGoonIcons\Delta.paa";
 		position_marker = "mf_respawn_deltatroop";
 	};
 };

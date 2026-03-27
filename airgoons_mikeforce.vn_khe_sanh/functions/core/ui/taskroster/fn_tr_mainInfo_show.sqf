@@ -34,7 +34,7 @@ _text = switch _groupID do {
 	case "charlieplatoon":{"STR_vn_mf_taskRoster_Main_charlieplatoonDescription"};
 	case "deltatroop":{"STR_vn_mf_taskRoster_Main_deltatroopTeamDescription"};
 	case "bravoplatoon":{"STR_vn_mf_taskRoster_Main_ArmouredCavalryDescription"};
-	default {""};
+	default {"alphaplatoon"};
 };
 
 VN_TR_MAININFO_TXT_MID_CTRL ctrlSetStructuredText parseText format [localize _text, format ["<img size='5' color='#FFFFFF' image='%1'/>", _groupIcon]];
