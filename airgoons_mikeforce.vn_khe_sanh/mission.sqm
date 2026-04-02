@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2189;
+		nextID=2206;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1811;
+		nextID=1919;
 	};
 	class Camera
 	{
-		pos[]={10485.521,169.42567,3188.533};
-		dir[]={0.91220444,-0.40582117,-0.056646276};
-		up[]={0.40504453,0.91394889,-0.025152508};
-		aside[]={-0.061978552,1.0291842e-08,-0.99808294};
+		pos[]={10772.408,102.92368,3197.0198};
+		dir[]={-0.72833228,-0.40545022,-0.5525791};
+		up[]={-0.32304269,0.91407102,-0.24508886};
+		aside[]={-0.60446703,-3.7573045e-08,0.79672498};
 	};
 };
 binarizationWanted=0;
@@ -48,6 +48,7 @@ addons[]=
 	"A3_Structures_F_Heli_Items_Airport",
 	"A3_Structures_F_EPA_Civ_Camping",
 	"A3_Signs_F_Signs_Ad",
+	"A3_Structures_F_Kart_Signs_Companies",
 	"armor_f_vietnam_02_c",
 	"armor_f_vietnam_03_c",
 	"wheeled_f_vietnam_04_c",
@@ -80,7 +81,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=39;
+		items=40;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -174,180 +175,187 @@ class AddonsMetaData
 		};
 		class Item13
 		{
+			className="A3_Structures_F_Kart";
+			name="Arma 3 Karts - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
 			className="armor_f_vietnam_02_c";
 			name="armor_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="armor_f_vietnam_03_c";
 			name="armor_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="wheeled_f_vietnam_04_c";
 			name="wheeled_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="armor_f_vietnam_06_c";
 			name="armor_f_vietnam_06_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="characters_f_vietnam_c";
 			name="characters_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="static_f_vietnam_c";
 			name="static_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="static_f_vietnam_03_c";
 			name="static_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="air_f_vietnam_04_c";
 			name="air_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="air_f_vietnam_06_c";
 			name="air_f_vietnam_06_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="air_f_vietnam_03_c";
 			name="air_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Structures_F_Enoch";
 			name="Arma 3 Contact Platform - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="weapons_f_vietnam_03_c";
 			name="weapons_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item32
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item33
 		{
 			className="characters_f_vietnam_02_c";
 			name="characters_f_vietnam_02_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="characters_f_vietnam_03_c";
 			name="characters_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item35
 		{
 			className="sounds_f_vietnam_c";
 			name="sounds_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item36
 		{
 			className="cba_jam_vn";
 			name="Community Base Addons - Joint Ammo Magazines";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item36
+		class Item37
 		{
 			className="weapons_f_vietnam_04_c";
 			name="weapons_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item37
+		class Item38
 		{
 			className="weapons_f_vietnam_05_c";
 			name="weapons_f_vietnam_05_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item39
 		{
 			className="characters_f_vietnam_04_c";
 			name="characters_f_vietnam_04_c";
@@ -375,6 +383,7 @@ dlcs[]=
 {
 	"VN",
 	"Heli",
+	"Kart",
 	"VNX",
 	"Enoch",
 	"Orange",
@@ -2076,6 +2085,7 @@ class Mission
 									};
 									id=1577;
 									type="vn_b_air_uh1d_02_02";
+									atlOffset=0.033050537;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2161,6 +2171,7 @@ class Mission
 									};
 									id=1579;
 									type="vn_b_air_uh1d_02_02";
+									atlOffset=0.031105042;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2331,6 +2342,7 @@ class Mission
 									};
 									id=1589;
 									type="vn_b_air_oh6a_07";
+									atlOffset=0.032859802;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2366,7 +2378,7 @@ class Mission
 									};
 									id=1616;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=7.6293945e-06;
+									atlOffset=0.033630371;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2452,6 +2464,7 @@ class Mission
 									};
 									id=1617;
 									type="vn_b_air_uh1d_02_02";
+									atlOffset=0.037078857;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2549,6 +2562,7 @@ class Mission
 									};
 									id=1005;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.02571106;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2620,6 +2634,7 @@ class Mission
 									};
 									id=1007;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.0047531128;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2655,6 +2670,7 @@ class Mission
 									};
 									id=1008;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.039253235;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2689,6 +2705,7 @@ class Mission
 									};
 									id=1009;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.032844543;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2759,7 +2776,7 @@ class Mission
 									};
 									id=1011;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0050811768;
+									atlOffset=0.00440979;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2795,6 +2812,7 @@ class Mission
 									};
 									id=1012;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.034347534;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2830,6 +2848,7 @@ class Mission
 									};
 									id=1013;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.038711548;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2865,6 +2884,7 @@ class Mission
 									};
 									id=1014;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.037391663;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2899,6 +2919,7 @@ class Mission
 									};
 									id=1015;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.030601501;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2933,6 +2954,7 @@ class Mission
 									};
 									id=1016;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.032844543;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2989,7 +3011,7 @@ class Mission
 									};
 									id=1618;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.041275024;
+									atlOffset=0.0046005249;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3025,7 +3047,7 @@ class Mission
 									};
 									id=1619;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.00015258789;
+									atlOffset=0.041275024;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3061,7 +3083,7 @@ class Mission
 									};
 									id=1620;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.040130615;
+									atlOffset=0.03314209;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3097,7 +3119,7 @@ class Mission
 									};
 									id=1621;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.011421204;
+									atlOffset=0.0042037964;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3133,7 +3155,7 @@ class Mission
 									};
 									id=1622;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0012207031;
+									atlOffset=0.012954712;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3205,6 +3227,7 @@ class Mission
 									};
 									id=1624;
 									type="PortableHelipadLight_01_green_F";
+									atlOffset=0.031646729;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3240,7 +3263,7 @@ class Mission
 									};
 									id=1625;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0054855347;
+									atlOffset=0.033790588;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3274,6 +3297,7 @@ class Mission
 									};
 									id=1626;
 									type="PortableHelipadLight_01_blue_F";
+									atlOffset=0.032859802;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3307,6 +3331,7 @@ class Mission
 									};
 									id=1627;
 									type="PortableHelipadLight_01_blue_F";
+									atlOffset=0.032859802;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3340,6 +3365,7 @@ class Mission
 									};
 									id=1628;
 									type="PortableHelipadLight_01_blue_F";
+									atlOffset=0.032859802;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3373,6 +3399,7 @@ class Mission
 									};
 									id=1629;
 									type="PortableHelipadLight_01_blue_F";
+									atlOffset=0.032859802;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3393,7 +3420,7 @@ class Mission
 								};
 							};
 							id=994;
-							atlOffset=0.00019836426;
+							atlOffset=0.033111572;
 						};
 						class Item4
 						{
@@ -3476,10 +3503,9 @@ class Mission
 						{
 							dataType="Layer";
 							name="Other";
-							state=1;
 							class Entities
 							{
-								items=2;
+								items=3;
 								class Item0
 								{
 									dataType="Object";
@@ -3547,9 +3573,44 @@ class Mission
 										nAttributes=1;
 									};
 								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10763.583,98.82106,3187.8647};
+										angles[]={0,2.4713488,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										createAsSimpleObject=1;
+									};
+									id=2189;
+									type="Land_WoodenTable_small_F";
+									atlOffset=-0.061233521;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
 							id=1039;
-							atlOffset=0.43230438;
+							atlOffset=0.21398163;
 						};
 						class Item6
 						{
@@ -3734,7 +3795,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14"",""vn_b_item_wiretap""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -3785,7 +3846,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14"",""vn_b_item_wiretap""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -3836,7 +3897,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14""],[]],[[],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_med_antibiotics"",""vn_prop_med_antimalaria"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_med_wormpowder"",""vn_prop_med_dysentery"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_prop_food_lrrp_01_03"",""vn_prop_food_lrrp_01_05"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m14_mag"",""vn_m14_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_radio_urc10"",""vn_b_item_map"",""vn_b_item_medikit_01"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m14"",""vn_b_m1897"",""vn_b_camo_m14"",""vn_bipod_m14"",""vn_b_item_wiretap""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -3864,17 +3925,16 @@ class Mission
 						{
 							dataType="Layer";
 							name="Signage";
-							state=1;
 							class Entities
 							{
-								items=7;
+								items=9;
 								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10757.278,99.468903,3195.9722};
-										angles[]={0,4.0629048,6.2778587};
+										position[]={10755.068,99.48069,3195.0481};
+										angles[]={0,4.0957842,6.2778587};
 									};
 									side="Empty";
 									flags=4;
@@ -3919,8 +3979,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10762.657,99.491051,3189.1101};
-										angles[]={0,4.1434817,0};
+										position[]={10760.101,99.488594,3188.4216};
+										angles[]={0.0026368296,4.0363035,0.00028370615};
 									};
 									side="Empty";
 									flags=4;
@@ -4150,8 +4210,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10756.906,100.18528,3190.4661};
-										angles[]={0.0026520467,4.0164261,0};
+										position[]={10757.161,100.18319,3191.4229};
+										angles[]={0,4.0599232,0};
 									};
 									side="Empty";
 									flags=4;
@@ -4192,9 +4252,105 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item7
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10761.686,99.494293,3186.2878};
+										angles[]={0.0026455482,4.0202017,0.00018556572};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=2190;
+									type="SignAd_Sponsor_Burstkoke_F";
+									atlOffset=7.6293945e-06;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="img\warning.jpg";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item8
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10763.689,99.251587,3187.9441};
+										angles[]={0,5.6335392,0};
+									};
+									side="Empty";
+									class Attributes
+									{
+										init="[cigbox, [""cigs_cigars_cigarbox_5"",""cigs_black_devil_cigpack"",""cigs_craven_cigpack"",""cigs_eckstein_cigpack"",""cigs_apollo_cigpack"",""cigs_pops_poppack"",""cigs_lighter"",""cigs_lucky_strike_cigpack"",""cigs_matches"",""cigs_nil_cigpack"",""cigs_baja_blast_cigpack"",""cigs_morley_cigpack"",""cigs_crayons_crayonpack"",""cigs_savage_cigpack"",""cigs_voron_cigpack""], true] call BIS_fnc_addVirtualItemCargo;";
+										name="cigbox";
+										disableSimulation=1;
+									};
+									id=2194;
+									type="vn_b_ammobox_10";
+									atlOffset=0.8030014;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ammoBox";
+											expression="[_this,_value] call bis_fnc_initAmmoBox;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="[[[[],[]],[[""vn_b_item_cigs_01"",""vn_b_item_lighter_01"",""cigs_savage_cigpack"",""cigs_morley_cigpack"",""cigs_baja_blast_cigpack"",""cigs_nil_cigpack"",""cigs_lucky_strike_cigpack"",""cigs_voron_cigpack"",""cigs_kosmos_cigpack"",""cigs_lighter"",""cigs_matches"",""cigs_pops_poppack"",""cigs_eckstein_cigpack"",""cigs_craven_cigpack"",""cigs_cigars_cigarbox_5"",""cigs_black_devil_cigpack"",""cigs_apollo_cigpack"",""cigs_crayons_crayonpack""],[]],[[""cigs_black_devil_cig0_nv"",""cigs_cigars_cigar0_nv"",""cigs_craven_cig0_nv"",""cigs_eckstein_cig0_nv"",""cigs_lucky_strike_cig0_nv"",""cigs_morley_cig0_nv"",""cigs_nil_cig0_nv"",""cigs_pops_pop0_nv"",""cigs_savage_cig0_nv"",""cigs_voron_cig0_nv"",""cigs_apollo_cig0_nv"",""cigs_crayons_crayon_black_nv"",""cigs_crayons_crayon_blue_nv"",""cigs_crayons_crayon_brown_nv"",""cigs_crayons_crayon_gray_nv"",""cigs_crayons_crayon_green_nv"",""cigs_crayons_crayon_orange_nv"",""cigs_crayons_crayon_pink_nv"",""cigs_crayons_crayon_purple_nv"",""cigs_crayons_crayon_red_nv"",""cigs_crayons_crayon_white_nv"",""cigs_crayons_crayon_yellow_nv"",""cigs_black_devil_cig0"",""cigs_cigars_cigar0"",""cigs_craven_cig0"",""cigs_eckstein_cig0"",""cigs_lucky_strike_cig0"",""cigs_morley_cig0"",""cigs_nil_cig0"",""cigs_pops_pop0"",""cigs_savage_cig0"",""cigs_voron_cig0"",""cigs_apollo_cig0"",""cigs_baja_blast_cig0"",""cigs_crayons_crayon_black"",""cigs_crayons_crayon_blue"",""cigs_crayons_crayon_brown"",""cigs_crayons_crayon_gray"",""cigs_crayons_crayon_green"",""cigs_crayons_crayon_orange"",""cigs_crayons_crayon_pink"",""cigs_crayons_crayon_purple"",""cigs_crayons_crayon_red"",""cigs_crayons_crayon_white"",""cigs_crayons_crayon_yellow"",""cigs_baja_blast_cig0_nv""],[]],[[],[]]],true]";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=1082;
-							atlOffset=-0.017868042;
+							atlOffset=0.4131546;
 						};
 						class Item8
 						{
@@ -6605,7 +6761,7 @@ class Mission
 						};
 					};
 					id=679;
-					atlOffset=66.511055;
+					atlOffset=66.33596;
 				};
 				class Item1
 				{
@@ -6782,7 +6938,7 @@ class Mission
 									};
 									id=1187;
 									type="EmptyDetectorArea10x10";
-									atlOffset=0.0071411133;
+									atlOffset=1.5258789e-05;
 								};
 								class Item5
 								{
@@ -6799,11 +6955,10 @@ class Mission
 									};
 									id=2084;
 									type="Land_vn_b_helipad_01";
-									atlOffset=-0.0071258545;
 								};
 							};
 							id=1091;
-							atlOffset=0.0064315796;
+							atlOffset=0.010002136;
 						};
 						class Item1
 						{
@@ -6953,7 +7108,7 @@ class Mission
 									};
 									id=1573;
 									type="vn_b_air_ch47_01_02";
-									atlOffset=0.0071411133;
+									atlOffset=0.038970947;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -6988,7 +7143,7 @@ class Mission
 									};
 									id=1575;
 									type="vn_b_air_ch47_01_02";
-									atlOffset=0.0071258545;
+									atlOffset=0.038955688;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7024,7 +7179,6 @@ class Mission
 									};
 									id=1583;
 									type="vn_b_air_uh1c_03_01";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7110,7 +7264,6 @@ class Mission
 									};
 									id=1585;
 									type="vn_b_air_uh1c_02_02";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7195,7 +7348,7 @@ class Mission
 									};
 									id=1587;
 									type="vn_b_air_oh6a_05";
-									atlOffset=0.0070724487;
+									atlOffset=7.6293945e-06;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7216,7 +7369,7 @@ class Mission
 								};
 							};
 							id=2082;
-							atlOffset=0.0075149536;
+							atlOffset=0.00025939941;
 						};
 						class Item3
 						{
@@ -7241,7 +7394,6 @@ class Mission
 									};
 									id=1017;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7275,7 +7427,6 @@ class Mission
 									};
 									id=1018;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.016410828;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7309,7 +7460,6 @@ class Mission
 									};
 									id=1019;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7343,7 +7493,6 @@ class Mission
 									};
 									id=1020;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7377,7 +7526,7 @@ class Mission
 									};
 									id=1021;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0095062256;
+									atlOffset=0.0026016235;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7411,7 +7560,7 @@ class Mission
 									};
 									id=1022;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0057754517;
+									atlOffset=0.039985657;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7445,7 +7594,7 @@ class Mission
 									};
 									id=1023;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0088043213;
+									atlOffset=0.0015411377;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7479,7 +7628,7 @@ class Mission
 									};
 									id=1024;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0074615479;
+									atlOffset=0.00030517578;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7513,7 +7662,6 @@ class Mission
 									};
 									id=1025;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7547,7 +7695,6 @@ class Mission
 									};
 									id=1026;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7581,7 +7728,6 @@ class Mission
 									};
 									id=1027;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7615,7 +7761,6 @@ class Mission
 									};
 									id=1028;
 									type="PortableHelipadLight_01_blue_F";
-									atlOffset=0.016410828;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7650,7 +7795,6 @@ class Mission
 									};
 									id=1000;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7685,7 +7829,7 @@ class Mission
 									};
 									id=1001;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0066680908;
+									atlOffset=0.039527893;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7720,7 +7864,7 @@ class Mission
 									};
 									id=1002;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0082015991;
+									atlOffset=0.0010757446;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7755,7 +7899,7 @@ class Mission
 									};
 									id=1003;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0067520142;
+									atlOffset=0.0035476685;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7790,7 +7934,7 @@ class Mission
 									};
 									id=1612;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.045806885;
+									atlOffset=0.03868103;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7825,7 +7969,7 @@ class Mission
 									};
 									id=1613;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.005821228;
+									atlOffset=0.03868103;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7860,7 +8004,6 @@ class Mission
 									};
 									id=1614;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7895,7 +8038,6 @@ class Mission
 									};
 									id=1615;
 									type="PortableHelipadLight_01_green_F";
-									atlOffset=0.0071258545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7933,11 +8075,10 @@ class Mission
 									};
 									id=1029;
 									type="EmptyDetectorArea10x10";
-									atlOffset=0.0071258545;
 								};
 							};
 							id=2083;
-							atlOffset=0.0082626343;
+							atlOffset=0.0011291504;
 						};
 						class Item4
 						{
@@ -8744,7 +8885,7 @@ class Mission
 						};
 					};
 					id=1570;
-					atlOffset=0.015724182;
+					atlOffset=0.015937805;
 				};
 				class Item2
 				{
@@ -9156,7 +9297,7 @@ class Mission
 				};
 			};
 			id=678;
-			atlOffset=-1.6929092;
+			atlOffset=-1.6837158;
 		};
 		class Item11
 		{
@@ -9197,6 +9338,7 @@ class Mission
 							};
 							id=7;
 							type="EmptyDetectorAreaR250";
+							atlOffset=0.075256348;
 						};
 						class Item2
 						{
@@ -9997,6 +10139,7 @@ class Mission
 							a=-500;
 							b=-500;
 							id=99;
+							atlOffset=0.075256348;
 						};
 						class Item8
 						{
@@ -10275,6 +10418,7 @@ class Mission
 							a=-500;
 							b=-500;
 							id=110;
+							atlOffset=1.9073486e-06;
 						};
 						class Item29
 						{
@@ -10537,7 +10681,7 @@ class Mission
 			text="Alpha Platoon Respawn";
 			type="Empty";
 			colorName="ColorPink";
-			angle=184.20798;
+			angle=184.20793;
 			id=206;
 			atlOffset=-0.00018310547;
 			class CustomAttributes
@@ -10566,7 +10710,7 @@ class Mission
 			text="Charlite Platoon Respawn";
 			type="Empty";
 			colorName="ColorPink";
-			angle=1.0509999;
+			angle=1.0509995;
 			id=204;
 			atlOffset=0.00042724609;
 			class CustomAttributes
@@ -31289,7 +31433,7 @@ class Mission
 					class Attributes
 					{
 						init="[this, ""TUBE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Gunner"", true];";
-						description="Gunner";
+						description="Mortar Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31625,7 +31769,7 @@ class Mission
 					class Attributes
 					{
 						init="[this, ""TUBE""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Mortar Gunner"", true];";
-						description="Gunner";
+						description="Mortar Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -33864,7 +34008,7 @@ class Mission
 			text="Helicopter Repar & Rearm";
 			type="b_support";
 			id=2140;
-			atlOffset=0.0071334839;
+			atlOffset=7.6293945e-06;
 			class CustomAttributes
 			{
 				class Attribute0

@@ -126,6 +126,55 @@
 		_unit linkItem "vn_b_item_watch";
 	};
 	
+	case "CAM": {
+	
+		comment "Combat Camera";
+		comment "Add containers";
+		_unit forceAddUniform _uniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_usarmy_02";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_lw_01";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear _headgear;
+
+		comment "Add weapons";
+		_unit addWeapon _rifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_mx991_red";
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
+	case "FO": {
+	
+		comment "Fire Observer";
+		comment "Add containers";
+		_unit forceAddUniform _uniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "cwr3_b_uk_vest_58webbing";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m18_white_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_prc77_01";
+		_unit addHeadgear _headgear;
+
+		comment "Add weapons";
+		_unit addWeapon _rifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_mx991_red";
+		_unit addWeapon _binocs;
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
 	// "Platoon Command";
 	
 	case "PL": {
@@ -153,32 +202,7 @@
 		_unit linkItem "vn_b_item_watch";
 		_unit linkItem "vn_b_item_radio_urc10";
 	};
-		
-	case "FO": {
-	
-		comment "Fire Observer";
-		comment "Add containers";
-		_unit forceAddUniform _uniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "cwr3_b_uk_vest_58webbing";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m18_white_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_prc77_01";
-		_unit addHeadgear _headgear;
-
-		comment "Add weapons";
-		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
-		_unit addWeapon _binocs;
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-		
+			
 	case "CM": {
 
 		// "Platoon Medic";
@@ -207,30 +231,6 @@
 		_unit addWeapon "vn_camera_01";
 
 		// "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-	
-	case "CAM": {
-	
-		comment "Combat Camera";
-		comment "Add containers";
-		_unit forceAddUniform _uniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_usarmy_02";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_lw_01";
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _headgear;
-
-		comment "Add weapons";
-		_unit addWeapon _rifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
-
-		comment "Add items";
 		_unit linkItem "vn_b_item_map";
 		_unit linkItem "vn_b_item_compass";
 		_unit linkItem "vn_b_item_watch";
@@ -291,7 +291,6 @@
 		_unit linkItem "vn_b_item_map";
 		_unit linkItem "vn_b_item_compass";
 		_unit linkItem "vn_b_item_watch";
-		_unit linkItem "vn_b_item_radio_urc10";
 	};
 		
 	case "RFL": {
@@ -557,262 +556,11 @@
 		_unit linkItem "vn_b_item_watch";
 	};
 	
-	// "Scouts";
-	
-	case "SPL": {
-	
-		comment "Scout Patrol Leader";
-		comment "Add containers";
-		_unit forceAddUniform _scoutuniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_sog_01";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_trp_04";
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_m16_20_t_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear "vn_b_boonie_02_02";
-
-		comment "Add weapons";
-		_unit addWeapon _scoutrifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
-		_unit addWeapon _binocs;
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-		_unit linkItem "vn_b_item_radio_urc10";
-	};
-	
-	case "SRTO": {
-	
-		comment "Scout RTO";
-		comment "Add containers";
-		_unit forceAddUniform _scoutuniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_sog_06";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_trp_04";
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_m16_20_t_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear "vn_b_boonie_02_02";
-
-		comment "Add weapons";
-		_unit addWeapon _scoutrifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-	
-	case "SCOUT": {
-	
-		comment "Senior Scout-Observer";
-		comment "Add containers";
-		_unit forceAddUniform _scoutuniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_sog_04";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_trp_02";
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear "vn_b_boonie_02_02";
-
-		comment "Add weapons";
-		_unit addWeapon _scoutrifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
-		_unit addWeapon _binocs;
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-	
-	case "SAR": {
-	
-		comment "Scout Autorifleman";
-		comment "Add containers";
-		_unit forceAddUniform _scoutuniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_sog_05";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m60_100_mag";};
-		_unit addBackpack "vn_b_pack_trp_01";
-		for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m60_100_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear "vn_b_boonie_02_02";
-
-		comment "Add weapons";
-		_unit addWeapon "vn_m60_shorty_camo";
-		_unit addPrimaryWeaponItem "vn_m60_100_mag";
-		_unit addWeapon "vn_mx991_red";
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-
-	case "OBSERVER": {
-	
-		comment "Scout-Observer";
-		comment "Add containers";
-		_unit forceAddUniform _scoutuniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_sog_04";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_trp_02";
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear "vn_b_boonie_02_02";
-
-		comment "Add weapons";
-		_unit addWeapon _scoutrifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-	
-	case "SCM": {
-
-		// "Scout Medic";
-		// "Add containers";
-		_unit forceAddUniform _scoutuniform;
-		for "_i" from 1 to 2 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_sog_02";
-		for "_i" from 1 to 4 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 7 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_lw_07";
-		_unit addItemToBackpack "vn_b_item_medikit_01";
-		for "_i" from 1 to 6 do {_unit addItemToBackpack "vn_b_item_firstaidkit";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antibiotics";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antimalaria";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antivenom";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_dysentery";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_painkillers";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_wormpowder";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear "vn_b_boonie_02_02";
-
-		// "Add weapons";
-		_unit addWeapon _scoutrifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
-		_unit addWeapon "vn_camera_01";
-
-		// "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-	
-	case "SBOOM": {
-	
-		comment "Scout-Observer";
-		comment "Add containers";
-		_unit forceAddUniform _scoutuniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_sog_03";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_trp_03";
-		_unit addItemToBackpack "vn_m34_grenade_mag";
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_mine_tripwire_m16_04_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
-		_unit addItemToBackpack "vn_mine_m15_mag";
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _helmet;
-
-		comment "Add weapons";
-		_unit addWeapon _scoutrifle;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon _binocs;
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-	
-	// "Sniper Team";
-	
-	case "SENIOR": {
-	
-		comment "Senior Sniper";
-		comment "Add containers";
-		_unit forceAddUniform _uniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_m1895_mag";};
-		_unit addVest "vn_b_vest_usarmy_08";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 10 do {_unit addItemToVest "vn_m40a1_t_mag";};
-		_unit addBackpack "vn_b_pack_trp_02_02";
-		for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m40a1_t_mag";};
-		for "_i" from 1 to 10 do {_unit addItemToBackpack "vn_m40a1_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear "vn_b_boonie_02_04";
-
-		comment "Add weapons";
-		_unit addWeapon "vn_m40a1";
-		_unit addPrimaryWeaponItem "vn_o_9x_m40a1";
-		_unit addPrimaryWeaponItem "vn_m40a1_t_mag";
-		_unit addPrimaryWeaponItem "vn_b_camo_m40a1";
-		_unit addWeapon "vn_m1895";
-		_unit addHandgunItem "vn_m1895_mag";
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-	};
-	
-	case "SNIPER": {
-	
-		comment "Sniper";
-		comment "Add containers";
-		_unit forceAddUniform _uniform;
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "vn_b_vest_usarmy_05";
-		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
-		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
-		_unit addBackpack "vn_b_pack_trp_02_02";
-		for "_i" from 1 to 12 do {_unit addItemToBackpack "vn_40mm_m406_he_mag";};
-		for "_i" from 1 to 8 do {_unit addItemToBackpack "vn_40mm_m397_ab_mag";};
-		for "_i" from 1 to 10 do {_unit addItemToBackpack "vn_40mm_m680_smoke_w_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _headgear;
-
-		comment "Add weapons";
-		_unit addWeapon _riflegl;
-		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addPrimaryWeaponItem "vn_40mm_m406_he_mag";
-		_unit addWeapon "vn_mx991_red";
-		_unit addWeapon _binocs;
-
-		comment "Add items";
-		_unit linkItem "vn_b_item_map";
-		_unit linkItem "vn_b_item_compass";
-		_unit linkItem "vn_b_item_watch";
-		_unit linkItem "vn_b_item_radio_urc10";
-	};
-	
 	// "Mortar Team";
 	
 	case "MPL": {
 	
-		comment "Mortar Platoon Leader";
+		comment "Mortar Section Leader";
 		comment "Add containers";
 		_unit forceAddUniform _uniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
@@ -1124,6 +872,257 @@
 		_unit linkItem "vn_b_item_map";
 		_unit linkItem "vn_b_item_compass";
 		_unit linkItem "vn_b_item_watch";
+	};
+	
+	// "Scouts";
+	
+	case "SPL": {
+	
+		comment "Scout Patrol Leader";
+		comment "Add containers";
+		_unit forceAddUniform _scoutuniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_sog_01";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_trp_04";
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_m16_20_t_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear "vn_b_boonie_02_02";
+
+		comment "Add weapons";
+		_unit addWeapon _scoutrifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_mx991_red";
+		_unit addWeapon _binocs;
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+		_unit linkItem "vn_b_item_radio_urc10";
+	};
+	
+	case "SRTO": {
+	
+		comment "Scout RTO";
+		comment "Add containers";
+		_unit forceAddUniform _scoutuniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_sog_06";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_trp_04";
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_m16_20_t_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear "vn_b_boonie_02_02";
+
+		comment "Add weapons";
+		_unit addWeapon _scoutrifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_mx991_red";
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
+	case "SCOUT": {
+	
+		comment "Senior Scout-Observer";
+		comment "Add containers";
+		_unit forceAddUniform _scoutuniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_sog_04";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_trp_02";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear "vn_b_boonie_02_02";
+
+		comment "Add weapons";
+		_unit addWeapon _scoutrifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_mx991_red";
+		_unit addWeapon _binocs;
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
+	case "SAR": {
+	
+		comment "Scout Autorifleman";
+		comment "Add containers";
+		_unit forceAddUniform _scoutuniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_sog_05";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m60_100_mag";};
+		_unit addBackpack "vn_b_pack_trp_01";
+		for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m60_100_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear "vn_b_boonie_02_02";
+
+		comment "Add weapons";
+		_unit addWeapon "vn_m60_shorty_camo";
+		_unit addPrimaryWeaponItem "vn_m60_100_mag";
+		_unit addWeapon "vn_mx991_red";
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+
+	case "OBSERVER": {
+	
+		comment "Scout-Observer";
+		comment "Add containers";
+		_unit forceAddUniform _scoutuniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_sog_04";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_trp_02";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear "vn_b_boonie_02_02";
+
+		comment "Add weapons";
+		_unit addWeapon _scoutrifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_mx991_red";
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
+	case "SCM": {
+
+		// "Scout Medic";
+		// "Add containers";
+		_unit forceAddUniform _scoutuniform;
+		for "_i" from 1 to 2 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_sog_02";
+		for "_i" from 1 to 4 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 7 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_lw_07";
+		_unit addItemToBackpack "vn_b_item_medikit_01";
+		for "_i" from 1 to 6 do {_unit addItemToBackpack "vn_b_item_firstaidkit";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antibiotics";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antimalaria";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antivenom";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_dysentery";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_painkillers";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_wormpowder";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear "vn_b_boonie_02_02";
+
+		// "Add weapons";
+		_unit addWeapon _scoutrifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_mx991_red";
+		_unit addWeapon "vn_camera_01";
+
+		// "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
+	case "SBOOM": {
+	
+		comment "Scout-Observer";
+		comment "Add containers";
+		_unit forceAddUniform _scoutuniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_sog_03";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_trp_03";
+		_unit addItemToBackpack "vn_m34_grenade_mag";
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_mine_tripwire_m16_04_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
+		_unit addItemToBackpack "vn_mine_m15_mag";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear _helmet;
+
+		comment "Add weapons";
+		_unit addWeapon _scoutrifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon _binocs;
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
+	// "Sniper Team";
+	
+	case "SENIOR": {
+	
+		comment "Senior Sniper";
+		comment "Add containers";
+		_unit forceAddUniform _uniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_m1895_mag";};
+		_unit addVest "vn_b_vest_usarmy_08";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 10 do {_unit addItemToVest "vn_m40a1_t_mag";};
+		_unit addBackpack "vn_b_pack_trp_02_02";
+		for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m40a1_t_mag";};
+		for "_i" from 1 to 10 do {_unit addItemToBackpack "vn_m40a1_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear "vn_b_boonie_02_04";
+
+		comment "Add weapons";
+		_unit addWeapon "vn_m40a1";
+		_unit addPrimaryWeaponItem "vn_o_9x_m40a1";
+		_unit addPrimaryWeaponItem "vn_m40a1_t_mag";
+		_unit addPrimaryWeaponItem "vn_b_camo_m40a1";
+		_unit addWeapon "vn_m1895";
+		_unit addHandgunItem "vn_m1895_mag";
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
+	
+	case "SNIPER": {
+	
+		comment "Sniper";
+		comment "Add containers";
+		_unit forceAddUniform _uniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_usarmy_05";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_trp_02_02";
+		for "_i" from 1 to 12 do {_unit addItemToBackpack "vn_40mm_m406_he_mag";};
+		for "_i" from 1 to 8 do {_unit addItemToBackpack "vn_40mm_m397_ab_mag";};
+		for "_i" from 1 to 10 do {_unit addItemToBackpack "vn_40mm_m680_smoke_w_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear _headgear;
+
+		comment "Add weapons";
+		_unit addWeapon _riflegl;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addPrimaryWeaponItem "vn_40mm_m406_he_mag";
+		_unit addWeapon "vn_mx991_red";
+		_unit addWeapon _binocs;
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+		_unit linkItem "vn_b_item_radio_urc10";
 	};
 	
 	// "Air crew";
