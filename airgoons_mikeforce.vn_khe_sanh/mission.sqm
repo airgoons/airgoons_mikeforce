@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1919;
+		nextID=1946;
 	};
 	class Camera
 	{
-		pos[]={10772.408,102.92368,3197.0198};
-		dir[]={-0.72833228,-0.40545022,-0.5525791};
-		up[]={-0.32304269,0.91407102,-0.24508886};
-		aside[]={-0.60446703,-3.7573045e-08,0.79672498};
+		pos[]={10713.354,138.19493,3156.395};
+		dir[]={-0.043116588,-0.82008171,-0.57080144};
+		up[]={-0.061767563,0.57226747,-0.81770748};
+		aside[]={-0.99723655,1.2100791e-06,0.075330295};
 	};
 };
 binarizationWanted=0;
@@ -2073,8 +2073,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10723.093,101.27119,3130.2024};
-										angles[]={0,0.063918941,0.00084572798};
+										position[]={10723.093,101.27113,3130.2026};
+										angles[]={0,0.063913956,0.00083775807};
 									};
 									side="Empty";
 									flags=4;
@@ -2085,7 +2085,7 @@ class Mission
 									};
 									id=1577;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=0.033050537;
+									atlOffset=0.032997131;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2331,18 +2331,18 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10704.416,100.7848,3112.4807};
-										angles[]={0,0.068025008,0};
+										position[]={10704.416,100.78493,3112.481};
+										angles[]={0,0.068032935,0};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
-										init="this execVM ""addHeloGunners.sqf"";";
+										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 									};
 									id=1589;
 									type="vn_b_air_oh6a_07";
-									atlOffset=0.032859802;
+									atlOffset=0.032997131;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2535,7 +2535,7 @@ class Mission
 								};
 							};
 							id=984;
-							atlOffset=0.035072327;
+							atlOffset=0.035087585;
 						};
 						class Item3
 						{
@@ -7337,8 +7337,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10935.708,100.8727,3114.6624};
-										angles[]={0,1.5811726,0};
+										position[]={10935.708,100.87294,3114.6621};
+										angles[]={0,1.581181,0};
 									};
 									side="Empty";
 									flags=4;
@@ -7348,7 +7348,7 @@ class Mission
 									};
 									id=1587;
 									type="vn_b_air_oh6a_05";
-									atlOffset=7.6293945e-06;
+									atlOffset=0.00024414063;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7369,7 +7369,7 @@ class Mission
 								};
 							};
 							id=2082;
-							atlOffset=0.00025939941;
+							atlOffset=0.00038146973;
 						};
 						class Item3
 						{
@@ -8885,7 +8885,7 @@ class Mission
 						};
 					};
 					id=1570;
-					atlOffset=0.015937805;
+					atlOffset=0.015953064;
 				};
 				class Item2
 				{
@@ -34005,7 +34005,7 @@ class Mission
 			dataType="Marker";
 			position[]={10946.705,98.519997,3145.666};
 			name="marker_12";
-			text="Helicopter Repar & Rearm";
+			text="Helicopter Repair & Rearm";
 			type="b_support";
 			id=2140;
 			atlOffset=7.6293945e-06;
