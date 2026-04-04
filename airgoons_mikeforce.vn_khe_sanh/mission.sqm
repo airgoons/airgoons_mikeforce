@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1975;
+		nextID=2003;
 	};
 	class Camera
 	{
-		pos[]={10959.829,129.4899,3172.5747};
-		dir[]={-0.93112272,-0.36395052,0.024018923};
-		up[]={-0.36384198,0.93141139,0.0093855308};
-		aside[]={0.025786517,1.67086e-07,0.99967635};
+		pos[]={10973.906,153.24643,3167.2656};
+		dir[]={-0.9311105,-0.3639456,0.024018712};
+		up[]={-0.36382458,0.93142015,0.009385135};
+		aside[]={0.02578719,0,0.99966747};
 	};
 };
 binarizationWanted=0;
@@ -10935,7 +10935,7 @@ class Mission
 			text="Initial Supply Drop 1";
 			type="Empty";
 			colorName="ColorGreen";
-			angle=91.872978;
+			angle=91.872948;
 			id=217;
 			class CustomAttributes
 			{
