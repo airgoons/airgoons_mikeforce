@@ -45,7 +45,7 @@ class allow_map_markers
     title = $STR_vn_mf_param_allow_map_markers;
     values[] = {0, 1};
     texts[] = {"False", "True"};
-    default = 1;
+    default = 0;
 };
 
 class allow_map_markers_desc
@@ -467,7 +467,7 @@ class hunger_loss_rate
     title = $STR_vn_mf_param_hunger_loss_rate;
     values[] = {1, 5, 10, 25, 50, 100};
     texts[] = {"0.01%", "0.05% (Default)", "0.1%", "0.25%", "0.5%", "1%"};
-    default = 5;
+    default = 10;
 };
 
 class hunger_loss_rate_desc
@@ -483,7 +483,7 @@ class thirst_loss_rate
     title = $STR_vn_mf_param_thirst_loss_rate;
     values[] = {1, 5, 10, 25, 50, 100};
     texts[] = {"0.01%", "0.05%", "0.1% (Default)", "0.25%", "0.5%", "1%"};
-    default = 10;
+    default = 25;
 };
 
 class thirst_loss_rate_desc
