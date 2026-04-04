@@ -124,7 +124,7 @@ class deltatroop
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
-        harassable = true;
+        harassable = false;
         scout = false;
     };
 

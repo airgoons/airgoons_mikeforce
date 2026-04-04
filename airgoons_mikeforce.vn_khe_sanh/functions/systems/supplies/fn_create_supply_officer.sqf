@@ -21,10 +21,12 @@ private _dropMarker = "supply_drop" + (_officerMarker select [count "supply_offi
 private _officer = missionNamespace getVariable [_officerMarker, objNull];
 
 if (isNull _officer) then {
-	_officer = createAgent ["vn_b_men_aircrew_02", getMarkerPos _officerMarker, [], 0, "NONE"];
+	_officer = createAgent ["vnx_b_men_aircrew_04", getMarkerPos _officerMarker, [], 0, "NONE"];
 	_officer setDir markerDir _officerMarker;
 	removeHeadgear _officer;
-	removeGoggles _officer;
+	removeBackpack _officer;
+	_officer addHeadgear "vn_b_boonie_02_01";
+	_officer addGoggles "vn_b_aviator";
 	_officer removeWeapon (primaryWeapon _officer);
 	_officer removeWeapon (secondaryWeapon _officer);
 	_officer removeWeapon (handgunWeapon _officer);
