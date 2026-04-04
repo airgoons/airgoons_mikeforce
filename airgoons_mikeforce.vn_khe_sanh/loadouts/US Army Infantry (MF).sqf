@@ -156,7 +156,7 @@
 		comment "Add containers";
 		_unit forceAddUniform _uniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		_unit addVest "cwr3_b_uk_vest_58webbing";
+		_unit addVest "vn_b_vest_usarmy_02";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m18_white_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
@@ -1050,7 +1050,7 @@
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
 		_unit addItemToBackpack "vn_mine_m15_mag";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _helmet;
+		_unit addHeadgear "vn_b_boonie_02_04";
 
 		comment "Add weapons";
 		_unit addWeapon _scoutrifle;
