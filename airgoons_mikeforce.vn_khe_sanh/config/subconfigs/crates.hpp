@@ -132,7 +132,44 @@ class FoodCrate
 {
 	objectClassname = "vn_b_ammobox_supply_02";
 	weapons[] = {};
-	magazines[] = {};
+	magazines[] = {
+		{"vn_prop_drink_02",20},
+		{"vn_prop_drink_04",10},
+		{"vn_prop_food_box_02_04",5},
+		{"vn_prop_food_box_02_07",5},
+		{"vn_prop_food_box_02_08",5},
+		{"vn_prop_food_box_02_01",5},
+		{"vn_prop_food_can_02_06",10},
+		{"vn_prop_food_can_01_10",10},
+		{"vn_prop_food_can_01_11",10},
+		{"vn_prop_food_can_02_05",10},
+		{"vn_prop_food_can_01_14",10},
+		{"vn_prop_food_can_02_07",10},
+		{"vn_prop_food_can_01_16",10},
+		{"vn_prop_food_can_01_03",10},
+		{"vn_prop_food_can_01_06",10},
+		{"vn_prop_food_can_01_02",10},
+		{"vn_prop_food_can_02_04",10},
+		{"vn_prop_food_can_01_12",10},
+		{"vn_prop_food_can_01_09",10},
+		{"vn_prop_food_can_03_03",10},
+		{"vn_prop_food_can_01_13",10},
+		{"vn_prop_food_can_02_08",10},
+		{"vn_prop_food_can_03_01",10},
+		{"vn_prop_food_can_03_02",10},
+		{"vn_prop_food_can_01_04",10},
+		{"vn_prop_food_can_01_05",10},
+		{"vn_prop_food_can_02_02",10},
+		{"vn_prop_food_can_01_15",10},
+		{"vn_prop_food_can_01_08",10},
+		{"vn_prop_food_can_03_04",10},
+		{"vn_prop_food_can_01_07",10},
+		{"vn_prop_food_can_01_01",10},
+		{"vn_prop_food_can_02_03",10},
+		{"vn_prop_food_can_02_01",10}
+	};
 	items[] = {};
 	backpacks[] = {};
 };
+
+

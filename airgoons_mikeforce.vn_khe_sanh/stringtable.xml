@@ -1263,7 +1263,10 @@
         <Original>Explosives Supplies</Original>
       </Key>
 	   <Key ID="STR_vn_mf_mortar_supplies">
-        <Original>Mortar Ammo Supplies</Original>
+        <Original>Mortar Ammo</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_missile_supplies">
+        <Original>Missile Ammo</Original>
       </Key>
       <Key ID="STR_vn_mf_building_supplies_crate">
         <Original>Building Supplies (Small)</Original>
@@ -1290,8 +1293,23 @@
 	   <Key ID="STR_vn_mf_m45_quad">
         <Original>M45 Quadmount</Original>
       </Key>
+	  <Key ID="STR_vn_mf_m40a1rr">
+        <Original>M40A1 106mm recoilless rifle</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_tow">
+        <Original>BGM-71 TOW Launcher</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_M101">
+        <Original>M101 105mm Anti-Tank gun</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_mk18">
+        <Original>Mk18 mod 0</Original>
+      </Key>
       <Key ID="STR_vn_mf_food_supplies">
-        <Original>Food Supplies</Original>
+        <Original>US Army Food Supplies</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_localfood_supplies">
+        <Original>Locally Sourced Food Supplies</Original>
       </Key>
       <Key ID="STR_vn_mf_medical_supplies">
         <Original>Medical Supplies</Original>

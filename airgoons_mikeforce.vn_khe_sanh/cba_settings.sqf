@@ -2,8 +2,8 @@
 // https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System
 
 // TFAR - Global settings
-force TFAR_AICanHearPlayer = false;
-force TFAR_AICanHearSpeaker = false;
+force TFAR_AICanHearPlayer = true;
+force TFAR_AICanHearSpeaker = true;
 
 force TFAR_giveLongRangeRadioToGroupLeaders = false;
 force TFAR_giveMicroDagrToSoldier = false;
