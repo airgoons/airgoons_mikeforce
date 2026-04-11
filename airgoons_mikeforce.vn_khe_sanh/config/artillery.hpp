@@ -3,7 +3,7 @@ class vn_artillery_settings
         // Add your NUMBER variable that will be used as a cost variable - leave empty if you don't want the cost to matter.
         cost_variable = "";
         // Array - { Always available, `radio_backpacks`, `radio_vehicles`, `player_types`, "vn_artillery" unit trait}
-        // Make the first true for the radio to be always avaliable
+        // Make the first true for the radio to be always available
         availability[] = {0, 1, 1, 0, 0};
         unit_trait_required = 1;
 	      // Distance from the edge of a blacklisted marker that a artillery/aircraft cannot be called in.
