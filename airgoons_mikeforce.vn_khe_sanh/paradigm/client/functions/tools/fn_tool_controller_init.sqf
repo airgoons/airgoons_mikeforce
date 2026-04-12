@@ -26,7 +26,9 @@
     switch(_tool) do
     {
         case "vn_m_shovel_01";
-        case "vn_m_m51_etool_01":
+		case "vnx_m_shovel_01";
+        case "vn_m_m51_etool_01";
+		case "vn_b_melee_m43_etool_01":
         {
             [_hitObject] call para_c_fnc_operate_shovel;
         };
@@ -35,11 +37,14 @@
         case "vn_m_axe_fire";
         case "vn_m_machete_01";
         case "vn_m_machete_02";
+		case "vnx_m_axe_01";
         case "vn_m_typeivaxe_01":
         {
             [_hitObject] call para_c_fnc_operate_axe;
         };
 
+		case "vnx_m_hammer_01";
+		case "vnx_m_pickaxe_01";
         case "vn_m_hammer":
         {
             [_hitObject] call para_c_fnc_operate_hammer;

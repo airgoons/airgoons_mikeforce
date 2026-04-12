@@ -221,16 +221,16 @@ units_vc_grenadier = ["vn_o_men_vc_07", "vn_o_men_nva_dc_07"];
 units_vc_at = ["vn_o_men_vc_14", "vn_o_men_vc_local_28"];
 units_vc_mg = ["vn_o_men_vc_11", "vn_o_men_vc_local_11"];
 
-units_sog_teamleader = ["vn_b_men_sog_01", "vn_b_men_sog_13"];
-units_sog_rto = ["vn_b_men_sog_02", "vn_b_men_sog_14"];
-units_sog_medic = ["vn_b_men_sog_03", "vn_b_men_sog_15"];
-units_sog_scout = ["vn_b_men_sog_09", "vn_b_men_sog_19"];
-units_sog_grenadier = ["vn_b_men_sog_07", "vn_b_men_sog_11"];
-units_sog_machinegunner = ["vn_b_men_sog_06", "vn_b_men_sog_16", "vn_b_men_sog_18"];
+units_sog_teamleader = ["vn_b_men_army_01", "vn_b_men_army_02"];
+units_sog_rto = ["vn_b_men_army_08", "vn_b_men_sf_06"];
+units_sog_medic = ["vn_b_men_army_03"];
+units_sog_scout = ["vn_b_men_army_09", "vn_b_men_army_11"];
+units_sog_grenadier = ["vn_b_men_army_07", "vn_b_men_army_17"];
+units_sog_machinegunner = ["vn_b_men_army_06", "vn_b_men_army_27"];
 
-vehicles_nva_helis = ["vn_o_air_mi2_01_01"];
+vehicles_nva_helis = ["vn_o_air_mi2_01_01", "vn_o_air_mi2_01_03", "vn_o_air_mi2_01_02", "vn_o_air_mi2_04_05", "vn_o_air_mi2_04_06", "vn_o_air_mi2_04_01", "vn_o_air_mi2_04_02", "vn_o_air_mi2_04_03", "vn_o_air_mi2_04_04", "vn_o_air_mi2_03_05", "vn_o_air_mi2_03_06", "vn_o_air_mi2_03_03", "vn_o_air_mi2_03_04"];
 vehicles_nva_planes = [];
-vehicles_vc_mortars = ["vn_o_vc_static_mortar_type63"];
+vehicles_vc_mortars = ["vn_o_vc_static_mortar_type63", "vn_o_nva_static_mortar_type53"];
 
 pavn_ammo_crate = "Land_vn_pavn_weapons_stack2";
 aa_emplacement_build_crate = "Land_vn_pavn_weapons_stack3";

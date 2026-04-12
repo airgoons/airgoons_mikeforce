@@ -404,6 +404,15 @@ class vn_logistics
 			item_size = 1;
 			spawn_distance = 2;
 			rotation_offset = 0;
+		};		
+		
+		//Missile Ammo
+		class vn_b_ammobox_full_13
+		{
+			item_weight = 50;
+			item_size = 1;
+			spawn_distance = 2;
+			rotation_offset = 0;
 		};
 		
 		//Small US ammo
@@ -423,10 +432,13 @@ class vn_logistics
             spawn_distance = 3;
             rotation_offset = 0;
         };
+		
 		//US Ammo
 		class vn_b_ammobox_supply_01 : vn_b_ammobox_sog {};
+		
 		//Medical supplies
 		class vn_b_ammobox_supply_03 : vn_b_ammobox_sog {};
+		
 		//Food supplies
 		class vn_b_ammobox_supply_02 : vn_b_ammobox_supply_03 {};
 
