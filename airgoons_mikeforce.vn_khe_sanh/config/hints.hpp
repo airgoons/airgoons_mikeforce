@@ -105,7 +105,7 @@ class CfgHints
 		class Construction {
 			displayName = "Construction";
 			displayNameShort = "Construction";
-			description = "Engineers can place building and structures to help their team. Engineers on bravoplatoon have access to more structures than engineers on other teams. To start building, open the building menu using the N key (default).";
+			description = "Engineers can place building and structures to help their team. Combat Engineers have access to more structures than engineers on other teams. To start building, open the building menu using the N key (default).";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\build_menu.paa";
 		};
 
@@ -188,7 +188,7 @@ class CfgHints
 		class Supplies {
 			displayName = "Supplies";
 			displayNameShort = "Supplies";
-			description = "A good supply line is an important aspect of gameplay. Without building, ammo, food and medical supplies, your team won't stand a chance against the NVA. Supplies can be ordered from a supply officer at the Green Hornets or bravoplatoon base, then driven or slingloaded to their destination.";
+			description = "A good supply line is an important aspect of gameplay. Without building, ammo, food and medical supplies, your team won't stand a chance against the NVA. Supplies can be ordered from a supply officer at the Main Base, then driven or slingloaded to their destination.";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\supply_officer.paa";
 		};
 
@@ -255,30 +255,30 @@ class CfgHints
 		displayName = "Team";
 
 		class Mike_Force {
-			displayName = "Mike Force";
-			displayNameShort = "Mike Force, attack and clear those objectives.";
-			description = "Mike Force, attack and clear those objectives! Mike Force's primary mission is to clear hostiles from the zone and eliminate enemy sites such as AA and artillery. You'll be in the thick of it, supported by bravoplatoon on the ground and Green Hornets in the air.";
+			displayName = "US Army Infantry";
+			displayNameShort = "Army Infantry, attack and clear those objectives.";
+			description = "Army Infantry, attack and clear those objectives! Mike Force's primary mission is to clear hostiles from the zone and eliminate enemy sites such as AA and artillery. You'll be in the thick of it, supported by Combat Engineers on the ground and Green Hornets in the air.";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\mike_force.paa";
 		};
 
 		class Green_Hornets {
-			displayName = "Green Hornets";
-			displayNameShort = "Green Hornets, Supply, Transport and CAS.";
+			displayName = "Air Cavalry";
+			displayNameShort = "Air Cavalry, Supply, Transport and CAS.";
 			description = "Transport, supplies and CAS. These are the primary mission goals of Green Hornets. As a pilot for the Green Hornets, you should prioritise getting people to where they need to go, as well as providing critical supplies to distant outposts. However, when your team calls a Prairie Fire emergency - don't hesitate to provide some heavy fire support!";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\green_hornet.paa";
 		};
 
-		class bravoplatoon {
-			displayName = "bravoplatoon";
-			displayNameShort = "bravoplatoon, Build, Supply, Win!";
-			description = "You'll never get anywhere without a base. With unlimited numbers of engineers, bravoplatoon are perfectly positioned to build all of the necessary structures to allow all your team to capture, hold and deploy from the current zone. bravoplatoon also fill the role of heavy fire support on the ground, wading into battle with tanks and gun trucks.";
-			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\bravoplatoon.paa";
+		class ACAV {
+			displayName = "Combat Engineers";
+			displayNameShort = "Engineers, Build, Supply, Win!";
+			description = "You'll never get anywhere without a base. With unlimited numbers of engineers, Bravo Platoon are perfectly positioned to build all of the necessary structures to allow all your team to capture, hold and deploy from the current zone.";
+			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\acav.paa";
 		};
 
 		class Close_Air {
 			displayName = "Close Air Support";
 			displayNameShort = "Close Air Support!";
-			description = "Close Air Support. When providing close air support as Green Hornets, remember to only engage targets designated by support tasks. Helping the team is your main job, getting kills is not.";
+			description = "Close Air Support. When providing close air support as Delta Troop, remember to only engage targets designated by support tasks. Helping the team is your main job, getting kills is not.";
 			//image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\<cardname>.paa";
 			//Note: No image.
 		};
@@ -291,7 +291,7 @@ class CfgHints
 		class RTO {
 			displayName = "RTO";
 			displayNameShort = "Bring the Iron Rain!";
-			description = "Bring the Iron Rain! The Radio Telephone Operator is critical to providing heavy fire support to the team. As an RTO you have the power to control the battlefield through a variety of air and artillery strikes. Illuminations are key to being able to operate during the night. You'll need a radio backpack though in order to call for support!";
+			description = "Bring the Iron Rain! The Forward Observer is critical to providing heavy fire support to the team. As an RTO you have the power to control the battlefield through a variety of air and artillery strikes. Illuminations are key to being able to operate during the night. You'll need a radio backpack though in order to call for support!";
 			image = "\vn\ui_f_vietnam\ui\mikeforce\survivalcards\arty_support.paa";
 		};
 

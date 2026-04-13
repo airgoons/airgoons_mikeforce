@@ -34,7 +34,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -47,7 +48,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;  
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -60,7 +62,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;  
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1]; 
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -73,7 +76,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -86,7 +90,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -99,7 +104,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
