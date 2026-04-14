@@ -25,7 +25,7 @@ if (_wipeSave) then {
 };
 
 vn_mf_enableRanks = (["enable_ranks", 1] call BIS_fnc_getParamValue) > 0;
-publicVariable "vn_mf_enableRanks";
+publicVariable "vn_mf_enableRanks"; 
 
 // Create traits hashmap for reference by traits system
 private _traits = (_gamemode_config >> "traits") call BIS_fnc_getCfgSubClasses;
