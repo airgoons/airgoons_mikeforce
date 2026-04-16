@@ -26,24 +26,24 @@ class destinations
 	class charlieplatoon_base
 	{
 		image = "img\AirGoonIcons\Charlie.paa";
-		position_marker = "mf_respawn_charlieplatoon";
+		position_marker = "mf_charlieplatoon";
 	};
 
 	class alphaplatoon_base
 	{
 		image = "img\AirGoonIcons\Alpha.paa";
-		position_marker = "mf_respawn_alphaplatoon";
+		position_marker = "mf_alphaplatoon";
 	};
 
 	class bravoplatoon_base
 	{
 		image = "img\AirGoonIcons\Bravo.paa";
-		position_marker = "mf_respawn_bravoplatoon";
+		position_marker = "mf_bravoplatoon";
 	};
 
 	class deltatroop_base
 	{
 		image = "img\AirGoonIcons\Delta.paa";
-		position_marker = "mf_respawn_deltatroop";
+		position_marker = "mf_deltatroop";
 	};
 };

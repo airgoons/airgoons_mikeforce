@@ -17,7 +17,7 @@
         [parameter] call vn_fnc_myFunction
 */
 
-#define RTB_LOCATION (getMarkerPos "mf_respawn_charlieplatoon")
+#define RTB_LOCATION (getMarkerPos "mf_charlieplatoon")
 
 params ["_dataStore"];
 

@@ -17,7 +17,7 @@
 
 params ["_position"];
 
-private _airbasePos = getMarkerPos "mf_respawn_deltatroop";
+private _airbasePos = getMarkerPos "mf_deltatroop";
 private _directionToAirbase = (_position getDir _airbasePos) + (-60 + random 120);
 
 private _lerpFactor = ((_position distance2D _airbasePos) / 2500) min 1;

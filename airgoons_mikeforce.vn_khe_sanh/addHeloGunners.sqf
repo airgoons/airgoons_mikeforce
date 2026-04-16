@@ -115,3 +115,5 @@ switch (typeOf _helo) do
 // Try to make our boys more aggressive grrrr
 _g setBehaviour "COMBAT";
 _g setCombatMode "RED";
+
+// Make the gunners join the pilot when the pilot gets in

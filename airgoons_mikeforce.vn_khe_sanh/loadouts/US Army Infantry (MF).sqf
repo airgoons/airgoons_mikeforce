@@ -649,7 +649,7 @@
 		_unit addHeadgear _headgear;
 
 		comment "Add weapons";
-		_type = selectRandom ["M3","M1897","XM"];
+		_type = selectRandom ["M3","M1897","XM","M1"];
 		
 		switch (_type) do {
 			case ("M3"): {
@@ -671,6 +671,13 @@
 					_unit addPrimaryWeaponItem "vn_m16_20_mag";
 					for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m16_20_t_mag";};					
+				};
+			
+			case ("M1"): {
+					_unit addWeapon "vn_m1carbine";
+					_unit addPrimaryWeaponItem "vn_carbine_15_mag";
+					for "_i" from 1 to 5 do {_unit addItemToVest "vn_carbine_15_mag";};
+					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_carbine_15_t_mag";};					
 				};
 		};
 		
@@ -699,7 +706,7 @@
 		_unit addHeadgear _headgear;
 
 		comment "Add weapons";
-		_type = selectRandom ["M3","M1897","XM"];
+		_type = selectRandom ["M3","M1897","XM","M1"];
 		
 		switch (_type) do {
 			case ("M3"): {
@@ -721,6 +728,13 @@
 					_unit addPrimaryWeaponItem "vn_m16_20_mag";
 					for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m16_20_t_mag";};					
+				};
+			
+			case ("M1"): {
+					_unit addWeapon "vn_m1carbine";
+					_unit addPrimaryWeaponItem "vn_carbine_15_mag";
+					for "_i" from 1 to 5 do {_unit addItemToVest "vn_carbine_15_mag";};
+					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_carbine_15_t_mag";};					
 				};
 		};
 		
@@ -803,7 +817,7 @@
 		_unit addHeadgear _headgear;
 
 		comment "Add weapons";
-		_type = selectRandom ["M3","M1897","XM"];
+		_type = selectRandom ["M3","M1897","XM","M1"];
 		
 		switch (_type) do {
 			case ("M3"): {
@@ -825,6 +839,13 @@
 					_unit addPrimaryWeaponItem "vn_m16_20_mag";
 					for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m16_20_t_mag";};					
+				};
+			
+			case ("M1"): {
+					_unit addWeapon "vn_m1carbine";
+					_unit addPrimaryWeaponItem "vn_carbine_15_mag";
+					for "_i" from 1 to 5 do {_unit addItemToVest "vn_carbine_15_mag";};
+					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_carbine_15_t_mag";};					
 				};
 		};
 		
@@ -851,7 +872,7 @@
 		_unit addHeadgear _headgear;
 
 		comment "Add weapons";
-		_type = selectRandom ["M3","M1897","XM"];
+		_type = selectRandom ["M3","M1897","XM","M1"];
 		
 		switch (_type) do {
 			case ("M3"): {
@@ -873,6 +894,13 @@
 					_unit addPrimaryWeaponItem "vn_m16_20_mag";
 					for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m16_20_t_mag";};					
+				};
+			
+			case ("M1"): {
+					_unit addWeapon "vn_m1carbine";
+					_unit addPrimaryWeaponItem "vn_carbine_15_mag";
+					for "_i" from 1 to 5 do {_unit addItemToVest "vn_carbine_15_mag";};
+					for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_carbine_15_t_mag";};					
 				};
 		};
 		
@@ -1303,6 +1331,7 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m18_white_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m18_red_mag";};
+		_unit addBackpack "vn_b_pack_prc77_01";
 		_unit addHeadgear "vn_b_helmet_svh4_02_01";
 
 		comment "Add weapons";
