@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2464;
+		nextID=2466;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2369;
+		nextID=2397;
 	};
 	class Camera
 	{
-		pos[]={10995.06,157.89125,3168.9197};
-		dir[]={-0.94283175,-0.3324807,0.02545571};
-		up[]={-0.33241779,0.94308829,0.0089751175};
-		aside[]={0.02699085,-8.7658009e-08,0.99968749};
+		pos[]={10767.627,102.05251,3202.2075};
+		dir[]={-0.77954787,-0.23747332,-0.57960415};
+		up[]={-0.19079085,0.9713257,-0.14185342};
+		aside[]={-0.59667075,4.7439244e-08,0.80250317};
 	};
 };
 binarizationWanted=0;
@@ -3249,17 +3249,16 @@ class Mission
 						{
 							dataType="Layer";
 							name="Signage";
-							state=1;
 							class Entities
 							{
-								items=8;
+								items=9;
 								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10755.068,99.48069,3195.0481};
-										angles[]={0,4.0957842,6.2778587};
+										position[]={10754.857,99.481438,3194.9043};
+										angles[]={6.5841567e-05,4.0717592,6.2805405};
 									};
 									side="Empty";
 									flags=4;
@@ -3304,8 +3303,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10760.101,99.488594,3188.4216};
-										angles[]={0.0026368296,4.0363035,0.00028370615};
+										position[]={10759.817,99.488701,3188.3813};
+										angles[]={0.0026520467,4.0363035,0};
 									};
 									side="Empty";
 									flags=4;
@@ -3535,8 +3534,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10757.161,100.18319,3191.4229};
-										angles[]={0,4.0599232,0};
+										position[]={10756.889,100.18319,3191.2937};
+										angles[]={-0,4.0599232,0};
 									};
 									side="Empty";
 									flags=4;
@@ -3582,8 +3581,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10761.686,99.494293,3186.2878};
-										angles[]={0.0026455482,4.0202017,0.00018556572};
+										position[]={10761.591,99.494507,3186.2075};
+										angles[]={0.0026520467,4.0202017,0};
 									};
 									side="Empty";
 									flags=4;
@@ -3624,9 +3623,56 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item8
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10751.965,100.19128,3197.8953};
+										angles[]={-0,4.0599151,6.2805333};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2465;
+									type="Land_vn_billboard_f";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="#(rgb,512,512,3)text(1,1,""TahomaB"",0.064,""#000000"",""#ffffff"",""Smoke grenade signals:\n\nRed: Enemy positions\nGreen: Friendly positions\nPurple: LZs and supply drop points\nWP: Demolitions/In-bound Strikes"")";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=1082;
-							atlOffset=0.011230469;
+							atlOffset=0.019844055;
 						};
 						class Item7
 						{
@@ -8103,7 +8149,7 @@ class Mission
 						};
 					};
 					id=679;
-					atlOffset=4.7266235;
+					atlOffset=4.6985321;
 				};
 				class Item1
 				{
@@ -10960,7 +11006,7 @@ class Mission
 				};
 			};
 			id=678;
-			atlOffset=8.5476685;
+			atlOffset=8.5024185;
 		};
 		class Item11
 		{
@@ -12344,7 +12390,7 @@ class Mission
 			text="Alpha Platoon Respawn";
 			type="Empty";
 			colorName="ColorPink";
-			angle=184.20795;
+			angle=184.20793;
 			id=206;
 			atlOffset=0.00039672852;
 			class CustomAttributes
@@ -34777,7 +34823,7 @@ class Mission
 			text="Field hospital";
 			type="Empty";
 			colorName="ColorPink";
-			angle=179.97697;
+			angle=179.97696;
 			id=2188;
 			class CustomAttributes
 			{

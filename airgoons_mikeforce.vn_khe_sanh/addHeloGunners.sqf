@@ -6,7 +6,7 @@
     Also sets the vehicle lock for the helicopters to DeltaTroop.
 */
 
-params["_helo"];
+params ["_helo"];
 
 // Was having issues with the script executing lots of times. This should maybe help?
 if (!isServer) exitWith {};
@@ -116,4 +116,24 @@ switch (typeOf _helo) do
 _g setBehaviour "COMBAT";
 _g setCombatMode "RED";
 
-// Make the gunners join the pilot when the pilot gets in
+// Make the gunners join the pilot when they enter
+
+player addEventHandler ["getInMan", {
+    params ["_unit", "_role", "_vehicle", "_turret"];
+    _unit = _this # 0;
+    if (_role == "driver")
+	then {
+	(crew _vehicle) joinSilent (group player);
+	}
+}];
+
+// Make the gunners leave the pilot when they exit
+
+_this addEventHandler ["getOutMan", {
+    params ["_unit", "_role", "_vehicle", "_turret"];
+    _unit = _this # 0;
+    if (_role == "driver")
+	then {
+	(crew _vehicle) joinSilent grpNull;
+	}
+}];
