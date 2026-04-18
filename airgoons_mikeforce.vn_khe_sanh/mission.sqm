@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1537;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=2476;
+		nextID=2486;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2454;
+		nextID=2482;
 	};
 	class Camera
 	{
-		pos[]={11003.901,199.69846,3161.0833};
-		dir[]={-0.86489439,-0.50201535,0.010792104};
-		up[]={-0.50233179,0.86464739,0.0062698568};
-		aside[]={0.012476139,-1.0142685e-08,1.0000111};
+		pos[]={10480.191,190.19473,3185.8386};
+		dir[]={0.89581203,-0.44443339,-0.0034764218};
+		up[]={0.44443756,0.89580548,-0.0017245994};
+		aside[]={-0.0038801157,1.0962822e-08,-0.99999678};
 	};
 };
 binarizationWanted=0;
@@ -1558,8 +1558,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10705.752,101.25098,3130.9858};
-										angles[]={0,0.062565424,0};
+										position[]={10705.752,101.25114,3130.9861};
+										angles[]={0,0.06257005,0};
 									};
 									side="Empty";
 									flags=4;
@@ -1570,7 +1570,7 @@ class Mission
 									};
 									id=1581;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=0.032836914;
+									atlOffset=0.032997131;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1655,7 +1655,7 @@ class Mission
 									};
 									id=1589;
 									type="vn_b_air_oh6a_07";
-									atlOffset=0.032989502;
+									atlOffset=0.032997131;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1848,13 +1848,12 @@ class Mission
 								};
 							};
 							id=984;
-							atlOffset=0.035087585;
+							atlOffset=0.035102844;
 						};
 						class Item2
 						{
 							dataType="Layer";
 							name="Helipads";
-							state=1;
 							class Entities
 							{
 								items=25;
@@ -2289,14 +2288,14 @@ class Mission
 								class Item12
 								{
 									dataType="Trigger";
-									position[]={10705.578,98.400002,3125.9646};
-									angle=0.04691904;
+									position[]={10705.578,98.400002,3125.9651};
+									angle=0.046914451;
 									class Attributes
 									{
 										text="Helicopter Repair / Refuel";
 										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 0;" \n "_x setFuel 1;" \n "_x setVehicleAmmo 1;" \n "};" \n "} forEach thisList;" \n "";
-										sizeA=28.458944;
-										sizeB=24.857677;
+										sizeA=28.459;
+										sizeB=24.858;
 										sizeC=7;
 										repeatable=1;
 										activationBy="WEST";
@@ -8142,68 +8141,81 @@ class Mission
 						{
 							dataType="Layer";
 							name="Anti-helo zone";
-							state=1;
 							class Entities
 							{
 								items=3;
 								class Item0
 								{
 									dataType="Trigger";
-									position[]={10796.899,98.497864,3176.6509};
+									position[]={10798.475,98.519615,3171.1211};
+									angle=1.5891049;
 									class Attributes
 									{
-										text="killzone 1";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
-										sizeA=62.23;
-										sizeB=92.167;
-										sizeC=4;
+										text="Kill Zone";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "player addRating -4000;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
+										sizeA=97.915001;
+										sizeB=60.903999;
+										sizeC=7;
+										repeatable=1;
 										activationBy="WEST";
+										activationByOwner="MEMBER";
 										isRectangle=1;
+										isServerOnly=1;
 									};
-									id=2472;
-									type="EmptyDetectorAreaR50";
+									id=2476;
+									type="EmptyDetectorArea10x10";
+									atlOffset=7.6293945e-06;
 								};
 								class Item1
 								{
 									dataType="Trigger";
-									position[]={10624.404,98.466507,3174.5391};
+									position[]={10706.2,98.389999,3216.1013};
+									angle=1.5891049;
 									class Attributes
 									{
-										text="killzone 2";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
-										sizeA=50.403;
-										sizeB=92.167;
-										sizeC=4;
+										text="Kill Zone";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "player addRating -4000;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
+										sizeA=54.894855;
+										sizeB=32.658024;
+										sizeC=7;
+										repeatable=1;
 										activationBy="WEST";
+										activationByOwner="MEMBER";
 										isRectangle=1;
+										isServerOnly=1;
 									};
-									id=2473;
-									type="EmptyDetectorAreaR50";
+									id=2477;
+									type="EmptyDetectorArea10x10";
 								};
 								class Item2
 								{
 									dataType="Trigger";
-									position[]={10705.059,98.389999,3212.8931};
+									position[]={10623.529,98.50148,3175.0183};
+									angle=1.5891049;
 									class Attributes
 									{
-										text="killzone 3";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
-										sizeA=30.43;
-										sizeB=53.922001;
-										sizeC=4;
+										text="Kill Zone";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "player addRating -4000;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
+										sizeA=97.915382;
+										sizeB=48.984154;
+										sizeC=7;
+										repeatable=1;
 										activationBy="WEST";
+										activationByOwner="MEMBER";
 										isRectangle=1;
+										isServerOnly=1;
 									};
-									id=2474;
-									type="EmptyDetectorAreaR50";
+									id=2478;
+									type="EmptyDetectorArea10x10";
+									atlOffset=0.030891418;
 								};
 							};
 							id=2475;
-							atlOffset=-0.079948425;
+							atlOffset=-0.10034943;
 						};
 					};
 					id=679;
-					atlOffset=6.6140976;
+					atlOffset=5.036377;
 				};
 				class Item1
 				{
@@ -8363,7 +8375,7 @@ class Mission
 								class Item4
 								{
 									dataType="Trigger";
-									position[]={10946.684,98.520004,3145.7251};
+									position[]={10946.684,98.519989,3145.7251};
 									angle=1.5891047;
 									class Attributes
 									{
@@ -8380,7 +8392,6 @@ class Mission
 									};
 									id=1187;
 									type="EmptyDetectorArea10x10";
-									atlOffset=1.5258789e-05;
 								};
 								class Item5
 								{
@@ -10382,7 +10393,7 @@ class Mission
 				};
 			};
 			id=678;
-			atlOffset=-0.78197479;
+			atlOffset=-0.81925964;
 		};
 		class Item11
 		{
@@ -33817,7 +33828,7 @@ class Mission
 					side="West";
 					class Attributes
 					{
-						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sniper"", true];";
+						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sniper/Spotter"", true];";
 						description="Sniper / Spotter";
 						isPlayable=1;
 					};
@@ -33893,7 +33904,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SENIOR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Senior Sniper"", true];";
+						init="[this, ""SENIOR""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sniper"", true];";
+						description="Sniper";
 						isPlayable=1;
 					};
 					id=2058;
@@ -33968,7 +33980,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sniper"", true];";
+						init="[this, ""SNIPER""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Sniper/Spotter"", true];";
 						description="Sniper / Spotter";
 						isPlayable=1;
 					};

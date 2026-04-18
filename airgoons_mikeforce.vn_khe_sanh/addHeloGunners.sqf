@@ -40,6 +40,19 @@ switch (typeOf _helo) do
             };
         };
     };
+	case "vn_b_air_oh6a_07":
+    {
+        for [{_i = 1}, {_i < 2}, {_i = _i + 1}] do
+        {
+            if (isNull (_helo turretUnit [_i])) then
+            {
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
+                _u moveInTurret [_helo, [_i]];
+            };
+        };
+    };
     // Iroquois has two turrets, slots 1, 2
     case "vn_b_air_uh1c_03_01":
     {
