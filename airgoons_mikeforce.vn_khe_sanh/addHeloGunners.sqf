@@ -116,7 +116,7 @@ switch (typeOf _helo) do
 _g setBehaviour "COMBAT";
 _g setCombatMode "RED";
 
-// Make the gunners join the pilot when they enter
+// Make the gunners join the pilot group when they enter
 
 player addEventHandler ["getInMan", {
     params ["_unit", "_role", "_vehicle", "_turret"];
@@ -127,7 +127,7 @@ player addEventHandler ["getInMan", {
 	}
 }];
 
-// Make the gunners leave the pilot when they exit
+// Make the gunners leave the pilot group when they exit
 
 _this addEventHandler ["getOutMan", {
     params ["_unit", "_role", "_vehicle", "_turret"];

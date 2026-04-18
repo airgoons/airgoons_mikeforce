@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2426;
+		nextID=2454;
 	};
 	class Camera
 	{
@@ -8153,7 +8153,7 @@ class Mission
 									class Attributes
 									{
 										text="killzone 1";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint ""Don't land inside the base"";" \n "};" \n "} forEach thisList;" \n "";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
 										sizeA=62.23;
 										sizeB=92.167;
 										sizeC=4;
@@ -8170,7 +8170,7 @@ class Mission
 									class Attributes
 									{
 										text="killzone 2";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint ""Don't land inside the base"";" \n "};" \n "} forEach thisList;" \n "";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
 										sizeA=50.403;
 										sizeB=92.167;
 										sizeC=4;
@@ -8187,7 +8187,7 @@ class Mission
 									class Attributes
 									{
 										text="killzone 3";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint ""Don't land inside the base"";" \n "};" \n "} forEach thisList;" \n "";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
 										sizeA=30.43;
 										sizeB=53.922001;
 										sizeC=4;
@@ -10378,11 +10378,11 @@ class Mission
 						};
 					};
 					id=1570;
-					atlOffset=-1.0542068;
+					atlOffset=0.0079116821;
 				};
 			};
 			id=678;
-			atlOffset=-0.32740784;
+			atlOffset=-0.78197479;
 		};
 		class Item11
 		{
