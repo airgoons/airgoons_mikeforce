@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2486;
+		nextID=2490;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2482;
+		nextID=2510;
 	};
 	class Camera
 	{
-		pos[]={10480.191,190.19473,3185.8386};
-		dir[]={0.89581203,-0.44443339,-0.0034764218};
-		up[]={0.44443756,0.89580548,-0.0017245994};
-		aside[]={-0.0038801157,1.0962822e-08,-0.99999678};
+		pos[]={10490.23,159.11131,3190.2878};
+		dir[]={0.89478397,-0.44496197,-0.037210878};
+		up[]={0.44458044,0.89554542,-0.01848828};
+		aside[]={-0.041550629,-1.1959855e-07,-0.99914128};
 	};
 };
 binarizationWanted=0;
@@ -1655,7 +1655,7 @@ class Mission
 									};
 									id=1589;
 									type="vn_b_air_oh6a_07";
-									atlOffset=0.032997131;
+									atlOffset=0.032989502;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1854,6 +1854,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Helipads";
+							state=1;
 							class Entities
 							{
 								items=25;
@@ -3193,7 +3194,7 @@ class Mission
 									side="Empty";
 									class Attributes
 									{
-										init="[""AmmoboxInit"", [cigbox, true]] call BIS_fnc_arsenal; " \n "[cigbox, [true], true] call BIS_fnc_removeVirtualItemCargo; " \n "[cigbox, [""cigs_cigars_cigarbox_5"",""cigs_black_devil_cigpack"",""cigs_craven_cigpack"",""cigs_eckstein_cigpack"",""cigs_apollo_cigpack"",""cigs_pops_poppack"",""cigs_lighter"",""cigs_lucky_strike_cigpack"",""cigs_matches"",""cigs_nil_cigpack"",""cigs_baja_blast_cigpack"",""cigs_morley_cigpack"",""cigs_crayons_crayonpack"",""cigs_savage_cigpack"",""cigs_voron_cigpack""], true] call BIS_fnc_addVirtualItemCargo;";
+										init="[""AmmoboxInit"", [cigbox, true]] call BIS_fnc_arsenal;  " \n "[cigbox, [""%ALL""], true] call BIS_fnc_removeVirtualBackpackCargo; " \n "[cigbox, [""%ALL""], true] call BIS_fnc_removeVirtualMagazineCargo; " \n "[cigbox, [""%ALL""], true] call BIS_fnc_removeVirtualWeaponCargo; " \n "[cigbox, [""%ALL""], true] call BIS_fnc_removeVirtualItemCargo; " \n "[cigbox, [""cigs_cigars_cigarbox_5"",""cigs_black_devil_cigpack"",""cigs_craven_cigpack"",""cigs_eckstein_cigpack"",""cigs_apollo_cigpack"",""cigs_pops_poppack"",""cigs_lighter"",""cigs_lucky_strike_cigpack"",""cigs_matches"",""cigs_nil_cigpack"",""cigs_baja_blast_cigpack"",""cigs_morley_cigpack"",""cigs_crayons_crayonpack"",""cigs_savage_cigpack"",""cigs_voron_cigpack""], true] call BIS_fnc_addVirtualMagazineCargo;";
 										name="cigbox";
 										disableSimulation=1;
 									};
@@ -8141,6 +8142,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Anti-helo zone";
+							state=1;
 							class Entities
 							{
 								items=3;
@@ -8148,11 +8150,11 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={10798.475,98.519615,3171.1211};
-									angle=1.5891049;
+									angle=1.5891047;
 									class Attributes
 									{
 										text="Kill Zone";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "player addRating -4000;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
 										sizeA=97.915001;
 										sizeB=60.903999;
 										sizeC=7;
@@ -8170,11 +8172,11 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={10706.2,98.389999,3216.1013};
-									angle=1.5891049;
+									angle=1.5891047;
 									class Attributes
 									{
 										text="Kill Zone";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "player addRating -4000;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
 										sizeA=54.894855;
 										sizeB=32.658024;
 										sizeC=7;
@@ -8191,11 +8193,11 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={10623.529,98.50148,3175.0183};
-									angle=1.5891049;
+									angle=1.5891047;
 									class Attributes
 									{
 										text="Kill Zone";
-										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "player addRating -4000;" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
+										onActivation="{" \n "if (_x isKindOf ""Helicopter"") then" \n "{" \n "_x setDamage 1;" \n "" \n "hint format [""%1, don't land inside the base"", name player];" \n "};" \n "} forEach thisList;" \n "";
 										sizeA=97.915382;
 										sizeB=48.984154;
 										sizeC=7;
