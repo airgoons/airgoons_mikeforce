@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2510;
+		nextID=2538;
 	};
 	class Camera
 	{
-		pos[]={10490.23,159.11131,3190.2878};
-		dir[]={0.89478397,-0.44496197,-0.037210878};
-		up[]={0.44458044,0.89554542,-0.01848828};
-		aside[]={-0.041550629,-1.1959855e-07,-0.99914128};
+		pos[]={10479.8,186.97533,3180.1572};
+		dir[]={0.84933794,-0.52613741,-0.043026011};
+		up[]={0.52547389,0.85038644,-0.026618848};
+		aside[]={-0.050593182,-1.2758392e-08,-0.99873829};
 	};
 };
 binarizationWanted=0;
@@ -8150,7 +8150,7 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={10798.475,98.519615,3171.1211};
-									angle=1.5891047;
+									angle=1.5891049;
 									class Attributes
 									{
 										text="Kill Zone";
@@ -8162,7 +8162,6 @@ class Mission
 										activationBy="WEST";
 										activationByOwner="MEMBER";
 										isRectangle=1;
-										isServerOnly=1;
 									};
 									id=2476;
 									type="EmptyDetectorArea10x10";
@@ -8172,7 +8171,7 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={10706.2,98.389999,3216.1013};
-									angle=1.5891047;
+									angle=1.5891049;
 									class Attributes
 									{
 										text="Kill Zone";
@@ -8184,7 +8183,6 @@ class Mission
 										activationBy="WEST";
 										activationByOwner="MEMBER";
 										isRectangle=1;
-										isServerOnly=1;
 									};
 									id=2477;
 									type="EmptyDetectorArea10x10";
@@ -8193,7 +8191,7 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={10623.529,98.50148,3175.0183};
-									angle=1.5891047;
+									angle=1.5891049;
 									class Attributes
 									{
 										text="Kill Zone";
@@ -8205,7 +8203,6 @@ class Mission
 										activationBy="WEST";
 										activationByOwner="MEMBER";
 										isRectangle=1;
-										isServerOnly=1;
 									};
 									id=2478;
 									type="EmptyDetectorArea10x10";
@@ -12256,7 +12253,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="1000";
+							value="300";
 						};
 					};
 				};
@@ -12492,8 +12489,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={10704.006,98.310654,3077.2642};
-				angles[]={6.2352223,0,6.2778587};
+				position[]={10704.006,98.310646,3077.2639};
+				angles[]={6.2352238,0,6.2778621};
 			};
 			name="HueyRespawn";
 			id=1468;
@@ -12548,7 +12545,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="1000";
+							value="300";
 						};
 					};
 				};
