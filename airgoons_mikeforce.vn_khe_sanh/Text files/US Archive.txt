@@ -1,0 +1,771 @@
+class Land_vn_sm_01_reservoirtower_f
+{
+	name = "";
+	type = "towers";
+	categories[] = {"towers", "sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(1000, HOURS_TO_SECONDS(12));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_sm_01_reservoirtower_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_sm_01_reservoirtower_f";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_sm_01_reservoirtower_f";
+		};
+	};
+};
+
+class Land_vn_barricade_01_10m_f
+{
+	name = "";
+	type = "walls";
+	categories[] = {"fortifications", "nonbravoplatoon", "fences"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_barricade_01_10m_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_barricade_01_10m_f";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_barricade_01_10m_f";
+		};
+	};
+};
+
+class Land_vn_tower_signal_01
+{
+	name = "";
+	type = "antennae";
+	categories[] = {"towers"};
+	rank = 0;
+	SUPPLY_CAPACITY(1000, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_tower_signal_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_tower_signal_01_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_tower_signal_01";
+		};
+	};
+};
+
+class Land_vn_ttowersmall_2_f
+{
+	name = "";
+	type = "antennae";
+	categories[] = {"towers"};
+	rank = 0;
+	SUPPLY_CAPACITY(1000, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_ttowersmall_2_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_ttowersmall_2_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_ttowersmall_2_f";
+		};
+	};
+};
+
+class Land_vn_slum_03_f
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_slum_03_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_slum_03_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_slum_03_f";
+		};
+	};
+};
+
+class Land_vn_barracks_02
+{
+	name = "";
+	type = "barracks";
+	categories[] = {"buildings", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_barracks_02_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_barracks_02_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_barracks_02";
+		};
+	};
+
+
+};
+
+class Land_vn_barracks_04
+{
+	name = "";
+	type = "barracks";
+	categories[] = {"buildings", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_barracks_04_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_barracks_04_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_barracks_04";
+		};
+	};
+};
+
+class Land_vn_i_barracks_v1_f
+{
+	name = "";
+	type = "barracks";
+	categories[] = {"buildings", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_i_barracks_v1_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_i_barracks_v1_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_i_barracks_v1_f";
+		};
+	};
+};
+
+class Land_vn_barracks_02_f
+{
+	name = "";
+	type = "barracks";
+	categories[] = {"buildings", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_barracks_02_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_barracks_02_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_barracks_02_f";
+		};
+	};
+};
+
+class Land_vn_barracks_03_f
+{
+	name = "";
+	type = "barracks";
+	categories[] = {"buildings", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_barracks_03_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_barracks_03_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_barracks_03_f";
+		};
+	};
+};
+
+class Land_vn_barracks_04_f
+{
+	name = "";
+	type = "barracks";
+	categories[] = {"buildings", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_barracks_04_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_barracks_04_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_barracks_04_f";
+		};
+	};
+};
+
+class Land_vn_army_hut3_long_int
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_army_hut3_long_int_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_army_hut3_long_int_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_army_hut3_long_int";
+		};
+	};
+};
+
+class Land_vn_fuel_tank_stairs
+{
+	name = "";
+	type = "props";
+	categories[] = {};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_fuel_tank_stairs_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_fuel_tank_stairs_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_fuel_tank_stairs";
+		};
+	};
+};
+
+class Land_vn_shower_01
+{
+	name = "";
+	type = "s";
+	categories[] = {"buildings", "sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_shower_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_shower_01_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_shower_01";
+		};
+	};
+};
+
+class Land_vn_steeldrum_01
+{
+	name = "";
+	type = "props";
+	categories[] = {"decorative"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_steeldrum_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_steeldrum_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_steeldrum_01";
+		};
+	};
+};
+
+class Land_vn_usaf_hangar_01
+{
+	name = "";
+	type = "hangars";
+	categories[] = {"hangars", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_usaf_hangar_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_usaf_hangar_01_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_usaf_hangar_01";
+		};
+	};
+};
+
+class Land_vn_usaf_hangar_02
+{
+	name = "";
+	type = "hangars";
+	categories[] = {"hangars", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_usaf_hangar_02_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_usaf_hangar_02_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_usaf_hangar_02";
+		};
+	};
+	class features
+	{
+		class supply_depot
+		{
+			supplyChange = 3000;
+		};
+	};
+};
+
+class Land_vn_radar_01_hq_f
+{
+	name = "";
+	type = "buildings";
+	categories[] = {"buildings", "towers"};
+	rank = 0;
+	SUPPLY_CAPACITY(1000, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_radar_01_hq_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_radar_01_hq_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_radar_01_hq_f";
+		};
+	};
+};
+
+class Land_vn_radar_01_antenna_base_f
+{
+	name = "";
+	type = "buildings";
+	categories[] = {"towers"};
+	rank = 0;
+	SUPPLY_CAPACITY(1000, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_radar_01_antenna_base_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_radar_01_antenna_base_f_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_radar_01_antenna_base_f";
+		};
+	};
+};
+
+class Land_vn_tropo_antenna_01
+{
+	name = "";
+	type = "antennae";
+	categories[] = {"towers"};
+	rank = 0;
+	SUPPLY_CAPACITY(2000, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_tropo_antenna_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_tropo_antenna_01_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_tropo_antenna_01";
+		};
+	};
+};
+
+/*
+class Land_vn_usaf_revetment_helipad_02
+{
+	name = "STR_vn_mf_vehicle_workshop";
+	type = "buildings";
+	categories[] = {"buildings", "functional"};
+	rank = 0;
+	SUPPLY_CAPACITY(300, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_usaf_revetment_helipad_02";
+		};
+		class middle_state
+		{
+			object_class = "vn_b_helipad_01_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_usaf_revetment_helipad_02";
+		};
+	};
+
+	class features
+	{
+		class vehicle_spawning
+		{
+			class vehicle_class
+			{
+				class trucks
+				{
+					icon = VEHICLE_ICON_TRUCK;
+					name = "STR_vn_mf_vic_truck";
+
+					class vn_b_wheeled_m54_02
+					{
+						/*Array currently unused, only the first number is used
+						cost[] = {{"BuildingSupplies", 500}};
+						cooldown = 300;
+						icon = VEHICLE_ICON_TRUCK;
+						//side = "WEST";
+					};
+				};
+				class cars
+				{
+					icon = VEHICLE_ICON_CAR;
+					name = "STR_vn_mf_vic_car";
+
+					class vn_b_wheeled_m151_01
+					{
+						cost[] = {{"BuildingSupplies", 250}};
+						cooldown = 120;
+						icon = VEHICLE_ICON_CAR;
+						//side = "WEST";
+					};
+
+					class vn_b_wheeled_m151_mg_04
+					{
+						cost[] = {{"BuildingSupplies", 500}};
+						cooldown = 300;
+						icon = VEHICLE_ICON_CAR;
+						//side = "WEST";
+					};
+				};
+				class statics
+				{
+					icon = VEHICLE_ICON_STATIC;
+					name = "STR_vn_mf_vic_static";
+
+					class vn_b_sf_static_m2_high
+					{
+						cost[] = {{"BuildingSupplies", 100}};
+						cooldown = 60;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+
+					class vn_b_ammobox_wpn_01
+					{
+						cost[] = {{"BuildingSupplies", 100}};
+						cooldown = 60;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+				};
+				class supplies
+				{
+					icon = VEHICLE_ICON_SUPPLY;
+					name = "STR_vn_mf_vic_supply";
+
+					class vn_b_ammobox_wpn_03
+					{
+						cost[] = {{"BuildingSupplies", 100}};
+						cooldown = 60;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+
+					class vn_b_ammobox_wpn_06
+					{
+						cost[] = {{"BuildingSupplies", 100}};
+						cooldown = 60;
+						icon = VEHICLE_ICON_STATIC;
+						//side = "WEST";
+					};
+				};
+			};
+
+			spawnPositionModelSpace[] = {4,0,-0.8};
+			spawnDirectionModelSpace = 90;
+		};
+	};
+};*/
+

@@ -101,6 +101,10 @@
 	   <Key ID="STR_vn_mf_statics">
         <Original>Static Weapons</Original>
       </Key>
+	  </Key>
+	   <Key ID="STR_vn_mf_communications">
+        <Original>Communication Tower (TFAR)</Original>
+      </Key>
       <Key ID="STR_vn_mf_bridgebailey01">
         <Original>Bailey Bridge 1</Original>
       </Key>
@@ -757,8 +761,8 @@
       </Key>
 
       <Key ID="STR_vn_mf_buildingMenu_condition_inbravoplatoon">
-        <Original>In bravoplatoon</Original>
-        <English>In bravoplatoon</English>
+        <Original>In Bravo Platoon</Original>
+        <English>In Bravo Platoon</English>
       </Key>
     </Container>
     <Container name="params">
@@ -896,8 +900,8 @@
         <English>======== Team Settings ========</English>
       </Key>
       <Key ID="STR_vn_mf_max_players_bravoplatoon">
-        <Original>==== Max players on bravoplatoon ====</Original>
-        <English>==== Max players on bravoplatoon ====</English>
+        <Original>==== Max players on Bravo Platoon ====</Original>
+        <English>==== Max players on Bravo Platoon ====</English>
       </Key>
       <Key ID="STR_vn_mf_max_players_deltatroop">
         <Original>==== Max players on Green Hornets ====</Original>
@@ -1188,8 +1192,8 @@
         <English>Anyone Can Build</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_nonbravoplatoon">
-        <Original>Non-bravoplatoon</Original>
-        <English>Non-bravoplatoon</English>
+        <Original>Non-Bravo Platoon</Original>
+        <English>Non-Bravo Platoon</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_caves">
         <Original>Caves and Rocks</Original>
