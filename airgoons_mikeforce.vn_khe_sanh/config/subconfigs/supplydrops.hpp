@@ -39,7 +39,7 @@ class construction
 class vehicles
 {
 	name = "STR_vn_mf_vehicle_supplies";
-	icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_truck_ca.paa";
+	icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_mg_ca.paa";
 	
 	class M2High
 	{
@@ -47,14 +47,7 @@ class vehicles
 		className = "vn_b_army_static_m2_high";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
 	};
-	
-	class M2Low
-	{
-		name = "STR_vn_mf_m2_low";
-		className = "vn_b_army_static_m2_low";
-		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
-	};
-	
+		
 	class MK18
 	{
 		name = "STR_vn_mf_mk18";
@@ -89,6 +82,13 @@ class vehicles
 		className = "vn_b_army_static_m101_01";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
 	};
+	
+	class M29Mortar
+	{
+		name = "STR_vn_mf_m29_mortar";
+		className = "vn_b_army_static_mortar_m29";
+		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
+	};
 };
 
 class support
@@ -118,6 +118,14 @@ class support
 		className = "vn_b_ammobox_supply_03";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_med_ca.paa";
 		crateConfig = "MedicalCrate";
+	};
+	
+	class MoraleSupplies
+	{
+		name = "STR_vn_mf_morale_supplies";
+		className =	"vn_b_ammobox_02";
+		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_food_ca.paa";
+		crateConfig = "MoraleCrate";
 	};
 };
 

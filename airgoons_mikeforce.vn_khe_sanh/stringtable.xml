@@ -1287,8 +1287,8 @@
 	   <Key ID="STR_vn_mf_m2_high">
         <Original>M2HB .50cal (High)</Original>
       </Key>
-	  <Key ID="STR_vn_mf_m2_low">
-        <Original>M2HB .50cal (low)</Original>
+	  <Key ID="STR_vn_mf_m29_mortar">
+        <Original>M29 81mm Mortar</Original>
       </Key>
 	   <Key ID="STR_vn_mf_m45_quad">
         <Original>M45 Quadmount</Original>
@@ -1310,6 +1310,9 @@
       </Key>
 	  <Key ID="STR_vn_mf_localfood_supplies">
         <Original>Locally Sourced Food Supplies</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_morale_supplies">
+        <Original>Morale Supplies</Original>
       </Key>
       <Key ID="STR_vn_mf_medical_supplies">
         <Original>Medical Supplies</Original>

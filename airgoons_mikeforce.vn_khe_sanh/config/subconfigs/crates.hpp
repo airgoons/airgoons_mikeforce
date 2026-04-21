@@ -3,15 +3,12 @@ class MedicalCrate
 	objectClassname = "vn_b_ammobox_supply_03";
 	weapons[] = {};
 	magazines[] = {
-		{"vn_prop_med_antivenom",30},
-		{"vn_prop_med_wormpowder",15},
-		{"vn_prop_med_dysentery",15},
-		{"vn_prop_med_painkillers",30},
-		{"vn_prop_med_antimalaria",15},
-		{"vn_prop_med_antibiotics",30}
+		{"vn_prop_med_dysentery",20},
+		{"vn_b_item_bandage_01",50},
+		{"vn_prop_med_antivenom",20}
 	};
 	items[] = {
-		{"vn_b_item_medikit_01",10},
+		{"vn_b_item_medikit_01",5},
 		{"vn_b_item_firstaidkit",50}
 	};
 	backpacks[] = {};
@@ -60,7 +57,7 @@ class AmmoCrateSupport
 		{"vn_m127",20}
 	};
 	magazines[] = {
-		{"vn_m60_100_mag",100},
+		{"vn_m60_100_mag",30},
 		{"vn_m61_grenade_mag",10},
 		{"vn_m67_grenade_mag",10},
 		{"vn_m18_purple_mag",20},
@@ -142,6 +139,29 @@ class FoodCrate
 		{"vn_prop_food_can_02_04",10},
 		{"vn_prop_food_can_01_12",5},
 		{"vn_prop_food_can_03_01",20}
+	};
+	items[] = {};
+	backpacks[] = {};
+};
+
+class MoraleCrate
+{
+	objectClassname = "vn_b_ammobox_02";
+	weapons[] = {};
+	magazines[] = {
+		{"vn_prop_drink_09_01",20},
+		{"vn_prop_drink_08_01",20},
+		{"cigs_cigars_cigarbox_5",5},
+		{"cigs_black_devil_cigpack",5},
+		{"cigs_craven_cigpack",5},
+		{"cigs_eckstein_cigpack",5},
+		{"cigs_pops_poppack",20},
+		{"cigs_lucky_strike_cigpack",10},
+		{"cigs_nil_cigpack",5},
+		{"cigs_baja_blast_cigpack",5},
+		{"cigs_morley_cigpack",5},
+		{"cigs_crayons_crayonpack",5},
+		{"cigs_savage_cigpack",5}
 	};
 	items[] = {};
 	backpacks[] = {};

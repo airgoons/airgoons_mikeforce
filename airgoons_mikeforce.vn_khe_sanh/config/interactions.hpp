@@ -702,6 +702,15 @@ class CfgItemInteractions
 		water = -0.2;
 		food = 0.1;
 	};
+	
+	// special
+	
+	class cigs_crayons_crayonpack : vn_prop_food_meal_01 // Crayons. A Marine Corps delicacy.
+	{
+		consume = 11;
+		water = -0.2;
+		food = 0.5;
+	};
 
 	class FirstAidKit
 	{

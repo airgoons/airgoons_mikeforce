@@ -215,13 +215,9 @@
 		_unit addBackpack "vn_b_pack_lw_07";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		_unit addItemToBackpack "vn_b_item_medikit_01";
-		for "_i" from 1 to 6 do {_unit addItemToBackpack "vn_b_item_firstaidkit";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antibiotics";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antimalaria";};
+		for "_i" from 1 to 20 do {_unit addItemToBackpack "vn_b_item_bandage_01";};
 		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antivenom";};
 		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_dysentery";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_painkillers";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_wormpowder";};
 		_unit addHeadgear _headgear;
 
 		// "Add weapons";
@@ -1122,13 +1118,9 @@
 		for "_i" from 1 to 4 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		_unit addBackpack "vn_b_pack_lw_07";
 		_unit addItemToBackpack "vn_b_item_medikit_01";
-		for "_i" from 1 to 6 do {_unit addItemToBackpack "vn_b_item_firstaidkit";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antibiotics";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antimalaria";};
+		for "_i" from 1 to 20 do {_unit addItemToBackpack "vn_b_item_bandage_01";};
 		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_antivenom";};
 		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_dysentery";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_painkillers";};
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_prop_med_wormpowder";};
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		_unit addHeadgear "vn_b_boonie_02_02";
 

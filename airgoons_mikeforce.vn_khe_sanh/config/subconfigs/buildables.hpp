@@ -554,7 +554,6 @@ class Land_vn_bridge_bailey_01
 	max_distance = 30;
 	check_pos_start[] = {-10.386,0.14209,-0.55};
 	check_pos_stop[] = {10.386,0.14209,-0.55};
-
 	conditions[] = {
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
@@ -692,7 +691,6 @@ class Land_vn_bridge_bailey_04
 		};
 	};
 };
-
 class Land_vn_bridge_ramp_01
 {
 	name = "STR_vn_mf_bridgeramp01";
@@ -726,7 +724,6 @@ class Land_vn_bridge_ramp_01
 		};
 	};
 };
-
 class Land_vn_bridge_small_01
 {
 	name = "STR_vn_mf_bridgesmall01";
@@ -841,7 +838,6 @@ class Land_vn_bridge_small_03
 		};
 	};
 };
-
 class Land_vn_bridge_small_04
 {
 	name = "STR_vn_mf_bridgesmall04";

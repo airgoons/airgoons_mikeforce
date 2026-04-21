@@ -25,7 +25,7 @@ params ["_vehicle"];
 */
 private _objective = ["crew", getPos _vehicle] call para_s_fnc_ai_obj_create_objective;
 _objective setVariable ["fixed_unit_count", 1];
-_objective setVariable ["squad_size", 1];
+_objective setVariable ["squad_size", 2];
 _objective setVariable ["squad_type", "STANDARD"];
 
 _objective setVariable ["vehicle", _vehicle];

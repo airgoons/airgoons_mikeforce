@@ -26,7 +26,7 @@ params ["_position", "_scalingFactor", ["_reinforcementsFactor", 1]];
 private _objective = ["defend", _position] call para_s_fnc_ai_obj_create_objective;
 _objective setVariable ["scaling_factor", _scalingFactor];
 _objective setVariable ["reinforcements_factor", _reinforcementsFactor];
-_objective setVariable ["squad_size", 4 + random 4];
+_objective setVariable ["squad_size", 8 + random 4];
 _objective setVariable ["squad_type", "STANDARD"];
 
 _objective setVariable ["onAssignScript", {

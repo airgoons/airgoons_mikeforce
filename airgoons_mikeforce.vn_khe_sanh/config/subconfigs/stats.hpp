@@ -1,7 +1,7 @@
 class rank
 {
 	min = 0;
-	max = 99999;
+	max = 0;
 };
 class hunger
 {

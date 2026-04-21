@@ -28,7 +28,7 @@ private _objective = ["pursue", getPos (_targets select 0)] call para_s_fnc_ai_o
 _objective setVariable ["scaling_player_count_override", count _targets];
 _objective setVariable ["scaling_factor", _scalingFactor];
 _objective setVariable ["reinforcements_factor", _reinforcementsFactor];
-_objective setVariable ["squad_size", 4];
+_objective setVariable ["squad_size", 8];
 _objective setVariable ["squad_type", "PATROL"];
 _objective setVariable ["enabled_spawn_types", ["FOOT"]];
 
