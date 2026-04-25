@@ -24,8 +24,8 @@ OnLoadIntro = "Welcome to Mike Force. No Fun Allowed Edition!";
 loadScreen = "img\mission.jpg";
 OnLoadIntroTime = 0;
 OnLoadMissionTime = 0;
-briefingName = QUOT(MF (VN_MF_VERSION) No Fun Grunts Only);
-onLoadName = QUOT(MF (VN_MF_VERSION) No Fun Grunts Only);
+briefingName = QUOT(Mike Force No Fun Grunts Only);
+onLoadName = QUOT(Mike Force No Fun Grunts Only);
 overviewPicture = "img\mission.jpg";
 
 disabledAI = 1;

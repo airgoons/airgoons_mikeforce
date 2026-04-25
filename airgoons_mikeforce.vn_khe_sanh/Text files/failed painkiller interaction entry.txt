@@ -1,0 +1,29 @@
+class vn_prop_med_painkillers
+	{
+		disallowRepack = 1;
+		removeonempty = 0;
+		consume = 10;
+		water = 0;
+		food = 0;
+		
+		interactActions[] = 
+		{
+			{ "STR_vn_mf_take_painkillers", "if (damage player > 0.1) then { player setdamage 0; hintSilent format ['You do need that right now.']; } else { hintSilent format ['You do not need that right now.']; };" }
+		};
+	};
+};
+
+class vn_b_item_bandage_01
+	{
+		disallowRepack = 1;
+		removeonempty = 1;
+		consume = 100;
+		water = 0;
+		food = 0;
+		
+		interactActions[] = 
+		{
+			{ "STR_vn_mf_use_bandage", "if (damage player > 0.1) then { player setdamage 0; };" }
+		};
+	};
+};

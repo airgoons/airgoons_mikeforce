@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2578;
+		nextID=2598;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2681;
+		nextID=3058;
 	};
 	class Camera
 	{
-		pos[]={11108.999,200.06004,3173.5801};
-		dir[]={-0.89410436,-0.44754156,-0.017138587};
-		up[]={-0.44746181,0.89426357,-0.0085771596};
-		aside[]={-0.019164994,5.2265023e-08,0.99982268};
+		pos[]={11108.748,187.53712,3172.5347};
+		dir[]={-0.95299435,-0.30300149,-0.00010901282};
+		up[]={-0.30300316,0.95299017,-3.4671804e-05};
+		aside[]={-0.00011442001,6.883063e-10,1.0000036};
 	};
 };
 binarizationWanted=0;
@@ -52,6 +52,7 @@ addons[]=
 	"armor_f_vietnam_03_c",
 	"wheeled_f_vietnam_04_c",
 	"armor_f_vietnam_06_c",
+	"armor_f_vietnam_05_c",
 	"characters_f_vietnam_c",
 	"static_f_vietnam_c",
 	"static_f_vietnam_03_c",
@@ -72,7 +73,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -201,89 +202,96 @@ class AddonsMetaData
 		};
 		class Item18
 		{
+			className="armor_f_vietnam_05_c";
+			name="armor_f_vietnam_05_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
+		class Item19
+		{
 			className="characters_f_vietnam_c";
 			name="characters_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="static_f_vietnam_c";
 			name="static_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="static_f_vietnam_03_c";
 			name="static_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="air_f_vietnam_03_c";
 			name="air_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Structures_F_Enoch";
 			name="Arma 3 Contact Platform - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="air_f_vietnam_04_c";
 			name="air_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="air_f_vietnam_06_c";
 			name="air_f_vietnam_06_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="characters_f_vietnam_03_c";
 			name="characters_f_vietnam_03_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="characters_f_vietnam_04_c";
 			name="characters_f_vietnam_04_c";
@@ -783,7 +791,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="['vn_b_item_firstaidkit','vn_o_item_firstaidkit','vn_b_item_medikit_01', 'FirstAidKit', 'Medikit']";
+							value="['vn_b_item_medikit_01']";
 						};
 					};
 				};
@@ -835,7 +843,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="['vn_b_item_firstaidkit','vn_o_item_firstaidkit','vn_b_item_medikit_01', 'vn_b_item_bandage_01', 'FirstAidKit', 'Medikit']";
+							value="['vn_b_item_firstaidkit','vn_o_item_firstaidkit','vn_b_item_medikit_01']";
 						};
 					};
 				};
@@ -3147,7 +3155,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_prop_med_dysentery"",""vn_prop_med_antivenom"",""vn_b_item_bandage_01""],[]],[[""vn_b_item_firstaidkit""],[]],[[],[]]],true]";
+													value="[[[[],[]],[[""vn_prop_med_dysentery"",""vn_prop_med_antivenom""],[]],[[""vn_b_item_firstaidkit"",""vn_b_item_medikit_01""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -4031,23 +4039,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10622.563,100.8504,3250.0701};
-										angles[]={6.2778587,3.1349847,0.013332055};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=982;
-									type="vn_b_armor_m125_01";
-									atlOffset=-0.00028991699;
-								};
-								class Item13
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={10747.306,100.0558,3139.9153};
 										angles[]={0,0.039633516,0.0026520467};
 									};
@@ -4060,7 +4051,7 @@ class Mission
 									type="vn_b_wheeled_m274_01_01";
 									atlOffset=-1.5258789e-05;
 								};
-								class Item14
+								class Item13
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4077,7 +4068,7 @@ class Mission
 									type="vn_b_wheeled_m151_mg_02";
 									atlOffset=-3.0517578e-05;
 								};
-								class Item15
+								class Item14
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4094,7 +4085,7 @@ class Mission
 									type="vn_b_armor_m113_01";
 									atlOffset=-1.5258789e-05;
 								};
-								class Item16
+								class Item15
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4111,7 +4102,7 @@ class Mission
 									type="vnx_b_armor_m50a1_01";
 									atlOffset=-0.00045013428;
 								};
-								class Item17
+								class Item16
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4145,7 +4136,7 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item18
+								class Item17
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4179,7 +4170,7 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item19
+								class Item18
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4195,7 +4186,7 @@ class Mission
 									id=2212;
 									type="vn_b_wheeled_m274_01_01";
 								};
-								class Item20
+								class Item19
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4212,7 +4203,7 @@ class Mission
 									type="vn_b_wheeled_m151_02";
 									atlOffset=-3.0517578e-05;
 								};
-								class Item21
+								class Item20
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4229,7 +4220,7 @@ class Mission
 									type="vn_b_wheeled_m151_02";
 									atlOffset=-0.00022125244;
 								};
-								class Item22
+								class Item21
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4246,7 +4237,7 @@ class Mission
 									type="vn_b_wheeled_m151_02";
 									atlOffset=7.6293945e-06;
 								};
-								class Item23
+								class Item22
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4262,7 +4253,7 @@ class Mission
 									id=2365;
 									type="vn_b_wheeled_m151_02";
 								};
-								class Item24
+								class Item23
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4278,9 +4269,42 @@ class Mission
 									id=2442;
 									type="vn_b_wheeled_m54_02";
 								};
+								class Item24
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10622.563,100.95683,3250.0701};
+										angles[]={6.2778621,3.1349778,0.013334315};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=2597;
+									type="vnx_b_armor_m163_01";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="vn_flag";
+											expression="_this setVariable ['vn_flag', _value, true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="\vn\objects_f_vietnam\flags\vn_flag_01_1stcav_co.paa";
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
 							id=963;
-							atlOffset=-0.013053894;
+							atlOffset=-0.026046753;
 						};
 						class Item8
 						{
@@ -8464,7 +8488,7 @@ class Mission
 						};
 					};
 					id=679;
-					atlOffset=-0.60834503;
+					atlOffset=-0.62884521;
 				};
 				class Item1
 				{
@@ -10642,7 +10666,7 @@ class Mission
 				};
 			};
 			id=678;
-			atlOffset=-0.47179413;
+			atlOffset=-0.46956635;
 		};
 		class Item11
 		{
@@ -24951,7 +24975,7 @@ class Mission
 			{
 				linkID=28;
 				item0=1472;
-				item1=982;
+				item1=2597;
 				class CustomData
 				{
 					type="Sync";

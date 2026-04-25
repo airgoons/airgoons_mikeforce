@@ -4,12 +4,10 @@ class MedicalCrate
 	weapons[] = {};
 	magazines[] = {
 		{"vn_prop_med_dysentery",20},
-		{"vn_b_item_bandage_01",50},
 		{"vn_prop_med_antivenom",20}
 	};
 	items[] = {
-		{"vn_b_item_medikit_01",5},
-		{"vn_b_item_firstaidkit",50}
+		{"vn_b_item_firstaidkit",30}
 	};
 	backpacks[] = {};
 };

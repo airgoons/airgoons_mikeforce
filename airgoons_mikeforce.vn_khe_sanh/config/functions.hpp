@@ -427,7 +427,7 @@ class CfgFunctions
 	{
 		class Gear 
 		{
-			class gearScript { file = "functions\gear\fn_gearscript.sqf"};
+			class gearScript { file = "functions\gear\fn_gearscript.sqf";};
 		};
 	};
 };
