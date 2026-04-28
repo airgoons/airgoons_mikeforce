@@ -65,9 +65,9 @@ class CfgItemInteractions
 	{
 		disallowRepack = 1;
 		removeonempty = 0;
-		consume = 34;	// ammount consumed on each use (all food/drink items have 100 ammo)
-		water = 0.1;	// ammount added to thirst if able to be fully consumed
-		food = 0;	// ammount added to hunger if able to be fully consumed
+		consume = 34;	// amount consumed on each use (all food/drink items have 100 ammo)
+		water = 0.1;	// amount added to thirst if able to be fully consumed
+		food = 0;	// amount added to hunger if able to be fully consumed
 		interactActions[] =
 		{
 			{
@@ -703,16 +703,9 @@ class CfgItemInteractions
 		water = -0.2;
 		food = 0.1;
 	};
-	
-	// special
-	
-	class cigs_crayons_crayonpack : vn_prop_food_meal_01 // Crayons. A Marine Corps delicacy.
-	{
-		consume = 11;
-		water = -0.2;
-		food = 0.5;
-	};
 
+	// FAK
+	
 	class vn_b_item_firstaidkit
 	{
 		interactActions[] =

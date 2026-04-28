@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2598;
+		nextID=2600;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3058;
+		nextID=3087;
 	};
 	class Camera
 	{
-		pos[]={11108.748,187.53712,3172.5347};
-		dir[]={-0.95299435,-0.30300149,-0.00010901282};
-		up[]={-0.30300316,0.95299017,-3.4671804e-05};
-		aside[]={-0.00011442001,6.883063e-10,1.0000036};
+		pos[]={11084.213,187.53712,3173.4426};
+		dir[]={-0.89184374,-0.45229346,0.0067388262};
+		up[]={-0.45228052,0.89186919,0.0034174595};
+		aside[]={0.0075558461,-2.3283064e-10,0.99997145};
 	};
 };
 binarizationWanted=0;
@@ -4284,6 +4284,7 @@ class Mission
 									};
 									id=2597;
 									type="vnx_b_armor_m163_01";
+									atlOffset=-7.6293945e-06;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8488,7 +8489,7 @@ class Mission
 						};
 					};
 					id=679;
-					atlOffset=-0.62884521;
+					atlOffset=-0.62883759;
 				};
 				class Item1
 				{
