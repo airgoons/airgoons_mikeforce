@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3145;
+		nextID=3174;
 	};
 	class Camera
 	{
-		pos[]={10968.202,160.11272,3172.812};
-		dir[]={-0.89833021,-0.43929991,0.0087644802};
-		up[]={-0.43931347,0.89831638,0.004284373};
-		aside[]={0.0097569488,-2.4862857e-07,0.99997717};
+		pos[]={10981.116,163.49084,3168.0005};
+		dir[]={-0.92618644,-0.37687945,0.016486084};
+		up[]={-0.37690759,0.92621094,0.0067089568};
+		aside[]={0.017800184,-5.9340982e-07,0.9998939};
 	};
 };
 binarizationWanted=0;
@@ -1556,7 +1556,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_m14_mag"",""vn_l1a1_20_mag"",""vn_prop_drink_02""],[8,8,8,8,8,20,10,8,10,10,10,20,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_prop_drink_02"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_m3a1_mag"",""vn_carbine_15_mag""],[8,5,5,5,5,30,5,5,10,10,10,10,10,10,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -1642,7 +1642,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_m14_mag"",""vn_l1a1_20_mag"",""vn_prop_drink_02""],[8,8,8,8,8,20,10,8,10,10,10,20,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_prop_drink_02"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_m3a1_mag"",""vn_carbine_15_mag""],[8,5,5,5,5,30,5,5,10,10,10,10,10,10,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -1728,7 +1728,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_m14_mag"",""vn_l1a1_20_mag"",""vn_prop_drink_02""],[8,8,8,8,8,20,10,8,10,10,10,20,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_prop_drink_02"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_m3a1_mag"",""vn_carbine_15_mag""],[8,5,5,5,5,30,5,5,10,10,10,10,10,10,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -1813,7 +1813,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m16_20_mag""],[2,2,4]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[8,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m16_20_mag"",""vn_m67_grenade_mag"",""vn_prop_drink_02"",""vn_prop_food_can_02_05"",""vn_prop_food_box_02_04"",""vn_m18_green_mag""],[4,12,4,10,10,4,4]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -1849,7 +1849,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_m14_mag"",""vn_l1a1_20_mag"",""vn_prop_drink_02""],[8,8,8,8,8,20,10,8,10,10,10,20,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_prop_drink_02"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_m3a1_mag"",""vn_carbine_15_mag""],[8,5,5,5,5,30,5,5,10,10,10,10,10,10,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -1935,7 +1935,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_m14_mag"",""vn_l1a1_20_mag"",""vn_prop_drink_02""],[8,8,8,8,8,20,10,8,10,10,10,20,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m16_20_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_food_can_01_10"",""vn_prop_food_can_01_11"",""vn_40mm_m381_he_mag"",""vn_prop_drink_02"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_m3a1_mag"",""vn_carbine_15_mag""],[8,5,5,5,5,30,5,5,10,10,10,10,10,10,10,20,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -8846,7 +8846,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m127""],[1]],[[""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_prop_food_lrrp_01_01"",""vn_m16_20_mag"",""vn_40mm_m381_he_mag"",""vn_m60_100_mag"",""vn_l1a1_20_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_drink_02"",""vn_m14_mag""],[16,16,16,16,6,6,6,20,40,20,10,40,20,20,20,20]],[[""vn_b_item_medikit_01"",""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[1,20,1]],[[""vn_b_pack_ba18_01"",""vn_b_pack_m41_01""],[8,1]]],false]";
+													value="[[[[""vn_m127"",""vn_xm177_short"",""vn_m72""],[1,2,10]],[[""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m16_20_mag"",""vn_40mm_m381_he_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_drink_02"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_m3a1_mag"",""vn_carbine_15_mag"",""vn_m72_mag"",""vn_prop_food_can_02_05"",""vn_prop_food_box_02_02"",""vn_prop_food_box_02_07""],[20,16,16,16,6,6,6,50,20,10,20,20,20,20,20,20,20,10,20,10,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[20,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -8881,7 +8881,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m127""],[1]],[[""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_prop_food_lrrp_01_01"",""vn_m16_20_mag"",""vn_40mm_m381_he_mag"",""vn_m60_100_mag"",""vn_l1a1_20_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_drink_02"",""vn_m14_mag""],[16,16,16,16,6,6,6,20,40,20,10,40,20,20,20,20]],[[""vn_b_item_medikit_01"",""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[1,20,1]],[[""vn_b_pack_ba18_01"",""vn_b_pack_m41_01""],[8,1]]],false]";
+													value="[[[[""vn_m127"",""vn_xm177_short"",""vn_m72""],[1,2,10]],[[""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m16_20_mag"",""vn_40mm_m381_he_mag"",""vn_m60_100_mag"",""vn_m18_white_mag"",""vn_m61_grenade_mag"",""vn_prop_drink_02"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_m3a1_mag"",""vn_carbine_15_mag"",""vn_m72_mag"",""vn_prop_food_can_02_05"",""vn_prop_food_box_02_02"",""vn_prop_food_box_02_07""],[20,16,16,16,6,6,6,50,20,10,20,20,20,20,20,20,20,10,20,10,10]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[20,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -8917,7 +8917,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_prop_drink_03"",""vn_prop_food_lrrp_01_01""],[2,2,2,2,2,2,2]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[8,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m16_20_mag"",""vn_m67_grenade_mag"",""vn_prop_drink_02"",""vn_prop_food_can_02_05"",""vn_prop_food_box_02_04"",""vn_m18_green_mag""],[4,12,4,10,10,4,4]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -9002,7 +9002,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag""],[2,2]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[8,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m16_20_mag"",""vn_m67_grenade_mag"",""vn_prop_drink_02"",""vn_prop_food_can_02_05"",""vn_prop_food_box_02_04"",""vn_m18_green_mag""],[4,12,4,10,10,4,4]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
@@ -9038,7 +9038,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_m34_grenade_mag"",""vn_m18_yellow_mag"",""vn_m18_red_mag"",""vn_m18_purple_mag"",""vn_m18_green_mag"",""vn_prop_drink_03"",""vn_prop_food_lrrp_01_01""],[2,2,2,2,2,2,2]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[8,1]],[[],[]]],false]";
+													value="[[[[""vn_xm177_short""],[2]],[[""vn_m34_grenade_mag"",""vn_m16_20_mag"",""vn_m67_grenade_mag"",""vn_prop_drink_02"",""vn_prop_food_can_02_05"",""vn_prop_food_box_02_04"",""vn_m18_green_mag""],[4,12,4,10,10,4,4]],[[""vn_b_item_firstaidkit"",""vn_b_item_toolkit""],[10,1]],[[""vn_b_pack_m41_01""],[1]]],false]";
 												};
 											};
 										};
