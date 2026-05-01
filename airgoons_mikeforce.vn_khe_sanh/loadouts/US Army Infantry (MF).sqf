@@ -402,9 +402,7 @@
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 		_unit addBackpack "vn_b_pack_trp_03_02";
 		_unit addItemToBackpack "vn_m34_grenade_mag";
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_mine_tripwire_m16_04_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
-		_unit addItemToBackpack "vn_mine_m15_mag";
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		_unit addHeadgear _headgear;
 
@@ -1162,9 +1160,8 @@
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		_unit addBackpack "vn_b_pack_trp_03";
 		_unit addItemToBackpack "vn_m34_grenade_mag";
-		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_mine_tripwire_m16_04_mag";};
-		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
-		_unit addItemToBackpack "vn_mine_m15_mag";
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		_unit addHeadgear "vn_b_boonie_02_04";
 

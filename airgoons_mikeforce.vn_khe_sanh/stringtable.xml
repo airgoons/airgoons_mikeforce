@@ -1258,13 +1258,13 @@
     </Container>
     <Container name="supplies">
       <Key ID="STR_vn_mf_light_ammo_supplies">
-        <Original>Light Ammo Supplies</Original>
+        <Original>Ammunition</Original>
       </Key>
       <Key ID="STR_vn_mf_support_ammo_supplies">
-        <Original>Support Ammo Supplies</Original>
+        <Original>Flares and Grenades</Original>
       </Key>
       <Key ID="STR_vn_mf_explosives_supplies">
-        <Original>Explosives Supplies</Original>
+        <Original>Explosives</Original>
       </Key>
 	   <Key ID="STR_vn_mf_mortar_supplies">
         <Original>Mortar Ammo</Original>
