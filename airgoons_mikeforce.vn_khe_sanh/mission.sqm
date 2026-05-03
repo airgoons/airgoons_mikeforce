@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2606;
+		nextID=2608;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3174;
+		nextID=3232;
 	};
 	class Camera
 	{
-		pos[]={10981.116,163.49084,3168.0005};
-		dir[]={-0.92618644,-0.37687945,0.016486084};
-		up[]={-0.37690759,0.92621094,0.0067089568};
-		aside[]={0.017800184,-5.9340982e-07,0.9998939};
+		pos[]={11020.023,138.34525,3166.1714};
+		dir[]={-0.9178223,-0.39722741,0.0054363371};
+		up[]={-0.39733636,0.91764325,0.0023541772};
+		aside[]={0.0059252982,7.8659014e-08,1.000069};
 	};
 };
 binarizationWanted=0;
@@ -3388,7 +3388,7 @@ class Mission
 							state=1;
 							class Entities
 							{
-								items=9;
+								items=11;
 								class Item0
 								{
 									dataType="Object";
@@ -3807,9 +3807,105 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item9
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10706.997,100.15919,3149.957};
+										angles[]={0.001972222,3.223309,6.281405};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2606;
+									type="Land_vn_billboard_f";
+									atlOffset=0.01599884;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="#(rgb,512,512,3)text(1,1,""TahomaB"",0.062,""#000000"",""#ffffff"",""Landing outside of designated\n landing zones may result\n in explosive discombulation."")";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item10
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10938.24,100.21842,3129.8491};
+										angles[]={0.0020615973,3.1715748,6.2815099};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										disableSimulation=1;
+									};
+									id=2607;
+									type="Land_vn_billboard_f";
+									atlOffset=-0.0047683716;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="#(rgb,512,512,3)text(1,1,""TahomaB"",0.062,""#000000"",""#ffffff"",""Landing outside of designated\n landing zones may result\n in explosive discombulation."")";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=1082;
-							atlOffset=0.0055084229;
+							atlOffset=-0.11884308;
 						};
 						class Item7
 						{
@@ -8274,7 +8370,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[],[]],[[""vn_prop_drink_05"",""vn_prop_med_dysentery"",""vn_prop_med_antivenom"",""vn_prop_med_painkillers"",""vn_prop_drink_10""],[]],[[""vn_b_item_firstaidkit""],[]],[[],[]]],true]";
+													value="[[[[],[]],[[""vn_prop_drink_05"",""vn_prop_med_dysentery"",""vn_prop_med_antivenom"",""vn_prop_drink_10""],[]],[[""vn_b_item_firstaidkit""],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -8521,7 +8617,7 @@ class Mission
 						};
 					};
 					id=679;
-					atlOffset=-0.64178467;
+					atlOffset=-0.63126373;
 				};
 				class Item1
 				{
@@ -10699,7 +10795,7 @@ class Mission
 				};
 			};
 			id=678;
-			atlOffset=-0.46762848;
+			atlOffset=-0.4702301;
 		};
 		class Item11
 		{
