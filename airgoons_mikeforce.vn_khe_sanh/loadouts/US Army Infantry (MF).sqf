@@ -79,7 +79,7 @@
 		comment "Add containers";
 		_unit forceAddUniform _uniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
-		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_m1911_mag";};
+		for "_i" from 1 to 3 do {_unit addItemToUniform "vn_m1911_mag";};
 		_unit addVest "vn_b_vest_usarmy_09";		
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
@@ -108,6 +108,7 @@
 		comment "Add containers";
 		_unit forceAddUniform _uniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		for "_i" from 1 to 3 do {_unit addItemToUniform "vn_m1911_mag";};
 		_unit addVest "vn_b_vest_usarmy_09";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
@@ -118,6 +119,8 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_m1911";
+		_unit addHandgunItem "vn_m1911_mag";
 		_unit addWeapon _binocs;
 
 		comment "Add items";
@@ -142,7 +145,7 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
+		_unit addWeapon "vn_camera_01";
 
 		comment "Add items";
 		_unit linkItem "vn_b_item_map";
@@ -183,6 +186,7 @@
 		comment "Add containers";
 		_unit forceAddUniform _uniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		for "_i" from 1 to 3 do {_unit addItemToUniform "vn_m1911_mag";};
 		_unit addVest "vn_b_vest_usarmy_09";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
@@ -193,7 +197,8 @@
 		comment "Add weapons";
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "vn_m16_20_mag";
-		_unit addWeapon "vn_mx991_red";
+		_unit addWeapon "vn_m1911";
+		_unit addHandgunItem "vn_m1911_mag";
 		_unit addWeapon _binocs;
 
 		comment "Add items";
@@ -223,7 +228,6 @@
 		_unit addWeapon _rifle;
 		_unit addPrimaryWeaponItem "vn_m16_20_mag";
 		_unit addWeapon "vn_mx991_red";
-		_unit addWeapon "vn_camera_01";
 
 		// "Add items";
 		_unit linkItem "vn_b_item_map";

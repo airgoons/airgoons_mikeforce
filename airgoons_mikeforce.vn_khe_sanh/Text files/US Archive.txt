@@ -769,3 +769,546 @@ class Land_vn_usaf_revetment_helipad_02
 	};
 };*/
 
+class Land_vn_b_trench_bunker_06_01
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"tents", "fortifications"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_trench_bunker_06_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_b_trench_bunker_06_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_b_trench_bunker_06_01";
+		};
+	};
+};
+
+class Land_vn_b_trench_bunker_06_02
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"tents", "fortifications"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_trench_bunker_06_02_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_b_trench_bunker_06_02";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_b_trench_bunker_06_02";
+		};
+	};
+};
+
+class Land_vn_b_trench_bunker_01_03
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_trench_bunker_01_03_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_b_trench_bunker_01_03";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_b_trench_bunker_01_03";
+		};
+	};
+};
+
+class Land_vn_b_trench_bunker_01_02
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_trench_bunker_01_02_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_b_trench_bunker_01_02";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_b_trench_bunker_01_02";
+		};
+	};
+};
+
+class Land_vn_hootch_01_02
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_hootch_01_02_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_hootch_01_02_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hootch_01_02";
+		};
+	};
+};
+
+class Land_vn_hootch_01_03
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches", "medical", "functional", "resupply"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_hootch_01_03_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_hootch_01_03_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hootch_01_03";
+		};
+	};
+};
+
+class Land_vn_hootch_01_11
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_hootch_01_11_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_hootch_01_11_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hootch_01_11";
+		};
+	};
+};
+
+class Land_vn_hootch_01_12
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches", "barracks"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_hootch_01_12_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_hootch_01_12_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hootch_01_12";
+		};
+	};
+};
+
+class Land_vn_hootch_01_13
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches", "medical", "functional", "resupply"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_hootch_01_13_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_hootch_01_13_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hootch_01_13";
+		};
+	};
+};
+
+class Land_vn_hootch_02
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_hootch_02_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_hootch_02_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hootch_02";
+		};
+	};
+};
+
+class Land_vn_hootch_02_02
+{
+	name = "";
+	type = "hootches";
+	categories[] = {"buildings", "hootches"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_hootch_02_02_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_hootch_02_02_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hootch_02_02";
+		};
+	};
+};
+
+class Land_vn_concretewell_01_f
+{
+	name = "";
+	type = "props";
+	categories[] = {"sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_concretewell_01_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_concretewell_01_f";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_concretewell_01_f";
+		};
+	};
+};
+
+class Land_vn_reservoirtower_aircav_f
+{
+	name = "";
+	type = "towers";
+	categories[] = {"towers", "sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(1000, HOURS_TO_SECONDS(12));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_reservoirtower_aircav_f_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_reservoirtower_aircav_f";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_reservoirtower_aircav_f";
+		};
+	};
+};
+
+class Land_vn_b_prop_m149_01
+{
+	name = "";
+	type = "props";
+	categories[] = {"sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_prop_m149_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_b_prop_m149_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_b_prop_m149_01";
+		};
+	};
+};
+
+class Land_vn_latrine_01
+{
+	name = "";
+	type = "latrines";
+	categories[] = {"buildings", "sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_latrine_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "vn_latrine_01_part1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_latrine_01";
+		};
+	};
+};
+
+class Land_vn_b_prop_barrels_water_01
+{
+	name = "";
+	type = "props";
+	categories[] = {"decorative", "sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_b_prop_barrels_water_01_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_b_prop_barrels_water_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_b_prop_barrels_water_01";
+		};
+	};
+};
+
+class Land_vn_watertower1
+{
+	name = "";
+	type = "towers";
+	categories[] = {"towers", "sanitation"};
+	rank = 0;
+	SUPPLY_CAPACITY(1000, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_watertower1_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_watertower1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_watertower1";
+		};
+	};
+};

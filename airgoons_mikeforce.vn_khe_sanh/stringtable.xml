@@ -101,9 +101,32 @@
 	   <Key ID="STR_vn_mf_statics">
         <Original>Static Weapons</Original>
       </Key>
-	  </Key>
 	   <Key ID="STR_vn_mf_communications">
         <Original>Communication Tower (TFAR)</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_hqbunker">
+        <Original>HQ bunker</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_aid_bunker">
+        <Original>Medical Bunker</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_bunkercheckpoint">
+        <Original>Bunker Billet</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_hootchcheckpoint">
+        <Original>Billet</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_small">
+        <Original>Small Supply Bunker (500 supplies)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_medium">
+        <Original>Medium Supply Bunker (1000 supplies)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_large">
+        <Original>Large Supply Bunker (1500 supplies)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_american">
+        <Original>American Sized Supply Bunker (2500 supplies)</Original>
       </Key>
       <Key ID="STR_vn_mf_bridgebailey01">
         <Original>Bailey Bridge 1</Original>
@@ -1127,6 +1150,22 @@
         <Original>Static Weapons</Original>
         <English>Static Weapons</English>
       </Key>
+	   <Key ID="STR_vn_mf_buildingMenu_category_artillery">
+        <Original>Artillery pits</Original>
+        <English>Artillery pits</English>
+      </Key>
+	   <Key ID="STR_vn_mf_buildingMenu_category_hq">
+        <Original>Headquarters</Original>
+        <English>Headquarters</English>
+      </Key>
+	  <Key ID="STR_vn_mf_buildingMenu_category_pillboxes">
+        <Original>Pillboxes</Original>
+        <English>Pillboxes</English>
+      </Key>
+	  <Key ID="STR_vn_mf_buildingMenu_category_spawn">
+        <Original>Respawn Points</Original>
+        <English>Respawn Points</English>
+      </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_us">
         <Original>U.S</Original>
         <English>U.S</English>
@@ -1203,9 +1242,9 @@
         <Original>Misc</Original>
         <English>Misc</English>
       </Key>
-      <Key ID="STR_vn_mf_buildingMenu_category_lighting">
-        <Original>Lighting</Original>
-        <English>Lighting</English>
+      <Key ID="STR_vn_mf_buildingMenu_category_lights">
+        <Original>Lights</Original>
+        <English>Lights</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_platforms">
         <Original>Platforms</Original>

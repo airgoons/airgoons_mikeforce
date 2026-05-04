@@ -7,7 +7,8 @@ class MedicalCrate
 		{"vn_prop_med_antivenom",20}
 	};
 	items[] = {
-		{"vn_b_item_firstaidkit",30}
+		{"vn_b_item_firstaidkit",30},
+		{"vn_b_item_medikit_01",5}
 	};
 	backpacks[] = {};
 };
@@ -104,8 +105,8 @@ class AmmoCrateExplosives
 		{"vn_mine_m18_x3_range_mag",20},
 		{"vn_mine_satchel_remote_02_mag",10},
 		{"vn_satchelcharge_02_throw_mag", 10},
-		{"vn_m20a1b1_heat_mag",20},
-		{"vn_m20a1b1_wp_mag",20},
+		{"vn_m20a1b1_heat_mag",10},
+		{"vn_m20a1b1_wp_mag",10},
 		{"vn_m72_mag",30}		
 	};
 	items[] = {};

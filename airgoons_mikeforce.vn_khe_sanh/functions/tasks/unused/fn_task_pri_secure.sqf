@@ -49,7 +49,7 @@ _taskDataStore setVariable ["INIT", {
 
 	private _buildTasks = [
 		["secondary_build", _zone, [["buildable", "Land_vn_guardhouse_01"]]] call vn_mf_fnc_task_create select 1,
-		["secondary_build", _zone, [["buildable", "Land_vn_tent_mash_01"]]] call vn_mf_fnc_task_create select 1,
+		["secondary_build", _zone, [["buildable", "Land_vn_tent_mash_01_04"]]] call vn_mf_fnc_task_create select 1,
 		["secondary_build", _zone, [["buildable", "vn_b_ammobox_supply_07"]]] call vn_mf_fnc_task_create select 1,
 		["secondary_build", _zone, [["buildable", "vn_b_ammobox_supply_08"]]] call vn_mf_fnc_task_create select 1,
 		["secondary_build", _zone, [["buildable", "vn_b_ammobox_supply_09"]]] call vn_mf_fnc_task_create select 1
