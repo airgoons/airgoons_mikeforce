@@ -35,11 +35,11 @@ if (_pos isEqualTo []) then
 else 
 {
 	if (_pos distance2D [14296, 5932, 0] < 7000) exitWith {
-		_faction = "vc";
+		_faction = "nva";
 	};
 
 	if (_pos # 0 < 6303) exitWith {
-		_faction = "dac_cong";
+		_faction = "vc";
 	};
 
 	_faction = "nva";

@@ -594,7 +594,8 @@ class squad_compositions
 			{"nva_main_grenadier_sksGl", "nva_main_rifleman_sks", "nva_main_rifleman_sksBayo"},
 			{"nva_main_rifleman_type56", "nva_main_rifleman_type56Bayo"}
 		};
-		 //Combine with cover element
+		
+		//Combine with cover element
 		nva_main_storm_element[] = {
 			"nva_main_rifleman_k50m",
 			"nva_main_medic_k50m",

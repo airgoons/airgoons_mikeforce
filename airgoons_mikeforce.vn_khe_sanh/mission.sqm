@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3290;
+		nextID=3319;
 	};
 	class Camera
 	{
@@ -396,7 +396,8 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=1970;
+		year=1968;
+		day=17;
 		hour=6;
 		minute=0;
 		startFogBase=150;
