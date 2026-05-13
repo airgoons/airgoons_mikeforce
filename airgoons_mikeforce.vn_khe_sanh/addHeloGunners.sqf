@@ -123,6 +123,21 @@ switch (typeOf _helo) do
             };
         };
     };
+	
+	// Cargo Chinook has two turrets, slots 3, 4
+    case "vn_b_air_ch47_03_02":
+    {
+        for [{_i = 3}, {_i < 6}, {_i = _i + 1}] do
+        {
+            if (isNull (_helo turretUnit [_i])) then
+            {
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
+                _u moveInTurret [_helo, [_i]];
+            };
+        };
+    };
 };
 
 // Try to make our boys more aggressive grrrr

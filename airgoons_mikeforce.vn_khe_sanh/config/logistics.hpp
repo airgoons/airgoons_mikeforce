@@ -27,6 +27,7 @@ class vn_logistics
 		inventory_max_weight = 50;
 		inventory_max_size = 1;
 	};
+	
 	//Jeeps + Small Cars
 	class vn_b_wheeled_m151_01 		: vn_defaults_small {};
 	class vn_b_wheeled_m151_01_mp 	: vn_defaults_small {};
@@ -39,7 +40,6 @@ class vn_logistics
 	class vn_c_car_01_02 			: vn_defaults_small {};
 	class vn_c_wheeled_m151_01 		: vn_defaults_small {};
 	class vn_c_wheeled_m151_02 		: vn_defaults_small {};
-
 
 	//Armed Jeeps
 	class vn_b_wheeled_m151_mg_01 	 : vn_defaults_tiny {};
@@ -62,19 +62,24 @@ class vn_logistics
 	class vn_b_armor_m113_acav_06 : vn_defaults_medium {};
 
 	//Transport trucks
-	class vn_b_wheeled_m54_01 : vn_defaults_extra_large {};
-	class vn_b_wheeled_m54_01_airport : vn_defaults_extra_large {};
-	class vn_b_wheeled_m54_02 : vn_defaults_extra_large {};
+	class vn_b_wheeled_m54_01 			: vn_defaults_extra_large {};
+	class vn_b_wheeled_m54_01_airport	: vn_defaults_extra_large {};
+	class vn_b_wheeled_m54_02 			: vn_defaults_extra_large {};
+	
 	//M109 Command Truck
-	class vn_b_wheeled_m54_03 : vn_defaults_medium {};
+	class vn_b_wheeled_m54_03 			: vn_defaults_medium {};
+	
 	//Repair Truck
-	class vn_b_wheeled_m54_repair : vn_defaults_medium {};
-	class vn_b_wheeled_m54_repair_airport : vn_defaults_medium {};
+	class vn_b_wheeled_m54_repair 			: vn_defaults_medium {};
+	class vn_b_wheeled_m54_repair_airport 	: vn_defaults_medium {};
+	
 	//Fuel trucks
-	class vn_b_wheeled_m54_fuel : vn_defaults_medium {};
+	class vn_b_wheeled_m54_fuel 		: vn_defaults_medium {};
 	class vn_b_wheeled_m54_fuel_airport : vn_defaults_medium {};
+	
 	//Ammo truck
-	class vn_b_wheeled_m54_ammo : vn_defaults_medium {};
+	class vn_b_wheeled_m54_ammo 		: vn_defaults_medium {};
+	
 	//Gun trucks
 	class vn_b_wheeled_m54_mg_01 : vn_defaults_small {};
 	class vn_b_wheeled_m54_mg_02 : vn_defaults_small {};
@@ -231,6 +236,7 @@ class vn_logistics
 	class vn_b_air_ch34_03_01 : vn_defaults_small {};
 	class vn_i_air_ch34_01_02 : vn_defaults_small {};
 	class vn_i_air_ch34_02_02 : vn_defaults_small {};
+	
 	//Choctaw - Armed (Stinger variants)
 	class vn_b_air_ch34_04_01 : vn_defaults_tiny {};
 	class vn_b_air_ch34_04_02 : vn_defaults_tiny {};
@@ -261,11 +267,11 @@ class vn_logistics
 	// CH-47 Chinook
 	class vn_b_air_ch47_01_01	: vn_defaults_large {};
 	class vn_b_air_ch47_02_01	: vn_defaults_large {};
-	class vn_b_air_ch47_03_01	: vn_defaults_large {};
+	class vn_b_air_ch47_03_01	: vn_defaults_extra_large {};
 	class vn_b_air_ch47_04_01	: vn_defaults_large {};
 	class vn_b_air_ch47_01_02	: vn_defaults_large {};
 	class vn_b_air_ch47_02_02	: vn_defaults_large {};
-	class vn_b_air_ch47_03_02	: vn_defaults_large {};
+	class vn_b_air_ch47_03_02	: vn_defaults_extra_large {};
 	class vn_b_air_ch47_04_02	: vn_defaults_large {};
 	class vn_b_air_ach47_01_01	: vn_defaults_medium {};
 	class vn_b_air_ach47_02_01	: vn_defaults_medium {};
@@ -274,7 +280,7 @@ class vn_logistics
 	class vn_b_air_ach47_05_01	: vn_defaults_medium {};
 	class vn_i_air_ch47_01_01	: vn_defaults_large {};
 	class vn_i_air_ch47_02_01	: vn_defaults_large {};
-	class vn_i_air_ch47_03_01	: vn_defaults_large {};
+	class vn_i_air_ch47_03_01	: vn_defaults_extra_large {};
 	class vn_i_air_ch47_04_01	: vn_defaults_large {};
 
 	// M151
