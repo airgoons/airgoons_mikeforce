@@ -1359,4 +1359,28 @@
 		_unit linkItem "vn_b_item_compass";
 		_unit linkItem "vn_b_item_watch";
 	};
+	
+	// "Artillery crew";
+	
+	case "SMOKE": {
+	
+		comment "Chief of Smoke";
+		comment "Add containers";
+		_unit forceAddUniform _uniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		_unit addVest "vn_b_vest_usarmy_13";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m1911_mag";};
+		_unit addBackpack "vn_b_pack_prc77_01";
+		_unit addHeadgear "vn_b_helmet_m1_01_01";
+
+		comment "Add weapons";
+		_unit addWeapon "vn_m1911";
+		_unit addHandgunItem "vn_m1911_mag";
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+	};
 };
