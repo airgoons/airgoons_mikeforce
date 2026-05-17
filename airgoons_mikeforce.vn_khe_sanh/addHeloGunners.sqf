@@ -127,7 +127,7 @@ switch (typeOf _helo) do
 	// Cargo Chinook has two turrets, slots 3, 4
     case "vn_b_air_ch47_03_02":
     {
-        for [{_i = 3}, {_i < 6}, {_i = _i + 1}] do
+        for [{_i = 3}, {_i < 5}, {_i = _i + 1}] do
         {
             if (isNull (_helo turretUnit [_i])) then
             {

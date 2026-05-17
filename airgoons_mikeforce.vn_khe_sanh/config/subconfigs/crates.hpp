@@ -22,17 +22,11 @@ class AmmoCrateLight
 		};
 	magazines[] = {
 		{"vn_m1911_mag",10},
-		{"vn_m16_20_mag",50},
+		{"vn_m16_20_mag",80},
 		{"vn_m16_40_mag",20},
 		{"vn_m60_100_mag",10},
 		{"vn_m67_grenade_mag",10},
 		{"vn_m127_mag",20},
-		{"vn_m3a1_mag",20},
-		{"vn_m3a1_t_mag",20},
-		{"vn_m1897_fl_mag",20},
-		{"vn_m1897_buck_mag",20},
-		{"vn_carbine_15_mag",20},
-		{"vn_carbine_15_t_mag",20},
 		{"vn_m40a1_mag",10},
 		{"vn_m40a1_t_mag",10},
 		{"vn_m72_mag",10},

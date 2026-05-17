@@ -27,10 +27,10 @@ para_s_ai_obj_reinforcement_scaling = 1;
 
 para_s_ai_obj_activation_radius = 1000;
 para_s_ai_obj_priority_radii = [300,400,500,700,para_s_ai_obj_activation_radius];
-para_s_ai_obj_reinforce_block_direct_spawn_range = 600;
-para_s_ai_obj_reinforce_reallocate_range = 600;
+para_s_ai_obj_reinforce_block_direct_spawn_range = 800;
+para_s_ai_obj_reinforce_reallocate_range = 800;
 
-para_s_ai_obj_hard_ai_limit = para_s_ai_obj_config getOrDefault ["hardAiLimit", 160];
+para_s_ai_obj_hard_ai_limit = para_s_ai_obj_config getOrDefault ["hardAiLimit", 180];
 
 para_s_ai_obj_pursuitRadius = 300;
 para_s_ai_obj_maxPursuitDistance = 1200;

@@ -261,7 +261,7 @@ class TFAR_Land_Communication_F
 	};
 };
 
-class Land_vn_tent_mash_01_04
+class Land_vn_tent_mash_01
 {
 	name = "STR_vn_mf_aid_post";
 	type = "aid";
@@ -274,7 +274,7 @@ class Land_vn_tent_mash_01_04
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_bravoplatoon
+		CONDITION_IS_CharliePlatoon
 	};
 	class build_states
 	{
@@ -288,7 +288,7 @@ class Land_vn_tent_mash_01_04
 		};
 		class final_state
 		{
-			object_class = "Land_vn_tent_mash_01_04";
+			object_class = "Land_vn_tent_mash_01";
 		};
 	};
 };
@@ -321,70 +321,6 @@ class Land_vn_b_trench_bunker_03_03
 		class final_state
 		{
 			object_class = "Land_vn_b_trench_bunker_03_03";
-		};
-	};
-};
-
-class Land_vn_hootch_02_01
-{
-	name = "";
-	type = "hootches";
-	categories[] = {"medical"};
-	rank = 0;
-	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
-	resupply = "BuildingSupplies";
-	conditions[] = {
-		CONDITION_HAS_RANK,
-		CONDITION_IS_ENGINEER,
-		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_bravoplatoon
-	};
-	class build_states
-	{
-		class initial_state
-		{
-			object_class = "vn_hootch_02_01_part0";
-		};
-		class middle_state
-		{
-			object_class = "vn_hootch_02_01_part1";
-		};
-		class final_state
-		{
-			object_class = "Land_vn_hootch_02_01";
-		};
-	};
-};
-
-class Land_vn_hootch_02_11
-{
-	name = "";
-	type = "hootches";
-	categories[] = {"medical"};
-	rank = 0;
-	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
-	resupply = "BuildingSupplies";
-	conditions[] = {
-		CONDITION_HAS_RANK,
-		CONDITION_IS_ENGINEER,
-		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_bravoplatoon
-	};
-	class build_states
-	{
-		class initial_state
-		{
-			object_class = "vn_hootch_02_11_part0";
-		};
-		class middle_state
-		{
-			object_class = "vn_hootch_02_11_part1";
-		};
-		class final_state
-		{
-			object_class = "Land_vn_hootch_02_11";
 		};
 	};
 };
@@ -3290,6 +3226,102 @@ class Land_vn_bridge_small_04
 		class final_state
 		{
 			object_class = "Land_vn_bridge_small_04";
+		};
+	};
+};
+
+class Land_vn_o_platform_04
+{
+	name = "";
+	type = "platforms";
+	categories[] = {"platforms"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "vn_o_platform_04_part0";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_o_platform_04";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_o_platform_04";
+		};
+	};
+};
+
+class Land_vn_hut_stairs_01
+{
+	name = "";
+	type = "platforms";
+	categories[] = {"platforms"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_hut_stairs_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_hut_stairs_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hut_stairs_01";
+		};
+	};
+};
+
+class Land_vn_hut_stairs_02
+{
+	name = "";
+	type = "platforms";
+	categories[] = {"platforms"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_hut_stairs_02";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_hut_stairs_02";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_hut_stairs_02";
 		};
 	};
 };
