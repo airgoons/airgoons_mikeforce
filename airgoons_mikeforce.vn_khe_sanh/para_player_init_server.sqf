@@ -97,6 +97,7 @@ switch (_playersGroup) do
 	case "Charlie": {[_player, "charlieplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "33"] call TFAR_fnc_setSwFrequency};
 	case "Artillery": {[_player, "charlieplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "33"] call TFAR_fnc_setSwFrequency};
 	case "Covey": {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "34"] call TFAR_fnc_setSwFrequency};
+	case "Cobra": {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "34"] call TFAR_fnc_setSwFrequency};
 	default {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "34"] call TFAR_fnc_setSwFrequency};
 };
 
