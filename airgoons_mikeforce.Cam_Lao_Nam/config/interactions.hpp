@@ -13,7 +13,8 @@ class CfgItemInteractions
 		{
 			{"poison", 1.0},
 			{"posion", 1.0},
-			{"diarrhea", 1.0}
+			{"diarrhea", 1.0},
+			{"alcohol", 1.0}
 		};
 	};
 	class snake_bite
@@ -64,9 +65,9 @@ class CfgItemInteractions
 	{
 		disallowRepack = 1;
 		removeonempty = 0;
-		consume = 34;	// ammount consumed on each use (all food/drink items have 100 ammo)
-		water = 0.1;	// ammount added to thirst if able to be fully consumed
-		food = 0;	// ammount added to hunger if able to be fully consumed
+		consume = 34;	// amount consumed on each use (all food/drink items have 100 ammo)
+		water = 0.1;	// amount added to thirst if able to be fully consumed
+		food = 0;	// amount added to hunger if able to be fully consumed
 		interactActions[] =
 		{
 			{
@@ -137,8 +138,8 @@ class CfgItemInteractions
 	};
 	class vn_prop_drink_09_01 : vn_prop_drink_01 // Whiskey
 	{
-		consume = 100;
-		drink = 0.1;
+		consume = 25;
+		drink = 0.5;
 		removeonempty = 1;
 		attributes[] =
 		{
@@ -703,12 +704,14 @@ class CfgItemInteractions
 		food = 0.1;
 	};
 
-	class FirstAidKit
+	// FAK
+	
+	class vn_b_item_firstaidkit
 	{
 		interactActions[] =
 		{
 			// Test actions - requires the player to have a watch equipped for "Check Pulse" action to show on double click of the First Aid Kit.
-			{"STR_vn_mf_check_pulse", "private _target = player; if (cursorTarget isKindof 'Man') then {_target = cursorTarget}; if ((damage _target) > 0.1) then { hintSilent format['%1 Needs Medical Attention!',name _target];} else {hintSilent format['%1, Does Not Need Medical Attention.',name _target];};", "!('ItemWatch' in (assignedItems player))", 1 , "hintSilent 'Watch Needed';" }
+			{ "STR_vn_mf_check_pulse", "private _target = player; if (cursorTarget isKindof 'Man') then {_target = cursorTarget}; if ((damage _target) > 0.1) then { hintSilent format['%1 Needs Medical Attention!',name _target];} else {hintSilent format['%1, Does Not Need Medical Attention.',name _target];};", "!('vn_b_item_watch' in (assignedItems player))", 1 , "hintSilent 'Watch Needed';" }
 			// {"Debug 1", "hintSilent str[_thisItem,_thisItemType];" },
 		};
 	};

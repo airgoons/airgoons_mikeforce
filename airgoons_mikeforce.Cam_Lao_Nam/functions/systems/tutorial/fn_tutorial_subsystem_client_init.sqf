@@ -19,7 +19,7 @@
 
 
 		player setVariable ["vn_mf_db_seenIntro", false];
-		player setVariable ["vn_mf_db_playedCharliePlatoon", false];
+		player setVariable ["vn_mf_db_playedbravoplatoon", false];
 		player setVariable ["vn_mf_db_playedGH", false];
 		player setVariable ["vn_mf_db_playedMF", false];
 		player setVariable ["vn_mf_db_playedEng", false];
@@ -63,32 +63,32 @@ if (!_seenIntro) then {
 		params ["_handlerParams", "_eventParams"];
 		_handlerParams params [];
 		_eventParams params ["_player", "_groupID"];
-		private _playedCharliePlatoon = _player getVariable ["vn_mf_db_playedCharliePlatoon", false];
+		private _playedbravoplatoon = _player getVariable ["vn_mf_db_playedbravoplatoon", false];
 		private _playedGH = _player getVariable ["vn_mf_db_playedGH", false];
 		private _playedMF = _player getVariable ["vn_mf_db_playedMF", false];
 		switch (_groupID) do {
-			case "CharliePlatoon": {
-				if (!_playedCharliePlatoon) then {
-				["Team", "CharliePlatoon"] call para_c_fnc_ui_hints_show_hint;
+			case "bravoplatoon": {
+				if (!_playedbravoplatoon) then {
+				["Team", "bravoplatoon"] call para_c_fnc_ui_hints_show_hint;
 				["Logistics", "Supplies"] call para_c_fnc_ui_hints_show_hint;
-				_player setVariable ["vn_mf_db_playedCharliePlatoon", true];
+				_player setVariable ["vn_mf_db_playedbravoplatoon", true];
 				};
 			};
-			case "DeltaTroop": {
+			case "deltatroop": {
 				if (!_playedGH) then {
 				["Team", "Green_Hornets"] call para_c_fnc_ui_hints_show_hint;
 				["Logistics", "Supplies"] call para_c_fnc_ui_hints_show_hint;
 				_player setVariable ["vn_mf_db_playedGH", true];
 				};
 			};
-			case "AlphaPlatoon": {
+			case "alphaplatoon": {
 				if (!_playedMF) then {
 				["Team", "Mike_Force"] call para_c_fnc_ui_hints_show_hint;
 				_player setVariable ["vn_mf_db_playedMF", true];
 				};
 			};
 		};
-		if (_playedCharliePlatoon && _playedGH && _playedMF) then {
+		if (_playedbravoplatoon && _playedGH && _playedMF) then {
 			private _handler = _currentEventHandler;
 			["changedTeams", _handler] call para_g_fnc_event_remove_handler;
 		};

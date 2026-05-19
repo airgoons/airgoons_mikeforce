@@ -21,7 +21,7 @@ para_s_harassBaseChallengeRating = 1;
 para_s_harassMaxChallengeRating = 2;
 //Delay between each harass attack
 para_s_harassDelay = 900;
-para_s_harassMinDelay = 480;
+if (isNil "para_s_harassMinDelay") then {para_s_harassMinDelay = 480};
 
 para_s_harassFiredDelay = 120;
 para_s_harassFiredChallengeValue = 0.5;

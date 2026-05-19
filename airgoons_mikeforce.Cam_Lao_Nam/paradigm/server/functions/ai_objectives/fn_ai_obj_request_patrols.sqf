@@ -55,7 +55,7 @@ if (_type == "roads") then {
 private _objective = ["patrol", _spawnPosition] call para_s_fnc_ai_obj_create_objective;
 _objective setVariable ["scaling_factor", _scalingFactor];
 _objective setVariable ["reinforcements_factor", _reinforcementsFactor];
-_objective setVariable ["squad_size", 4];
+_objective setVariable ["squad_size", 8];
 _objective setVariable ["squad_type", "PATROL"];
 
 _objective setVariable ["orders", _orders];

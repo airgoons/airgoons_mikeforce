@@ -27,33 +27,33 @@ class vn_logistics
 		inventory_max_weight = 50;
 		inventory_max_size = 1;
 	};
+	
 	//Jeeps + Small Cars
-	class vn_b_wheeled_m151_01 : vn_defaults_small {};
-	class vn_b_wheeled_m151_01_mp : vn_defaults_small {};
-	class vn_b_wheeled_m151_02_mp : vn_defaults_small {};
-	class vn_b_wheeled_m151_02 : vn_defaults_small {};
-	class vn_c_car_01_01 : vn_defaults_small {};
-	class vn_c_car_02_01 : vn_defaults_small {};
-	class vn_c_car_03_01 : vn_defaults_small {};
-	class vn_c_car_04_01 : vn_defaults_small {};
-	class vn_c_car_01_02 : vn_defaults_small {};
-	class vn_c_wheeled_m151_01 : vn_defaults_small {};
-	class vn_c_wheeled_m151_02 : vn_defaults_small {};
-
+	class vn_b_wheeled_m151_01 		: vn_defaults_small {};
+	class vn_b_wheeled_m151_01_mp 	: vn_defaults_small {};
+	class vn_b_wheeled_m151_02_mp 	: vn_defaults_small {};
+	class vn_b_wheeled_m151_02 		: vn_defaults_small {};
+	class vn_c_car_01_01 			: vn_defaults_small {};
+	class vn_c_car_02_01 			: vn_defaults_small {};
+	class vn_c_car_03_01 			: vn_defaults_small {};
+	class vn_c_car_04_01 			: vn_defaults_small {};
+	class vn_c_car_01_02 			: vn_defaults_small {};
+	class vn_c_wheeled_m151_01 		: vn_defaults_small {};
+	class vn_c_wheeled_m151_02 		: vn_defaults_small {};
 
 	//Armed Jeeps
-	class vn_b_wheeled_m151_mg_01 : vn_defaults_tiny {};
+	class vn_b_wheeled_m151_mg_01 	 : vn_defaults_tiny {};
 	class vn_b_wheeled_m151_mg_02_mp : vn_defaults_tiny {};
-	class vn_b_wheeled_m151_mg_02 : vn_defaults_tiny {};
+	class vn_b_wheeled_m151_mg_02 	 : vn_defaults_tiny {};
 	class vn_b_wheeled_m151_mg_03_mp : vn_defaults_tiny {};
-	class vn_b_wheeled_m151_mg_03 : vn_defaults_tiny {};
+	class vn_b_wheeled_m151_mg_03 	 : vn_defaults_tiny {};
 	class vn_b_wheeled_m151_mg_04_mp : vn_defaults_tiny {};
-	class vn_b_wheeled_m151_mg_04 : vn_defaults_tiny {};
-	class vn_b_wheeled_m151_mg_05 : vn_defaults_tiny {};
-	class vn_b_wheeled_m151_mg_06 : vn_defaults_tiny {};
+	class vn_b_wheeled_m151_mg_04 	 : vn_defaults_tiny {};
+	class vn_b_wheeled_m151_mg_05 	 : vn_defaults_tiny {};
+	class vn_b_wheeled_m151_mg_06 	 : vn_defaults_tiny {};
 
 	//APC
-	class vn_b_armor_m113_01 : vn_defaults_medium {};
+	class vn_b_armor_m113_01 	  : vn_defaults_medium {};
 	class vn_b_armor_m113_acav_01 : vn_defaults_medium {};
 	class vn_b_armor_m113_acav_02 : vn_defaults_medium {};
 	class vn_b_armor_m113_acav_03 : vn_defaults_medium {};
@@ -62,23 +62,28 @@ class vn_logistics
 	class vn_b_armor_m113_acav_06 : vn_defaults_medium {};
 
 	//Transport trucks
-	class vn_b_wheeled_m54_01 : vn_defaults_extra_large {};
-	class vn_b_wheeled_m54_01_airport : vn_defaults_extra_large {};
-	class vn_b_wheeled_m54_02 : vn_defaults_extra_large {};
+	class vn_b_wheeled_m54_01 			: vn_defaults_extra_large {};
+	class vn_b_wheeled_m54_01_airport	: vn_defaults_extra_large {};
+	class vn_b_wheeled_m54_02 			: vn_defaults_extra_large {};
+	
 	//M109 Command Truck
-	class vn_b_wheeled_m54_03 : vn_defaults_medium {};
+	class vn_b_wheeled_m54_03 			: vn_defaults_medium {};
+	
 	//Repair Truck
-	class vn_b_wheeled_m54_repair : vn_defaults_medium {};
-	class vn_b_wheeled_m54_repair_airport : vn_defaults_medium {};
+	class vn_b_wheeled_m54_repair 			: vn_defaults_medium {};
+	class vn_b_wheeled_m54_repair_airport 	: vn_defaults_medium {};
+	
 	//Fuel trucks
-	class vn_b_wheeled_m54_fuel : vn_defaults_medium {};
+	class vn_b_wheeled_m54_fuel 		: vn_defaults_medium {};
 	class vn_b_wheeled_m54_fuel_airport : vn_defaults_medium {};
+	
 	//Ammo truck
-	class vn_b_wheeled_m54_ammo : vn_defaults_medium {};
+	class vn_b_wheeled_m54_ammo 		: vn_defaults_medium {};
+	
 	//Gun trucks
-	class vn_b_wheeled_m54_mg_01 : vn_defaults_medium {};
-	class vn_b_wheeled_m54_mg_02 : vn_defaults_medium {};
-	class vn_b_wheeled_m54_mg_03 : vn_defaults_medium {};
+	class vn_b_wheeled_m54_mg_01 : vn_defaults_small {};
+	class vn_b_wheeled_m54_mg_02 : vn_defaults_small {};
+	class vn_b_wheeled_m54_mg_03 : vn_defaults_small {};
 
 	//Armor
 	class vn_b_armor_m41_01_01 : vn_defaults_tiny {};
@@ -124,10 +129,6 @@ class vn_logistics
 	class vn_b_boat_13_01 : vn_defaults_medium {};
 
 	//Air assets
-
-	//C-119 planes
-	class vnx_b_air_ac119_02_01 : vn_defaults_extra_large {};
-
 	//Cobra Helicopter
 	class vn_b_air_ah1g_01 : vn_defaults_tiny {};
 	class vn_b_air_ah1g_02 : vn_defaults_tiny {};
@@ -235,6 +236,7 @@ class vn_logistics
 	class vn_b_air_ch34_03_01 : vn_defaults_small {};
 	class vn_i_air_ch34_01_02 : vn_defaults_small {};
 	class vn_i_air_ch34_02_02 : vn_defaults_small {};
+	
 	//Choctaw - Armed (Stinger variants)
 	class vn_b_air_ch34_04_01 : vn_defaults_tiny {};
 	class vn_b_air_ch34_04_02 : vn_defaults_tiny {};
@@ -263,23 +265,23 @@ class vn_logistics
 	// 	Jets don't get any storage.
 
 	// CH-47 Chinook
-	class vn_b_air_ch47_01_01: vn_defaults_large {};
-	class vn_b_air_ch47_02_01: vn_defaults_large {};
-	class vn_b_air_ch47_03_01: vn_defaults_large {};
-	class vn_b_air_ch47_04_01: vn_defaults_large {};
-	class vn_b_air_ch47_01_02: vn_defaults_large {};
-	class vn_b_air_ch47_02_02: vn_defaults_large {};
-	class vn_b_air_ch47_03_02: vn_defaults_large {};
-	class vn_b_air_ch47_04_02: vn_defaults_large {};
-	class vn_b_air_ach47_01_01: vn_defaults_medium {};
-	class vn_b_air_ach47_02_01: vn_defaults_medium {};
-	class vn_b_air_ach47_03_01: vn_defaults_medium {};
-	class vn_b_air_ach47_04_01: vn_defaults_medium {};
-	class vn_b_air_ach47_05_01: vn_defaults_medium {};
-	class vn_i_air_ch47_01_01: vn_defaults_large {};
-	class vn_i_air_ch47_02_01: vn_defaults_large {};
-	class vn_i_air_ch47_03_01: vn_defaults_large {};
-	class vn_i_air_ch47_04_01: vn_defaults_large {};
+	class vn_b_air_ch47_01_01	: vn_defaults_large {};
+	class vn_b_air_ch47_02_01	: vn_defaults_large {};
+	class vn_b_air_ch47_03_01	: vn_defaults_extra_large {};
+	class vn_b_air_ch47_04_01	: vn_defaults_large {};
+	class vn_b_air_ch47_01_02	: vn_defaults_large {};
+	class vn_b_air_ch47_02_02	: vn_defaults_large {};
+	class vn_b_air_ch47_03_02	: vn_defaults_extra_large {};
+	class vn_b_air_ch47_04_02	: vn_defaults_large {};
+	class vn_b_air_ach47_01_01	: vn_defaults_medium {};
+	class vn_b_air_ach47_02_01	: vn_defaults_medium {};
+	class vn_b_air_ach47_03_01	: vn_defaults_medium {};
+	class vn_b_air_ach47_04_01	: vn_defaults_medium {};
+	class vn_b_air_ach47_05_01	: vn_defaults_medium {};
+	class vn_i_air_ch47_01_01	: vn_defaults_large {};
+	class vn_i_air_ch47_02_01	: vn_defaults_large {};
+	class vn_i_air_ch47_03_01	: vn_defaults_extra_large {};
+	class vn_i_air_ch47_04_01	: vn_defaults_large {};
 
 	// M151
 	class vn_b_wheeled_m151_01_usmc: vn_defaults_small {};
@@ -289,43 +291,64 @@ class vn_logistics
 	class vn_b_wheeled_m151_mg_04_usmc: vn_defaults_tiny {};
 
 	// LR2a
-	class vn_b_wheeled_lr2a_01_aus_army: vn_defaults_small {};
-	class vn_b_wheeled_lr2a_01_nz_army: vn_defaults_small {};
-	class vn_b_wheeled_lr2a_02_aus_army: vn_defaults_small {};
-	class vn_b_wheeled_lr2a_02_nz_army: vn_defaults_small {};
-	class vn_b_wheeled_lr2a_03_aus_army: vn_defaults_small {};
-	class vn_b_wheeled_lr2a_03_nz_army: vn_defaults_small {};
-	class vn_b_wheeled_lr2a_mg_01_aus_army: vn_defaults_tiny {};
-	class vn_b_wheeled_lr2a_mg_01_nz_army: vn_defaults_tiny {};
-	class vn_b_wheeled_lr2a_mg_02_aus_army: vn_defaults_tiny {};
-	class vn_b_wheeled_lr2a_mg_02_nz_army: vn_defaults_tiny {};
-	class vn_b_wheeled_lr2a_mg_03_aus_army: vn_defaults_tiny {};
-	class vn_b_wheeled_lr2a_mg_03_nz_army: vn_defaults_tiny {};
-	class vn_i_wheeled_lr2a_mg_01_fank_71: vn_defaults_tiny {};
+	class vn_b_wheeled_lr2a_01_aus_army		: vn_defaults_small {};
+	class vn_b_wheeled_lr2a_01_nz_army		: vn_defaults_small {};
+	class vn_b_wheeled_lr2a_02_aus_army		: vn_defaults_small {};
+	class vn_b_wheeled_lr2a_02_nz_army		: vn_defaults_small {};
+	class vn_b_wheeled_lr2a_03_aus_army		: vn_defaults_small {};
+	class vn_b_wheeled_lr2a_03_nz_army		: vn_defaults_small {};
+	class vn_b_wheeled_lr2a_mg_01_aus_army	: vn_defaults_tiny {};
+	class vn_b_wheeled_lr2a_mg_01_nz_army	: vn_defaults_tiny {};
+	class vn_b_wheeled_lr2a_mg_02_aus_army	: vn_defaults_tiny {};
+	class vn_b_wheeled_lr2a_mg_02_nz_army	: vn_defaults_tiny {};
+	class vn_b_wheeled_lr2a_mg_03_aus_army	: vn_defaults_tiny {};
+	class vn_b_wheeled_lr2a_mg_03_nz_army	: vn_defaults_tiny {};
+	class vn_i_wheeled_lr2a_mg_01_fank_71	: vn_defaults_tiny {};
 
 	// M274 Mule
-	class vn_b_wheeled_m274_01_01: vn_defaults_large {};
-	class vn_b_wheeled_m274_01_02: vn_defaults_large {};
-	class vn_b_wheeled_m274_01_03: vn_defaults_large {};
-	class vn_b_wheeled_m274_02_01: vn_defaults_large {};
-	class vn_b_wheeled_m274_02_02: vn_defaults_large {};
-	class vn_b_wheeled_m274_02_03: vn_defaults_large {};
-	class vn_b_wheeled_m274_mg_01_01: vn_defaults_tiny {};
-	class vn_b_wheeled_m274_mg_01_02: vn_defaults_tiny {};
-	class vn_b_wheeled_m274_mg_02_01: vn_defaults_tiny {};
-	class vn_b_wheeled_m274_mg_02_02: vn_defaults_tiny {};
-	class vn_b_wheeled_m274_mg_03_01: vn_defaults_tiny {};
-	class vn_b_wheeled_m274_mg_03_02: vn_defaults_tiny {};
+	class vn_b_wheeled_m274_01_01		: vn_defaults_medium {};
+	class vn_b_wheeled_m274_01_02		: vn_defaults_medium {};
+	class vn_b_wheeled_m274_01_03		: vn_defaults_medium {};
+	class vn_b_wheeled_m274_02_01		: vn_defaults_medium {};
+	class vn_b_wheeled_m274_02_02		: vn_defaults_medium {};
+	class vn_b_wheeled_m274_02_03		: vn_defaults_medium {};
+	class vn_b_wheeled_m274_mg_01_01	: vn_defaults_tiny {};
+	class vn_b_wheeled_m274_mg_01_02	: vn_defaults_tiny {};
+	class vn_b_wheeled_m274_mg_02_01	: vn_defaults_tiny {};
+	class vn_b_wheeled_m274_mg_02_02	: vn_defaults_tiny {};
+	class vn_b_wheeled_m274_mg_03_01	: vn_defaults_tiny {};
+	class vn_b_wheeled_m274_mg_03_02	: vn_defaults_tiny {};
 
 	// M113A1
-	class vn_b_armor_m125_01: vn_defaults_medium {};
-	class vn_b_armor_m132_01: vn_defaults_medium {};
-	class vn_b_armor_m577_01: vn_defaults_medium {};
-	class vn_b_armor_m577_02: vn_defaults_medium {};
+	class vn_b_armor_m125_01	: vn_defaults_medium {};
+	class vn_b_armor_m132_01	: vn_defaults_medium {};
+	class vn_b_armor_m577_01	: vn_defaults_medium {};
+	class vn_b_armor_m577_02	: vn_defaults_medium {};
+
+	/////////////////////////////////////
+	////  S.O.G. Nickel Steel (VNX)  ////
+	/////////////////////////////////////
+
+	class vnx_b_air_ac119_01_01 : vn_defaults_small {};
+	class vnx_b_air_ac119_02_01 : vn_defaults_large {};
+	class vnx_b_air_ac119_02_02 : vn_defaults_large {};
+	class vnx_b_air_ac119_03_01 : vn_defaults_extra_large {};
+	class vnx_b_air_ac119_03_02 : vn_defaults_extra_large {};
+	class vnx_b_air_ac119_04_01 : vn_defaults_small {};
+	
+	class vnx_b_armor_m163_01 	: vn_defaults_small {};
+	class vnx_b_armor_m50_01	: vn_defaults_small {};
+	class vnx_b_armor_m50a1_01	: vn_defaults_small {};
+	
+	class vnx_b_armor_lvte1_01_usmc 	: vn_defaults_extra_large {};
+	class vnx_b_armor_lvtr1_01_usmc 	: vn_defaults_extra_large {};
+	class vnx_b_armor_lvtp5_01			: vn_defaults_large {};
+	class vnx_b_armor_lvtp5c_01_usmc	: vn_defaults_large {};
 
 	//////////////////
 	////  UNSUNG  ////
 	//////////////////
+	
 	class uns_willys : vn_defaults_small {};
 	class uns_willys_2 : vn_defaults_small {};
 	class uns_willysmg50 : vn_defaults_tiny {};
@@ -358,7 +381,8 @@ class vn_logistics
 	class uns_M35A2 : vn_defaults_large {};
 	class uns_M35A2_Open : vn_defaults_large {};
     };
-    class item_data
+  
+	class item_data
     {
 		//Building supplies crate
         class vn_b_ammobox_supply_05
@@ -388,7 +412,7 @@ class vn_logistics
 
 		//Sandbag supplies
 		class vn_b_ammobox_supply_10 : vn_b_ammobox_supply_05 {};
-
+		
 		//Mortar Ammo
 		class vn_b_ammobox_full_14
 		{
@@ -396,8 +420,17 @@ class vn_logistics
 			item_size = 1;
 			spawn_distance = 2;
 			rotation_offset = 0;
+		};		
+		
+		//Missile Ammo
+		class vn_b_ammobox_full_13
+		{
+			item_weight = 50;
+			item_size = 1;
+			spawn_distance = 2;
+			rotation_offset = 0;
 		};
-
+		
 		//Small US ammo
 		class vn_b_ammobox_supply_04
 		{
@@ -415,10 +448,13 @@ class vn_logistics
             spawn_distance = 3;
             rotation_offset = 0;
         };
+		
 		//US Ammo
 		class vn_b_ammobox_supply_01 : vn_b_ammobox_sog {};
+		
 		//Medical supplies
 		class vn_b_ammobox_supply_03 : vn_b_ammobox_sog {};
+		
 		//Food supplies
 		class vn_b_ammobox_supply_02 : vn_b_ammobox_supply_03 {};
 
@@ -592,8 +628,8 @@ class vn_logistics
 		class vn_b_usmc_static_m2_scoped_low: vn_static_small {};
 		class vn_b_usmc_static_m60_low: vn_static_small {};
 		class vn_b_usmc_static_m60_high: vn_static_small {};
-		class vn_b_usmc_static_mortar_m2: vn_static_small {};
-		class vn_b_usmc_static_mortar_m29: vn_static_small {};
+		class vn_b_usmc_static_mortar_m2: vn_static_tiny {};
+		class vn_b_usmc_static_mortar_m29: vn_static_tiny {};
 		class vn_b_usmc_static_m101_01: vn_static_small {};
 		class vn_b_usmc_static_m101_02: vn_static_small {};
 		class vn_b_usmc_static_m40a1rr: vn_static_small {};
@@ -607,8 +643,8 @@ class vn_logistics
 		class vn_i_fank_71_static_m45: vn_static_small {};
 		class vn_i_fank_71_static_m60_low: vn_static_small {};
 		class vn_i_fank_71_static_m60_high: vn_static_small {};
-		class vn_i_fank_71_static_mortar_m2: vn_static_small {};
-		class vn_i_fank_71_static_mortar_m29: vn_static_small {};
+		class vn_i_fank_71_static_mortar_m2: vn_static_tiny {};
+		class vn_i_fank_71_static_mortar_m29: vn_static_tiny {};
 		class vn_i_fank_71_static_m40a1rr: vn_static_small {};
 		class vn_i_fank_71_static_l70mk2: vn_static_small {};
 

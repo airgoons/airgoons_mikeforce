@@ -78,9 +78,9 @@ if (_enlisted isEqualTo "0") then {
 
 };
 
-// last group, or if not one assign AlphaPlatoon
-// private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
-// Attempt team change, defaulting to AlphaPlatoon is team is full.
+// last group, or if not one assign alphaplatoon
+// private _lastTeamName = _player getVariable ["vn_mf_db_player_group", "alphaplatoon"];
+// Attempt team change, defaulting to alphaplatoon is team is full.
 
 // Assigns players to the appropriate team based on their group.
 // Group is determined by the FIRST WORD of their group name in the Eden editor. Valid options are:
@@ -91,11 +91,14 @@ if (_enlisted isEqualTo "0") then {
 _playersGroup = (groupID group _player regexFind ["^[a-zA-Z]*"])#0#0#0;
 switch (_playersGroup) do
 {
-	case "Alpha": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
-	case "Company": {[_player, "AlphaPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.1"] call TFAR_fnc_setSwFrequency};
-	case "Bravo": {[_player, "BravoPlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.2"] call TFAR_fnc_setSwFrequency};
-	case "Charlie": {[_player, "CharliePlatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.3"] call TFAR_fnc_setSwFrequency};
-	default {[_player, "DeltaTroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "60.4"] call TFAR_fnc_setSwFrequency};
+	case "Alpha": {[_player, "alphaplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "31"] call TFAR_fnc_setSwFrequency};
+	case "Company": {[_player, "alphaplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "31"] call TFAR_fnc_setSwFrequency};
+	case "Bravo": {[_player, "bravoplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "32"] call TFAR_fnc_setSwFrequency};
+	case "Charlie": {[_player, "charlieplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "33"] call TFAR_fnc_setSwFrequency};
+	case "Artillery": {[_player, "charlieplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "33"] call TFAR_fnc_setSwFrequency};
+	case "Covey": {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "34"] call TFAR_fnc_setSwFrequency};
+	case "Cobra": {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "34"] call TFAR_fnc_setSwFrequency};
+	default {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "34"] call TFAR_fnc_setSwFrequency};
 };
 
 // [NOFUN][AJK] This would load the last loadout, but instead we want to always spawn with the equipment preset in the editor
@@ -126,7 +129,6 @@ switch (_playersGroup) do
 //private _playerGroup = _player getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
 //private _respawnMarker = format ["mf_respawn_%1", _playerGroup];
 //_player setPos getMarkerPos _respawnMarker;
-
 
 // add event handlers from the harass subsystem.
 [_player] call para_s_fnc_harass_add_player_event_handlers;

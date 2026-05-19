@@ -69,9 +69,9 @@
 //Later, this should be all zones < 100 % presence, but only when spawning optimisations are in.
 //private _activeZones = keys mf_s_dir_activeZones;
 
-//private _mfPlayers = (allPlayers select {groupId group _x == "AlphaPlatoon"});
-//private _ghPlayers = (allPlayers select {groupId group _x == "DeltaTroop"});
-//private _CharliePlatoonPlayers = (allPlayers select {groupId group _x == "CharliePlatoon"});
+//private _mfPlayers = (allPlayers select {groupId group _x == "alphaplatoon"});
+//private _ghPlayers = (allPlayers select {groupId group _x == "deltatroop"});
+//private _bravoplatoonPlayers = (allPlayers select {groupId group _x == "bravoplatoon"});
 
 //Evaluated in context. Environment variables:
 // _vehicleStrength - Vehicle strength in the zone (0-1)

@@ -1,71 +1,49 @@
 class objects
 {
-	class vn_mf_DeltaTroop_teleporter 
+	class vn_mf_deltatroop_teleporter 
 	{
-		destinations[] = {"bravo_base", "alpha_base", "charlie_base", "delta_base", "farp_base", "navy_base"};
+		destinations[] = {"alphaplatoon_base", "bravoplatoon_base", "charlieplatoon_base"};
 	};
 
-	class vn_mf_BravoPlatoon_teleporter
+	class vn_mf_charlieplatoon_teleporter
 	{
-		destinations[] = {"bravo_base", "alpha_base", "charlie_base", "delta_base", "farp_base", "navy_base"};
+		destinations[] = {"alphaplatoon_base", "bravoplatoon_base", "deltatroop_base"};
 	};
 
-	class vn_mf_AlphaPlatoon_teleporter
+	class vn_mf_alphaplatoon_teleporter
 	{
-		destinations[] = {"bravo_base", "alpha_base", "charlie_base", "delta_base", "farp_base", "navy_base"};
+		destinations[] = {"charlieplatoon_base", "bravoplatoon_base", "deltatroop_base"};
 	};
 
-	class vn_mf_CharliePlatoon_teleporter
+	class vn_mf_bravoplatoon_teleporter
 	{
-		destinations[] = {"bravo_base", "alpha_base", "charlie_base", "delta_base", "farp_base", "navy_base"};
-	};
-	
-	class vn_mf_farp_teleporter
-	{
-		destinations[] = {"bravo_base", "alpha_base", "charlie_base", "delta_base", "farp_base", "navy_base"};
-	};
-	
-	class vn_mf_navy_teleporter
-	{
-		destinations[] = {"bravo_base", "alpha_base", "charlie_base", "delta_base", "farp_base", "navy_base"};
+		destinations[] = {"alphaplatoon_base", "charlieplatoon_base", "deltatroop_base"};
 	};
 };
 
 class destinations
 {
-	class bravo_base
+	class charlieplatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_spikebase_ca.paa";
-		position_marker = "mf_respawn_BravoPlatoon";
+		image = "img\AirGoonIcons\Charlie.paa";
+		position_marker = "mf_charlieplatoon";
 	};
 
-	class alpha_base
+	class alphaplatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_mikebase_ca.paa";
-		position_marker = "mf_respawn_AlphaPlatoon";
+		image = "img\AirGoonIcons\Alpha.paa";
+		position_marker = "mf_alphaplatoon";
 	};
 
-	class charlie_base
+	class bravoplatoon_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_acavbase_ca.paa";
-		position_marker = "mf_respawn_CharliePlatoon";
+		image = "img\AirGoonIcons\Bravo.paa";
+		position_marker = "mf_bravoplatoon";
 	};
 
-	class delta_base
+	class deltatroop_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_airbase_ca.paa";
-		position_marker = "mf_respawn_DeltaTroop";
-	};
-	
-	class farp_base
-	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_airbase_ca.paa";
-		position_marker = "mf_respawn_farp";
-	};
-	
-	class navy_base
-	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_mikebase_ca.paa";
-		position_marker = "mf_respawn_navy";
+		image = "img\AirGoonIcons\Delta.paa";
+		position_marker = "mf_deltatroop";
 	};
 };

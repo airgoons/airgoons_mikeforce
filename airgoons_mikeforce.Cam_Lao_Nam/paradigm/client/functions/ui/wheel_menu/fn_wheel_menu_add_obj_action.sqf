@@ -20,8 +20,8 @@
 			   This will be called on the client for localization. Must return a <STRING>
 		function - Name of the function to call <STRING>
 		spawnFunction - Whether the function should be spawned or called <BOOL>
-		selectorColorcodes - Colour of the selector. <ARRAY>, formatted: [<Colour Array>, <Colour Array>]. Optional.
-		iconColorcodes - Colour of the icon. <ARRAY>, formatted: [<Colour Array>, <Colour Array>]. Optional
+		selectorColorCodes - Colour of the selector. <ARRAY>, formatted: [<Colour Array>, <Colour Array>]. Optional.
+		iconColorCodes - Colour of the icon. <ARRAY>, formatted: [<Colour Array>, <Colour Array>]. Optional
 
 	Returns:
 		Function reached the end [BOOL]

@@ -1,22 +1,22 @@
 // limits and vanilla/custom trait values
-class AlphaPlatoon
+class alphaplatoon
 {
     name = "Alpha Platoon [Infantry]";
     icon = "img\AirGoonIcons\Alpha.paa";
-    shortname = "Alpha";
+    shortname = "Alpha Plt";
     unit = "vn_b_men_army_01";
 
     class rolelimits 
     {
-        medic = 4;
-        engineer = 3;
-        explosiveSpecialist = 2;
-        vn_artillery = 4;
+        medic = 3;
+        engineer = 1;
+        explosiveSpecialist = 3;
+        vn_artillery = 1;
     };
     
     class defaultTraits
     {
-        camouflageCoef = 1.0;
+        camouflageCoef = 0.8;
         audibleCoef = 0.6;
         loadCoef = 1;
         engineer = false;
@@ -32,18 +32,18 @@ class AlphaPlatoon
     onJoin = "";
     onLeave = "";
 };
-class BravoPlatoon
+class charlieplatoon
 {
-    name = "Bravo Platoon [Infantry]";
-    icon = "img\AirGoonIcons\Bravo.paa";
-    shortname = "Bravo";
-    unit = "vn_b_men_army_01";
+    name = "Charlie Platoon [Mortar & Scouts]";
+    icon = "img\AirGoonIcons\charlie.paa";
+    shortname = "Charlie Plt";
+    unit = "vn_b_men_sf_19";
 
     class rolelimits 
     {
-        medic = 4;
-        engineer = 2;
-        explosiveSpecialist = 2;
+        medic = 3;
+        engineer = 1;
+        explosiveSpecialist = 3;
         vn_artillery = 2;
     };
     
@@ -66,28 +66,28 @@ class BravoPlatoon
     onJoin = "";
     onLeave = "";
 };
-class CharliePlatoon
+class bravoplatoon
 {
-    name = "Charlie Platoon [Engineers & Fire Support]";
-    icon = "img\AirGoonIcons\Charlie.paa";
-    shortname = "Charlie";
-    unit = "vn_b_men_army_01";
+    name = "Bravo Combat Engineer Platoon [Support]";
+    icon = "img\AirGoonIcons\Bravo.paa";
+    shortname = "Bravo Plt";
+    unit = "vn_b_men_army_04";
 
     class rolelimits 
     {
-        medic = 5;
+        medic = 3;
         engineer = 40;
-        explosiveSpecialist = 43;
-        vn_artillery = 2;
+        explosiveSpecialist = 40;
+        vn_artillery = 1;
     };
     
     class defaultTraits
     {
-        camouflageCoef = 1.0;
+        camouflageCoef = 0.8;
         audibleCoef = 0.6;
         loadCoef = 1;
         engineer = true;
-        explosiveSpecialist = false;
+        explosiveSpecialist = true;
         medic = false;
         UAVHacker = false;
         vn_artillery = false;
@@ -99,24 +99,24 @@ class CharliePlatoon
     onJoin = "";
     onLeave = "";
 };
-class DeltaTroop
+class deltatroop
 {
-    name = "Delta Troop [Air Support]";
+    name = "Delta Troop, Air Cav [Air Support]";
     icon = "img\AirGoonIcons\Delta.paa";
-    shortname = "Delta";
-    unit = "vn_b_men_army_01";
+    shortname = "Delta Troop";
+    unit = "vn_b_men_aircrew_05";
     
     class rolelimits 
     {
         medic = 1;
         engineer = 1;
         explosiveSpecialist = 1;
-        vn_artillery = 2;
+        vn_artillery = 1;
     };
     
     class defaultTraits
     {
-        camouflageCoef = 1.0;
+        camouflageCoef = 0.8;
         audibleCoef = 0.6;
         loadCoef = 1;
         engineer = false;

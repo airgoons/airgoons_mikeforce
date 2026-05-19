@@ -1,12 +1,12 @@
 /*
 	File: fn_player_markers_job.sqf
 	Author: Savage Game Design
-	Edited: DirtySanchez, zeph1rum
+	Edited: DirtySanchez
 	
 	Public: No
 	
 	Description:
-	    Called periodically to maintain player markers. Modified by zeph to emphasize group leaders, reducing map clutter
+	    Called periodically to maintain player markers. Modified by Cooked Auto to emphasize group leaders, reducing map clutter
 	
 	Parameter(s): none
 	
@@ -35,7 +35,7 @@ vn_mf_player_markers_manned_vehicles = [];
 {
 	private _unit = _x;
 	private _unitMarker = format ["player_marker_%1", getPlayerUID _unit];
-	private _unitGroup = _unit getVariable ["vn_mf_db_player_group", "AlphaPlatoon"];
+	private _unitGroup = _unit getVariable ["vn_mf_db_player_group", "alphaplatoon"];
 	private _unitAlpha = 1; // Default transparency 
 
 	private _markerType = "b_inf";
@@ -45,7 +45,7 @@ vn_mf_player_markers_manned_vehicles = [];
 	if (_unit getUnitTrait "vn_artillery") then {_markerType = "b_support"};
 
 	if (isFormationLeader _unit != true) then {_unitAlpha = 0.15}; //Change the transparency of non-leader units
-
+	
 	//Easiest way to check if it exists
 	if (markerShape _unitMarker == "") then {
 		createMarkerLocal [_unitMarker, [0,0,0]];

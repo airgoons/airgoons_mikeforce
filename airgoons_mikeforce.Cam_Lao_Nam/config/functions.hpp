@@ -223,6 +223,7 @@ class CfgFunctions
 			class sites_init {};
 			class sites_load {};
 			class sites_teardown_site {};
+			class sites_check_standard_site_completed {};
 
 			//Specific types of site
 			class sites_create_aa_site {};
@@ -341,6 +342,7 @@ class CfgFunctions
 			class veh_asset_respawn {};
 			class veh_asset_respawn_job {};
 			class veh_asset_set_active {};
+			class veh_asset_set_queued {};
 			class veh_asset_set_disabled {};
 			class veh_asset_set_global_variable {};
 			class veh_asset_set_global_variables {};
@@ -418,6 +420,14 @@ class CfgFunctions
 			class task_sup_transport { file = "functions\tasks\support\fn_task_sup_transport.sqf"; };
 			class task_sup_resupply { file = "functions\tasks\support\fn_task_sup_resupply.sqf";};
 			class task_zone_connector { file = "functions\tasks\fn_zone_connector.sqf";};
+		};
+	};
+	
+	class Gib 
+	{
+		class Gear 
+		{
+			class gearScript { file = "functions\gear\fn_gearscript.sqf";};
 		};
 	};
 };

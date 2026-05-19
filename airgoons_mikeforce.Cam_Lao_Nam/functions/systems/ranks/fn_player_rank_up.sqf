@@ -18,7 +18,10 @@
 */
 
 params ["_name","_rank"];
-private _last_rank = missionNamespace getVariable ["vn_mf_last_rank",vn_mf_starting_rank];
+
+// [NOFUN] [AJK] 20260413 Should block any rank changes by just letting this code dead-end.
+
+/* private _last_rank = missionNamespace getVariable ["vn_mf_last_rank",vn_mf_starting_rank];
 private _last_rank_text = missionNamespace getVariable ["vn_mf_last_rank_text","Private"];
 private _diff = (_rank-_last_rank);
 
@@ -43,5 +46,4 @@ if (_last_rank_text isEqualTo _rank_text) then
 	[localize "STR_vn_mf_levelup", _icon] call para_c_fnc_infopanel_addToQueue;
 	// store last rank
 	missionNamespace setVariable ["vn_mf_last_rank_text",_rank_text];
-};
-
+}; */

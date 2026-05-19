@@ -31,7 +31,7 @@
 */
 
 //Give the player a black screen while the loading happens.
-//cutText ["", "BLACK FADED", 0, false];
+cutText ["", "BLACK FADED", 0, false];
 //Disable their sound.
 0 fadeSound 0;
 //Play some intro music

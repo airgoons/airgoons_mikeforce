@@ -24,15 +24,23 @@ if (!isServer) exitWith {};
 params ["_obj", "_spawnPointSettings", "_spawnLocation", "_textureSelection"];
 
 if (_obj getVariable ["veh_asset_isSpawnPoint", false]) exitWith {
-	diag_log format ["VN AlphaPlatoon: [WARNING] Attempting to make object a vehicle spawn point twice: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN MikeForce: [WARNING] Attempting to make object a vehicle spawn point twice: %1 at %2", typeOf _obj, getPos _obj];
+};
+
+if (_spawnLocation isEqualType objNull) then {
+	_spawnLocation = [getPosASL _spawnLocation, getDir _spawnLocation];
 };
 
 if (_spawnPointSettings isEqualType "") then {
 	_spawnPointSettings = [missionConfigFile >> "gamemode" >> "vehicle_respawn_info" >> "spawn_point_types" >> _spawnPointSettings] call vn_mf_fnc_veh_asset_get_spawn_point_info_from_config;
 };
 
-if (_spawnLocation isEqualType objNull) then {
-	_spawnLocation = [getPosASL _spawnLocation, getDir _spawnLocation];
+// players won't be able to do anything with this spawn point if no categories exist.
+// can occur if spawn point exclusively provides access to a mod's vehicles, but the mod isn't loaded.
+// NOTE: calling function `vn_mf_fnc_veh_asset_3DEN_spawn_point` doesn't use this function's result (yet).
+if (count (_spawnPointSettings getOrDefault ["categories", createHashMap]) isEqualTo 0) exitWith {
+	diag_log format ["WARN: %1: Disabling spawn point as no categories data found: objPos=%2", _fnc_scriptName, _spawnLocation];
+	createHashMap;
 };
 
 // This allows this function to be called even if the system isn't initialised yet.
@@ -41,12 +49,12 @@ if (isNil "vn_mf_veh_asset_spawn_points") then {
 };
 
 if (_spawnPointSettings getOrDefault ["respawnType", ""] isEqualTo "") then {
-	diag_log format ["VN AlphaPlatoon: [WARNING] Spawn point info has no respawn type set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN MikeForce: [WARNING] Spawn point info has no respawn type set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
 	_spawnPointSettings set ["respawnType", "RESPAWN"];
 };
 
 if (_spawnPointSettings getOrDefault ["time", ""] isEqualTo "") then {
-	diag_log format ["VN AlphaPlatoon: [WARNING] Spawn point info has no respawn time set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN MikeForce: [WARNING] Spawn point info has no respawn time set, using defaults: %1 at %2", typeOf _obj, getPos _obj];
 	_spawnPointSettings set ["time", 10];
 };
 
@@ -61,7 +69,7 @@ if !(isNil "_textureSelection" || _spawnPointSettings get "vehicles" isEqualTo [
 };
 
 if (isNil "_spawnLocation") exitWith {
-	diag_log format ["VN AlphaPlatoon: [ERROR] Unable to create spawn point, no spawn location given: %1 at %2", typeOf _obj, getPos _obj];
+	diag_log format ["VN MikeForce: [ERROR] Unable to create spawn point, no spawn location given: %1 at %2", typeOf _obj, getPos _obj];
 };
 
 private _id = [] call vn_mf_fnc_veh_asset_create_spawn_point_id;

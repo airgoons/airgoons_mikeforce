@@ -104,7 +104,7 @@ private _respawnDelay = ["respawn_delay", 20] call BIS_fnc_getParamValue;
 setplayerrespawntime _respawnDelay;
 
 // Start player marker subsystem
-private _useMarkers = (["allow_map_markers", 1] call BIS_fnc_getParamValue) > 0;
+private _useMarkers = (["allow_map_markers", 0] call BIS_fnc_getParamValue) > 0;
 if (_useMarkers) then {
 	call vn_mf_fnc_player_markers_subsystem_init;
 };
@@ -273,7 +273,6 @@ if hasInterface then
 //DEV (ToDo): Until client Scheduler is added:
 []spawn
 {
-	systemchat "starting infopanel handler loop";
 	"para_infopanel" cutRsc ["para_infopanel", "PLAIN", -1, true];
 	while{true}do
 	{

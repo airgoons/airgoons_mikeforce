@@ -6,7 +6,7 @@
     Also sets the vehicle lock for the helicopters to DeltaTroop.
 */
 
-params["_helo"];
+params ["_helo"];
 
 // Was having issues with the script executing lots of times. This should maybe help?
 if (!isServer) exitWith {};
@@ -17,7 +17,7 @@ if (!isServer) exitWith {};
 _g = createGroup [west, true];
 
 // Ensure the newly spawned Helo is appropriately teamlocked
-_helo setVariable ["teamLock", "DeltaTroop", true];
+_helo setVariable ["teamLock", "deltatroop", true];
 
 // We want to make sure that we add the appropriate gunners to each Helo type
 // [TODO] At some point it would be wise to maybe make this as general as possible
@@ -34,7 +34,21 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
+                _u moveInTurret [_helo, [_i]];
+            };
+        };
+    };
+	case "vn_b_air_oh6a_07":
+    {
+        for [{_i = 1}, {_i < 2}, {_i = _i + 1}] do
+        {
+            if (isNull (_helo turretUnit [_i])) then
+            {
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -47,7 +61,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;  
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -60,7 +75,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;  
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1]; 
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -73,7 +89,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -86,7 +103,8 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -99,7 +117,23 @@ switch (typeOf _helo) do
             if (isNull (_helo turretUnit [_i])) then
             {
                 _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
-                _u setSkill 1;
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
+                _u moveInTurret [_helo, [_i]];
+            };
+        };
+    };
+	
+	// Cargo Chinook has two turrets, slots 3, 4
+    case "vn_b_air_ch47_03_02":
+    {
+        for [{_i = 3}, {_i < 5}, {_i = _i + 1}] do
+        {
+            if (isNull (_helo turretUnit [_i])) then
+            {
+                _u = _g createUnit ["vn_b_men_aircrew_08", [0,0,0], [], 0, "NONE"];
+                _u setSkill ["spotDistance", 1];
+				_u setSkill ["spotTime", 1];
                 _u moveInTurret [_helo, [_i]];
             };
         };
@@ -109,3 +143,25 @@ switch (typeOf _helo) do
 // Try to make our boys more aggressive grrrr
 _g setBehaviour "COMBAT";
 _g setCombatMode "RED";
+
+// Make the gunners join the pilot group when they enter
+
+player addEventHandler ["getInMan", {
+    params ["_unit", "_role", "_vehicle", "_turret"];
+    _unit = _this # 0;
+    if (_role == "driver")
+	then {
+	(crew _vehicle) joinSilent (group player);
+	}
+}];
+
+// Make the gunners leave the pilot group when they exit
+
+_this addEventHandler ["getOutMan", {
+    params ["_unit", "_role", "_vehicle", "_turret"];
+    _unit = _this # 0;
+    if (_role == "driver")
+	then {
+	(crew _vehicle) joinSilent grpNull;
+	}
+}];

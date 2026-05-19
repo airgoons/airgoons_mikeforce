@@ -16,6 +16,10 @@
 
 params ["_class"];
 
+if (!(isNil "para_l_basebuilding_enabled") && {!para_l_basebuilding_enabled} ) exitWith {
+	hint "The Mike Force building system has been disabled on this server.";
+};
+
 if (isNil "para_l_buildmode") then {
 	para_l_buildmode = true;
 	createDialog "para_RscDisplayBuildingMenu";

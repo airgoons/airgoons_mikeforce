@@ -1,4 +1,4 @@
-#include "CharliePlatoon\tasks.hpp"
-#include "DeltaTroop\tasks.hpp"
-#include "AlphaPlatoon\tasks.hpp"
-#include "BravoPlatoon\tasks.hpp"
+#include "bravoplatoon\tasks.hpp"
+#include "deltatroop\tasks.hpp"
+#include "alphaplatoon\tasks.hpp"
+#include "charlieplatoon\tasks.hpp"

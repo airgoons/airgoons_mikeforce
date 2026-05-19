@@ -21,7 +21,7 @@
 params ["_vehicle", "_targetPos"];
 
 private _vehiclePosAGL = getPos _vehicle;
-private _boundingBox = boundingBoxReal _vehicle;
+private _boundingBox = boundingBoxReal [_vehicle, "FireGeometry"];
 private _corners = [
 	//Bottom - rear - left
 	[_boundingBox select 0 select 0, _boundingBox select 0 select 1, _boundingBox select 0 select 2],

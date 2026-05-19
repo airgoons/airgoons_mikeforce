@@ -105,10 +105,10 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "img\AirGoonIcons\Charlie.paa";
-			textUp = "img\AirGoonIcons\Charlie.paa";
+			text = "img\AirGoonIcons\Bravo.paa";
+			textUp = "img\AirGoonIcons\Bravo.paa";
 			
-			onButtonClick = "['CharliePlatoon'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['bravoplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		class logoTR: vn_mf_RscButton_ImgSwitch
 		{
@@ -123,7 +123,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			text = "img\AirGoonIcons\Delta.paa";
 			textUp = "img\AirGoonIcons\Delta.paa";
 			
-			onButtonClick = "['DeltaTroop'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['deltatroop'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		class logoBL: vn_mf_RscButton_ImgSwitch
 		{
@@ -138,7 +138,7 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			text = "img\AirGoonIcons\Alpha.paa";
 			textUp = "img\AirGoonIcons\Alpha.paa";
 			
-			onButtonClick = "['AlphaPlatoon'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['alphaplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		class logoBR: vn_mf_RscButton_ImgSwitch
 		{
@@ -150,10 +150,10 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			
 			tooltip = "";
 			
-			text = "img\AirGoonIcons\Bravo.paa";
-			textUp = "img\AirGoonIcons\Bravo.paa";
+			text = "img\AirGoonIcons\Charlie.paa";
+			textUp = "img\AirGoonIcons\Charlie.paa";
 			
-			onButtonClick = "['BravoPlatoon'] call vn_mf_fnc_tr_selectTeam;";
+			onButtonClick = "['charlieplatoon'] call vn_mf_fnc_tr_selectTeam;";
 		};
 		
 		
@@ -873,7 +873,7 @@ class vn_tr_MainInfo_base : vn_mf_RscControlsGroupNoScrollbarHV
 			h = UIH(3);
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {1,1,1,1};
-			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\logo_mikeforce_HL.paa";
+			text = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce_HL.paa";
 			tooltip = "";
 		};
 		

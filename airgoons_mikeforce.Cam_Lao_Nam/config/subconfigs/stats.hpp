@@ -1,7 +1,7 @@
 class rank
 {
 	min = 0;
-	max = 99999;
+	max = 0;
 };
 class hunger
 {
@@ -22,8 +22,8 @@ class attributes
 		{2.0, 5.0}
 	};
 	thirst[] = {
-		{"diuretic","poison"},
-		{2.0, 5.0}
+		{"diuretic","poison", "alcohol"},
+		{2.0, 5.0, 3.5}
 	};
 };
 class deaths

@@ -1,4 +1,41 @@
 class Changelog {
+	class 1_00_04 {
+		version = "1.00.04";
+		date = "11th September 2025";
+		changes[] = {
+			"[New] Adds Nickel Steel Dong Giang terrain (release 3)",
+			"[New] Adds Nickel Steel 2025-09 assets (release 3)",
+			"[New] Adds Nickel Steel 2024-12 assets (release 2)",
+			"[New] Adds boat vehicle respawn entries",
+			"[New] Adds custom teleporter configuration per map",
+			"[New] Adds AC-119 to Cam Lao Nam, Khe Sanh and Altis",
+			"[New] Adds C-119 aircraft to vehicle configs",
+			"[Change] Zone string table names used for pop up zone info display (was hardcoded)",
+			"[Change] Ignore unavailable vehicle classes when loading respawn config (missing mods)",
+			"[Change] Remove some debug system chat messages",
+			"[Change] Replace GitHub README instructions with link to new GitHub Wiki",
+			"[Change] Use vehicle parent category menu icons for individual vehicles entries",
+			"[Change] Allow locking of static weapons to a specific team",
+			"[Change] Makes cargo mules have a medium cargo capacity",
+			"[Fix] String interpolation of building overlay messages",
+			"[Fix] Add missing zone names across terrains (Cam Lao Nam/Altis/The Bra)",
+			"[Fix] Add missing config entries for some CDLC 1.3 OPFOR units",
+			"[Fix] Remove duplicate zone name entry for Kok (Khe Sanh)",
+			"[Fix] Stop duplicate vehicle spawns",
+			"[Fix] Set player direction after initial spawn/teleport according to respawn map marker",
+			"[Fix] Stop Earplugs/Scout wheel menu entries conflicting with other wheel menus",
+			"[Fix] Stop zone soft lock when players steal objects required by sites",
+			"[Fix] Advanced Logistics module no longer blocks static weapon respawns",
+			"[Fix] Stop players spawning in debug when deleting a team config",
+			"[Fix] Removed vehicle option that did not exist (vn_b_wheeled_m151_mg_01)",
+			"[Fix] Accurate string table entries for respawn marker names on The Bra",
+			"[Fix] Add missing string table entry for RVN Civil Action Unit Citation",
+			"[Fix] Stop map marker conflicts in for vehicles",
+			"[Fix] Stamina server parameter now loads correctly",
+			"[Fix] M151A1 jeeps now shows in light transport spawns"
+		};
+	};
+
 	class 1_00_03 {
 		version = "1.00.03";
 		date = "13th June 2023";
@@ -66,7 +103,7 @@ class Changelog {
 			"[New] Ported MF to Altis map. Grab the compatibility patch from the SGD workshop!",
 			"[Change] 1.2 content added to the arsenal, workshop, and docks.",
 			"[Change] Icon-based scouting.",
-			"[Change] Refactored teams(MF,CharliePlatoon,...) to not use the group system.",
+			"[Change] Refactored teams(MF,bravoplatoon,...) to not use the group system.",
 			"[Change] Update welcome menu to only show after update by default",
 			"[Change] Add M101 Howitzers to configurable logistics.",
 			"[Fix] Players not being able to get in team-locked vehicles.",

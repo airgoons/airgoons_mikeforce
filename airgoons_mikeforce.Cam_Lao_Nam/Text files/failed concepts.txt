@@ -1,0 +1,75 @@
+// Painkillers
+
+class vn_prop_med_painkillers
+	{
+		disallowRepack = 1;
+		removeonempty = 0;
+		consume = 10;
+		water = 0;
+		food = 0;
+		
+		interactActions[] = 
+		{
+			{ "STR_vn_mf_take_painkillers", "if (damage player > 0.1) then { player setdamage 0; hintSilent format ['You do need that right now.']; } else { hintSilent format ['You do not need that right now.']; };" }
+		};
+	};
+};
+
+class vn_b_item_bandage_01
+	{
+		disallowRepack = 1;
+		removeonempty = 1;
+		consume = 100;
+		water = 0;
+		food = 0;
+		
+		interactActions[] = 
+		{
+			{ "STR_vn_mf_use_bandage", "if (damage player > 0.1) then { player setdamage 0; };" }
+		};
+	};
+};
+
+// Eatable ciggs
+
+// special
+	
+	class cigs_crayons_crayonpack : vn_prop_food_meal_01 // Crayons. A Marine Corps delicacy.
+	{
+		consume = 11;
+		water = -0.3;
+		food = 0.5;
+	};
+	
+	class cigs_pops_poppack : vn_prop_food_meal_01 // Lollipop, some people like the crunch.
+	{
+		consume = 100;
+		water = 0;
+		food = 0.5;
+	};
+	
+	// cigarettes 
+	
+	class cigs_lucky_strike_cigpack : vn_prop_food_meal_01 // Cigarettes
+	{
+		consume = 5;
+		water = -0.2;
+		food = 0.2;
+	};
+	class cigs_black_devil_cigpack 	: cigs_lucky_strike_cigpack {}; // Black Devil
+	class cigs_craven_cigpack 		: cigs_lucky_strike_cigpack {}; // Craven
+	class cigs_eckstein_cigpack 	: cigs_lucky_strike_cigpack {}; // Eckstein
+	class cigs_apollo_cigpack 		: cigs_lucky_strike_cigpack {}; // Apollo
+	class cigs_nil_cigpack 			: cigs_lucky_strike_cigpack {}; // Nil
+	class cigs_baja_blast_cigpack 	: cigs_lucky_strike_cigpack {}; // Baja Blast
+	class cigs_morley_cigpack 		: cigs_lucky_strike_cigpack {}; // Morley
+	class cigs_savage_cigpack 		: cigs_lucky_strike_cigpack {}; // Savage
+	class cigs_voron_cigpack 		: cigs_lucky_strike_cigpack {}; // Voron
+	class vn_b_item_cigs_01			: cigs_lucky_strike_cigpack {}; // Savage
+	
+	class cigs_cigars_cigarbox_5 : vn_prop_food_meal_01 // Box of Cigars
+	{
+		consume = 20;
+		water = -0.3;
+		food = 0.2;
+	};

@@ -6,9 +6,9 @@ class support_mf_reinforce : support_task
 	taskname = "Reinforce";
 	taskdesc = "Reinforce %1 at their location";
 	tasktype = "defend";
-	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\su\vn_ui_mf_task_mfs1.jpg";
-	taskgroups[] = {"AlphaPlatoon"};
-	requestgroups[] = {"BravoPlatoon","CharliePlatoon"};
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\su\vn_ui_mf_task_mfs1.jpg";
+	taskgroups[] = {"alphaplatoon"};
+	requestgroups[] = {"charlieplatoon","bravoplatoon"};
 	rankpoints = 10;
 	taskprogress = 0;
 
@@ -32,7 +32,7 @@ class support_mf_reinforce : support_task
 		class parameters
 		{
 			Init = "";
-			CanRun = "!((allUnits inAreaArray [(_taskDataStore getVariable 'supportRequestPos'),50,50,0,false]) select {alive _x && side _x == west && ((group _x) isEqualTo (missionNamespace getVariable 'AlphaPlatoon'))} isEqualTo [])";
+			CanRun = "!((allUnits inAreaArray [(_taskDataStore getVariable 'supportRequestPos'),50,50,0,false]) select {alive _x && side _x == west && ((group _x) isEqualTo (missionNamespace getVariable 'alphaplatoon'))} isEqualTo [])";
 			RunAtRegularIntervals = "private _pos = _taskDataStore getVariable ['supportRequestPos', [0,0,0]]; [[_pos,10,10,0,false],[[[_pos, 150]],[[_pos, 100]]] call BIS_fnc_randomPos] call vn_mf_fnc_spawn_enemy_units; _hasSucceeded = true";
 			FailureCondition = "false";
 			OnFailure = "";

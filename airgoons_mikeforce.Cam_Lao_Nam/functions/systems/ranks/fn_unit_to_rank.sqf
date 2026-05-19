@@ -23,7 +23,8 @@ params
 ];
 
 if (isNil "vn_mf_enableRanks" || {!vn_mf_enableRanks}) exitWith {
-	["", "COLONEL", 0]
+	// [NOFUN][AJK] Not sure if this was set as a default, or something we goofed with before, but it was resetting ranks I think?
+	//["", "COLONEL", 0]
 };
 
 private _data = [];

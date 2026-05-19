@@ -45,7 +45,7 @@ class allow_map_markers
     title = $STR_vn_mf_param_allow_map_markers;
     values[] = {0, 1};
     texts[] = {"False", "True"};
-    default = 1;
+    default = 0;
 };
 
 class allow_map_markers_desc
@@ -128,7 +128,7 @@ class day_length
     title = $STR_vn_mf_day_length;
     values[] = {3600, 5400, 7200, 9000, 10800, 21600, 43200, 86400, 172800};
     texts[] = {"1 hour", "1.5 hours", "2 hours", "2.5 hours", "3 hours", "6 hours", "12 hours", "24 hours", "48 hours"};
-    default = 7200;
+    default = 9000;
 };
 
 class Spacer4 : Spacer1 {};
@@ -148,7 +148,7 @@ class night_length
     title = $STR_vn_mf_night_length;
     values[] = {600, 1200, 1800, 2400, 3600, 5400, 7200, 9000, 10800, 21600, 43200, 86400, 172800};
     texts[] = {"10 minutes", "20 minutes", "30 minutes", "40 minutes", "1 hour", "1.5 hours", "2 hours", "2.5 hours", "3 hours", "6 hours", "12 hours", "24 hours", "48 hours"};
-    default = 1200;
+    default = 1800;
 };
 
 class Spacer7 : Spacer1 {};
@@ -275,33 +275,33 @@ class teams_header
 
 class Spacer13 : Spacer1 {};
 
-class max_players_CharliePlatoon
+class max_players_bravoplatoon
 {
-    title = $STR_vn_mf_max_players_CharliePlatoon;
+    title = $STR_vn_mf_max_players_bravoplatoon;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 99;
 };
 
-class max_players_DeltaTroop
+class max_players_deltatroop
 {
-    title = $STR_vn_mf_max_players_DeltaTroop;
+    title = $STR_vn_mf_max_players_deltatroop;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 99;
 };
 
-class max_players_AlphaPlatoon
+class max_players_alphaplatoon
 {
-    title = $STR_vn_mf_max_players_AlphaPlatoon;
+    title = $STR_vn_mf_max_players_alphaplatoon;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 99;
 };
 
-class max_players_BravoPlatoon
+class max_players_charlieplatoon
 {
-    title = $STR_vn_mf_max_players_BravoPlatoon;
+    title = $STR_vn_mf_max_players_charlieplatoon;
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 99};
     texts[] = {"0 players", "1 player", "2 players", "3 players", "4 players", "5 players", "6 players", "7 players", "8 players", "9 players", "10 players", "15 players", "20 players", "25 players", "30 players", "35 players", "40 players", "45 players", "50 players", "Default (99 players)"};
     default = 99;
@@ -467,7 +467,7 @@ class hunger_loss_rate
     title = $STR_vn_mf_param_hunger_loss_rate;
     values[] = {1, 5, 10, 25, 50, 100};
     texts[] = {"0.01%", "0.05% (Default)", "0.1%", "0.25%", "0.5%", "1%"};
-    default = 5;
+    default = 10;
 };
 
 class hunger_loss_rate_desc
@@ -483,7 +483,7 @@ class thirst_loss_rate
     title = $STR_vn_mf_param_thirst_loss_rate;
     values[] = {1, 5, 10, 25, 50, 100};
     texts[] = {"0.01%", "0.05%", "0.1% (Default)", "0.25%", "0.5%", "1%"};
-    default = 10;
+    default = 25;
 };
 
 class thirst_loss_rate_desc

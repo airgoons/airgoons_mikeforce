@@ -13,7 +13,7 @@
 	Returns: nothing
 
 	Example(s):
-		[player, "AlphaPlatoon"] call vn_mf_fnc_force_team_change
+		[player, "alphaplatoon"] call vn_mf_fnc_force_team_change
 */
 
 params ["_player", "_team"];

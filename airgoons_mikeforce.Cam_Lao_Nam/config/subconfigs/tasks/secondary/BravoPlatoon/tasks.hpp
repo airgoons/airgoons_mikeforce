@@ -1,48 +1,12 @@
-class secondary_st2 : task
+class secondary_ac2 : task
 {
 	taskcategory = "SEC";
-	tasktitle = "Destroy Gun Emplacement";
-	taskname = "Destroy Gun Emplacement";
-	taskdesc = "Destroy the hostile gun emplacement near to the given position.";
-	tasktype = "destroy";
-	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_st2.jpg";
-	taskgroups[] = {"BravoPlatoon", "AlphaPlatoon"};
-	rankpoints = 10;
-	taskprogress = 5;
-
-	//The script called when the task is created.
-	taskScript = "vn_mf_fnc_state_machine_task_system";
-
-	//Data for the script to use to customise behaviour
-	class parameters 
-	{
-		stateMachineCode = "vn_mf_fnc_task_sec_destroy_emplacement";
-		timeout = -1;
-	};
-
-	class preparing_emplacement
-	{
-		taskname = "Prevent Emplacement Build";
-		taskdesc = "Prevent the gun emplacement from being built";
-	};
-
-	//Data for subtasks. These are specific to the script.
-	class destroy_emplacement 
-	{
-		taskname = "Find and Destroy Emplacement";
-		taskdesc = "Find and destroy the hostile gun emplacement in this area";
-	};
-};
-
-class secondary_st3 : task
-{
-	taskcategory = "SEC";
-	tasktitle = "Kill Enemy Officer";
-	taskname = "Kill Enemy Officer";
-	taskdesc = "Kill the enemy officer near to the target position";
-	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_st3.jpg";
-	taskgroups[] = {"BravoPlatoon"};
+	tasktitle = "Clear Minefield";
+	taskname = "Clear Minefield";
+	taskdesc = "A minefield has been spotted near this location. Clear it of mines and VC traps.";
+	tasktype = "mine";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\s\vn_ui_mf_task_ac2.jpg";
+	taskgroups[] = {"bravoplatoon"};
 	rankpoints = 10;
 	taskprogress = 10;
 
@@ -52,57 +16,50 @@ class secondary_st3 : task
 	//Data for the script to use to customise behaviour
 	class parameters 
 	{
-		stateMachineCode = "vn_mf_fnc_task_sec_kill_officer";
+		stateMachineCode = "vn_mf_fnc_task_sec_clear_minefield";
+		timeout = 1800;
 	};
 
 	//Data for subtasks. These are specific to the script.
-	class kill_officer 
+	class find_minefield 
 	{
-		taskname = "Find and Kill the Officer";
-		taskdesc = "Find and kill the enemy officer in this area";
+		taskname = "Find Minefield";
+		taskdesc = "Find the minefield near the given marker.";
+	};
+
+	class disarm_minefield
+	{
+		taskname = "Clear Minefield";
+		taskdesc = "Clear the minefield of traps and mines.";
 	};
 };
 
-class secondary_spike_wiretap : task
+class secondary_build : task
 {
 	taskcategory = "SEC";
-	tasktitle = "Wiretap";
-	taskname = "Wiretap";
-	taskdesc = "Mount a recording device to an enemy communications line.";
-	tasktype = "attack";
-	taskimage = "vn\missions_f_vietnam\data\img\AlphaPlatoon\s\vn_ui_mf_task_st3.jpg";
-	taskgroups[] = {"BravoPlatoon"};
+	tasktitle = "Build %1";
+	taskname = "Build %1";
+	taskdesc = "Build a %1 in the zone.";
+	taskformatdata = "[(getText (missionConfigFile >> 'gamemode' >> 'buildables' >> (_this getVariable 'buildable') >> 'name')) call para_c_fnc_localize]";
+	tasktype = "repair";
+	taskimage = "vn\missions_f_vietnam\data\img\mikeforce\p\vn_ui_mf_task_p1.jpg";
+	taskgroups[] = {"bravoplatoon"};
 	rankpoints = 10;
-	taskprogress = 30;
+	taskprogress = 10;
 
-	//The script called when the task is created.
 	taskScript = "vn_mf_fnc_state_machine_task_system";
 
 	//Data for the script to use to customise behaviour
 	class parameters 
 	{
-		stateMachineCode = "vn_mf_fnc_task_sec_spike_wiretap";
+		stateMachineCode = "vn_mf_fnc_task_sec_build";
+		timeout = -1;
 	};
 
 	//Data for subtasks. These are specific to the script.
-	class enter_ao 
+	class build
 	{
-		taskname = "Enter AO";
-		taskdesc = "Enter the area of operations on foot.";
-	};
-
-	class start_wiretap
-	{
-
-		taskname = "Start wiretap";
-		taskdesc = "Mount the recording device.";
-	};
-
-	class RTB
-	{
-		taskname = "Return to base";
-		taskdesc = "Return to base. At least one team member must survive.";
+		taskname = "Build building";
+		taskdesc = "Construct the building anywhere within the zone.";
 	};
 };
-
-

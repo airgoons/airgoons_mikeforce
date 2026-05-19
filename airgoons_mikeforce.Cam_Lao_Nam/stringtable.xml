@@ -98,8 +98,35 @@
       <Key ID="STR_vn_mf_vehicle_workshop">
         <Original>Vehicle Workshop</Original>
       </Key>
-	  <Key ID="STR_vn_mf_statics">
+	   <Key ID="STR_vn_mf_statics">
         <Original>Static Weapons</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_communications">
+        <Original>Communication Tower (TFAR)</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_hqbunker">
+        <Original>HQ bunker</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_aid_bunker">
+        <Original>Medical Bunker</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_bunkercheckpoint">
+        <Original>Bunker Billet</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_hootchcheckpoint">
+        <Original>Billet</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_small">
+        <Original>Small Supply Bunker (500 supplies)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_medium">
+        <Original>Medium Supply Bunker (1000 supplies)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_large">
+        <Original>Large Supply Bunker (1500 supplies)</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_supply_bunker_american">
+        <Original>American Sized Supply Bunker (2500 supplies)</Original>
       </Key>
       <Key ID="STR_vn_mf_bridgebailey01">
         <Original>Bailey Bridge 1</Original>
@@ -171,19 +198,19 @@
         <Original>This vehicle can't be used by your team</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force">
-        <Original>PLEI MEI SF CAMP</Original>
+        <Original>PLEI MEI SF CAMP - MIKE FORCE</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_green_hornets">
-        <Original>ARMY HELI BASE - DELTA TROOP</Original>
+        <Original>PLEIKU - GREEN HORNETS</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_spike_team">
-        <Original>MSS LEGHORN - LAOS PATROL BASE</Original>
+        <Original>FOB2 KONTUM - SPIKE TEAM</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_CharliePlatoon">
-        <Original>FOB 5 BAN ME THUOT - Vehicle Base</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon">
+        <Original>FOB 5 BAN ME THUOT - bravoplatoon</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_mike_force_khe_sanh">
-        <Original>KHE SANH CAMP - Infantry Base</Original>
+        <Original>KHE SANH SF CAMP - MIKE FORCE</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_green_hornets_khe_sanh">
         <Original>KHE SANH SF CAMP - GREEN HORNETS</Original>
@@ -191,8 +218,20 @@
       <Key ID="STR_vn_mf_respawn_spike_team_khe_sanh">
         <Original>KHE SANH SF CAMP - SPIKE TEAM</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_CharliePlatoon_khe_sanh">
-        <Original>KHE SANH SF CAMP - CharliePlatoon</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_khe_sanh">
+        <Original>KHE SANH SF CAMP - bravoplatoon</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_mike_force_the_bra">
+        <Original>CAMP STRIKER - MIKE FORCE</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_green_hornets_the_bra">
+        <Original>CAMP STRIKER - GREEN HORNETS</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_spike_team_the_bra">
+        <Original>CAMP STRIKER - SPIKE TEAM</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_the_bra">
+        <Original>CAMP STRIKER - bravoplatoon</Original>
       </Key>
       <Key ID="STR_vn_mf_respawn_spike_team_altis">
         <Original>MOLOS VILLAGE - SPIKE TEAM</Original>
@@ -203,8 +242,26 @@
       <Key ID="STR_vn_mf_respawn_green_hornets_altis">
         <Original>MOLOS AIRFIELD - GREEN HORNETS</Original>
       </Key>
-      <Key ID="STR_vn_mf_respawn_CharliePlatoon_altis">
-        <Original>FOB 1 - CharliePlatoon</Original>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_altis">
+        <Original>FOB 1 - bravoplatoon</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_mike_force_dong_giang">
+        <Original>FOB MILLER - MIKE FORCE</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_green_hornets_dong_giang">
+        <Original>FOB MILLER - GREEN HORNETS</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_bravoplatoon_dong_giang">
+        <Original>FOB MILLER - bravoplatoon</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_spike_team_dong_giang">
+        <Original>FOB MITCH - SPIKE TEAM</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_arty_section_dong_giang">
+        <Original>FOB MITCH - ARTILLERY SECTION</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_comms_tower_dong_giang">
+        <Original>FOB MITCH - COMMS TOWER</Original>
       </Key>
       <Key ID="STR_vn_mf_supply_officer">
         <Original>Supply Officer</Original>
@@ -274,6 +331,9 @@
       </Key>
       <Key ID="STR_vn_mf_rvn_wound_medal">
         <Original>RVN Wound Medal</Original>
+      </Key>
+      <Key ID="STR_vn_mf_rvn_civil_action_unit_citation">
+        <Original>RVN Civil Action Unit Citation</Original>
       </Key>
       <Key ID="STR_vn_mf_distinguished_service_cross">
         <Original>Distinguished Service Cross</Original>
@@ -380,17 +440,17 @@
       <Key ID="STR_vn_mf_keybindings_interactionOverlay_toggle">
         <Original>Toggle Interaction Overlay</Original>
       </Key>
-      <Key ID="STR_vn_mf_taskRoster_Main_AlphaPlatoonDescription">
-        <Original>As Army Infantry, your team's role is to:&lt;br/&gt;- Sweep and clear areas of enemy&lt;br/&gt;- Secure and hold zones&lt;br/&gt;- Protect populations, logistics and supplies&lt;br/&gt;- Reinforce other teams&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by Charlie PL or Delta Troop</Original>
+      <Key ID="STR_vn_mf_taskRoster_Main_alphaplatoonDescription">
+        <Original>As Army Infantry, your team's role is to:&lt;br/&gt;- Sweep and clear areas of enemy&lt;br/&gt;- Secure and hold zones&lt;br/&gt;- Protect populations, logistics and supplies&lt;br/&gt;- Reinforce other teams&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by Bravo PL or Delta Troop</Original>
       </Key>
-      <Key ID="STR_vn_mf_taskRoster_Main_BravoPlatoonDescription">
-        <Original>As Army Infantry, your team's role is to:&lt;br/&gt;- Carry out reconnaissance to locate enemy infrastructure&lt;br/&gt;- Ambush and assault the enemy&lt;br/&gt;- Direct air and armour support onto enemy concentrations&lt;br/&gt;- Support other teams with reconnaissance and search and rescue&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams. &lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by Charlie PL or Delta Troop.</Original>
+      <Key ID="STR_vn_mf_taskRoster_Main_charlieplatoonDescription">
+        <Original>As special forces recon, your team's role is to:&lt;br/&gt;- Carry out reconnaissance to locate enemy infrastructure&lt;br/&gt;- Ambush and assault the enemy&lt;br/&gt;- Direct air and armour support onto enemy concentrations&lt;br/&gt;- Support other teams with reconnaissance and search and rescue&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams. &lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example transport is provided for you by Combat Engineers or Delta Troop.</Original>
       </Key>
-      <Key ID="STR_vn_mf_taskRoster_Main_DeltaTroopTeamDescription">
-        <Original>As an Army Aviatior your job is to:&lt;br/&gt;- Insert and extract troops to their desired location&lt;br/&gt;- Carry out aerial reconnaissance to find enemy infrastructure&lt;br/&gt;- Support other teams with close air support&lt;br/&gt;- Deliver supplies to build new infrastructure&lt;br/&gt;- Engage enemy aircraft&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example search and rescue is provided for you by Bravo PL.</Original>
+      <Key ID="STR_vn_mf_taskRoster_Main_deltatroopTeamDescription">
+        <Original>As an Army Aviator your job is to:&lt;br/&gt;- Insert and extract troops to their desired location&lt;br/&gt;- Carry out aerial reconnaissance to find enemy infrastructure&lt;br/&gt;- Support other teams with close air support&lt;br/&gt;- Deliver supplies to build new infrastructure&lt;br/&gt;- Engage enemy aircraft&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example search and rescue is provided for you by Alpha PL.</Original>
       </Key>
-      <Key ID="STR_vn_mf_taskRoster_Main_ArmouredCavalryDescription">
-        <Original>As Charlie Engineers, your team's role is to operate trucks and tanks to:&lt;br/&gt;- Insert and extract troops to their desired location&lt;br/&gt;- Support other teams with heavy weapons vehicles&lt;br/&gt;- Deliver supplies and build new infrastructure&lt;br/&gt;- Engage enemy vehicles and armour&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams. &lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example vehicle recovery or convoy protection is provided for you by Delta Troop</Original>
+      <Key ID="STR_vn_mf_taskRoster_Main_bravoplatoonDescription">
+        <Original>As Bravo Combat Engineers, your team's role is to operate trucks and tanks to:&lt;br/&gt;- Insert and extract troops to their desired location&lt;br/&gt;- Support other teams with heavy weapons vehicles&lt;br/&gt;- Deliver supplies and build new infrastructure&lt;br/&gt;- Engage enemy vehicles and armour&lt;br/&gt;Tasks&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_primary.paa'/&gt; Primary Tasks are shared by all teams. &lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_secondary.paa'/&gt; Secondary Tasks are unique to your team.&lt;br/&gt;- &lt;img color='#CC000000' image='\vn\ui_f_vietnam\ui\taskroster\img\icons\vn_icon_task_support.paa'/&gt; Support Tasks are called by other teams in need of your help. You may also request their support, for example vehicle recovery or convoy protection is provided for you by Delta Troop</Original>
       </Key>
       <Key ID="STR_vn_mf_taskRoster_Main_rolesHeaderName">
         <Original>Role</Original>
@@ -504,7 +564,7 @@
         <Original>Build Progress: %2%1</Original>
       </Key>
       <Key ID="STR_para_overlay_buildable_percentage_filled">
-        <Original>Percentage Filled: %2%1</Original>
+        <Original>Percentage Filled: %1</Original>
       </Key>
       <Key ID="STR_para_overlay_buildable_current_supplies">
         <Original>Current Supplies: %1</Original>
@@ -723,9 +783,9 @@
         <English>Search</English>
       </Key>
 
-      <Key ID="STR_vn_mf_buildingMenu_condition_inCharliePlatoon">
-        <Original>In CharliePlatoon</Original>
-        <English>In CharliePlatoon</English>
+      <Key ID="STR_vn_mf_buildingMenu_condition_inbravoplatoon">
+        <Original>In Bravo Platoon</Original>
+        <English>In Bravo Platoon</English>
       </Key>
     </Container>
     <Container name="params">
@@ -862,19 +922,19 @@
         <Original>======== Team Settings ========</Original>
         <English>======== Team Settings ========</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_CharliePlatoon">
-        <Original>==== Max players on CharliePlatoon ====</Original>
-        <English>==== Max players on CharliePlatoon ====</English>
+      <Key ID="STR_vn_mf_max_players_bravoplatoon">
+        <Original>==== Max players on Bravo Platoon ====</Original>
+        <English>==== Max players on Bravo Platoon ====</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_DeltaTroop">
+      <Key ID="STR_vn_mf_max_players_deltatroop">
         <Original>==== Max players on Green Hornets ====</Original>
         <English>==== Max players on Green Hornets ====</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_AlphaPlatoon">
+      <Key ID="STR_vn_mf_max_players_alphaplatoon">
         <Original>==== Max players on Mike Force ====</Original>
         <English>==== Max players on Mike Force ====</English>
       </Key>
-      <Key ID="STR_vn_mf_max_players_BravoPlatoon">
+      <Key ID="STR_vn_mf_max_players_charlieplatoon">
         <Original>==== Max players on Spike Team ====</Original>
         <English>==== Max players on Spike Team ====</English>
       </Key>
@@ -1086,9 +1146,25 @@
         <Original>Special Buildings</Original>
         <English>Special Buildings</English>
       </Key>
-	  <Key ID="STR_vn_mf_buildingMenu_category_statics">
+	   <Key ID="STR_vn_mf_buildingMenu_category_statics">
         <Original>Static Weapons</Original>
         <English>Static Weapons</English>
+      </Key>
+	   <Key ID="STR_vn_mf_buildingMenu_category_artillery">
+        <Original>Artillery pits</Original>
+        <English>Artillery pits</English>
+      </Key>
+	   <Key ID="STR_vn_mf_buildingMenu_category_hq">
+        <Original>Headquarters</Original>
+        <English>Headquarters</English>
+      </Key>
+	  <Key ID="STR_vn_mf_buildingMenu_category_pillboxes">
+        <Original>Pillboxes</Original>
+        <English>Pillboxes</English>
+      </Key>
+	  <Key ID="STR_vn_mf_buildingMenu_category_spawn">
+        <Original>Respawn Points</Original>
+        <English>Respawn Points</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_us">
         <Original>U.S</Original>
@@ -1154,9 +1230,9 @@
         <Original>Anyone Can Build</Original>
         <English>Anyone Can Build</English>
       </Key>
-      <Key ID="STR_vn_mf_buildingMenu_category_nonCharliePlatoon">
-        <Original>Non-CharliePlatoon</Original>
-        <English>Non-CharliePlatoon</English>
+      <Key ID="STR_vn_mf_buildingMenu_category_nonbravoplatoon">
+        <Original>Non-Bravo Platoon</Original>
+        <English>Non-Bravo Platoon</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_caves">
         <Original>Caves and Rocks</Original>
@@ -1166,9 +1242,9 @@
         <Original>Misc</Original>
         <English>Misc</English>
       </Key>
-      <Key ID="STR_vn_mf_buildingMenu_category_lighting">
-        <Original>Lighting</Original>
-        <English>Lighting</English>
+      <Key ID="STR_vn_mf_buildingMenu_category_lights">
+        <Original>Lights</Original>
+        <English>Lights</English>
       </Key>
       <Key ID="STR_vn_mf_buildingMenu_category_platforms">
         <Original>Platforms</Original>
@@ -1221,16 +1297,19 @@
     </Container>
     <Container name="supplies">
       <Key ID="STR_vn_mf_light_ammo_supplies">
-        <Original>Light Ammo Supplies</Original>
+        <Original>Ammunition</Original>
       </Key>
       <Key ID="STR_vn_mf_support_ammo_supplies">
-        <Original>Support Ammo Supplies</Original>
+        <Original>Flares and Grenades</Original>
       </Key>
       <Key ID="STR_vn_mf_explosives_supplies">
-        <Original>Explosives Supplies</Original>
+        <Original>Explosives</Original>
       </Key>
 	   <Key ID="STR_vn_mf_mortar_supplies">
-        <Original>Mortar Ammo Supplies</Original>
+        <Original>Mortar Ammo</Original>
+      </Key>
+	   <Key ID="STR_vn_mf_missile_supplies">
+        <Original>Missile Ammo</Original>
       </Key>
       <Key ID="STR_vn_mf_building_supplies_crate">
         <Original>Building Supplies (Small)</Original>
@@ -1248,17 +1327,35 @@
       <Key ID="STR_vn_mf_workshop_supplies">
         <Original>Workshop Supplies</Original>
       </Key>
-	  <Key ID="STR_vn_mf_m2_high">
+	   <Key ID="STR_vn_mf_m2_high">
         <Original>M2HB .50cal (High)</Original>
       </Key>
-	  <Key ID="STR_vn_mf_m2_low">
-        <Original>M2HB .50cal (low)</Original>
+	  <Key ID="STR_vn_mf_m29_mortar">
+        <Original>M29 81mm Mortar</Original>
       </Key>
 	   <Key ID="STR_vn_mf_m45_quad">
         <Original>M45 Quadmount</Original>
       </Key>
+	  <Key ID="STR_vn_mf_m40a1rr">
+        <Original>M40A1 106mm recoilless rifle</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_tow">
+        <Original>BGM-71 TOW Launcher</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_M101">
+        <Original>M101 105mm Anti-Tank gun</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_mk18">
+        <Original>Mk18 mod 0</Original>
+      </Key>
       <Key ID="STR_vn_mf_food_supplies">
-        <Original>Food Supplies</Original>
+        <Original>US Army Food Supplies</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_localfood_supplies">
+        <Original>Locally Sourced Food Supplies</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_morale_supplies">
+        <Original>Morale Supplies</Original>
       </Key>
       <Key ID="STR_vn_mf_medical_supplies">
         <Original>Medical Supplies</Original>
@@ -1268,8 +1365,8 @@
         <English>Support Supplies</English>
       </Key>
 	    <Key ID="STR_vn_mf_vehicle_supplies">
-        <Original>Vehicle Supplies</Original>
-        <English>Vehicle Supplies</English>
+        <Original>Heavy Weapons</Original>
+        <English>Heavy Weapons</English>
       </Key>
 	    <Key ID="STR_vn_mf_building_supplies">
         <Original>Construction Supplies</Original>
@@ -1379,7 +1476,7 @@
     </Container>
     <Container name="KeybindingsMenu">
       <Key ID="STR_vn_mf_keybindings_title">
-        <Original>AlphaPlatoon Keybindings</Original>
+        <Original>alphaplatoon Keybindings</Original>
       </Key>
       <Key ID="STR_vn_mf_keybindings_header_action">
         <Original>Action</Original>
@@ -1500,6 +1597,9 @@
       <Key ID="STR_vn_mf_zone_aggelochori">
         <Original>Aggelochori</Original>
       </Key>
+      <Key ID="STR_vn_mf_zone_galati">
+        <Original>Galati</Original>
+      </Key>
     </Container>
     <Container name="Zone_Name_Cam_Lao">
       <Key ID="STR_vn_mf_zone_ban_hoang">
@@ -1574,6 +1674,27 @@
       <Key ID="STR_vn_mf_zone_ling_ho">
         <Original>Ling Ho</Original>
       </Key>
+      <Key ID="STR_vn_mf_zone_nodal_lho">
+        <Original>Nodal Lho</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_plain_of_jars">
+        <Original>Plain of Jars</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_bru_village">
+        <Original>Bru Village</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_son_tay">
+        <Original>Son Tay</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_gia_lam_airbase">
+        <Original>Gia Lam Airbase</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_hanoi_city">
+        <Original>Hanoi City</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_fob_mai_loc">
+        <Original>FOB Mai Loc</Original>
+      </Key>
     </Container>
     <Container name="ZoneName_khe_sanh">
       <Key ID="STR_vn_mf_zone_khe_sanh">
@@ -1589,7 +1710,7 @@
         <Original>French Fort Base</Original>
       </Key>
       <Key ID="STR_vn_mf_zone_khe_sanh_base">
-        <Original>Khe Sanh Base</Original>
+        <Original>Chau Langh Chanh</Original>
       </Key>
       <Key ID="STR_vn_mf_zone_koanphan">
         <Original>Koanphan</Original>
@@ -1638,9 +1759,6 @@
       </Key>
       <Key ID="STR_vn_mf_zone_lang_vei">
         <Original>Lang Vei</Original>
-      </Key>
-      <Key ID="STR_vn_mf_zone_kok">
-        <Original>Kok</Original>
       </Key>
       <Key ID="STR_vn_mf_zone_a_bung">
         <Original>A Bung</Original>
@@ -1727,6 +1845,113 @@
       </Key>
       <Key ID="STR_vn_mf_zone_southeastern_supply_depot">
         <Original>Southeastern Supply Depot</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_nva_pow_camp">
+        <Original>NVA POW Camp</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_ban_onglouan">
+        <Original>Ban Onglouan</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_ban_chom">
+        <Original>Ban Chom</Original>
+      </Key>
+    </Container>
+    <Container name="ZoneName_dong_giang">
+      <Key ID="STR_vn_mf_zone_da_nam_valley">
+        <Original>Ðà Nam Valley</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_da_nam">
+        <Original>Ðà Nam</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_south_eastern_village">
+        <Original>South Eastern Village</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_splintered_forest">
+        <Original>Splintered Forest</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_ta_tieng">
+        <Original>Ta Tieng</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_south_western_village">
+        <Original>South Western Village</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_radio_relay_oscar">
+        <Original>Radio Relay Oscar</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_canyon">
+        <Original>Canyon</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_pa_r_h">
+        <Original>Pa R h</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_thon_59b">
+        <Original>Thon 59B</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_plei_bh">
+        <Original>Plei B h</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_kon_kap">
+        <Original>Kon Kăp</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_radio_relay_cudgel">
+        <Original>Radio Relay Cudgel</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_eastern_village">
+        <Original>Eastern Village</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_radio_relay_george">
+        <Original>Radio Relay George</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_dong_giang">
+        <Original>Dong Giang</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_junctions">
+        <Original>Road Junctions</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_dak_pa_r">
+        <Original>Dak Pa R</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_cr_toonh">
+        <Original>Cr'toonh</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_drawbridge">
+        <Original>Drawbridge</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_ia_p_h">
+        <Original>Ia P h</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_battle_hill">
+        <Original>Battle Hill</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_pa_toi">
+        <Original>Pà Tôi</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_lz_one">
+        <Original>Landing Zone One</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_lz_two">
+        <Original>Landing Zone Two</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_lz_three">
+        <Original>Landing Zone Three</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_northern_jungle">
+        <Original>Northern Jungle</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_disn">
+        <Original>Ð i S n</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_temple">
+        <Original>Temple</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_pavn_base">
+        <Original>P.A.V.N. Base</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_abandoned_outpost">
+        <Original>Abandoned Outpost</Original>
+      </Key>
+      <Key ID="STR_vn_mf_zone_pavn_camp">
+        <Original>P.A.V.N. Camp</Original>
       </Key>
     </Container>
   </Package>

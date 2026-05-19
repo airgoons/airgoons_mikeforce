@@ -11,6 +11,9 @@
 
 	Example(s): TODO
 */
+if (!(isNil "para_l_basebuilding_enabled") && {!para_l_basebuilding_enabled} ) exitWith {
+	hint "The Mike Force building system has been disabled on this server.";
+};
 
 private _classname = localNamespace getVariable ["#para_c_BuildingMenu_class", ""];
 if (_classname isEqualTo "") exitWith {};
