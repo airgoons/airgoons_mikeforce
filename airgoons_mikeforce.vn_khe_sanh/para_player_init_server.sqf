@@ -92,7 +92,7 @@ _playersGroup = (groupID group _player regexFind ["^[a-zA-Z]*"])#0#0#0;
 switch (_playersGroup) do
 {
 	case "Alpha": {[_player, "alphaplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "31"] call TFAR_fnc_setSwFrequency};
-	case "Company": {[_player, "deltatroop", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "31"] call TFAR_fnc_setSwFrequency};
+	case "Company": {[_player, "alphaplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "31"] call TFAR_fnc_setSwFrequency};
 	case "Bravo": {[_player, "bravoplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "32"] call TFAR_fnc_setSwFrequency};
 	case "Charlie": {[_player, "charlieplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "33"] call TFAR_fnc_setSwFrequency};
 	case "Artillery": {[_player, "charlieplatoon", nil, false] call vn_mf_fnc_change_team; [(call TFAR_fnc_activeSwRadio), "33"] call TFAR_fnc_setSwFrequency};

@@ -157,7 +157,7 @@ player addEventHandler ["getInMan", {
 
 // Make the gunners leave the pilot group when they exit
 
-_this addEventHandler ["getOutMan", {
+player addEventHandler ["getOutMan", {
     params ["_unit", "_role", "_vehicle", "_turret"];
     _unit = _this # 0;
     if (_role == "driver")

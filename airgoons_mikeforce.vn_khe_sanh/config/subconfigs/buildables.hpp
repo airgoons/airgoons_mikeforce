@@ -3044,7 +3044,7 @@ class Land_vn_bridge_ramp_01
 {
 	name = "STR_vn_mf_bridgeramp01";
 	type = "bridges";
-	categories[] = {"bridges"};
+	categories[] = {"bridges", "platforms"};
 	rank = 0;
 	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
@@ -3236,7 +3236,7 @@ class Land_vn_o_platform_04
 	type = "platforms";
 	categories[] = {"platforms"};
 	rank = 0;
-	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
 	resupply = "BuildingSupplies";
 	conditions[] = {
 		CONDITION_HAS_RANK,
@@ -3322,6 +3322,134 @@ class Land_vn_hut_stairs_02
 		class final_state
 		{
 			object_class = "Land_vn_hut_stairs_02";
+		};
+	};
+};
+
+class Land_vn_bridge_monkey_02
+{
+	name = "";
+	type = "platforms";
+	categories[] = {"platforms"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_bridge_monkey_02";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_bridge_monkey_02";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_bridge_monkey_02";
+		};
+	};
+};
+
+class Land_vn_pallet_f
+{
+	name = "STR_vn_mf_palletbig";
+	type = "platforms";
+	categories[] = {"platforms"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_pallet_f";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_pallet_f";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_pallet_f";
+		};
+	};
+};
+
+class Land_vn_us_common_pallet_01
+{
+	name = "STR_vn_mf_palletsmall";
+	type = "platforms";
+	categories[] = {"platforms"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_us_common_pallet_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_us_common_pallet_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_us_common_pallet_01";
+		};
+	};
+};
+
+class Land_vn_object_ladder_01
+{
+	name = "";
+	type = "platforms";
+	categories[] = {"platforms"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_object_ladder_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_object_ladder_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_object_ladder_01";
 		};
 	};
 };

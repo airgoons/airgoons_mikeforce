@@ -155,6 +155,12 @@
       <Key ID="STR_vn_mf_bridgesmall04">
         <Original>Small Bridge 4</Original>
       </Key>
+	  <Key ID="STR_vn_mf_palletbig">
+        <Original>Big Pallet</Original>
+      </Key>
+	  <Key ID="STR_vn_mf_palletsmall">
+        <Original>Small Pallet</Original>
+      </Key>
       <Key ID="STR_vn_mf_school">
         <Original>School</Original>
       </Key>
