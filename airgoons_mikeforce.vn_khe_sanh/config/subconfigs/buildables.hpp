@@ -55,7 +55,7 @@ class Land_vn_guardhouse_01
 class Land_vn_b_trench_bunker_01_01
 {
 	name = "STR_vn_mf_bunkercheckpoint";
-	type = "bunkers";
+	type = "checkpoints";
 	categories[] = {"spawn"};
 	rank = 0;
 	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
@@ -91,7 +91,7 @@ class Land_vn_b_trench_bunker_01_01
 class Land_vn_hootch_01_01
 {
 	name = "STR_vn_mf_hootchcheckpoint";
-	type = "hootches";
+	type = "checkpoints";
 	categories[] = {"spawn"};
 	rank = 0;
 	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
@@ -163,7 +163,7 @@ class Land_vn_hootch_02_03
 class Land_vn_b_trench_bunker_03_04
 {
 	name = "STR_vn_mf_hqbunker";
-	type = "bunkers";
+	type = "hqs";
 	categories[] = {"hq"};
 	rank = 0;
 	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
@@ -296,7 +296,7 @@ class Land_vn_tent_mash_01
 class Land_vn_b_trench_bunker_03_03
 {
 	name = "STR_vn_mf_aid_bunker";
-	type = "bunkers";
+	type = "aid";
 	categories[] = {"medical"};
 	rank = 0;
 	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));

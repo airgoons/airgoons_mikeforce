@@ -38,7 +38,7 @@ _base setVariable ["para_g_base_radius", _baseRadius, true];
 if (isNil "_baseName") then
 {
     private _number = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
-    private _phoenetic = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "Indigo", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Siera", "Tango", "Uniform", "Victor", "Whisky", "Xray", "Yankee", "Zulu"];
+    private _phoenetic = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "Indigo", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whisky", "Xray", "Yankee", "Zulu"];
     _baseName = selectRandom _phoenetic + "-" + selectRandom _number + selectRandom _number;
 };
 _base setVariable ["para_g_base_name", _baseName, true];
