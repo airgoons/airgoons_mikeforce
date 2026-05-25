@@ -274,7 +274,7 @@ class Land_vn_tent_mash_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
-		CONDITION_IS_CharliePlatoon
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -296,7 +296,7 @@ class Land_vn_tent_mash_01
 class Land_vn_b_trench_bunker_03_03
 {
 	name = "STR_vn_mf_aid_bunker";
-	type = "aid";
+	type = "bunker";
 	categories[] = {"medical"};
 	rank = 0;
 	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
@@ -1762,7 +1762,8 @@ class Land_vn_b_trench_stair_01
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -1793,7 +1794,8 @@ class Land_vn_b_trench_stair_02
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -1824,7 +1826,8 @@ class Land_vn_b_trench_revetment_tall_09
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -1855,7 +1858,8 @@ class Land_vn_b_trench_revetment_tall_03
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -1886,7 +1890,8 @@ class Land_vn_b_trench_revetment_90_01
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -1917,7 +1922,8 @@ class Land_vn_b_trench_revetment_05_01
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -2045,6 +2051,7 @@ class Land_vn_b_trench_firing_01
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
 		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -2203,7 +2210,8 @@ class Land_vn_b_trench_corner_01
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -2426,7 +2434,8 @@ class Land_vn_b_trench_05_03
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -2457,7 +2466,8 @@ class Land_vn_b_trench_05_02
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -2488,7 +2498,8 @@ class Land_vn_b_trench_05_01
 		CONDITION_HAS_RANK,
 		CONDITION_IS_ENGINEER,
 		CONDITION_IS_ON_FOOT,
-		CONDITION_NOT_IN_RESTRICTED_ZONE
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
 	};
 	class build_states
 	{
@@ -3450,6 +3461,70 @@ class Land_vn_object_ladder_01
 		class final_state
 		{
 			object_class = "Land_vn_object_ladder_01";
+		};
+	};
+};
+
+class PortableHelipadLight_01_white_F
+{
+	name = "";
+	type = "lighting";
+	categories[] = {"lights"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "PortableHelipadLight_01_white_F";
+		};
+		class middle_state
+		{
+			object_class = "PortableHelipadLight_01_white_F";
+		};
+		class final_state
+		{
+			object_class = "PortableHelipadLight_01_white_F";
+		};
+	};
+};
+
+class Land_PortableLight_double_F
+{
+	name = "";
+	type = "lighting";
+	categories[] = {"lights"};
+	rank = 0;
+	SUPPLY_CAPACITY(100, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_bravoplatoon
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_PortableLight_double_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_PortableLight_double_F";
+		};
+		class final_state
+		{
+			object_class = "Land_PortableLight_double_F";
 		};
 	};
 };

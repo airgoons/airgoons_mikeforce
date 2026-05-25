@@ -633,6 +633,34 @@
 	
 	// "Engineers";
 	
+	case "EPL": {
+	
+		comment "Engineer Platoon Cmd";
+		comment "Add containers";
+		_unit forceAddUniform _uniform;
+		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
+		for "_i" from 1 to 3 do {_unit addItemToUniform "vn_m1911_mag";};
+		_unit addVest "vn_b_vest_usarmy_14";
+		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
+		_unit addBackpack "vn_b_pack_lw_06";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
+		_unit addHeadgear _headgear;
+
+		comment "Add weapons";
+		_unit addWeapon _rifle;
+		_unit addPrimaryWeaponItem "vn_m16_20_mag";
+		_unit addWeapon "vn_m1911";
+		_unit addHandgunItem "vn_m1911_mag";
+		_unit addWeapon _binocs;
+
+		comment "Add items";
+		_unit linkItem "vn_b_item_map";
+		_unit linkItem "vn_b_item_compass";
+		_unit linkItem "vn_b_item_watch";
+		_unit linkItem "vn_b_item_radio_urc10";
+	};
+	
 	case "ESL": {
 	
 		comment "Engineer Squad Leader";

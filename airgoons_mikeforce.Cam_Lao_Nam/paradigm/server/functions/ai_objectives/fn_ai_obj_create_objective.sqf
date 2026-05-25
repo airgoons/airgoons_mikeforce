@@ -41,10 +41,10 @@ _objective setVariable ["type", _type];
 _objective setVariable ["assignedGroups", []];
 
 //Default values for reinforcements
-_objective setVariable ["squad_size", 4];
+_objective setVariable ["squad_size", 12];
 _objective setVariable ["squad_type", "STANDARD"];
-_objective setVariable ["scaling_factor", 1];
-_objective setVariable ["reinforcements_factor", 1];
+_objective setVariable ["scaling_factor", 2];
+_objective setVariable ["reinforcements_factor", 2];
 _objective setVariable ["reinforcements_remaining", 1];
 _objective setVariable ["spawned_units", []];
 

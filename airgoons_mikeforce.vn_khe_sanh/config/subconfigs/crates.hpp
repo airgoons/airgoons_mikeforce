@@ -18,7 +18,8 @@ class AmmoCrateLight
 	objectClassname = "vn_b_ammobox_supply_01";
 	weapons[] = {
 		{"vn_m127",5},
-		{"vn_m72",10}
+		{"vn_m72",10},
+		{"vn_m16",5}
 		};
 	magazines[] = {
 		{"vn_m1911_mag",10},

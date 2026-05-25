@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=3216;
+		nextID=3227;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3678;
+		nextID=3828;
 	};
 	class Camera
 	{
-		pos[]={11035.375,134.30217,3178.0115};
-		dir[]={-0.98474151,-0.17340586,-0.015225695};
-		up[]={-0.17338879,0.98485076,-0.0026807738};
-		aside[]={-0.015459632,2.9875991e-08,0.99988896};
+		pos[]={11014.133,125.3756,3176.8303};
+		dir[]={-0.9609291,-0.27484667,0.035782408};
+		up[]={-0.27480218,0.96143216,0.010233386};
+		aside[]={0.037211318,1.0798176e-06,0.99939054};
 	};
 };
 binarizationWanted=0;
@@ -55,10 +55,10 @@ addons[]=
 	"A3_Props_F_Orange_Humanitarian_Camps",
 	"A3_Props_F_Orange_Humanitarian_Garbage",
 	"air_f_vietnam_03_c",
+	"A3_Props_F_Enoch_Military_Camps",
 	"air_f_vietnam_04_c",
 	"A3_Structures_F_System",
 	"A3_Props_F_Exp_Military_Camps",
-	"A3_Props_F_Enoch_Military_Camps",
 	"A3_Characters_F",
 	"A3_Modules_F_Multiplayer",
 	"characters_f_vietnam_03_c",
@@ -214,29 +214,29 @@ class AddonsMetaData
 		};
 		class Item20
 		{
+			className="A3_Props_F_Enoch";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item21
+		{
 			className="air_f_vietnam_04_c";
 			name="air_f_vietnam_04_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item23
-		{
-			className="A3_Props_F_Enoch";
-			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -298,6 +298,7 @@ dlcs[]=
 	"Heli",
 	"VNX",
 	"Orange",
+	"Contact",
 	"Expansion"
 };
 randomSeed=521005;
@@ -364,14 +365,16 @@ class Mission
 		briefingName="Mike Force - No Fun Grunts Only";
 		overviewText="Air Goons No-Fun Vietnarma. Visit www.airgoons.com for more info and come join us! ";
 		timeOfChanges=1800.0002;
+		startWeather=0.25;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.75;
+		forecastWeather=0.25;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=1968;
-		day=24;
+		month=6;
+		day=7;
 		hour=6;
 		minute=0;
 		startFogBase=150;
@@ -2847,7 +2850,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01"",""vn_m_bolo_01"",""vn_m_fishing_rod_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag"",""vn_carbine_15_mag"",""vn_carbine_15_t_mag"",""vn_mine_m18_x3_mag"",""vn_mine_m18_x3_range_mag"",""vn_mine_m14_mag"",""vn_mine_m16_mag"",""vn_mine_tripwire_m16_02_mag"",""vn_mine_tripwire_m16_04_mag"",""vn_mine_m112_remote_mag"",""vn_mine_limpet_01_mag"",""vn_prop_fort_mag""],[]],[[""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_map"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m1897"",""vn_b_item_wiretap"",""vn_b_carbine""],[]],[[""vn_b_pack_static_base_01"",""vn_b_pack_01""],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01"",""vn_m_bolo_01"",""vn_m_fishing_rod_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag"",""vn_carbine_15_mag"",""vn_carbine_15_t_mag"",""vn_mine_m18_x3_mag"",""vn_mine_m18_x3_range_mag"",""vn_mine_m14_mag"",""vn_mine_m16_mag"",""vn_mine_tripwire_m16_02_mag"",""vn_mine_tripwire_m16_04_mag"",""vn_mine_m112_remote_mag"",""vn_mine_limpet_01_mag"",""vn_prop_fort_mag""],[]],[[""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_map"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m1897"",""vn_b_item_wiretap"",""vn_b_carbine"",""vn_b_boonie_02_01""],[]],[[""vn_b_pack_static_base_01"",""vn_b_pack_01""],[]]],true]";
 												};
 											};
 										};
@@ -2898,7 +2901,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01"",""vn_m_bolo_01"",""vn_m_fishing_rod_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag"",""vn_carbine_15_mag"",""vn_carbine_15_t_mag"",""vn_mine_m18_x3_mag"",""vn_mine_m18_x3_range_mag"",""vn_mine_m14_mag"",""vn_mine_m16_mag"",""vn_mine_tripwire_m16_02_mag"",""vn_mine_tripwire_m16_04_mag"",""vn_mine_m112_remote_mag"",""vn_mine_limpet_01_mag"",""vn_prop_fort_mag""],[]],[[""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_map"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m1897"",""vn_b_item_wiretap"",""vn_b_carbine""],[]],[[""vn_b_pack_static_base_01"",""vn_b_pack_01""],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01"",""vn_m_bolo_01"",""vn_m_fishing_rod_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag"",""vn_carbine_15_mag"",""vn_carbine_15_t_mag"",""vn_mine_m18_x3_mag"",""vn_mine_m18_x3_range_mag"",""vn_mine_m14_mag"",""vn_mine_m16_mag"",""vn_mine_tripwire_m16_02_mag"",""vn_mine_tripwire_m16_04_mag"",""vn_mine_m112_remote_mag"",""vn_mine_limpet_01_mag"",""vn_prop_fort_mag""],[]],[[""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_map"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m1897"",""vn_b_item_wiretap"",""vn_b_carbine"",""vn_b_boonie_02_01""],[]],[[""vn_b_pack_static_base_01"",""vn_b_pack_01""],[]]],true]";
 												};
 											};
 										};
@@ -2949,7 +2952,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01"",""vn_m_bolo_01"",""vn_m_fishing_rod_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag"",""vn_carbine_15_mag"",""vn_carbine_15_t_mag"",""vn_mine_m18_x3_mag"",""vn_mine_m18_x3_range_mag"",""vn_mine_m14_mag"",""vn_mine_m16_mag"",""vn_mine_tripwire_m16_02_mag"",""vn_mine_tripwire_m16_04_mag"",""vn_mine_m112_remote_mag"",""vn_mine_limpet_01_mag"",""vn_prop_fort_mag""],[]],[[""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_map"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m1897"",""vn_b_item_wiretap"",""vn_b_carbine""],[]],[[""vn_b_pack_static_base_01"",""vn_b_pack_01""],[]]],true]";
+													value="[[[[""vn_m_wrench_01"",""vn_m_hammer"",""vn_m_shovel_01"",""vn_m_axe_01"",""vn_m_bayo_m14"",""vn_m_bayo_m16"",""vn_m_bayo_m1897"",""vn_m_mk2_knife_01"",""vn_m_machete_02"",""vn_m_m51_etool_01"",""vn_mx991"",""vn_m127"",""vn_mx991_red"",""vn_m72"",""vnx_m_ladle"",""vnx_m_spoon_01"",""vnx_m_spoon_02"",""vnx_m_axe_01"",""vnx_m_hammer_01"",""vnx_m_shovel_01"",""vn_m_bolo_01"",""vn_m_fishing_rod_01""],[]],[[""vn_m61_grenade_mag"",""vn_m67_grenade_mag"",""vn_m18_red_mag"",""vn_m18_white_mag"",""vn_m18_green_mag"",""vn_m18_yellow_mag"",""vn_m18_purple_mag"",""vn_40mm_m576_buck_mag"",""vn_40mm_m406_he_mag"",""vn_40mm_m583_flare_w_mag"",""vn_40mm_m661_flare_g_mag"",""vn_40mm_m662_flare_r_mag"",""vn_40mm_m695_flare_y_mag"",""vn_40mm_m680_smoke_w_mag"",""vn_40mm_m682_smoke_r_mag"",""vn_40mm_m715_smoke_g_mag"",""vn_40mm_m716_smoke_y_mag"",""vn_40mm_m717_smoke_p_mag"",""vn_m72_mag"",""vn_m127_mag"",""vn_m128_mag"",""vn_m129_mag"",""vn_m1911_mag"",""vn_m16_20_mag"",""vn_m40a1_mag"",""vn_m60_100_mag"",""vn_m16_20_t_mag"",""vn_m16_40_mag"",""vn_m16_40_t_mag"",""vn_m34_grenade_mag"",""vn_mine_satchel_remote_02_mag"",""vn_prop_drink_02"",""vn_prop_drink_06"",""vn_m3a1_mag"",""vn_m3a1_t_mag"",""vn_m40a1_t_mag"",""vn_m10_mag"",""vn_m1897_fl_mag"",""vn_m1897_buck_mag"",""vn_mine_satchelcharge_02_mag"",""vn_40mm_m381_he_mag"",""vn_40mm_m433_hedp_mag"",""vn_mine_m18_range_mag"",""vn_mine_m18_wp_range_mag"",""vn_40mm_m397_ab_mag"",""vn_40mm_m651_cs_mag"",""vn_satchelcharge_02_throw_mag"",""vn_mine_m18_mag"",""vn_mine_m18_wp_mag"",""vn_m14_grenade_mag"",""vn_m14_early_grenade_mag"",""vn_m7_grenade_mag"",""vn_m20a1b1_heat_mag"",""vn_m20a1b1_wp_mag"",""vn_carbine_15_mag"",""vn_carbine_15_t_mag"",""vn_mine_m18_x3_mag"",""vn_mine_m18_x3_range_mag"",""vn_mine_m14_mag"",""vn_mine_m16_mag"",""vn_mine_tripwire_m16_02_mag"",""vn_mine_tripwire_m16_04_mag"",""vn_mine_m112_remote_mag"",""vn_mine_limpet_01_mag"",""vn_prop_fort_mag""],[]],[[""vn_b_item_watch"",""vn_b_item_compass"",""vn_b_item_map"",""vn_b_item_toolkit"",""vn_b_m16"",""vn_b_m1897"",""vn_b_item_wiretap"",""vn_b_carbine"",""vn_b_boonie_02_01""],[]],[[""vn_b_pack_static_base_01"",""vn_b_pack_01""],[]]],true]";
 												};
 											};
 										};
@@ -8710,8 +8713,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										lock="LOCKED";
-										fuel=0;
+										lock="UNLOCKED";
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 									};
 									id=1573;
@@ -8747,8 +8749,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										lock="LOCKED";
-										fuel=0;
+										lock="UNLOCKED";
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 									};
 									id=1575;
@@ -8991,8 +8992,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										lock="LOCKED";
-										fuel=0;
+										lock="UNLOCKED";
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 									};
 									id=2654;
@@ -9027,6 +9027,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "";
 									};
 									id=3135;
@@ -9045,6 +9047,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "";
 									};
 									id=3136;
@@ -10161,7 +10165,7 @@ class Mission
 							state=1;
 							class Entities
 							{
-								items=2;
+								items=3;
 								class Item0
 								{
 									dataType="Object";
@@ -10270,8 +10274,42 @@ class Mission
 										nAttributes=1;
 									};
 								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={11006.596,101.67601,3153.8401};
+										angles[]={0.0061086523,0,1.5634485};
+									};
+									side="Empty";
+									class Attributes
+									{
+									};
+									id=3224;
+									type="Land_TentLamp_01_suspended_red_F";
+									atlOffset=2.6754456;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
 							id=2085;
+							atlOffset=1.5759964;
 						};
 						class Item5
 						{
@@ -10786,11 +10824,11 @@ class Mission
 						};
 					};
 					id=1570;
-					atlOffset=0.0040512085;
+					atlOffset=0.20105743;
 				};
 			};
 			id=678;
-			atlOffset=-0.41644287;
+			atlOffset=-0.31939697;
 		};
 		class Item5
 		{
@@ -12241,7 +12279,7 @@ class Mission
 		class Item15
 		{
 			dataType="Marker";
-			position[]={10995.434,98.480003,3153.4473};
+			position[]={10996.252,98.480003,3153.7458};
 			name="supply_drop_initial_1";
 			text="Initial Supply Drop 1";
 			type="Empty";
@@ -12269,7 +12307,7 @@ class Mission
 		class Item16
 		{
 			dataType="Marker";
-			position[]={11004.879,98.480003,3153.6809};
+			position[]={11006.001,98.480003,3153.8503};
 			name="supply_officer_initial_1";
 			text="Initial Supply Officer 1";
 			type="Empty";
@@ -12953,8 +12991,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={10748.747,98.547043,3179.9319};
-				angles[]={0.0053232545,0,6.2805324};
+				position[]={10730.761,98.568321,3181.1836};
+				angles[]={0.0053265258,0,6.2805333};
 			};
 			name="VehicleRespawn";
 			id=1472;
@@ -13099,7 +13137,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11022.73,98.152527,3126.7847};
+				position[]={11022.604,98.159706,3126.7737};
 				angles[]={6.080668,0,6.2086554};
 			};
 			id=1445;
@@ -13299,8 +13337,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11019.64,98.480003,3214.4231};
-				angles[]={0,1.5271456,0};
+				position[]={11067.03,98.481468,3173.0505};
+				angles[]={6.2805333,1.5271456,0};
 			};
 			name="GunshipRespawn";
 			id=1467;
@@ -25108,6 +25146,7 @@ class Mission
 				position[]={10557.031,125.14133,3176.8379};
 				angles[]={0,3.3059328,0};
 			};
+			init="if (isServer) then {" \n "  [] spawn {" \n "    while {isNil ""stopCuratorLoop""} do {" \n "      { _x addCuratorEditableObjects [vehicles + allUnits]} forEach allCurators;" \n "      uisleep 10;" \n "    };" \n "  };" \n "};";
 			id=3159;
 			type="ModuleCurator_F";
 			atlOffset=28.845215;
@@ -25176,6 +25215,7 @@ class Mission
 				position[]={10557.647,125.05109,3181.7471};
 				angles[]={0,3.3059328,0};
 			};
+			init="if (isServer) then {" \n "  [] spawn {" \n "    while {isNil ""stopCuratorLoop""} do {" \n "      { _x addCuratorEditableObjects [vehicles + allUnits]} forEach allCurators;" \n "      uisleep 10;" \n "    };" \n "  };" \n "};";
 			id=3160;
 			type="ModuleCurator_F";
 			atlOffset=29.999992;
@@ -25244,6 +25284,7 @@ class Mission
 				position[]={10556.306,125.99679,3170.6489};
 				angles[]={0,3.3059328,0};
 			};
+			init="if (isServer) then {" \n "  [] spawn {" \n "    while {isNil ""stopCuratorLoop""} do {" \n "      { _x addCuratorEditableObjects [vehicles + allUnits]} forEach allCurators;" \n "      uisleep 10;" \n "    };" \n "  };" \n "};";
 			id=3161;
 			type="ModuleCurator_F";
 			atlOffset=30;
@@ -25309,11 +25350,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=59;
+			nextID=57;
 		};
 		class Links
 		{
-			items=59;
+			items=57;
 			class Item0
 			{
 				linkID=0;
@@ -25327,8 +25368,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=1445;
-				item1=1638;
+				item0=1468;
+				item1=1581;
 				class CustomData
 				{
 					type="Sync";
@@ -25337,8 +25378,8 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=1445;
-				item1=1637;
+				item0=1462;
+				item1=1587;
 				class CustomData
 				{
 					type="Sync";
@@ -25347,8 +25388,8 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=1468;
-				item1=1581;
+				item0=1466;
+				item1=1573;
 				class CustomData
 				{
 					type="Sync";
@@ -25358,7 +25399,7 @@ class Mission
 			{
 				linkID=4;
 				item0=1462;
-				item1=1587;
+				item1=2431;
 				class CustomData
 				{
 					type="Sync";
@@ -25367,8 +25408,8 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=1466;
-				item1=1573;
+				item0=1472;
+				item1=973;
 				class CustomData
 				{
 					type="Sync";
@@ -25377,8 +25418,8 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=1462;
-				item1=2431;
+				item0=1472;
+				item1=972;
 				class CustomData
 				{
 					type="Sync";
@@ -25388,7 +25429,7 @@ class Mission
 			{
 				linkID=7;
 				item0=1472;
-				item1=973;
+				item1=967;
 				class CustomData
 				{
 					type="Sync";
@@ -25398,7 +25439,7 @@ class Mission
 			{
 				linkID=8;
 				item0=1472;
-				item1=972;
+				item1=966;
 				class CustomData
 				{
 					type="Sync";
@@ -25408,7 +25449,7 @@ class Mission
 			{
 				linkID=9;
 				item0=1472;
-				item1=967;
+				item1=969;
 				class CustomData
 				{
 					type="Sync";
@@ -25418,7 +25459,7 @@ class Mission
 			{
 				linkID=10;
 				item0=1472;
-				item1=966;
+				item1=970;
 				class CustomData
 				{
 					type="Sync";
@@ -25428,7 +25469,7 @@ class Mission
 			{
 				linkID=11;
 				item0=1472;
-				item1=969;
+				item1=2277;
 				class CustomData
 				{
 					type="Sync";
@@ -25438,7 +25479,7 @@ class Mission
 			{
 				linkID=12;
 				item0=1472;
-				item1=970;
+				item1=2278;
 				class CustomData
 				{
 					type="Sync";
@@ -25448,7 +25489,7 @@ class Mission
 			{
 				linkID=13;
 				item0=1472;
-				item1=2277;
+				item1=971;
 				class CustomData
 				{
 					type="Sync";
@@ -25458,7 +25499,7 @@ class Mission
 			{
 				linkID=14;
 				item0=1472;
-				item1=2278;
+				item1=977;
 				class CustomData
 				{
 					type="Sync";
@@ -25468,7 +25509,7 @@ class Mission
 			{
 				linkID=15;
 				item0=1472;
-				item1=971;
+				item1=975;
 				class CustomData
 				{
 					type="Sync";
@@ -25477,8 +25518,8 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=1472;
-				item1=977;
+				item0=1462;
+				item1=1585;
 				class CustomData
 				{
 					type="Sync";
@@ -25487,8 +25528,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=1472;
-				item1=975;
+				item0=1639;
+				item1=1471;
 				class CustomData
 				{
 					type="Sync";
@@ -25497,8 +25538,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=1462;
-				item1=1585;
+				item0=1589;
+				item1=1462;
 				class CustomData
 				{
 					type="Sync";
@@ -25507,8 +25548,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=1639;
-				item1=1471;
+				item0=1468;
+				item1=1579;
 				class CustomData
 				{
 					type="Sync";
@@ -25517,8 +25558,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=1638;
-				item1=1471;
+				item0=1468;
+				item1=1577;
 				class CustomData
 				{
 					type="Sync";
@@ -25527,8 +25568,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=1637;
-				item1=1471;
+				item0=1575;
+				item1=1466;
 				class CustomData
 				{
 					type="Sync";
@@ -25537,8 +25578,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=1589;
-				item1=1462;
+				item0=1472;
+				item1=2605;
 				class CustomData
 				{
 					type="Sync";
@@ -25547,8 +25588,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=1468;
-				item1=1579;
+				item0=983;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25557,8 +25598,8 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=1468;
-				item1=1577;
+				item0=968;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25567,8 +25608,8 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=1575;
-				item1=1466;
+				item0=1467;
+				item1=1161;
 				class CustomData
 				{
 					type="Sync";
@@ -25577,8 +25618,8 @@ class Mission
 			class Item26
 			{
 				linkID=26;
-				item0=1472;
-				item1=2605;
+				item0=1617;
+				item1=1468;
 				class CustomData
 				{
 					type="Sync";
@@ -25587,8 +25628,8 @@ class Mission
 			class Item27
 			{
 				linkID=27;
-				item0=983;
-				item1=1472;
+				item0=1616;
+				item1=1468;
 				class CustomData
 				{
 					type="Sync";
@@ -25597,8 +25638,8 @@ class Mission
 			class Item28
 			{
 				linkID=28;
-				item0=968;
-				item1=1472;
+				item0=1125;
+				item1=1471;
 				class CustomData
 				{
 					type="Sync";
@@ -25607,8 +25648,8 @@ class Mission
 			class Item29
 			{
 				linkID=29;
-				item0=1467;
-				item1=1161;
+				item0=1126;
+				item1=1471;
 				class CustomData
 				{
 					type="Sync";
@@ -25617,8 +25658,8 @@ class Mission
 			class Item30
 			{
 				linkID=30;
-				item0=1617;
-				item1=1468;
+				item0=1644;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25627,8 +25668,8 @@ class Mission
 			class Item31
 			{
 				linkID=31;
-				item0=1616;
-				item1=1468;
+				item0=1645;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25637,8 +25678,8 @@ class Mission
 			class Item32
 			{
 				linkID=32;
-				item0=1125;
-				item1=1471;
+				item0=2072;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25647,8 +25688,8 @@ class Mission
 			class Item33
 			{
 				linkID=33;
-				item0=1126;
-				item1=1471;
+				item0=1445;
+				item1=2164;
 				class CustomData
 				{
 					type="Sync";
@@ -25657,8 +25698,8 @@ class Mission
 			class Item34
 			{
 				linkID=34;
-				item0=1644;
-				item1=1472;
+				item0=1472;
+				item1=2208;
 				class CustomData
 				{
 					type="Sync";
@@ -25667,8 +25708,8 @@ class Mission
 			class Item35
 			{
 				linkID=35;
-				item0=1645;
-				item1=1472;
+				item0=1472;
+				item1=976;
 				class CustomData
 				{
 					type="Sync";
@@ -25677,7 +25718,7 @@ class Mission
 			class Item36
 			{
 				linkID=36;
-				item0=2072;
+				item0=2211;
 				item1=1472;
 				class CustomData
 				{
@@ -25687,8 +25728,8 @@ class Mission
 			class Item37
 			{
 				linkID=37;
-				item0=1445;
-				item1=2164;
+				item0=2212;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25697,8 +25738,8 @@ class Mission
 			class Item38
 			{
 				linkID=38;
-				item0=1472;
-				item1=2208;
+				item0=2364;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25707,8 +25748,8 @@ class Mission
 			class Item39
 			{
 				linkID=39;
-				item0=1472;
-				item1=976;
+				item0=2365;
+				item1=1472;
 				class CustomData
 				{
 					type="Sync";
@@ -25717,7 +25758,7 @@ class Mission
 			class Item40
 			{
 				linkID=40;
-				item0=2211;
+				item0=2442;
 				item1=1472;
 				class CustomData
 				{
@@ -25727,8 +25768,8 @@ class Mission
 			class Item41
 			{
 				linkID=41;
-				item0=2212;
-				item1=1472;
+				item0=1472;
+				item1=974;
 				class CustomData
 				{
 					type="Sync";
@@ -25737,8 +25778,8 @@ class Mission
 			class Item42
 			{
 				linkID=42;
-				item0=2364;
-				item1=1472;
+				item0=2536;
+				item1=2527;
 				class CustomData
 				{
 					type="Sync";
@@ -25747,8 +25788,8 @@ class Mission
 			class Item43
 			{
 				linkID=43;
-				item0=2365;
-				item1=1472;
+				item0=2536;
+				item1=2528;
 				class CustomData
 				{
 					type="Sync";
@@ -25757,8 +25798,8 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=2442;
-				item1=1472;
+				item0=1472;
+				item1=2604;
 				class CustomData
 				{
 					type="Sync";
@@ -25767,8 +25808,8 @@ class Mission
 			class Item45
 			{
 				linkID=45;
-				item0=1472;
-				item1=974;
+				item0=1466;
+				item1=2654;
 				class CustomData
 				{
 					type="Sync";
@@ -25778,7 +25819,7 @@ class Mission
 			{
 				linkID=46;
 				item0=2536;
-				item1=2527;
+				item1=2665;
 				class CustomData
 				{
 					type="Sync";
@@ -25787,8 +25828,8 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=2536;
-				item1=2528;
+				item0=2527;
+				item1=3099;
 				class CustomData
 				{
 					type="Sync";
@@ -25797,8 +25838,8 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=1472;
-				item1=2604;
+				item0=2528;
+				item1=3099;
 				class CustomData
 				{
 					type="Sync";
@@ -25807,8 +25848,8 @@ class Mission
 			class Item49
 			{
 				linkID=49;
-				item0=1466;
-				item1=2654;
+				item0=2665;
+				item1=3099;
 				class CustomData
 				{
 					type="Sync";
@@ -25817,8 +25858,8 @@ class Mission
 			class Item50
 			{
 				linkID=50;
-				item0=2536;
-				item1=2665;
+				item0=3136;
+				item1=3144;
 				class CustomData
 				{
 					type="Sync";
@@ -25827,8 +25868,8 @@ class Mission
 			class Item51
 			{
 				linkID=51;
-				item0=2527;
-				item1=3099;
+				item0=3135;
+				item1=3144;
 				class CustomData
 				{
 					type="Sync";
@@ -25837,8 +25878,8 @@ class Mission
 			class Item52
 			{
 				linkID=52;
-				item0=2528;
-				item1=3099;
+				item0=3159;
+				item1=3156;
 				class CustomData
 				{
 					type="Sync";
@@ -25847,8 +25888,8 @@ class Mission
 			class Item53
 			{
 				linkID=53;
-				item0=2665;
-				item1=3099;
+				item0=3160;
+				item1=3157;
 				class CustomData
 				{
 					type="Sync";
@@ -25857,8 +25898,8 @@ class Mission
 			class Item54
 			{
 				linkID=54;
-				item0=3136;
-				item1=3144;
+				item0=3161;
+				item1=3158;
 				class CustomData
 				{
 					type="Sync";
@@ -25867,8 +25908,8 @@ class Mission
 			class Item55
 			{
 				linkID=55;
-				item0=3135;
-				item1=3144;
+				item0=1637;
+				item1=1471;
 				class CustomData
 				{
 					type="Sync";
@@ -25877,28 +25918,8 @@ class Mission
 			class Item56
 			{
 				linkID=56;
-				item0=3159;
-				item1=3156;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item57
-			{
-				linkID=57;
-				item0=3160;
-				item1=3157;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item58
-			{
-				linkID=58;
-				item0=3161;
-				item1=3158;
+				item0=1638;
+				item1=1471;
 				class CustomData
 				{
 					type="Sync";
