@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=3227;
+		nextID=3240;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3828;
+		nextID=3888;
 	};
 	class Camera
 	{
-		pos[]={11014.133,125.3756,3176.8303};
-		dir[]={-0.9609291,-0.27484667,0.035782408};
-		up[]={-0.27480218,0.96143216,0.010233386};
-		aside[]={0.037211318,1.0798176e-06,0.99939054};
+		pos[]={11022.323,135.23489,3178.2781};
+		dir[]={-0.92900234,-0.36935267,0.02455068};
+		up[]={-0.36924803,0.92927653,0.0097578857};
+		aside[]={0.026420299,-7.8042558e-07,0.9996829};
 	};
 };
 binarizationWanted=0;
@@ -63,9 +63,9 @@ addons[]=
 	"A3_Modules_F_Multiplayer",
 	"characters_f_vietnam_03_c",
 	"characters_f_vietnam_04_c",
-	"A3_Modules_F_ObjectModifiers",
 	"A3_Data_F_Curator_Virtual",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F_ObjectModifiers"
 };
 class AddonsMetaData
 {
@@ -384,7 +384,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=73;
+		items=74;
 		class Item0
 		{
 			dataType="Logic";
@@ -1182,19 +1182,20 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10723.093,101.27113,3130.2026};
-										angles[]={0,0.063913956,0.00083775807};
+										position[]={9729.5264,234.46271,6620.1084};
+										angles[]={6.2827911,0.21358974,6.2805648};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 										textures="uh1d_22";
 									};
 									id=1577;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=0.032997131;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1268,19 +1269,21 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10688.366,101.25924,3131.1355};
-										angles[]={6.2813263,0.027511461,6.2824135};
+										position[]={9695.3271,234.56255,6626.2104};
+										angles[]={6.2823935,0.17718874,6.2779198};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 										textures="uh1d_22";
 									};
 									id=1579;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=4.5776367e-05;
+									atlOffset=0.01852417;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1354,19 +1357,21 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10705.752,101.25114,3130.9861};
-										angles[]={0,0.06257005,0};
+										position[]={9712.4951,234.51331,6623.4702};
+										angles[]={0.002226999,0.21224533,6.2801695};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 										textures="uh1d_22";
 									};
 									id=1581;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=0.00015258789;
+									atlOffset=0.0077362061;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1475,19 +1480,21 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10722.083,101.24352,3110.9502};
-										angles[]={6.2812634,0.063918941,0.001035801};
+										position[]={9725.6572,234.46109,6601.2217};
+										angles[]={6.2805648,0.21359359,0.00039537984};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 										textures="uh1d_22";
 									};
 									id=1616;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=1.5258789e-05;
+									atlOffset=-0.0068511963;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1561,19 +1568,21 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10686.877,101.25738,3112.3174};
-										angles[]={0.0016914561,0.063918941,6.2822719};
+										position[]={9691.0469,234.52838,6607.8252};
+										angles[]={6.2805429,0.21359353,0.00039871101};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 										textures="uh1d_22";
 									};
 									id=1617;
 									type="vn_b_air_uh1d_02_02";
-									atlOffset=6.1035156e-05;
+									atlOffset=-0.0078277588;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1644,7 +1653,7 @@ class Mission
 								};
 							};
 							id=984;
-							atlOffset=0.035102844;
+							atlOffset=7.4535217;
 						};
 						class Item2
 						{
@@ -8361,7 +8370,7 @@ class Mission
 						};
 					};
 					id=679;
-					atlOffset=-0.69204712;
+					atlOffset=-0.65045166;
 				};
 				class Item1
 				{
@@ -8700,25 +8709,25 @@ class Mission
 							name="Helos";
 							class Entities
 							{
-								items=8;
+								items=6;
 								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10933.917,102.12459,3028.0112};
-										angles[]={0,1.5847939,0};
+										position[]={9751.6914,235.27356,6598.751};
+										angles[]={0,1.7486458,-0};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
-										lock="UNLOCKED";
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 									};
 									id=1573;
 									type="vn_b_air_ch47_01_02";
-									atlOffset=0.0010299683;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8742,19 +8751,20 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10933.802,102.16354,2997.3101};
-										angles[]={0,1.5955882,0};
+										position[]={9746.5703,235.33765,6568.4795};
+										angles[]={6.2805481,1.7594396,0.00043621086};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
-										lock="UNLOCKED";
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 									};
 									id=1575;
 									type="vn_b_air_ch47_01_02";
-									atlOffset=0.0071258545;
+									atlOffset=0.041244507;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8778,19 +8788,21 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10934.652,101.42204,3084.2053};
-										angles[]={0,1.5778649,0};
+										position[]={9761.5674,234.53452,6654.0742};
+										angles[]={0.0026386222,1.7417161,6.2827501};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 										textures="uh1c_21";
 									};
 									id=1585;
 									type="vn_b_air_uh1c_02_02";
-									atlOffset=0.0071411133;
+									atlOffset=0.036727905;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8899,19 +8911,21 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={10934.227,101.42204,3056.2483};
-										angles[]={0,1.5990882,0};
+										position[]={9756.584,234.5537,6626.5605};
+										angles[]={0.0021840015,1.7629403,6.2801385};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 										textures="uh1c_20";
 									};
 									id=2431;
 									type="vn_b_air_uh1c_02_02";
-									atlOffset=0.0071411133;
+									atlOffset=0.041656494;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8985,14 +8999,15 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11015.241,102.12356,3280.4443};
-										angles[]={0,4.7347641,0};
+										position[]={9732.0742,235.26355,6646.4551};
+										angles[]={-0,1.7405382,0};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
-										lock="UNLOCKED";
+										lock="LOCKED";
+										fuel=0;
 										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "this execVM ""addHeloGunners.sqf"";";
 									};
 									id=2654;
@@ -9015,49 +9030,9 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item6
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={11015.235,101.30025,3250.658};
-										angles[]={0,4.7249928,0};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										lock="LOCKED";
-										fuel=0;
-										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "";
-									};
-									id=3135;
-									type="vn_b_air_ah1g_03";
-									atlOffset=0.039978027;
-								};
-								class Item7
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={11014.973,101.30025,3224.5596};
-										angles[]={0,4.7683544,0};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										lock="LOCKED";
-										fuel=0;
-										init="this setVariable [""teamLock"", ""deltatroop"", true];" \n "";
-									};
-									id=3136;
-									type="vn_b_air_ah1g_04";
-									atlOffset=0.039978027;
-								};
 							};
 							id=2082;
-							atlOffset=0.034706116;
+							atlOffset=5.2080231;
 						};
 						class Item3
 						{
@@ -10824,11 +10799,11 @@ class Mission
 						};
 					};
 					id=1570;
-					atlOffset=0.20105743;
+					atlOffset=3.8410263;
 				};
 			};
 			id=678;
-			atlOffset=-0.31939697;
+			atlOffset=1.264679;
 		};
 		class Item5
 		{
@@ -12267,14 +12242,33 @@ class Mission
 		class Item14
 		{
 			dataType="Marker";
-			position[]={10695.389,98.602074,3165.2439};
+			position[]={10695.389,98.601997,3165.2439};
 			name="blocked_area1";
 			text="Base Block 1";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=273.35901;
 			b=277.25201;
 			id=344;
+			atlOffset=-7.6293945e-05;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item15
 		{
@@ -13142,6 +13136,7 @@ class Mission
 			};
 			id=1445;
 			type="vn_module_masterarm";
+			atlOffset=-6.8664551e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13669,11 +13664,12 @@ class Mission
 			dataType="Marker";
 			position[]={10990.303,98.480003,3155.0029};
 			name="blocked_area2";
-			text="Base Block 1";
+			text="Base Block 2";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=81.027954;
-			b=356.16632;
+			alpha=0;
+			a=81.028;
+			b=356.16599;
 			id=2498;
 			class CustomAttributes
 			{
@@ -24547,50 +24543,10 @@ class Mission
 		};
 		class Item62
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10651.421,98.510002,3132.3989};
-			};
-			id=3099;
-			type="ModuleShowHide_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleShowHide_F_Units";
-					expression="_this setVariable ['Units',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="1";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleShowHide_F_State";
-					expression="_this setVariable ['State',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="0";
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item63
-		{
 			dataType="Marker";
 			position[]={11013.298,98.519997,3249.075};
 			name="MarkerHelo1_1";
-			text="Helicopters (Cobra Gunships & Cargo Chinook)";
+			text="Helicopters (Cargo Chinook)";
 			type="b_air";
 			id=3143;
 			atlOffset=7.6293945e-06;
@@ -24612,7 +24568,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item64
+		class Item63
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -24758,237 +24714,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item65
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={10761.104,99.428024,3224.187};
-						angles[]={0,3.1238077,0};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						init="[this, ""PILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Cobra Pilot / Section Leader"", true];";
-						description="Cobra Pilot@Cobra Gunship Section";
-						isPlayable=1;
-					};
-					id=3146;
-					type="vn_b_men_aircrew_05";
-					atlOffset=7.6293945e-05;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.02;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={10759.855,99.424683,3224.1921};
-						angles[]={0,3.1238077,0};
-					};
-					side="West";
-					class Attributes
-					{
-						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Cobra Gunner"", true];";
-						description="Cobra Gunner";
-						isPlayable=1;
-					};
-					id=3148;
-					type="vn_b_men_aircrew_06";
-					atlOffset=0.95800018;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male01ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.02;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={10758.37,99.423393,3224.1169};
-						angles[]={0,3.1238077,0};
-					};
-					side="West";
-					class Attributes
-					{
-						init="[this, ""PILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Cobra Pilot"", true];";
-						description="Cobra Pilot";
-						isPlayable=1;
-					};
-					id=3150;
-					type="vn_b_men_aircrew_05";
-					atlOffset=0.95799255;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male08ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={10757.121,99.420044,3224.1211};
-						angles[]={0,3.1238077,0};
-					};
-					side="West";
-					class Attributes
-					{
-						init="[this, ""COPILOT""] call Gib_fnc_Gearscript;" \n "this setVariable [""diwako_dui_nametags_customInfo"", ""Cobra Gunner"", true];";
-						description="Cobra Gunner";
-						isPlayable=1;
-					};
-					id=3151;
-					type="vn_b_men_aircrew_06";
-					atlOffset=0.95799255;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.99000001;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-				behaviour="SAFE";
-				formation="LINE";
-			};
-			id=3145;
-			atlOffset=7.6293945e-05;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Cobra Section";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item66
+		class Item64
 		{
 			dataType="Marker";
 			position[]={10650.274,98.510002,3120.635};
@@ -25015,7 +24741,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item67
+		class Item65
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -25056,7 +24782,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item68
+		class Item66
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -25097,7 +24823,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item69
+		class Item67
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -25138,7 +24864,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item70
+		class Item68
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -25207,7 +24933,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item71
+		class Item69
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -25276,7 +25002,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item72
+		class Item70
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -25345,16 +25071,120 @@ class Mission
 				nAttributes=4;
 			};
 		};
+		class Item71
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10651.737,98.510002,3140.4871};
+			};
+			id=3237;
+			type="ModuleShowHide_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleShowHide_F_Units";
+					expression="_this setVariable ['Units',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleShowHide_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item72
+		{
+			dataType="Marker";
+			position[]={9714.3584,231.69299,6562.7446};
+			name="blocked_area3";
+			text="Base Block 3";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			a=284.83887;
+			b=831.099;
+			angle=281.22897;
+			id=3238;
+			atlOffset=0.032989502;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item73
+		{
+			dataType="Marker";
+			position[]={9194.2871,230.645,6280.1875};
+			name="blocked_area4";
+			text="Base Block 4";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			a=135.12581;
+			b=304.94263;
+			angle=308.71323;
+			id=3239;
+			atlOffset=2.2112122;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ENH_markerShape";
+					expression="if (_value != 'NONE' && isServer) then {_this setMarkerShape _value}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NONE";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=57;
+			nextID=55;
 		};
 		class Links
 		{
-			items=57;
+			items=55;
 			class Item0
 			{
 				linkID=0;
@@ -25828,8 +25658,8 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=2527;
-				item1=3099;
+				item0=3159;
+				item1=3156;
 				class CustomData
 				{
 					type="Sync";
@@ -25838,8 +25668,8 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=2528;
-				item1=3099;
+				item0=3160;
+				item1=3157;
 				class CustomData
 				{
 					type="Sync";
@@ -25848,8 +25678,8 @@ class Mission
 			class Item49
 			{
 				linkID=49;
-				item0=2665;
-				item1=3099;
+				item0=3161;
+				item1=3158;
 				class CustomData
 				{
 					type="Sync";
@@ -25858,8 +25688,8 @@ class Mission
 			class Item50
 			{
 				linkID=50;
-				item0=3136;
-				item1=3144;
+				item0=1637;
+				item1=1471;
 				class CustomData
 				{
 					type="Sync";
@@ -25868,8 +25698,8 @@ class Mission
 			class Item51
 			{
 				linkID=51;
-				item0=3135;
-				item1=3144;
+				item0=1638;
+				item1=1471;
 				class CustomData
 				{
 					type="Sync";
@@ -25878,8 +25708,8 @@ class Mission
 			class Item52
 			{
 				linkID=52;
-				item0=3159;
-				item1=3156;
+				item0=2527;
+				item1=3237;
 				class CustomData
 				{
 					type="Sync";
@@ -25888,8 +25718,8 @@ class Mission
 			class Item53
 			{
 				linkID=53;
-				item0=3160;
-				item1=3157;
+				item0=2528;
+				item1=3237;
 				class CustomData
 				{
 					type="Sync";
@@ -25898,28 +25728,8 @@ class Mission
 			class Item54
 			{
 				linkID=54;
-				item0=3161;
-				item1=3158;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item55
-			{
-				linkID=55;
-				item0=1637;
-				item1=1471;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item56
-			{
-				linkID=56;
-				item0=1638;
-				item1=1471;
+				item0=2665;
+				item1=3237;
 				class CustomData
 				{
 					type="Sync";
