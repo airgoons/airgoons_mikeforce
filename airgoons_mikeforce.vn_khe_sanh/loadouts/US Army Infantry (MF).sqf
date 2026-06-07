@@ -696,6 +696,7 @@
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_usarmy_14";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 		_unit addBackpack "vn_b_pack_lw_06";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		_unit addHeadgear _headgear;
@@ -723,6 +724,7 @@
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_usarmy_14";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 		_unit addBackpack "vn_b_pack_lw_04";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		_unit addHeadgear _headgear;
@@ -854,14 +856,14 @@
 	
 		comment "Scout Patrol Leader";
 		comment "Add containers";
-		_unit forceAddUniform _greenscoutuniform;
+		_unit forceAddUniform _tigerscoutuniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_sog_01";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 		_unit addBackpack "vn_b_pack_trp_04";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _greenscoutheadgear;
+		_unit addHeadgear _tigerscoutheadgear;
 
 		comment "Add weapons";
 		_unit addWeapon _scoutrifle;
@@ -882,14 +884,14 @@
 	
 		comment "Scout RTO";
 		comment "Add containers";
-		_unit forceAddUniform _greenscoutuniform;
+		_unit forceAddUniform _tigerscoutuniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_sog_06";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 		_unit addBackpack "vn_b_pack_trp_04";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _greenscoutheadgear;
+		_unit addHeadgear _tigerscoutheadgear;
 
 		comment "Add weapons";
 		_unit addWeapon _scoutrifle;
@@ -908,14 +910,14 @@
 	
 		comment "Senior Scout-Observer";
 		comment "Add containers";
-		_unit forceAddUniform _greenscoutuniform;
+		_unit forceAddUniform _tigerscoutuniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_sog_04";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 		_unit addBackpack "vn_b_pack_trp_02";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _greenscoutheadgear;
+		_unit addHeadgear _tigerscoutheadgear;
 
 		comment "Add weapons";
 		_unit addWeapon _scoutrifle;
@@ -935,7 +937,7 @@
 	
 		comment "Scout Autorifleman";
 		comment "Add containers";
-		_unit forceAddUniform _greenscoutuniform;
+		_unit forceAddUniform _tigerscoutuniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_sog_05";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
@@ -943,7 +945,7 @@
 		_unit addBackpack "vn_b_pack_trp_01";
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "vn_m60_100_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _greenscoutheadgear;
+		_unit addHeadgear _tigerscoutheadgear;
 
 		comment "Add weapons";
 		_unit addWeapon "vn_m60_shorty_camo";
@@ -960,14 +962,14 @@
 	
 		comment "Scout-Observer";
 		comment "Add containers";
-		_unit forceAddUniform _greenscoutuniform;
+		_unit forceAddUniform _tigerscoutuniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_sog_04";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
 		for "_i" from 1 to 5 do {_unit addItemToVest "vn_m16_20_mag";};
 		_unit addBackpack "vn_b_pack_trp_02";
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _greenscoutheadgear;
+		_unit addHeadgear _tigerscoutheadgear;
 
 		comment "Add weapons";
 		_unit addWeapon _scoutrifle;
@@ -986,7 +988,7 @@
 
 		// "Scout Medic";
 		// "Add containers";
-		_unit forceAddUniform _greenscoutuniform;
+		_unit forceAddUniform _tigerscoutuniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_sog_02";
 		for "_i" from 1 to 4 do {_unit addItemToVest "vn_m67_grenade_mag";};
@@ -996,7 +998,7 @@
 		for "_i" from 1 to 10 do {_unit addItemToBackpack "vn_prop_med_antivenom";};
 		for "_i" from 1 to 10 do {_unit addItemToBackpack "vn_prop_med_dysentery";};
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _greenscoutheadgear;
+		_unit addHeadgear _tigerscoutheadgear;
 
 		// "Add weapons";
 		_unit addWeapon _scoutrifle;
@@ -1015,7 +1017,7 @@
 	
 		comment "Scout-Observer";
 		comment "Add containers";
-		_unit forceAddUniform _greenscoutuniform;
+		_unit forceAddUniform _tigerscoutuniform;
 		for "_i" from 1 to 4 do {_unit addItemToUniform "vn_b_item_firstaidkit";};
 		_unit addVest "vn_b_vest_sog_03";
 		for "_i" from 1 to 2 do {_unit addItemToVest "vn_m67_grenade_mag";};
@@ -1025,7 +1027,7 @@
 		for "_i" from 1 to 4 do {_unit addItemToBackpack "vn_mine_m112_remote_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
 		for "_i" from 1 to 2 do {_unit addItemToBackpack "vn_m18_white_mag";};
-		_unit addHeadgear _greenscoutheadgear;
+		_unit addHeadgear _tigerscoutheadgear;
 
 		comment "Add weapons";
 		_unit addWeapon _scoutrifle;
